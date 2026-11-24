@@ -1,19 +1,45 @@
-# Global agent platform (working name: Agents)
+# Agents — an open-source library of specialised AI agents
 
-A platform of specialised agents across fields, professions and everyday tasks. Twenty-nine fields and 1,033 ready-made agents (seven fields joined on 10 November 2026: IT & cybersecurity, Banking & investment, Retail & e-commerce, Manufacturing & engineering, Sustainability & ESG, Startups & fundraising, Project management; see `docs/launch.md`), each field with its own areas
-and ready-made agents: **Legal** (109, the reference library) and, since 6 November 2026, Finance & accounting, People & HR,
-Marketing & sales, Operations, Product & engineering, Healthcare, Education, Languages, Creative, Communication, Everyday life,
-Compliance & risk, Business & strategy, Data & analytics, Customer support, Real estate & construction, Science & research,
-Public sector & nonprofits, Hospitality & tourism, Shipping, logistics & trade and Insurance & claims (nine starters every
-agent). Custom agents built from a description or by
-customising a ready one, conversations with streaming answers, documents, favourites, history, Word/Copy exports,
-and **jurisdiction-aware research limited to each place's official websites** (208 places, 1,594 catalogued sources)
-with a right-hand source reader. Since 7 November: **«Tell me the task»** (describe the job, get the agents of every field that do it), **«/» in the chat box** (commands, and any other agent answering inside the conversation), **names hidden** from the AI by default (placeholders in the browser, real names back in the answer) and **«All fields»** in the Field picker. Also since 7 November (`docs/smart-features.md`): **proof on every sentence** (each claim linked to the exact quoted words, checked against the document or official page), a **house style** every agent follows, **agent chains**, **branded Word, Excel and PowerPoint** files and **Word with tracked changes**, **photos and «Share to Agents»** on a phone, **e-mail and WhatsApp channels** (off until the owner connects them) and a **privacy page** that states only what is true. For the launch (`docs/launch.md`): **50 chain agents** on a card grid, **⌘K search**, and a **landing page** at `/welcome` with a 3D globe of every agent and live demos of the builder. Since 10 November: **Connections** (Gmail, Google Calendar, Outlook) and the first connected agent, the **morning inbox brief**, read-only, with names hidden, and **Routines** that run it on a schedule and send it by e-mail or WhatsApp (`docs/connections.md`, `docs/routines.md`; open-source licences in `THIRD_PARTY_NOTICES.md`).
+**1,033 ready-made agents across 29 fields** (legal, finance, HR, marketing, healthcare, IT, everyday life and more),
+a builder for your own agents, agent chains, routines that run on a schedule, and research that only cites each
+country's **official websites**.
 
-The interaction model: library → agent home → conversation → citation → conversation + reader; builder/editor with a
-test pane, in a white + lavender design.
+**Live demo:** _coming soon_ · **Licence:** MIT
 
-## Run
+> The live demo runs without an AI key, so you can explore every screen for free. AI actions show
+> «AI is not connected». Run it yourself with your own OpenAI key to get real answers (see [Run it yourself](#run-it-yourself)).
+
+## How it works
+
+1. **Pick a field and an agent.** The library groups agents by field (Legal, Finance & accounting, People & HR, …) and
+   by area inside each field. Not sure which one? Type the job into **«Tell me the task»** and you get the agents of every
+   field that can do it.
+2. **Open the agent and ask.** Each agent has its own home page with 9–10 starter questions. Answers stream in, every
+   sentence carries its **proof** (the exact quoted words from your document or the official page), and sources open in a
+   reader on the right.
+3. **Choose where the law or rules come from.** For research, pick one of 208 places. The agent searches only that
+   place's catalogued official sources (1,594 of them) and never falls back to the open web.
+4. **Build your own.** Describe an agent in a sentence, or customise a ready one, and test it side by side in the builder.
+   Link agents into **chains** (50 ready-made) so one agent's answer feeds the next.
+5. **Let it work for you.** Connect Gmail, Google Calendar or Outlook and set a **routine** (for example a morning inbox
+   brief every weekday at 07:00, sent by e-mail, WhatsApp or Telegram). Finished work comes out as branded **Word, Excel
+   or PowerPoint** files, including Word with tracked changes.
+
+**Privacy by default:** names are hidden from the AI (placeholders in the browser, real names back in your answer),
+documents are read on your device, and the privacy page states only what is true.
+
+## What's inside
+
+- **Library** — 29 fields, 1,033 agents, ⌘K search, favourites and history.
+- **Conversations** — streaming answers, «/» commands, any other agent answering inside the chat, Word/Copy exports.
+- **Builder & editor** — new agents from a description, with a test pane.
+- **Chains** — 50 ready-made multi-agent workflows on a visual map.
+- **Connections & routines** — Gmail, Calendar, Outlook, Sheets, Docs, Slack and more through Composio; schedules and
+  «when a page changes» triggers.
+- **Every row** — run an agent over each row of an Excel/CSV file or a Google Sheet.
+- **Landing page** at `/welcome` with a 3D globe of every agent and a live builder demo.
+
+## Run it yourself
 
 ```bash
 npm install
