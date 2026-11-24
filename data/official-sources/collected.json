@@ -1,0 +1,8170 @@
+{
+ "Afghanistan": [
+  {
+   "name": "Ministry of Finance",
+   "url": "https://www.mof.gov.af",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://moj.gov.af",
+   "kind": "gazette"
+  },
+  {
+   "name": "Supreme Court of Afghanistan",
+   "url": "https://supremecourt.gov.af",
+   "kind": "courts"
+  }
+ ],
+ "Andorra": [
+  {
+   "name": "Portal Jurídic d'Andorra",
+   "url": "https://portaljuridicandorra.ad/Inici",
+   "kind": "legislation"
+  },
+  {
+   "name": "BOPA Butlletins",
+   "url": "https://www.bopa.ad/Butlletins",
+   "kind": "regulator"
+  },
+  {
+   "name": "BOPA Legislació",
+   "url": "https://www.bopa.ad/Legislacio",
+   "kind": "legislation"
+  },
+  {
+   "name": "Butlletí Oficial del Principat d'Andorra (BOPA)",
+   "url": "https://www.bopa.ad",
+   "kind": "gazette"
+  }
+ ],
+ "Angola": [
+  {
+   "name": "Agência Nacional de Petróleo, Gás e Biocombustíveis",
+   "url": "https://anpg.co.ao",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banco Nacional de Angola",
+   "url": "https://www.bna.ao",
+   "kind": "regulator"
+  },
+  {
+   "name": "Assembleia Nacional",
+   "url": "https://parlamento.ao",
+   "kind": "parliament"
+  },
+  {
+   "name": "Tribunal Supremo",
+   "url": "https://tribunalsupremo.ao",
+   "kind": "courts"
+  },
+  {
+   "name": "Tribunal Constitucional",
+   "url": "https://www.tribunalconstitucional.ao",
+   "kind": "courts"
+  }
+ ],
+ "Antigua and Barbuda": [
+  {
+   "name": "Parliament of Antigua and Barbuda",
+   "url": "https://ab.gov.ag/detail_template.php?page=government_info/parliament",
+   "kind": "parliament"
+  },
+  {
+   "name": "Acts of Antigua and Barbuda",
+   "url": "https://laws.gov.ag/laws/alphabetical",
+   "kind": "legislation"
+  },
+  {
+   "name": "Bills of Antigua and Barbuda",
+   "url": "https://laws.gov.ag/bills",
+   "kind": "government"
+  },
+  {
+   "name": "Official Gazette of Antigua and Barbuda",
+   "url": "http://gazette.laws.gov.ag",
+   "kind": "gazette"
+  },
+  {
+   "name": "Antigua and Barbuda Ministry of Justice",
+   "url": "https://legalaffairs.gov.ag",
+   "kind": "government"
+  }
+ ],
+ "Argentina": [
+  {
+   "name": "Honorable Senado de la Nación Argentina",
+   "url": "https://www.senado.gob.ar",
+   "kind": "parliament"
+  },
+  {
+   "name": "Honorable Cámara de Diputados de la Nación",
+   "url": "https://www.hcdn.gob.ar",
+   "kind": "parliament"
+  },
+  {
+   "name": "Corte Suprema de Justicia de la Nación",
+   "url": "https://www.csjn.gov.ar",
+   "kind": "courts"
+  },
+  {
+   "name": "Boletín Oficial de la República Argentina",
+   "url": "https://www.boletinoficial.gob.ar",
+   "kind": "gazette"
+  },
+  {
+   "name": "InfoLEG",
+   "url": "http://www.infoleg.gob.ar",
+   "kind": "legislation"
+  }
+ ],
+ "Armenia": [
+  {
+   "name": "Parliament of Armenia",
+   "url": "https://www.parliament.am/hy",
+   "kind": "parliament"
+  },
+  {
+   "name": "Court of Cassation of Armenia",
+   "url": "https://www.cassationcourt.am",
+   "kind": "courts"
+  },
+  {
+   "name": "Armenia Official Public Notifications",
+   "url": "https://azdarar.am/hy",
+   "kind": "government"
+  },
+  {
+   "name": "Armenian Legal Information System",
+   "url": "https://www.arlis.am/en",
+   "kind": "legislation"
+  },
+  {
+   "name": "Armenia Ministry of Justice",
+   "url": "https://www.moj.am/en",
+   "kind": "government"
+  }
+ ],
+ "Australia": [
+  {
+   "name": "NSW Parliament",
+   "url": "https://www.parliament.nsw.gov.au/parliamentary-business/bills/current-session-bills",
+   "kind": "parliament"
+  },
+  {
+   "name": "NSW CaseLaw",
+   "url": "https://www.caselaw.nsw.gov.au",
+   "kind": "courts"
+  },
+  {
+   "name": "NSW Courts",
+   "url": "https://courts.nsw.gov.au",
+   "kind": "courts"
+  },
+  {
+   "name": "NSW Legislation",
+   "url": "https://legislation.nsw.gov.au",
+   "kind": "legislation"
+  },
+  {
+   "name": "Supreme Court of Victoria",
+   "url": "https://www.supremecourt.vic.gov.au",
+   "kind": "courts"
+  },
+  {
+   "name": "AustLII",
+   "url": "http://www.austlii.edu.au",
+   "kind": "other"
+  },
+  {
+   "name": "Federal Register",
+   "url": "https://www.legislation.gov.au",
+   "kind": "legislation"
+  }
+ ],
+ "Austria": [
+  {
+   "name": "Bundeswettbewerbsbehörde (BWB)",
+   "url": "https://www.bwb.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bilanzbuchhaltungsbehörde",
+   "url": "https://www.wko.at/bilanzbuchhaltungsbehoerde/start",
+   "kind": "regulator"
+  },
+  {
+   "name": "Abschlussprüferaufsichtsbehörde (APAB)",
+   "url": "https://www.apab.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt zur Korruptionsprävention und Korruptionsbekämpfung (BAK)",
+   "url": "https://www.bak.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Cybersicherheit (BCS)",
+   "url": "https://www.bundesamt-cybersicherheit.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesministerium für Justiz (BMJ)",
+   "url": "https://www.bmj.gv.at",
+   "kind": "government"
+  },
+  {
+   "name": "Sozialministeriumservice (SMS)",
+   "url": "https://www.sozialministeriumservice.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Oesterreichische Nationalbank (OeNB)",
+   "url": "https://www.oenb.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finanzmarktaufsicht (FMA)",
+   "url": "https://www.fma.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Datenschutzbehörde (DSB)",
+   "url": "https://dsb.gv.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Rundfunk und Telekom Regulierungs-GmbH (RTR)",
+   "url": "https://www.rtr.at",
+   "kind": "regulator"
+  },
+  {
+   "name": "Parlament Österreich",
+   "url": "https://www.parlament.gv.at",
+   "kind": "parliament"
+  },
+  {
+   "name": "Oberster Gerichtshof (OGH)",
+   "url": "https://www.ogh.gv.at",
+   "kind": "courts"
+  },
+  {
+   "name": "Verfassungsgerichtshof (VfGH)",
+   "url": "https://www.vfgh.gv.at",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesgesetzblatt (BGBl.)",
+   "url": "https://www.ris.bka.gv.at/Bgbl-Auth",
+   "kind": "gazette"
+  },
+  {
+   "name": "Rechtsinformationssystem (RIS)",
+   "url": "https://www.ris.bka.gv.at",
+   "kind": "courts"
+  }
+ ],
+ "Azerbaijan": [
+  {
+   "name": "President of the Republic of Azerbaijan",
+   "url": "https://president.az",
+   "kind": "legislation"
+  },
+  {
+   "name": "Constitutional Court of the Republic of Azerbaijan",
+   "url": "https://www.constcourt.gov.az",
+   "kind": "courts"
+  },
+  {
+   "name": "Central Bank of Azerbaijan (CBAR)",
+   "url": "https://www.cbar.az",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice of Azerbaijan",
+   "url": "https://www.justice.gov.az",
+   "kind": "government"
+  },
+  {
+   "name": "Milli Məclis",
+   "url": "https://meclis.gov.az",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Azerbaijan",
+   "url": "https://supremecourt.gov.az",
+   "kind": "courts"
+  },
+  {
+   "name": "E-Qanun",
+   "url": "https://e-qanun.az",
+   "kind": "legislation"
+  }
+ ],
+ "Baden-Württemberg": [
+  {
+   "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)",
+   "url": "https://www.baden-wuerttemberg.datenschutz.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesrecht Baden-Württemberg",
+   "url": "https://www.landesrecht-bw.de",
+   "kind": "courts"
+  }
+ ],
+ "Bahrain": [
+  {
+   "name": "Constitutional Court of Bahrain - Judgments",
+   "url": "https://www.ccb.bh/Pages_ar/Listdoc.aspx?encr=1B3A&mtype=anVk",
+   "kind": "courts"
+  },
+  {
+   "name": "Bahrain Official Gazette",
+   "url": "https://www.lloc.gov.bh/en/OfficialGazette",
+   "kind": "gazette"
+  },
+  {
+   "name": "Bahrain Treaties",
+   "url": "https://www.lloc.gov.bh/en/Treaty/Search",
+   "kind": "legislation"
+  },
+  {
+   "name": "Bahrain Legislation",
+   "url": "https://www.lloc.gov.bh/en/Legislation/Search",
+   "kind": "legislation"
+  }
+ ],
+ "Bavaria": [
+  {
+   "name": "Bayerischer Landesbeauftragter für den Datenschutz (BayLfD)",
+   "url": "https://www.datenschutz-bayern.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)",
+   "url": "https://www.lda.bayern.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gesetze Bayern",
+   "url": "https://www.gesetze-bayern.de",
+   "kind": "courts"
+  }
+ ],
+ "Belgium": [
+  {
+   "name": "Vlaamse Landmaatschappij (VLM)",
+   "url": "https://www.vlm.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Médiateur fédéral",
+   "url": "https://www.mediateurfederal.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Federale Ombudsman",
+   "url": "https://www.federaalombudsman.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gallilex (Fédération Wallonie-Bruxelles)",
+   "url": "https://gallilex.cfwb.be",
+   "kind": "legislation"
+  },
+  {
+   "name": "Autorité de protection des données (APD)",
+   "url": "https://www.autoriteprotectiondonnees.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Belgisch Instituut voor postdiensten en telecommunicatie (BIPT)",
+   "url": "https://www.bipt.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "FOD Mobiliteit en Vervoer",
+   "url": "https://mobilit.belgium.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nationale Bank van België (NBB)",
+   "url": "https://www.nbb.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gegevensbeschermingsautoriteit (GBA)",
+   "url": "https://www.gegevensbeschermingsautoriteit.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "CTIF-CFI",
+   "url": "https://www.ctif-cfi.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "CREG",
+   "url": "https://www.creg.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Belgische Mededingingsautoriteit (BMA)",
+   "url": "https://www.bma-abc.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Corporate Governance Commissie",
+   "url": "https://corporategovernancecommittee.be",
+   "kind": "legislation"
+  },
+  {
+   "name": "Werk België",
+   "url": "https://werk.belgie.be",
+   "kind": "government"
+  },
+  {
+   "name": "Emploi Belgique",
+   "url": "https://emploi.belgique.be",
+   "kind": "government"
+  },
+  {
+   "name": "Website Vlaanderen",
+   "url": "https://www.vlaanderen.be",
+   "kind": "other"
+  },
+  {
+   "name": "Grondwettelijk Hof",
+   "url": "https://const-court.be",
+   "kind": "other"
+  },
+  {
+   "name": "FOD Kanselarij",
+   "url": "https://kanselarij.belgium.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Mobiliteit",
+   "url": "https://mobilit.belgium.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Sociale Zekerheid",
+   "url": "https://www.socialsecurity.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Justitie",
+   "url": "https://justonweb.be",
+   "kind": "courts"
+  },
+  {
+   "name": "FOD Binnenlandse Zaken",
+   "url": "https://www.ibz.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Volksgezondheid",
+   "url": "https://www.health.belgium.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Financiën",
+   "url": "https://financien.belgium.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "FOD WASO",
+   "url": "https://werk.belgie.be",
+   "kind": "government"
+  },
+  {
+   "name": "FOD Economie",
+   "url": "https://economie.fgov.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ejustice",
+   "url": "https://www.ejustice.just.fgov.be",
+   "kind": "other"
+  },
+  {
+   "name": "FSMA",
+   "url": "https://www.fsma.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Belgium.be",
+   "url": "https://www.belgium.be",
+   "kind": "government"
+  },
+  {
+   "name": "Senaat",
+   "url": "https://www.senate.be",
+   "kind": "parliament"
+  },
+  {
+   "name": "De Kamer",
+   "url": "https://www.dekamer.be",
+   "kind": "parliament"
+  },
+  {
+   "name": "Raad van State",
+   "url": "https://www.raadvst-consetat.be",
+   "kind": "courts"
+  },
+  {
+   "name": "Belgisch Staatsblad",
+   "url": "https://www.ejustice.just.fgov.be/cgi/welcome.pl?language=nl&view_numac=",
+   "kind": "gazette"
+  }
+ ],
+ "Benin": [
+  {
+   "name": "Secrétariat Général du Gouvernement",
+   "url": "https://sgg.gouv.bj",
+   "kind": "government"
+  },
+  {
+   "name": "Government of Benin Portal",
+   "url": "https://www.gouv.bj",
+   "kind": "government"
+  },
+  {
+   "name": "Cour Suprême du Bénin",
+   "url": "https://coursupreme.bj/jurisadmin/advanced-search",
+   "kind": "courts"
+  },
+  {
+   "name": "Journal Officiel du Bénin",
+   "url": "https://journalofficiel.gouv.bj",
+   "kind": "gazette"
+  },
+  {
+   "name": "Secrétariat Général du Gouvernement - Lois",
+   "url": "https://sgg.gouv.bj/documentheque/lois",
+   "kind": "legislation"
+  }
+ ],
+ "Berlin": [
+  {
+   "name": "Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI)",
+   "url": "https://www.datenschutz-berlin.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Berliner Vorschriften- und Rechtsprechungsdatenbank",
+   "url": "https://gesetze.berlin.de",
+   "kind": "courts"
+  }
+ ],
+ "Bolivia": [
+  {
+   "name": "Chamber of Deputies - Pending Bills",
+   "url": "https://diputados.gob.bo/proyectos-de-ley-en-tratamiento",
+   "kind": "parliament"
+  },
+  {
+   "name": "Chamber of Deputies - Enacted Laws",
+   "url": "https://diputados.gob.bo/leyes-promulgadas",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Bolivia - Jurisprudence Search",
+   "url": "https://jurisprudencia.tsj.bo",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Bolivia - Jurisprudence",
+   "url": "https://tsj.bo/jurisprudencia",
+   "kind": "courts"
+  }
+ ],
+ "Brandenburg": [
+  {
+   "name": "Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht Brandenburg (LDA)",
+   "url": "https://www.lda.brandenburg.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gerichtsentscheidungen Brandenburg",
+   "url": "https://gerichtsentscheidungen.brandenburg.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesrecht Brandenburg",
+   "url": "https://www.landesrecht.brandenburg.de",
+   "kind": "legislation"
+  },
+  {
+   "name": "BRAVORS",
+   "url": "https://bravors.brandenburg.de",
+   "kind": "legislation"
+  }
+ ],
+ "Brazil": [
+  {
+   "name": "Superintendência de Seguros Privados (SUSEP)",
+   "url": "https://www.gov.br/susep/pt-br",
+   "kind": "regulator"
+  },
+  {
+   "name": "Senado – Legislação Federal",
+   "url": "https://www25.senado.leg.br",
+   "kind": "parliament"
+  },
+  {
+   "name": "Planalto Casa Civil",
+   "url": "https://www.planalto.gov.br",
+   "kind": "legislation"
+  }
+ ],
+ "Bremen": [
+  {
+   "name": "Landesbeauftragter für Datenschutz und Informationsfreiheit Bremen (LfDI HB)",
+   "url": "https://www.datenschutz.bremen.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Sozialgericht Bremen",
+   "url": "https://www.sozialgericht-bremen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesarbeitsgericht Bremen",
+   "url": "https://www.landesarbeitsgericht.bremen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Verwaltungsgericht Bremen",
+   "url": "https://www.verwaltungsgericht.bremen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Oberverwaltungsgericht Bremen",
+   "url": "https://www.oberverwaltungsgericht.bremen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Hanseatisches Oberlandesgericht Bremen",
+   "url": "https://www.oberlandesgericht.bremen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Die Senatorin für Justiz und Verfassung",
+   "url": "https://www.justiz.bremen.de",
+   "kind": "parliament"
+  }
+ ],
+ "Brussels-Capital Region": [
+  {
+   "name": "Bruxelles Économie et Emploi",
+   "url": "https://economie-emploi.brussels",
+   "kind": "regulator"
+  },
+  {
+   "name": "Brugel",
+   "url": "https://brugel.brussels",
+   "kind": "regulator"
+  },
+  {
+   "name": "urban.brussels",
+   "url": "https://urban.brussels",
+   "kind": "legislation"
+  },
+  {
+   "name": "perspective.brussels",
+   "url": "https://perspective.brussels",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bruxelles Environnement",
+   "url": "https://environnement.brussels",
+   "kind": "legislation"
+  },
+  {
+   "name": "Weblex (Parlement bruxellois)",
+   "url": "https://weblex.irisnet.be",
+   "kind": "parliament"
+  },
+  {
+   "name": "Bruxelles Pouvoirs Locaux",
+   "url": "https://pouvoirs-locaux.brussels",
+   "kind": "regulator"
+  },
+  {
+   "name": "be.brussels",
+   "url": "https://be.brussels",
+   "kind": "government"
+  },
+  {
+   "name": "Brussels Parlement",
+   "url": "https://www.parlement.brussels",
+   "kind": "parliament"
+  }
+ ],
+ "Bulgaria": [
+  {
+   "name": "Министерство на правосъдието (МП)",
+   "url": "https://justice.government.bg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Комисия за защита на потребителите (КЗП)",
+   "url": "https://kzp.bg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Комисия за финансов надзор (КФН)",
+   "url": "https://www.fsc.bg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Българска народна банка (БНБ)",
+   "url": "https://www.bnb.bg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Комисия за регулиране на съобщенията (КРС)",
+   "url": "https://crc.bg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Народно събрание (National Assembly)",
+   "url": "https://www.parliament.bg",
+   "kind": "parliament"
+  },
+  {
+   "name": "Комисия за защита на личните данни (КЗЛД)",
+   "url": "https://cpdp.bg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Министерство на иновациите и дигиталната трансформация (МИДТ)",
+   "url": "https://midt.gov.bg",
+   "kind": "legislation"
+  },
+  {
+   "name": "President of Bulgaria",
+   "url": "https://www.president.bg/cat47/Prezidentsko-veto",
+   "kind": "government"
+  },
+  {
+   "name": "Държавен вестник (State Gazette)",
+   "url": "https://dv.parliament.bg/DVWeb/index.faces",
+   "kind": "gazette"
+  },
+  {
+   "name": "LegislationLine Bulgaria",
+   "url": "https://legislationline.org/Bulgaria",
+   "kind": "legislation"
+  }
+ ],
+ "Cambodia": [
+  {
+   "name": "Bar Association of the Kingdom of Cambodia",
+   "url": "https://www.bakc.org.kh/index.php/km",
+   "kind": "government"
+  },
+  {
+   "name": "Constitutional Council of Cambodia",
+   "url": "https://www.ccc.gov.kh/index_en.php",
+   "kind": "government"
+  },
+  {
+   "name": "Supreme Court of Cambodia - Criminal Judgments",
+   "url": "https://supremecourt.gov.kh/en/criminal-judgement",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Cambodia - Civil Judgments",
+   "url": "https://supremecourt.gov.kh/en/civil-judgement",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Cambodia",
+   "url": "https://supremecourt.gov.kh/en",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministry of Justice - Civil Judgments",
+   "url": "https://www.moj.gov.kh/en/actual-civil-judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.moj.gov.kh",
+   "kind": "government"
+  }
+ ],
+ "Canada": [
+  {
+   "name": "CanLII",
+   "url": "https://www.canlii.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Senate of Canada",
+   "url": "https://sencanada.ca",
+   "kind": "parliament"
+  },
+  {
+   "name": "House of Commons of Canada",
+   "url": "https://www.ourcommons.ca",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Canada (SCC)",
+   "url": "https://www.scc-csc.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Canada Gazette",
+   "url": "https://gazette.gc.ca",
+   "kind": "gazette"
+  },
+  {
+   "name": "Justice Laws Website",
+   "url": "https://laws-lois.justice.gc.ca",
+   "kind": "legislation"
+  }
+ ],
+ "Cayman Islands": [
+  {
+   "name": "Judicial Committee of the Privy Council",
+   "url": "https://www.jcpc.uk/cases",
+   "kind": "courts"
+  },
+  {
+   "name": "Judicial Administration of the Cayman Islands",
+   "url": "https://judicial.ky",
+   "kind": "government"
+  },
+  {
+   "name": "Cayman Islands Gazette",
+   "url": "https://gov.ky/web/gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Cayman Islands Legislation",
+   "url": "https://legislation.gov.ky/cms",
+   "kind": "legislation"
+  }
+ ],
+ "Chad": [
+  {
+   "name": "Présidence de la République du Tchad",
+   "url": "https://presidence.td",
+   "kind": "government"
+  },
+  {
+   "name": "Sénat du Tchad",
+   "url": "https://senat.td",
+   "kind": "parliament"
+  },
+  {
+   "name": "Journal officiel de la République du Tchad",
+   "url": "https://journalofficiel.td",
+   "kind": "gazette"
+  }
+ ],
+ "Chile": [
+  {
+   "name": "Banco de Información de Chile",
+   "url": "https://www.doe.cl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Diario Oficial",
+   "url": "https://www.diariooficial.interior.gob.cl",
+   "kind": "gazette"
+  },
+  {
+   "name": "Biblioteca del Congreso Nacional",
+   "url": "https://www.bcn.cl",
+   "kind": "legislation"
+  }
+ ],
+ "China": [
+  {
+   "name": "National Archives Administration of China (SAAC)",
+   "url": "https://www.saac.gov.cn",
+   "kind": "legislation"
+  },
+  {
+   "name": "Cyberspace Administration of China (CAC)",
+   "url": "https://www.cac.gov.cn",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gov.cn Zhengce",
+   "url": "https://www.gov.cn/zhengce",
+   "kind": "government"
+  },
+  {
+   "name": "China Judgments Online",
+   "url": "https://wenshu.court.gov.cn",
+   "kind": "courts"
+  },
+  {
+   "name": "National People’s Congress",
+   "url": "http://www.npc.gov.cn/npc/index.html",
+   "kind": "parliament"
+  }
+ ],
+ "Colombia": [
+  {
+   "name": "Corte Suprema de Justicia de Colombia",
+   "url": "https://www.cortesuprema.gov.co",
+   "kind": "courts"
+  },
+  {
+   "name": "Consejo de Estado",
+   "url": "https://www.consejodeestado.gov.co",
+   "kind": "courts"
+  },
+  {
+   "name": "Corte Constitucional de Colombia",
+   "url": "https://www.corteconstitucional.gov.co",
+   "kind": "courts"
+  },
+  {
+   "name": "Congreso de la República de Colombia",
+   "url": "https://www.congreso.gov.co",
+   "kind": "parliament"
+  },
+  {
+   "name": "Diario Oficial",
+   "url": "https://www.imprenta.gov.co/diario-oficial",
+   "kind": "gazette"
+  }
+ ],
+ "Commonwealth of Kentucky": [
+  {
+   "name": "Kentucky Administrative Regulations",
+   "url": "https://legislature.ky.gov/Law/kar/Pages/default.aspx",
+   "kind": "legislation"
+  },
+  {
+   "name": "Kentucky Court of Justice",
+   "url": "https://www.kycourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Kentucky Legislature",
+   "url": "https://legislature.ky.gov",
+   "kind": "parliament"
+  }
+ ],
+ "Commonwealth of Massachusetts": [
+  {
+   "name": "Massachusetts Division of Banks",
+   "url": "https://www.mass.gov/orgs/division-of-banks",
+   "kind": "regulator"
+  },
+  {
+   "name": "Massachusetts Division of Insurance",
+   "url": "https://www.mass.gov/orgs/division-of-insurance",
+   "kind": "regulator"
+  },
+  {
+   "name": "Code of Massachusetts Regulations",
+   "url": "https://www.mass.gov/code-of-massachusetts-regulations-cmr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Massachusetts Court System",
+   "url": "https://www.mass.gov/orgs/massachusetts-court-system",
+   "kind": "courts"
+  },
+  {
+   "name": "Massachusetts General Court",
+   "url": "https://malegislature.gov",
+   "kind": "courts"
+  }
+ ],
+ "Commonwealth of Pennsylvania": [
+  {
+   "name": "Pennsylvania Department of Banking and Securities",
+   "url": "https://www.pa.gov/agencies/dobs",
+   "kind": "regulator"
+  },
+  {
+   "name": "Pennsylvania Insurance Department",
+   "url": "https://www.pa.gov/agencies/insurance",
+   "kind": "legislation"
+  },
+  {
+   "name": "Pennsylvania Office of Attorney General",
+   "url": "https://www.attorneygeneral.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Pennsylvania Code and Bulletin",
+   "url": "https://www.pacodeandbulletin.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Unified Judicial System of Pennsylvania",
+   "url": "https://www.pacourts.us",
+   "kind": "courts"
+  },
+  {
+   "name": "Pennsylvania General Assembly",
+   "url": "https://www.palegis.us",
+   "kind": "parliament"
+  }
+ ],
+ "Commonwealth of Virginia": [
+  {
+   "name": "Virginia Department of Health Professions",
+   "url": "https://www.dhp.virginia.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Virginia Administrative Code",
+   "url": "https://law.lis.virginia.gov/admincode",
+   "kind": "legislation"
+  },
+  {
+   "name": "Virginia Court System",
+   "url": "https://www.vacourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Code of Virginia",
+   "url": "https://law.lis.virginia.gov/vacode",
+   "kind": "legislation"
+  },
+  {
+   "name": "Virginia's Legislative Information System",
+   "url": "https://lis.virginia.gov",
+   "kind": "legislation"
+  }
+ ],
+ "Costa Rica": [
+  {
+   "name": "National Printing Office of Costa Rica - La Gaceta",
+   "url": "https://www.imprentanacional.go.cr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Legislative Assembly of Costa Rica - Bills",
+   "url": "https://www.asamblea.go.cr/Centro_de_informacion/Consultas_SIL/SitePages/ConsultaProyectos.aspx",
+   "kind": "parliament"
+  },
+  {
+   "name": "PGR SINALEVI - Legal Information System",
+   "url": "https://sinalevi.go.cr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Sala Constitucional de Costa Rica - Jurisprudence",
+   "url": "https://salaconstitucional.poder-judicial.go.cr/index.php/jurisprudencia",
+   "kind": "courts"
+  },
+  {
+   "name": "Poder Judicial de Costa Rica - NEXUS PJ",
+   "url": "https://nexuspj.poder-judicial.go.cr",
+   "kind": "government"
+  }
+ ],
+ "Croatia": [
+  {
+   "name": "Pučka pravobraniteljica (Ombudsman)",
+   "url": "https://www.ombudsman.hr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Nacionalni centar za kibernetičku sigurnost (NCSC-HR)",
+   "url": "https://ncsc.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministarstvo pravosuđa, uprave i digitalne transformacije (MPUDT)",
+   "url": "https://mpudt.gov.hr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Državni inspektorat (DIRH)",
+   "url": "https://dirh.gov.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hrvatska agencija za nadzor financijskih usluga (HANFA)",
+   "url": "https://hanfa.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hrvatska narodna banka (HNB)",
+   "url": "https://hnb.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hrvatska regulatorna agencija za mrežne djelatnosti (HAKOM)",
+   "url": "https://www.hakom.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hrvatski sabor",
+   "url": "https://sabor.hr",
+   "kind": "parliament"
+  },
+  {
+   "name": "Agencija za zaštitu osobnih podataka (AZOP)",
+   "url": "https://azop.hr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Narodne novine",
+   "url": "https://www.nn.hr",
+   "kind": "gazette"
+  },
+  {
+   "name": "Croatian Court Decisions (SupraNova)",
+   "url": "https://odluke.sudovi.hr",
+   "kind": "courts"
+  },
+  {
+   "name": "Constitutional Court of the Republic of Croatia",
+   "url": "https://www.usud.hr",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of the Republic of Croatia",
+   "url": "https://www.vsrh.hr",
+   "kind": "courts"
+  },
+  {
+   "name": "Zakon.hr",
+   "url": "https://www.zakon.hr",
+   "kind": "legislation"
+  }
+ ],
+ "Cyprus": [
+  {
+   "name": "Human Resource Development Authority (HRDA)",
+   "url": "https://anad.org.cy",
+   "kind": "regulator"
+  },
+  {
+   "name": "Digital Security Authority (DSA)",
+   "url": "https://dsa.cy",
+   "kind": "legislation"
+  },
+  {
+   "name": "Consumer Protection Service",
+   "url": "https://consumer.gov.cy",
+   "kind": "legislation"
+  },
+  {
+   "name": "Radio Television and Digital Services Authority (RTDSA)",
+   "url": "https://rtdsa.org.cy",
+   "kind": "regulator"
+  },
+  {
+   "name": "Cyprus Securities and Exchange Commission (CySEC)",
+   "url": "https://www.cysec.gov.cy",
+   "kind": "legislation"
+  },
+  {
+   "name": "Central Bank of Cyprus (CBC)",
+   "url": "https://www.centralbank.cy",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commissioner for Personal Data Protection",
+   "url": "https://www.gov.cy/dataprotection",
+   "kind": "regulator"
+  },
+  {
+   "name": "Deputy Ministry of Research, Innovation and Digital Policy (DMRID)",
+   "url": "https://www.gov.cy/dmrid",
+   "kind": "government"
+  },
+  {
+   "name": "Office of the Commissioner of Electronic Communications and Postal Regulation (OCECPR)",
+   "url": "https://ocecpr.ee.cy",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice and Public Order",
+   "url": "https://www.gov.cy/mjpo",
+   "kind": "government"
+  },
+  {
+   "name": "House of Representatives",
+   "url": "http://www.parliament.cy",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Cyprus",
+   "url": "http://www.supremecourt.gov.cy",
+   "kind": "courts"
+  },
+  {
+   "name": "Cyprus Government Gazette",
+   "url": "https://www.mof.gov.cy/mof/gpo/gpo.nsf",
+   "kind": "gazette"
+  },
+  {
+   "name": "Cylaw",
+   "url": "http://www.cylaw.org",
+   "kind": "courts"
+  }
+ ],
+ "Czechia": [
+  {
+   "name": "Oznamovatel - Ministerstvo spravedlnosti",
+   "url": "https://oznamovatel.justice.cz",
+   "kind": "government"
+  },
+  {
+   "name": "Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB)",
+   "url": "https://nukib.gov.cz",
+   "kind": "legislation"
+  },
+  {
+   "name": "Úřad pro ochranu osobních údajů (ÚOOÚ)",
+   "url": "https://uoou.gov.cz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstvo spravedlnosti (MSp)",
+   "url": "https://msp.gov.cz",
+   "kind": "legislation"
+  },
+  {
+   "name": "Česká obchodní inspekce (ČOI)",
+   "url": "https://coi.gov.cz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Česká národní banka (ČNB)",
+   "url": "https://www.cnb.cz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstvo průmyslu a obchodu (MPO)",
+   "url": "https://mpo.gov.cz",
+   "kind": "legislation"
+  },
+  {
+   "name": "Český telekomunikační úřad (ČTÚ)",
+   "url": "https://ctu.gov.cz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Parlament - Senát",
+   "url": "https://www.senat.cz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Parlament - Poslanecká sněmovna",
+   "url": "https://www.psp.cz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Nejvyšší správní soud",
+   "url": "https://www.nssoud.cz",
+   "kind": "courts"
+  },
+  {
+   "name": "Nejvyšší soud",
+   "url": "https://www.nsoud.cz",
+   "kind": "courts"
+  },
+  {
+   "name": "Ústavní soud",
+   "url": "https://www.usoud.cz",
+   "kind": "courts"
+  },
+  {
+   "name": "Sbírka zákonů",
+   "url": "https://e-sbirka.gov.cz",
+   "kind": "gazette"
+  },
+  {
+   "name": "Zákony pro lidi",
+   "url": "https://www.zakonyprolidi.cz",
+   "kind": "legislation"
+  }
+ ],
+ "Denmark": [
+  {
+   "name": "Datatilsynet",
+   "url": "https://www.datatilsynet.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Erhvervsstyrelsen Markedsovervågning (formerly Sikkerhedsstyrelsen)",
+   "url": "https://www.sik.dk",
+   "kind": "other"
+  },
+  {
+   "name": "Digitaliseringsstyrelsen",
+   "url": "https://digst.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finanstilsynet",
+   "url": "https://www.finanstilsynet.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Søfartsstyrelsen (Danish Maritime Authority)",
+   "url": "https://www.dma.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Skattestyrelsen",
+   "url": "https://sktst.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Styrelsen for Samfundssikkerhed (formerly Centre for Cyber Security)",
+   "url": "https://samsik.dk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Skat info",
+   "url": "https://info.skat.dk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Finansministeriet",
+   "url": "https://fm.dk",
+   "kind": "government"
+  },
+  {
+   "name": "Domstol.dk",
+   "url": "https://www.domstol.dk",
+   "kind": "courts"
+  },
+  {
+   "name": "Højesteret",
+   "url": "https://www.domstol.dk/hoejesteret",
+   "kind": "courts"
+  },
+  {
+   "name": "Folketinget",
+   "url": "https://www.ft.dk",
+   "kind": "parliament"
+  },
+  {
+   "name": "Lovtidende",
+   "url": "https://www.retsinformation.dk",
+   "kind": "gazette"
+  },
+  {
+   "name": "Retsinformation.dk",
+   "url": "https://www.retsinformation.dk",
+   "kind": "legislation"
+  }
+ ],
+ "District of Columbia": [
+  {
+   "name": "DC Courts",
+   "url": "https://www.dccourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "DC Code",
+   "url": "https://code.dccouncil.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "DC Council",
+   "url": "https://dccouncil.gov",
+   "kind": "legislation"
+  }
+ ],
+ "Dominican Republic": [
+  {
+   "name": "Chamber of Deputies of the Dominican Republic",
+   "url": "https://www.diputados.gob.do",
+   "kind": "parliament"
+  },
+  {
+   "name": "Senate of the Dominican Republic",
+   "url": "https://www.senado.gob.do",
+   "kind": "parliament"
+  },
+  {
+   "name": "Constitutional Tribunal of the Dominican Republic",
+   "url": "https://tribunalconstitucional.gob.do",
+   "kind": "courts"
+  },
+  {
+   "name": "Judiciary of the Dominican Republic",
+   "url": "https://portal.poderjudicial.gob.do",
+   "kind": "legislation"
+  },
+  {
+   "name": "Judiciary of the Dominican Republic - Laws",
+   "url": "https://transparencia.poderjudicial.gob.do/transparencia/consultas/leyes/index",
+   "kind": "legislation"
+  },
+  {
+   "name": "Legal Consultancy of the Executive Power of the Dominican Republic",
+   "url": "https://www.consultoria.gov.do",
+   "kind": "regulator"
+  }
+ ],
+ "Ecuador": [
+  {
+   "name": "State Attorney General of Ecuador - Legal Pronouncements",
+   "url": "https://www.pge.gob.ec/index.php/servicios/consultas/extractos-de-pronunciamientos",
+   "kind": "other"
+  },
+  {
+   "name": "Official Registry of Ecuador",
+   "url": "https://www.registroficial.gob.ec",
+   "kind": "government"
+  },
+  {
+   "name": "National Assembly of Ecuador - Legislative Information",
+   "url": "https://www.asambleanacional.gob.ec/es/multimedios-legislativos/list",
+   "kind": "parliament"
+  },
+  {
+   "name": "Constitutional Court of Ecuador - Case Search",
+   "url": "https://buscador.corteconstitucional.gob.ec/buscador-externo",
+   "kind": "courts"
+  },
+  {
+   "name": "National Court of Justice of Ecuador",
+   "url": "https://www.cortenacional.gob.ec",
+   "kind": "courts"
+  }
+ ],
+ "Egypt": [
+  {
+   "name": "Egyptian Patent Office",
+   "url": "https://www.egypo.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Egyptian Exchange",
+   "url": "https://www.egx.com.eg",
+   "kind": "other"
+  },
+  {
+   "name": "Information Technology Industry Development Agency",
+   "url": "https://itida.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Personal Data Protection Center",
+   "url": "https://pdpc.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Telecom Regulatory Authority",
+   "url": "https://www.tra.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Egyptian Competition Authority",
+   "url": "https://eca.org.eg",
+   "kind": "regulator"
+  },
+  {
+   "name": "General Authority for Investment and Free Zones",
+   "url": "https://gafi.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Financial Regulatory Authority",
+   "url": "https://fra.gov.eg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Central Bank of Egypt",
+   "url": "https://www.cbe.org.eg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Labour",
+   "url": "https://www.labour.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Egyptian Customs Authority",
+   "url": "https://www.customs.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Egyptian Tax Authority",
+   "url": "https://eta.gov.eg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Finance",
+   "url": "https://mof.gov.eg",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://moj.gov.eg",
+   "kind": "government"
+  },
+  {
+   "name": "Presidency of the Arab Republic of Egypt",
+   "url": "https://www.presidency.eg",
+   "kind": "government"
+  },
+  {
+   "name": "Council of State of Egypt",
+   "url": "https://www.esc.gov.eg",
+   "kind": "courts"
+  },
+  {
+   "name": "Court of Cassation of Egypt",
+   "url": "https://cc.gov.eg",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Constitutional Court of Egypt",
+   "url": "https://www.sccourt.gov.eg",
+   "kind": "courts"
+  },
+  {
+   "name": "House of Representatives of Egypt",
+   "url": "https://www.parliament.gov.eg",
+   "kind": "parliament"
+  }
+ ],
+ "El Salvador": [
+  {
+   "name": "Procuraduría General de la República of El Salvador",
+   "url": "https://www.pgr.gob.sv",
+   "kind": "other"
+  },
+  {
+   "name": "Legal Jurisprudence Portal of El Salvador",
+   "url": "https://www.jurisprudencia.gob.sv",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Justice of El Salvador",
+   "url": "https://www.csj.gob.sv",
+   "kind": "courts"
+  },
+  {
+   "name": "Legislative Assembly of El Salvador - Annual Legislative Reports",
+   "url": "https://asamblea.gob.sv/leyes-y-decretos/anuarios-legislativos",
+   "kind": "parliament"
+  },
+  {
+   "name": "Legislative Assembly of El Salvador - Laws and Decrees",
+   "url": "https://www.asamblea.gob.sv/leyes-y-decretos/busqueda-decretos",
+   "kind": "parliament"
+  }
+ ],
+ "England and Wales": [
+  {
+   "name": "PRA Rulebook",
+   "url": "https://www.prarulebook.co.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office of Rail and Road (ORR)",
+   "url": "https://www.orr.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office for Nuclear Regulation (ONR)",
+   "url": "https://www.onr.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ofwat",
+   "url": "https://www.ofwat.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ofgem",
+   "url": "https://www.ofgem.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Crime Agency (NCA)",
+   "url": "https://www.nationalcrimeagency.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Health and Safety Executive (HSE)",
+   "url": "https://www.hse.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Food Standards Agency (FSA)",
+   "url": "https://www.gov.uk/government/organisations/food-standards-agency",
+   "kind": "regulator"
+  },
+  {
+   "name": "Environment Agency",
+   "url": "https://www.gov.uk/government/organisations/environment-agency",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gambling Commission",
+   "url": "https://www.gamblingcommission.gov.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "NHS England",
+   "url": "https://www.england.nhs.uk",
+   "kind": "other"
+  },
+  {
+   "name": "Care Quality Commission (CQC)",
+   "url": "https://www.cqc.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Civil Aviation Authority (CAA)",
+   "url": "https://www.caa.co.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bank of England",
+   "url": "https://www.bankofengland.co.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Advertising Standards Authority (ASA)",
+   "url": "https://www.asa.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "UK Tribunal Decisions",
+   "url": "https://tribunalsdecisions.service.gov.uk",
+   "kind": "courts"
+  },
+  {
+   "name": "Legal Services Board (LSB)",
+   "url": "https://legalservicesboard.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Find Case Law (The National Archives)",
+   "url": "https://caselaw.nationalarchives.gov.uk",
+   "kind": "courts"
+  },
+  {
+   "name": "Judicial Committee of the Privy Council",
+   "url": "https://www.jcpc.uk/cases",
+   "kind": "courts"
+  },
+  {
+   "name": "UK Supreme Court",
+   "url": "https://supremecourt.uk",
+   "kind": "courts"
+  },
+  {
+   "name": "UK Parliament",
+   "url": "https://www.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "Hansard (Parliamentary Debates)",
+   "url": "https://hansard.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "GOV.UK",
+   "url": "https://www.gov.uk",
+   "kind": "government"
+  },
+  {
+   "name": "Financial Conduct Authority (FCA)",
+   "url": "https://www.fca.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Information Commissioner’s Office (ICO)",
+   "url": "https://ico.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Competition & Markets Authority",
+   "url": "https://www.gov.uk/government/organisations/competition-and-markets-authority",
+   "kind": "regulator"
+  },
+  {
+   "name": "Oxford Law Blogs",
+   "url": "https://blogs.law.ox.ac.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Cambridge International Law Journal",
+   "url": "https://cilj.co.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Immigration Law Practitioners’ Association",
+   "url": "https://ilpa.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Law Commission",
+   "url": "https://lawcom.gov.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Justice.org",
+   "url": "https://justice.org.uk/resources/reports",
+   "kind": "other"
+  },
+  {
+   "name": "Public Law Project",
+   "url": "https://publiclawproject.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "BAILII",
+   "url": "https://www.bailii.org/form/search_legis.html",
+   "kind": "courts"
+  },
+  {
+   "name": "British Institute of International and Comparative Law",
+   "url": "https://www.biicl.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Legislation.gov.uk",
+   "url": "https://www.legislation.gov.uk",
+   "kind": "legislation"
+  }
+ ],
+ "Estonia": [
+  {
+   "name": "Riigi Infosüsteemi Amet (RIA)",
+   "url": "https://ria.ee",
+   "kind": "legislation"
+  },
+  {
+   "name": "Andmekaitse Inspektsioon (AKI)",
+   "url": "https://www.aki.ee",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finantsinspektsioon (FI)",
+   "url": "https://fi.ee",
+   "kind": "regulator"
+  },
+  {
+   "name": "Tarbijakaitse ja Tehnilise Järelevalve Amet (TTJA)",
+   "url": "https://ttja.ee",
+   "kind": "regulator"
+  },
+  {
+   "name": "Justiitsministeerium",
+   "url": "https://www.justdigi.ee",
+   "kind": "government"
+  },
+  {
+   "name": "Riigikohus",
+   "url": "https://www.riigikohus.ee",
+   "kind": "courts"
+  },
+  {
+   "name": "Riigikogu",
+   "url": "https://www.riigikogu.ee",
+   "kind": "parliament"
+  },
+  {
+   "name": "Riigi Teataja",
+   "url": "https://www.riigiteataja.ee",
+   "kind": "gazette"
+  }
+ ],
+ "EU": [
+  {
+   "name": "DG EMPL - Employment, Social Affairs and Inclusion",
+   "url": "https://employment-social-affairs.ec.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "DG MOVE - Mobility and Transport",
+   "url": "https://transport.ec.europa.eu",
+   "kind": "legislation"
+  },
+  {
+   "name": "AI Office - AI Act Service Desk",
+   "url": "https://ai-act-service-desk.ec.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Eurojust - European Union Agency for Criminal Justice Cooperation",
+   "url": "https://www.eurojust.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "European Commission Press Corner",
+   "url": "https://ec.europa.eu/commission/presscorner/home/en",
+   "kind": "regulator"
+  },
+  {
+   "name": "DG CNECT - Shaping Europe's Digital Future",
+   "url": "https://digital-strategy.ec.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "SRB - Single Resolution Board",
+   "url": "https://www.srb.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EUIPO - European Union Intellectual Property Office",
+   "url": "https://www.euipo.europa.eu",
+   "kind": "courts"
+  },
+  {
+   "name": "ESRB - European Systemic Risk Board",
+   "url": "https://www.esrb.europa.eu",
+   "kind": "other"
+  },
+  {
+   "name": "ERA - European Union Agency for Railways",
+   "url": "https://www.era.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EPO - European Patent Office",
+   "url": "https://www.epo.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "ENISA - European Union Agency for Cybersecurity",
+   "url": "https://www.enisa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EMSA - European Maritime Safety Agency",
+   "url": "https://www.emsa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EMA - European Medicines Agency",
+   "url": "https://www.ema.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ELA - European Labour Authority",
+   "url": "https://www.ela.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EFSA - European Food Safety Authority",
+   "url": "https://www.efsa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EDPS - European Data Protection Supervisor",
+   "url": "https://www.edps.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EDPB - European Data Protection Board",
+   "url": "https://www.edpb.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ECDC - European Centre for Disease Prevention and Control",
+   "url": "https://www.ecdc.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EASA - European Union Aviation Safety Agency",
+   "url": "https://www.easa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "BEREC - Body of European Regulators for Electronic Communications",
+   "url": "https://www.berec.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "AMLA - Authority for Anti-Money Laundering and Countering the Financing of Terrorism",
+   "url": "https://www.amla.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EU-OSHA - European Agency for Safety and Health at Work",
+   "url": "https://osha.europa.eu",
+   "kind": "legislation"
+  },
+  {
+   "name": "Publications Office of the European Union",
+   "url": "https://op.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ECHA - European Chemicals Agency",
+   "url": "https://echa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EIOPA – European Insurance and Occupational Pensions Authority",
+   "url": "https://www.eiopa.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ESMA – European Securities and Markets Authority",
+   "url": "https://www.esma.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ECB – Banking Supervision",
+   "url": "https://www.bankingsupervision.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ECB – Publications",
+   "url": "https://www.ecb.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "EBA – European Banking Authority",
+   "url": "https://www.eba.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "European Commission",
+   "url": "https://commission.europa.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Official Journal of the European Union (OJEU)",
+   "url": "https://eur-lex.europa.eu/oj/direct-access.html",
+   "kind": "gazette"
+  },
+  {
+   "name": "Council of the EU / European Council",
+   "url": "https://www.consilium.europa.eu",
+   "kind": "other"
+  },
+  {
+   "name": "European Parliament",
+   "url": "https://www.europarl.europa.eu",
+   "kind": "parliament"
+  },
+  {
+   "name": "Court of Justice of the EU (CURIA)",
+   "url": "https://curia.europa.eu",
+   "kind": "courts"
+  },
+  {
+   "name": "EUR-Lex",
+   "url": "https://eur-lex.europa.eu",
+   "kind": "legislation"
+  }
+ ],
+ "Finland": [
+  {
+   "name": "Oikeuskanslerinvirasto",
+   "url": "https://oikeuskansleri.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Kyberturvallisuuskeskus (NCSC-FI)",
+   "url": "https://kyberturvallisuuskeskus.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Lupa- ja valvontavirasto (LVV)",
+   "url": "https://lvv.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Saavutettavuusvaatimukset.fi",
+   "url": "https://saavutettavuusvaatimukset.fi",
+   "kind": "other"
+  },
+  {
+   "name": "Eduskunta",
+   "url": "https://www.eduskunta.fi",
+   "kind": "parliament"
+  },
+  {
+   "name": "Tietosuojavaltuutetun toimisto",
+   "url": "https://tietosuoja.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Energiavirasto",
+   "url": "https://energiavirasto.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Lääkealan turvallisuus- ja kehittämiskeskus (Fimea)",
+   "url": "https://fimea.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Työsuojeluhallinto (tyosuojelu.fi)",
+   "url": "https://tyosuojelu.fi",
+   "kind": "legislation"
+  },
+  {
+   "name": "Tulli",
+   "url": "https://tulli.fi",
+   "kind": "legislation"
+  },
+  {
+   "name": "Turvallisuus- ja kemikaalivirasto (Tukes)",
+   "url": "https://tukes.fi",
+   "kind": "legislation"
+  },
+  {
+   "name": "Liikenne- ja viestintävirasto (Traficom)",
+   "url": "https://traficom.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Suomi.fi",
+   "url": "https://www.suomi.fi",
+   "kind": "government"
+  },
+  {
+   "name": "FINE - Vakuutus- ja rahoitusneuvonta",
+   "url": "https://www.fine.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finanssivalvonta (FIN-FSA)",
+   "url": "https://www.finanssivalvonta.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finanssiala",
+   "url": "https://www.finanssiala.fi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Valtiovarainministeriö",
+   "url": "https://vm.fi",
+   "kind": "government"
+  },
+  {
+   "name": "Supreme Administrative Court of Finland (Korkein hallinto-oikeus)",
+   "url": "https://www.kho.fi",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Finland (Korkein oikeus)",
+   "url": "https://www.korkeinoikeus.fi",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministry of Economic Affairs and Employment",
+   "url": "https://tem.fi",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://oikeusministerio.fi",
+   "kind": "courts"
+  },
+  {
+   "name": "Finlex",
+   "url": "https://www.finlex.fi",
+   "kind": "courts"
+  }
+ ],
+ "Flemish Region": [
+  {
+   "name": "Vlaamse Landmaatschappij (VLM)",
+   "url": "https://www.vlm.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Lokaal Bestuur Vlaanderen",
+   "url": "https://www.vlaanderen.be/lokaal-bestuur",
+   "kind": "regulator"
+  },
+  {
+   "name": "Dienst van de Bestuursrechtscolleges (DBRC)",
+   "url": "https://www.dbrc.be",
+   "kind": "courts"
+  },
+  {
+   "name": "Vlaamse Nutsregulator",
+   "url": "https://www.vlaamsenutsregulator.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "OVAM",
+   "url": "https://ovam.vlaanderen.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "Departement Omgeving",
+   "url": "https://omgeving.vlaanderen.be",
+   "kind": "government"
+  },
+  {
+   "name": "Vlaamse Belastingdienst (VLABEL)",
+   "url": "https://www.vlaanderen.be/vlaamse-belastingdienst",
+   "kind": "other"
+  },
+  {
+   "name": "Vlaanderen.be",
+   "url": "https://www.vlaanderen.be",
+   "kind": "government"
+  },
+  {
+   "name": "Vlaams Parlement",
+   "url": "https://www.vlaamsparlement.be",
+   "kind": "parliament"
+  },
+  {
+   "name": "Vlaamse Codex",
+   "url": "https://codex.vlaanderen.be",
+   "kind": "legislation"
+  }
+ ],
+ "France": [
+  {
+   "name": "Défenseur des droits",
+   "url": "https://www.defenseurdesdroits.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministère du Travail et des Solidarités",
+   "url": "https://travail-emploi.gouv.fr",
+   "kind": "government"
+  },
+  {
+   "name": "Arcep - Autorité de régulation des communications électroniques, des postes et de la distribution de la presse",
+   "url": "https://www.arcep.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "ANSSI - Agence nationale de la sécurité des systèmes d’information",
+   "url": "https://cyber.gouv.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Arcom - Autorité de régulation de la communication audiovisuelle et numérique",
+   "url": "https://www.arcom.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "CNIL - Commission nationale de l’informatique et des libertés",
+   "url": "https://www.cnil.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministère de l’Économie et des Finances",
+   "url": "https://www.economie.gouv.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministère de la Justice",
+   "url": "https://www.justice.gouv.fr",
+   "kind": "government"
+  },
+  {
+   "name": "Ministère de l’Intérieur",
+   "url": "https://www.interieur.gouv.fr",
+   "kind": "government"
+  },
+  {
+   "name": "France Diplomatie",
+   "url": "https://www.diplomatie.gouv.fr",
+   "kind": "government"
+  },
+  {
+   "name": "Commission de régulation de l’énergie (CRE)",
+   "url": "https://www.cre.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "AMF - Autorité des marchés financiers",
+   "url": "https://www.amf-france.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministère de la Santé",
+   "url": "https://sante.gouv.fr",
+   "kind": "government"
+  },
+  {
+   "name": "ACPR - Autorité de contrôle prudentiel et de résolution",
+   "url": "https://acpr.banque-france.fr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Journal Officiel (JORF)",
+   "url": "https://www.legifrance.gouv.fr/jorf",
+   "kind": "gazette"
+  },
+  {
+   "name": "Sénat",
+   "url": "https://www.senat.fr",
+   "kind": "parliament"
+  },
+  {
+   "name": "Assemblée Nationale",
+   "url": "https://www.assemblee-nationale.fr",
+   "kind": "parliament"
+  },
+  {
+   "name": "Cour de Cassation",
+   "url": "https://www.courdecassation.fr",
+   "kind": "courts"
+  },
+  {
+   "name": "Conseil d’État",
+   "url": "https://www.conseil-etat.fr",
+   "kind": "courts"
+  },
+  {
+   "name": "Conseil Constitutionnel",
+   "url": "https://www.conseil-constitutionnel.fr",
+   "kind": "courts"
+  },
+  {
+   "name": "Légifrance",
+   "url": "https://www.legifrance.gouv.fr",
+   "kind": "legislation"
+  }
+ ],
+ "Gabon": [
+  {
+   "name": "Journal Officiel de la République Gabonaise",
+   "url": "https://journal-officiel.ga",
+   "kind": "gazette"
+  }
+ ],
+ "Georgia": [
+  {
+   "name": "Constitutional Court of Georgia - Hearings",
+   "url": "https://constcourt.ge/en/hearings",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Georgia - Cases",
+   "url": "https://www.supremecourt.ge/ka/cases",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Georgia",
+   "url": "https://www.supremecourt.ge",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Georgia",
+   "url": "https://www.parliament.ge/en",
+   "kind": "parliament"
+  },
+  {
+   "name": "Legislative Herald of Georgia (Matsne)",
+   "url": "https://matsne.gov.ge",
+   "kind": "legislation"
+  }
+ ],
+ "Germany": [
+  {
+   "name": "Thüringer Landesbeauftragter für den Datenschutz und die Informationsfreiheit (TLfDI)",
+   "url": "https://tlfdi.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein (ULD)",
+   "url": "https://www.datenschutzzentrum.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz Sachsen-Anhalt",
+   "url": "https://datenschutz.sachsen-anhalt.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Sächsische Datenschutz- und Transparenzbeauftragte (SDTB)",
+   "url": "https://www.datenschutz.sachsen.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Unabhängiges Datenschutzzentrum Saarland (UDZ)",
+   "url": "https://www.datenschutz.saarland.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz (LfDI RLP)",
+   "url": "https://www.datenschutz.rlp.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)",
+   "url": "https://www.ldi.nrw.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz Niedersachsen (LfD)",
+   "url": "https://www.lfd.niedersachsen.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern (LfDI MV)",
+   "url": "https://www.datenschutz-mv.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hessischer Beauftragter für Datenschutz und Informationsfreiheit (HBDI)",
+   "url": "https://datenschutz.hessen.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hamburgischer Beauftragter für Datenschutz und Informationsfreiheit (HmbBfDI)",
+   "url": "https://datenschutz-hamburg.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für Datenschutz und Informationsfreiheit Bremen (LfDI HB)",
+   "url": "https://www.datenschutz.bremen.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragte für den Datenschutz und für das Recht auf Akteneinsicht Brandenburg (LDA)",
+   "url": "https://www.lda.brandenburg.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Berliner Beauftragte für Datenschutz und Informationsfreiheit (BlnBDI)",
+   "url": "https://www.datenschutz-berlin.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bayerischer Landesbeauftragter für den Datenschutz (BayLfD)",
+   "url": "https://www.datenschutz-bayern.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)",
+   "url": "https://www.lda.bayern.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Baden-Württemberg (LfDI BW)",
+   "url": "https://www.baden-wuerttemberg.datenschutz.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Sicherheit in der Informationstechnik (BSI)",
+   "url": "https://www.bsi.bund.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Justiz (BfJ)",
+   "url": "https://www.bundesjustizamt.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Marktüberwachungsstelle der Länder für die Barrierefreiheit von Produkten und Dienstleistungen (MLBF)",
+   "url": "https://www.mlbf-barrierefrei.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Die Medienanstalten (ALM)",
+   "url": "https://www.die-medienanstalten.de",
+   "kind": "other"
+  },
+  {
+   "name": "Bundesnetzagentur (BNetzA)",
+   "url": "https://www.bundesnetzagentur.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesministerium für Verkehr (BMV)",
+   "url": "https://www.bmv.de",
+   "kind": "legislation"
+  },
+  {
+   "name": "Umweltbundesamt (UBA)",
+   "url": "https://www.umweltbundesamt.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Rechtsprechung im Internet",
+   "url": "https://www.rechtsprechung-im-internet.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Luftfahrt-Bundesamt (LBA)",
+   "url": "https://www.lba.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Deutsches Patent- und Markenamt (DPMA)",
+   "url": "https://www.dpma.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesverwaltungsgericht (BVerwG)",
+   "url": "https://www.bverwg.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesumweltministerium (BMUKN)",
+   "url": "https://www.bundesumweltministerium.de",
+   "kind": "legislation"
+  },
+  {
+   "name": "Bundeskartellamt",
+   "url": "https://www.bundeskartellamt.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Der Bundeskanzler",
+   "url": "https://www.bundeskanzler.de",
+   "kind": "government"
+  },
+  {
+   "name": "Bundesanstalt für Immobilienaufgaben (BImA)",
+   "url": "https://www.bundesimmobilien.de",
+   "kind": "other"
+  },
+  {
+   "name": "Bundesministerium der Finanzen (BMF)",
+   "url": "https://www.bundesfinanzministerium.de",
+   "kind": "legislation"
+  },
+  {
+   "name": "Bundesfinanzhof (BFH)",
+   "url": "https://www.bundesfinanzhof.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Deutsche Bundesbank",
+   "url": "https://www.bundesbank.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesarbeitsgericht (BAG)",
+   "url": "https://www.bundesarbeitsgericht.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundessozialgericht (BSG)",
+   "url": "https://www.bsg.bund.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesamt für Migration und Flüchtlinge (BAMF)",
+   "url": "https://www.bamf.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Logistik und Mobilität (BALM)",
+   "url": "https://www.balm.bund.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Familie und zivilgesellschaftliche Aufgaben (BAFzA)",
+   "url": "https://www.bafza.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Auswärtiges Amt",
+   "url": "https://www.auswaertiges-amt.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesamt für Verbraucherschutz und Lebensmittelsicherheit (BVL)",
+   "url": "https://www.bvl.bund.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesinstitut für Arzneimittel und Medizinprodukte (BfArM)",
+   "url": "https://www.bfarm.de",
+   "kind": "other"
+  },
+  {
+   "name": "Justizportal des Bundes und der Länder",
+   "url": "https://www.justiz.de",
+   "kind": "government"
+  },
+  {
+   "name": "Bundesamt für Wirtschaft und Ausfuhrkontrolle (BAFA)",
+   "url": "https://www.bafa.de/DE/Home/home_node.html",
+   "kind": "regulator"
+  },
+  {
+   "name": "CSR in Deutschland",
+   "url": "https://www.csr-in-deutschland.de",
+   "kind": "government"
+  },
+  {
+   "name": "Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin)",
+   "url": "https://www.bafin.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Datenschutzkonferenz (DSK)",
+   "url": "https://www.datenschutzkonferenz-online.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bundesbeauftragte für den Datenschutz und die Informationsfreiheit (BfDI)",
+   "url": "https://www.bfdi.bund.de",
+   "kind": "regulator"
+  },
+  {
+   "name": "openJur",
+   "url": "https://openjur.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesgerichtshof",
+   "url": "https://bundesgerichtshof.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Dejure",
+   "url": "https://dejure.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesrat",
+   "url": "https://www.bundesrat.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Bundestag",
+   "url": "https://www.bundestag.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Bundesverfassungsgericht (BVerfG)",
+   "url": "https://www.bundesverfassungsgericht.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundesgesetzblatt (BGBl.)",
+   "url": "https://www.recht.bund.de",
+   "kind": "gazette"
+  },
+  {
+   "name": "Bundesanzeiger",
+   "url": "https://www.bundesanzeiger.de",
+   "kind": "gazette"
+  },
+  {
+   "name": "Gesetze im Internet",
+   "url": "https://www.gesetze-im-internet.de",
+   "kind": "legislation"
+  }
+ ],
+ "Ghana": [
+  {
+   "name": "Public Utilities Regulatory Commission",
+   "url": "https://www.purc.com.gh",
+   "kind": "regulator"
+  },
+  {
+   "name": "Energy Commission of Ghana",
+   "url": "https://www.energycom.gov.gh",
+   "kind": "regulator"
+  },
+  {
+   "name": "Petroleum Commission Ghana",
+   "url": "https://www.petrocom.gov.gh",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bank of Ghana",
+   "url": "https://www.bog.gov.gh",
+   "kind": "regulator"
+  },
+  {
+   "name": "Judicial Service of Ghana",
+   "url": "https://judicial.gov.gh",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Ghana",
+   "url": "https://www.parliament.gh",
+   "kind": "parliament"
+  }
+ ],
+ "Greece": [
+  {
+   "name": "Εθνική Αρχή Διαφάνειας (ΕΑΔ)",
+   "url": "https://aead.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Επιθεώρηση Εργασίας",
+   "url": "https://www.hli.gov.gr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Υπουργείο Εργασίας και Κοινωνικής Ασφάλισης",
+   "url": "https://ypergasias.gov.gr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Εθνική Αρχή Κυβερνοασφάλειας",
+   "url": "https://cyber.gov.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Υπουργείο Κοινωνικής Συνοχής και Οικογένειας",
+   "url": "https://minscfa.gov.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Επιτροπή Κεφαλαιαγοράς",
+   "url": "http://www.hcmc.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Τράπεζα της Ελλάδος",
+   "url": "https://www.bankofgreece.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Εθνική Επιτροπή Τηλεπικοινωνιών και Ταχυδρομείων (ΕΕΤΤ)",
+   "url": "https://www.eett.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Αρχή Προστασίας Δεδομένων Προσωπικού Χαρακτήρα (ΑΠΔΠΧ)",
+   "url": "https://www.dpa.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Υπουργείο Δικαιοσύνης",
+   "url": "https://www.ministryofjustice.gr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Άρειος Πάγος",
+   "url": "https://www.areiospagos.gr",
+   "kind": "courts"
+  },
+  {
+   "name": "Συμβούλιο της Επικρατείας",
+   "url": "https://www.adjustice.gr/webcenter/portal/ste",
+   "kind": "courts"
+  },
+  {
+   "name": "Βουλή των Ελλήνων",
+   "url": "https://www.hellenicparliament.gr",
+   "kind": "parliament"
+  },
+  {
+   "name": "Εθνικό Τυπογραφείο (ΦΕΚ)",
+   "url": "https://www.et.gr",
+   "kind": "gazette"
+  }
+ ],
+ "Guatemala": [
+  {
+   "name": "Organismo Judicial of Guatemala - Electronic Services",
+   "url": "https://portal.oj.gob.gt",
+   "kind": "government"
+  },
+  {
+   "name": "Diario de Centro América of Guatemala",
+   "url": "https://dca.gob.gt",
+   "kind": "gazette"
+  },
+  {
+   "name": "Congress of Guatemala - Legislative Initiatives",
+   "url": "https://www.congreso.gob.gt/buscador_iniciativas",
+   "kind": "parliament"
+  },
+  {
+   "name": "Congress of Guatemala - Decrees and Laws",
+   "url": "https://www.congreso.gob.gt/buscador_decretos",
+   "kind": "parliament"
+  },
+  {
+   "name": "Constitutional Court of Guatemala - Jurisprudence",
+   "url": "https://jurisprudencia.cc.gob.gt/sjc",
+   "kind": "courts"
+  }
+ ],
+ "Guernsey": [
+  {
+   "name": "Official Gazette of Guernsey",
+   "url": "https://gazette.guernseypress.com",
+   "kind": "gazette"
+  },
+  {
+   "name": "Guernsey Magistrates Court Judgments",
+   "url": "https://guernseylegalresources.gg/unreported-judgments/magistrates-court",
+   "kind": "courts"
+  },
+  {
+   "name": "Guernsey Court of Appeal Judgments",
+   "url": "https://guernseylegalresources.gg/unreported-judgments/court-of-appeal",
+   "kind": "courts"
+  },
+  {
+   "name": "Guernsey Royal Court Judgments",
+   "url": "https://guernseylegalresources.gg/unreported-judgments/royal-court",
+   "kind": "courts"
+  },
+  {
+   "name": "Guernsey Financial Services Commission",
+   "url": "https://www.gfsc.gg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Guernsey Legislation",
+   "url": "https://www.guernseylegalresources.gg",
+   "kind": "legislation"
+  }
+ ],
+ "Hamburg": [
+  {
+   "name": "Justiz-Portal Hamburg",
+   "url": "https://justiz.hamburg.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Parlamentsdatenbank der Hamburgischen Bürgerschaft",
+   "url": "https://www.buergerschaft-hh.de/parldok",
+   "kind": "parliament"
+  },
+  {
+   "name": "Hamburgische Bürgerschaft",
+   "url": "https://www.hamburgische-buergerschaft.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landesrecht Hamburg",
+   "url": "https://www.landesrecht-hamburg.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Hamburgischer Beauftragter für Datenschutz und Informationsfreiheit (HmbBfDI)",
+   "url": "https://datenschutz-hamburg.de",
+   "kind": "regulator"
+  }
+ ],
+ "Hesse": [
+  {
+   "name": "Verwaltungsgerichtsbarkeit Hessen",
+   "url": "https://verwaltungsgerichtsbarkeit.hessen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Ordentliche Gerichtsbarkeit Hessen",
+   "url": "https://ordentliche-gerichtsbarkeit.hessen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Staatsgerichtshof des Landes Hessen",
+   "url": "https://staatsgerichtshof.hessen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Hessisches Ministerium der Justiz und für den Rechtsstaat",
+   "url": "https://justizministerium.hessen.de",
+   "kind": "government"
+  },
+  {
+   "name": "Parlamentsdokumentation des Hessischen Landtags",
+   "url": "https://starweb.hessen.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Hessischer Landtag",
+   "url": "https://hessischer-landtag.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Bürgerservice Hessenrecht",
+   "url": "https://www.rv.hessenrecht.hessen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Hessischer Beauftragter für Datenschutz und Informationsfreiheit (HBDI)",
+   "url": "https://datenschutz.hessen.de",
+   "kind": "regulator"
+  }
+ ],
+ "Honduras": [
+  {
+   "name": "Tribunal Superior de Cuentas of Honduras - Legal Library",
+   "url": "https://www.tsc.gob.hn/biblioteca/index.php/leyes",
+   "kind": "courts"
+  },
+  {
+   "name": "National Congress of Honduras",
+   "url": "https://www.congresonacional.hn",
+   "kind": "parliament"
+  },
+  {
+   "name": "Official Gazette of Honduras - La Gaceta Digital",
+   "url": "https://enag.gob.hn/index.php/gaceta-digital",
+   "kind": "gazette"
+  },
+  {
+   "name": "CEDIJ - Jurisprudence Unit of Honduras",
+   "url": "https://www.poderjudicial.gob.hn/Cedij/SitePages/Unidad-de-Jurisprudencia.aspx?web=1",
+   "kind": "courts"
+  },
+  {
+   "name": "CEDIJ - Judicial Documentation and Information Center of Honduras",
+   "url": "https://www.poderjudicial.gob.hn/Cedij/SitePages/Home.aspx",
+   "kind": "other"
+  }
+ ],
+ "Hong Kong": [
+  {
+   "name": "Hong Kong Government Business and Trade",
+   "url": "https://www.gov.hk/en/business",
+   "kind": "government"
+  },
+  {
+   "name": "Hong Kong Government Portal",
+   "url": "https://www.gov.hk/en/residents",
+   "kind": "government"
+  },
+  {
+   "name": "Legislative Council of Hong Kong",
+   "url": "https://www.legco.gov.hk/en",
+   "kind": "legislation"
+  },
+  {
+   "name": "Hong Kong Basic Law Court Cases",
+   "url": "https://www.basiclawcourtcase.gov.hk/en/court-cases/index.html",
+   "kind": "courts"
+  },
+  {
+   "name": "Hong Kong Constitution",
+   "url": "https://www.basiclaw.gov.hk/en/constitution/index.html",
+   "kind": "government"
+  },
+  {
+   "name": "Hong Kong Basic Law",
+   "url": "https://www.basiclaw.gov.hk/en/basiclaw/index.html",
+   "kind": "legislation"
+  },
+  {
+   "name": "Hong Kong e-Legislation Gazette",
+   "url": "https://www.elegislation.gov.hk/gazette",
+   "kind": "gazette"
+  },
+  {
+   "name": "Hong Kong e-Legislation",
+   "url": "https://www.elegislation.gov.hk",
+   "kind": "legislation"
+  }
+ ],
+ "Hungary": [
+  {
+   "name": "Szabályozott Tevékenységek Felügyeleti Hatósága (SZTFH)",
+   "url": "https://sztfh.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)",
+   "url": "https://www.naih.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nemzeti Kereskedelmi és Fogyasztóvédelmi Hatóság (NKFH)",
+   "url": "https://nkfh.gov.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nemzeti Média- és Hírközlési Hatóság (NMHH)",
+   "url": "https://nmhh.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Magyar Nemzeti Bank (MNB)",
+   "url": "https://www.mnb.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nemzeti Akkreditáló Hatóság (NAH)",
+   "url": "https://nah.gov.hu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Magyarország Kormánya - Dokumentumtár",
+   "url": "https://kormany.hu/dokumentumtar",
+   "kind": "government"
+  },
+  {
+   "name": "Országgyűlés",
+   "url": "https://www.parlament.hu",
+   "kind": "parliament"
+  },
+  {
+   "name": "Kúria",
+   "url": "https://kuria-birosag.hu",
+   "kind": "courts"
+  },
+  {
+   "name": "Alkotmánybíróság",
+   "url": "https://www.alkotmanybirosag.hu",
+   "kind": "courts"
+  },
+  {
+   "name": "Magyar Közlöny",
+   "url": "https://magyarkozlony.hu",
+   "kind": "gazette"
+  },
+  {
+   "name": "Nemzeti Jogszabálytár (NJT)",
+   "url": "https://njt.jog.gov.hu",
+   "kind": "legislation"
+  }
+ ],
+ "Iceland": [
+  {
+   "name": "Umboðsmaður Alþingis",
+   "url": "https://www.umbodsmadur.is",
+   "kind": "parliament"
+  },
+  {
+   "name": "Fjarskiptastofa",
+   "url": "https://www.fjarskiptastofa.is",
+   "kind": "regulator"
+  },
+  {
+   "name": "Seðlabanki Íslands",
+   "url": "https://sedlabanki.is",
+   "kind": "regulator"
+  },
+  {
+   "name": "Persónuvernd",
+   "url": "https://island.is/s/personuvernd",
+   "kind": "regulator"
+  },
+  {
+   "name": "Stjórnarráð Íslands",
+   "url": "https://www.stjornarradid.is",
+   "kind": "regulator"
+  },
+  {
+   "name": "Hæstiréttur Íslands",
+   "url": "https://island.is/s/haestirettur",
+   "kind": "courts"
+  },
+  {
+   "name": "Reglugerðasafn",
+   "url": "https://island.is/reglugerdir",
+   "kind": "legislation"
+  },
+  {
+   "name": "Stjórnartíðindi",
+   "url": "https://island.is/stjornartidindi",
+   "kind": "gazette"
+  },
+  {
+   "name": "Alþingi",
+   "url": "https://www.althingi.is",
+   "kind": "parliament"
+  }
+ ],
+ "India": [
+  {
+   "name": "Supreme Court of India",
+   "url": "https://www.sci.gov.in",
+   "kind": "courts"
+  },
+  {
+   "name": "Legislative Department",
+   "url": "https://legislative.gov.in",
+   "kind": "legislation"
+  },
+  {
+   "name": "India Code",
+   "url": "https://www.indiacode.nic.in",
+   "kind": "legislation"
+  }
+ ],
+ "Indonesia": [
+  {
+   "name": "Supreme Court of Indonesia",
+   "url": "https://jdih.mahkamahagung.go.id",
+   "kind": "courts"
+  },
+  {
+   "name": "JDIH Kominfo",
+   "url": "https://jdih.komdigi.go.id",
+   "kind": "regulator"
+  },
+  {
+   "name": "JDIH Nasional",
+   "url": "https://jdihn.go.id",
+   "kind": "legislation"
+  }
+ ],
+ "International": [
+  {
+   "name": "United Nations Treaty Collection - Depositary Notifications",
+   "url": "https://treaties.un.org/Pages/CNs.aspx?cnTab=tab1&clang=_en",
+   "kind": "other"
+  },
+  {
+   "name": "UNECE - Road Transport and Transport Legal Instruments",
+   "url": "https://unece.org/transport/road-transport",
+   "kind": "regulator"
+  },
+  {
+   "name": "IFRS Foundation",
+   "url": "https://www.ifrs.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "Financial Action Task Force (FATF)",
+   "url": "https://www.fatf-gafi.org",
+   "kind": "regulator"
+  }
+ ],
+ "Iraq": [
+  {
+   "name": "Regional Legislation of Iraq",
+   "url": "https://iraq-lg-law.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Kurdistan Region Draft Legislation",
+   "url": "https://www.parliament.krd/business/draft-legislation",
+   "kind": "parliament"
+  },
+  {
+   "name": "Kurdistan Region Legislation",
+   "url": "https://legislation.krd",
+   "kind": "legislation"
+  },
+  {
+   "name": "Parliament of the Kurdistan Region",
+   "url": "https://www.parliament.krd/business/legislation",
+   "kind": "parliament"
+  },
+  {
+   "name": "Council of Representatives of Iraq",
+   "url": "https://iq.parliament.iq",
+   "kind": "government"
+  },
+  {
+   "name": "Federal Court of Cassation of Iraq",
+   "url": "https://iraqcas.e-sjc-services.iq",
+   "kind": "courts"
+  },
+  {
+   "name": "Federal Supreme Court of Iraq",
+   "url": "https://iraqfsc.iq/Judgments-decisions-en.php",
+   "kind": "courts"
+  },
+  {
+   "name": "Iraq Federal Legislation",
+   "url": "https://iraqld.msla.iq/legislations/search-legislation",
+   "kind": "legislation"
+  },
+  {
+   "name": "Iraq Official Gazette",
+   "url": "https://moj.gov.iq/iraqmag",
+   "kind": "gazette"
+  },
+  {
+   "name": "Iraq Ministry of Justice",
+   "url": "https://moj.gov.iq",
+   "kind": "government"
+  }
+ ],
+ "Ireland": [
+  {
+   "name": "Office of the Protected Disclosures Commissioner (OPDC)",
+   "url": "https://www.opdc.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Transport Authority (NTA)",
+   "url": "https://www.nationaltransport.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Irish Aviation Authority (IAA)",
+   "url": "https://www.iaa.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commission for Regulation of Utilities (CRU)",
+   "url": "https://www.cru.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Cyber Security Centre (NCSC)",
+   "url": "https://www.ncsc.gov.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Coimisiún na Meán",
+   "url": "https://www.cnam.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Central Bank of Ireland",
+   "url": "https://www.centralbank.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commission for Communications Regulation (ComReg)",
+   "url": "https://www.comreg.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Iris Oifigiúil",
+   "url": "https://irisoifigiuil.ie",
+   "kind": "gazette"
+  },
+  {
+   "name": "Data Protection Commission (DPC)",
+   "url": "https://www.dataprotection.ie",
+   "kind": "regulator"
+  },
+  {
+   "name": "Cambridge International Law Journal",
+   "url": "https://cilj.co.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Competition and Consumer Protection Commission (CCPC)",
+   "url": "https://www.ccpc.ie/consumers",
+   "kind": "regulator"
+  },
+  {
+   "name": "Department of Foreign Affairs (Ireland)",
+   "url": "https://www.ireland.ie/en/dfa",
+   "kind": "government"
+  },
+  {
+   "name": "Law Society of Ireland",
+   "url": "https://www.lawsociety.ie",
+   "kind": "legislation"
+  },
+  {
+   "name": "Irish Courts Service",
+   "url": "https://www.courts.ie",
+   "kind": "courts"
+  },
+  {
+   "name": "Irish Legal Information Initiative (IRLII)",
+   "url": "https://irlii.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Irish Statute Book",
+   "url": "https://www.irishstatutebook.ie",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ireland Government Portal",
+   "url": "https://www.gov.ie/en",
+   "kind": "government"
+  },
+  {
+   "name": "Houses of the Oireachtas",
+   "url": "https://www.oireachtas.ie/en/bills",
+   "kind": "parliament"
+  },
+  {
+   "name": "BAILII",
+   "url": "https://www.bailii.org/form/search_legis.html",
+   "kind": "courts"
+  }
+ ],
+ "Israel": [
+  {
+   "name": "Nevo - Legislation Search",
+   "url": "https://www.nevo.co.il/HakikaSearch.aspx",
+   "kind": "legislation"
+  },
+  {
+   "name": "Government of Israel Portal",
+   "url": "https://www.gov.il/en",
+   "kind": "government"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.gov.il/en/departments/ministry_of_justice",
+   "kind": "government"
+  },
+  {
+   "name": "Knesset",
+   "url": "https://main.knesset.gov.il/en/pages/default.aspx",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Israel - Case Search",
+   "url": "https://supreme.court.gov.il/Pages/fullsearch.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Israel",
+   "url": "https://supreme.court.gov.il/Pages/HomePage.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Reshumot - Official Gazette",
+   "url": "https://www.gov.il/he/departments/dynamiccollectors/gazette-official",
+   "kind": "gazette"
+  }
+ ],
+ "Italy": [
+  {
+   "name": "Autorità Nazionale Anticorruzione (ANAC)",
+   "url": "https://www.anticorruzione.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ispettorato Nazionale del Lavoro (INL)",
+   "url": "https://www.ispettorato.gov.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Garante per la protezione dei dati personali",
+   "url": "https://www.garanteprivacy.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministero della Giustizia",
+   "url": "https://www.giustizia.it",
+   "kind": "government"
+  },
+  {
+   "name": "Autorità di Regolazione dei Trasporti (ART)",
+   "url": "https://www.autorita-trasporti.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ente Nazionale per l'Aviazione Civile (ENAC)",
+   "url": "https://www.enac.gov.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autorità per le Garanzie nelle Comunicazioni (AGCOM)",
+   "url": "https://www.agcom.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commissione di Vigilanza sui Fondi Pensione (COVIP)",
+   "url": "https://www.covip.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Istituto per la Vigilanza sulle Assicurazioni (IVASS)",
+   "url": "https://www.ivass.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commissione Nazionale per le Società e la Borsa (CONSOB)",
+   "url": "https://www.consob.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banca d'Italia",
+   "url": "https://www.bancaditalia.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Agenzia per la Cybersicurezza Nazionale (ACN)",
+   "url": "https://www.acn.gov.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministero dell’Università e della Ricerca",
+   "url": "https://www.mur.gov.it",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministero dell’Istruzione e del Merito",
+   "url": "https://www.mim.gov.it",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministero del Lavoro e delle Politiche Sociali",
+   "url": "https://www.lavoro.gov.it",
+   "kind": "legislation"
+  },
+  {
+   "name": "AgID - Agenzia per l’Italia Digitale",
+   "url": "https://www.agid.gov.it",
+   "kind": "regulator"
+  },
+  {
+   "name": "Camera dei Deputati",
+   "url": "https://www.camera.it",
+   "kind": "parliament"
+  },
+  {
+   "name": "Senato della Repubblica",
+   "url": "https://www.senato.it",
+   "kind": "parliament"
+  },
+  {
+   "name": "Corte Suprema di Cassazione",
+   "url": "https://www.cortedicassazione.it",
+   "kind": "courts"
+  },
+  {
+   "name": "Corte Costituzionale",
+   "url": "https://www.cortecostituzionale.it",
+   "kind": "courts"
+  },
+  {
+   "name": "Gazzetta Ufficiale della Repubblica Italiana",
+   "url": "https://www.gazzettaufficiale.it",
+   "kind": "gazette"
+  },
+  {
+   "name": "Normattiva",
+   "url": "https://www.normattiva.it",
+   "kind": "legislation"
+  }
+ ],
+ "Ivory Coast": [
+  {
+   "name": "Constitutional Council of Côte d’Ivoire",
+   "url": "https://www.conseil-constitutionnel.ci",
+   "kind": "other"
+  },
+  {
+   "name": "OHADA Official Gazette",
+   "url": "https://www.ohada.org/en/official-gazette",
+   "kind": "gazette"
+  },
+  {
+   "name": "OHADA Uniform Acts",
+   "url": "https://www.ohada.org/en/uniform-acts",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Assembly of Côte d’Ivoire",
+   "url": "https://www.assnat.ci",
+   "kind": "parliament"
+  },
+  {
+   "name": "Juriscope Côte d’Ivoire",
+   "url": "https://juriscope.ci/en",
+   "kind": "gazette"
+  },
+  {
+   "name": "Ministry of Justice of Côte d’Ivoire - Major Texts",
+   "url": "https://www.justice.ci/textes-majeurs",
+   "kind": "legislation"
+  }
+ ],
+ "Japan": [
+  {
+   "name": "Supreme Court Judgments",
+   "url": "https://www.courts.go.jp",
+   "kind": "courts"
+  },
+  {
+   "name": "eLaws",
+   "url": "https://elaws.e-gov.go.jp",
+   "kind": "legislation"
+  }
+ ],
+ "Jersey": [
+  {
+   "name": "Jersey Financial Services Commission",
+   "url": "https://www.jerseyfsc.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "Jersey Legal Publications",
+   "url": "https://www.jerseylaw.je/publications/Pages/Search.aspx",
+   "kind": "other"
+  },
+  {
+   "name": "Jersey Judgments",
+   "url": "https://www.jerseylaw.je/judgments/Pages/Search.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Jersey Legislation",
+   "url": "https://www.jerseylaw.je/laws/current/search",
+   "kind": "legislation"
+  }
+ ],
+ "Jordan": [
+  {
+   "name": "Jordan Ministry of Justice",
+   "url": "https://www.moj.gov.jo",
+   "kind": "government"
+  },
+  {
+   "name": "Senate of Jordan",
+   "url": "https://senate.jo",
+   "kind": "parliament"
+  },
+  {
+   "name": "House of Representatives of Jordan",
+   "url": "https://representatives.jo/Default/Ar",
+   "kind": "parliament"
+  },
+  {
+   "name": "Jordan Official Gazette",
+   "url": "https://www.pm.gov.jo/ar/Pages/NewsPaper",
+   "kind": "gazette"
+  },
+  {
+   "name": "Jordanian Legislation",
+   "url": "https://lob.gov.jo",
+   "kind": "legislation"
+  },
+  {
+   "name": "Jordan Draft Bills",
+   "url": "https://lob.gov.jo",
+   "kind": "legislation"
+  },
+  {
+   "name": "Jordan Judicial Rulings and Interpretative Decisions",
+   "url": "https://lob.gov.jo",
+   "kind": "legislation"
+  }
+ ],
+ "Kazakhstan": [
+  {
+   "name": "PRG Zanger",
+   "url": "https://prg.kz/lawyer",
+   "kind": "other"
+  },
+  {
+   "name": "Constitution of the Republic of Kazakhstan",
+   "url": "https://www.akorda.kz/ru/konstituciya-respubliki-kazahstan-3053339",
+   "kind": "other"
+  },
+  {
+   "name": "National Bank of Kazakhstan",
+   "url": "https://nationalbank.kz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Parliament (Mazhilis)",
+   "url": "https://www.parlam.kz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Kazakhstan - Legislation",
+   "url": "https://sud.gov.kz/rus/legislation",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Kazakhstan",
+   "url": "https://sud.gov.kz/rus/legislation",
+   "kind": "courts"
+  },
+  {
+   "name": "Online Zakon",
+   "url": "https://online.zakon.kz",
+   "kind": "legislation"
+  },
+  {
+   "name": "Adilet",
+   "url": "https://adilet.zan.kz",
+   "kind": "legislation"
+  }
+ ],
+ "Kenya": [
+  {
+   "name": "Kenya Law - Case Digests",
+   "url": "https://new.kenyalaw.org/taxonomy/publications/publications-case-digests",
+   "kind": "legislation"
+  },
+  {
+   "name": "Kenya Law - Superior Courts Judgments",
+   "url": "https://new.kenyalaw.org/judgments/court-class/superior-courts",
+   "kind": "courts"
+  },
+  {
+   "name": "Kenya Law Reform Commission",
+   "url": "https://klrc.go.ke",
+   "kind": "legislation"
+  },
+  {
+   "name": "Judiciary of Kenya",
+   "url": "https://judiciary.go.ke",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Kenya",
+   "url": "https://www.parliament.go.ke",
+   "kind": "parliament"
+  },
+  {
+   "name": "Kenya Law - Gazettes",
+   "url": "https://new.kenyalaw.org/gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Kenya Law - Case Law",
+   "url": "https://new.kenyalaw.org/judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "Kenya Law - Legislation",
+   "url": "https://new.kenyalaw.org/legislation",
+   "kind": "parliament"
+  }
+ ],
+ "Kuwait": [
+  {
+   "name": "Kuwait Official Gazette",
+   "url": "https://www.fatwa.gov.kw/Portal/Home/Index",
+   "kind": "gazette"
+  },
+  {
+   "name": "Kuwait Court of Cassation",
+   "url": "https://www.moj.gov.kw/AR/Pages/MojPrevProvisions.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Kuwait Legislation",
+   "url": "https://www.moj.gov.kw/AR/Pages/MojLaws.aspx",
+   "kind": "legislation"
+  },
+  {
+   "name": "Kuwait Ministry of Justice",
+   "url": "https://www.moj.gov.kw/AR/Pages/default.aspx",
+   "kind": "government"
+  }
+ ],
+ "Kyrgyzstan": [
+  {
+   "name": "National Bank of the Kyrgyz Republic (NBKR)",
+   "url": "https://www.nbkr.kg",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice of Kyrgyzstan",
+   "url": "https://minjust.gov.kg",
+   "kind": "government"
+  },
+  {
+   "name": "Supreme Court of Kyrgyzstan",
+   "url": "https://sot.kg",
+   "kind": "courts"
+  },
+  {
+   "name": "Jogorku Kenesh",
+   "url": "https://kenesh.kg",
+   "kind": "parliament"
+  },
+  {
+   "name": "CBD Minjust",
+   "url": "https://cbd.minjust.gov.kg",
+   "kind": "legislation"
+  }
+ ],
+ "Latvia": [
+  {
+   "name": "Trauksmescelejs.lv",
+   "url": "https://trauksmescelejs.lv",
+   "kind": "government"
+  },
+  {
+   "name": "Korupcijas novēršanas un apkarošanas birojs (KNAB)",
+   "url": "https://www.knab.gov.lv",
+   "kind": "other"
+  },
+  {
+   "name": "Nacionālais kiberdrošības centrs (NKC)",
+   "url": "https://www.cyber.gov.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Viedās administrācijas un reģionālās attīstības ministrija (VARAM)",
+   "url": "https://www.varam.gov.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Patērētāju tiesību aizsardzības centrs (PTAC)",
+   "url": "https://www.ptac.gov.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Sabiedrisko pakalpojumu regulēšanas komisija (SPRK)",
+   "url": "https://www.sprk.gov.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Latvijas Banka",
+   "url": "https://www.bank.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Datu valsts inspekcija (DVI)",
+   "url": "https://www.dvi.gov.lv",
+   "kind": "regulator"
+  },
+  {
+   "name": "Tieslietu ministrija (TM)",
+   "url": "https://www.tm.gov.lv",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministru kabinets",
+   "url": "https://www.mk.gov.lv",
+   "kind": "government"
+  },
+  {
+   "name": "Satversmes tiesa",
+   "url": "https://www.satversmestiesa.lv",
+   "kind": "courts"
+  },
+  {
+   "name": "Augstākā tiesa",
+   "url": "https://www.at.gov.lv",
+   "kind": "courts"
+  },
+  {
+   "name": "Latvijas Republikas Saeima",
+   "url": "https://www.saeima.lv",
+   "kind": "parliament"
+  },
+  {
+   "name": "Latvijas Vēstnesis",
+   "url": "https://www.vestnesis.lv",
+   "kind": "gazette"
+  },
+  {
+   "name": "Likumi.lv",
+   "url": "https://likumi.lv",
+   "kind": "legislation"
+  }
+ ],
+ "Liechtenstein": [
+  {
+   "name": "Stabsstelle Cyber-Sicherheit (SCS)",
+   "url": "https://www.llv.li/de/landesverwaltung/stabsstelle-cybersicherheit",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finanzmarktaufsicht (FMA)",
+   "url": "https://www.fma-li.li",
+   "kind": "regulator"
+  },
+  {
+   "name": "Datenschutzstelle (DSS)",
+   "url": "https://www.datenschutzstelle.li",
+   "kind": "regulator"
+  },
+  {
+   "name": "Gerichtsentscheidungen Liechtenstein",
+   "url": "https://www.gerichtsentscheidungen.li",
+   "kind": "courts"
+  },
+  {
+   "name": "Staatsgerichtshof (StGH)",
+   "url": "https://www.stgh.li",
+   "kind": "courts"
+  },
+  {
+   "name": "Regierung des Fürstentums Liechtenstein",
+   "url": "https://www.regierung.li",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landtag des Fürstentums Liechtenstein",
+   "url": "https://www.landtag.li",
+   "kind": "parliament"
+  },
+  {
+   "name": "Lilex - Gesetzesdatenbank",
+   "url": "https://www.gesetze.li",
+   "kind": "legislation"
+  }
+ ],
+ "Lithuania": [
+  {
+   "name": "Prosecutor's Office of the Republic of Lithuania",
+   "url": "https://www.prokuraturos.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "State Social Insurance Fund Board (Sodra)",
+   "url": "https://sodra.lt",
+   "kind": "other"
+  },
+  {
+   "name": "State Labour Inspectorate (VDI)",
+   "url": "https://www.vdi.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Cyber Security Centre (NKSC)",
+   "url": "https://www.nksc.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "State Data Protection Inspectorate (VDAI)",
+   "url": "https://vdai.lrv.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice (Lithuania)",
+   "url": "https://tm.lrv.lt",
+   "kind": "government"
+  },
+  {
+   "name": "Ministry of Social Security and Labour (Lithuania)",
+   "url": "https://socmin.lrv.lt",
+   "kind": "government"
+  },
+  {
+   "name": "Agency for the Rights of Persons with Disabilities (ANTA)",
+   "url": "https://anta.lrv.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bank of Lithuania",
+   "url": "https://www.lb.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Communications Regulatory Authority (RRT)",
+   "url": "https://rrt.lt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Seimas of the Republic of Lithuania (Parliament)",
+   "url": "https://www.lrs.lt",
+   "kind": "parliament"
+  },
+  {
+   "name": "Lithuanian Court Information System (LITEKO)",
+   "url": "https://liteko.teismai.lt/viesasprendimupaieska/detalipaieska.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Register of Legal Acts (e-TAR)",
+   "url": "https://www.e-tar.lt",
+   "kind": "other"
+  },
+  {
+   "name": "Seimas - Legislation Search",
+   "url": "https://e-seimas.lrs.lt/portal/documentSearch/lt",
+   "kind": "parliament"
+  }
+ ],
+ "Lower Saxony": [
+  {
+   "name": "Niedersächsisches Oberverwaltungsgericht",
+   "url": "https://oberverwaltungsgericht.niedersachsen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Oberlandesgericht Celle",
+   "url": "https://oberlandesgericht-celle.niedersachsen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Niedersächsischer Staatsgerichtshof",
+   "url": "https://staatsgerichtshof.niedersachsen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Niedersächsisches Justizministerium",
+   "url": "https://www.mj.niedersachsen.de",
+   "kind": "government"
+  },
+  {
+   "name": "Niedersächsisches Landtagsdokumentationssystem (NILAS)",
+   "url": "https://www.nilas.niedersachsen.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Niedersächsischer Landtag",
+   "url": "https://www.landtag-niedersachsen.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Niedersächsisches Vorschrifteninformationssystem (NI-VORIS)",
+   "url": "https://voris.wolterskluwer-online.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz Niedersachsen (LfD)",
+   "url": "https://www.lfd.niedersachsen.de",
+   "kind": "regulator"
+  }
+ ],
+ "Luxembourg": [
+  {
+   "name": "Autorité luxembourgeoise indépendante de l’audiovisuel (ALIA)",
+   "url": "https://alia.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Centre pour l’égalité de traitement (CET)",
+   "url": "https://cet.lu",
+   "kind": "other"
+  },
+  {
+   "name": "Médiateur du Grand-Duché de Luxembourg (Ombudsman)",
+   "url": "https://ombudsman.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministère de la Justice",
+   "url": "https://mj.gouvernement.lu",
+   "kind": "government"
+  },
+  {
+   "name": "Office de la surveillance de l’accessibilité des produits et services (OSAPS)",
+   "url": "https://accessibilite-produits-services.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Institut Luxembourgeois de Régulation (ILR)",
+   "url": "https://www.ilr.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "CSSF",
+   "url": "https://www.cssf.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commissariat aux Assurances (CAA)",
+   "url": "https://www.caa.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banque centrale du Luxembourg (BCL)",
+   "url": "https://www.bcl.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Association des Compagnies d’Assurances et de Réassurance (ACA)",
+   "url": "https://www.aca.lu",
+   "kind": "other"
+  },
+  {
+   "name": "Portail de la fiscalité indirecte",
+   "url": "https://pfi.public.lu",
+   "kind": "government"
+  },
+  {
+   "name": "Inspection du travail et des mines (ITM)",
+   "url": "https://itm.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Administration des contributions directes (ACD)",
+   "url": "https://impotsdirects.public.lu",
+   "kind": "government"
+  },
+  {
+   "name": "Douanes et accises",
+   "url": "https://douanes.public.lu",
+   "kind": "government"
+  },
+  {
+   "name": "Autorité de la concurrence",
+   "url": "https://concurrence.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Commission nationale pour la protection des données (CNPD)",
+   "url": "https://cnpd.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "ADEM - Agence pour le développement de l’emploi",
+   "url": "https://adem.public.lu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Chambre des Députés",
+   "url": "https://www.chd.lu",
+   "kind": "parliament"
+  },
+  {
+   "name": "Cour de Cassation",
+   "url": "https://justice.public.lu/fr/jurisprudence/cour-cassation.html",
+   "kind": "courts"
+  },
+  {
+   "name": "Cour Constitutionnelle",
+   "url": "https://justice.public.lu/fr/jurisprudence/cour-constitutionnelle.html",
+   "kind": "courts"
+  },
+  {
+   "name": "Journal Officiel (Mémorial)",
+   "url": "https://legilux.public.lu",
+   "kind": "gazette"
+  },
+  {
+   "name": "Legilux",
+   "url": "https://legilux.public.lu",
+   "kind": "legislation"
+  }
+ ],
+ "Madagascar": [
+  {
+   "name": "Ministry of Justice of Madagascar",
+   "url": "https://www.justice.mg",
+   "kind": "government"
+  },
+  {
+   "name": "National Legal Code of Madagascar",
+   "url": "https://cnlegis.gov.mg/page_accueil_cnL",
+   "kind": "legislation"
+  },
+  {
+   "name": "Social Case Law of Madagascar",
+   "url": "https://jurisprudence.justice.gov.mg/decision/sociale",
+   "kind": "courts"
+  },
+  {
+   "name": "Civil Case Law of Madagascar",
+   "url": "https://jurisprudence.justice.gov.mg/decision/civile",
+   "kind": "courts"
+  },
+  {
+   "name": "Commercial Case Law of Madagascar",
+   "url": "https://jurisprudence.justice.gov.mg/decision/commerciale",
+   "kind": "courts"
+  }
+ ],
+ "Malaysia": [
+  {
+   "name": "Judiciary of Malaysia",
+   "url": "https://www.kehakiman.gov.my",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament Bills",
+   "url": "https://www.parlimen.gov.my",
+   "kind": "parliament"
+  },
+  {
+   "name": "CLJLaw",
+   "url": "https://www.cljlaw.com",
+   "kind": "legislation"
+  },
+  {
+   "name": "Federal Legislation Portal",
+   "url": "https://lom.agc.gov.my",
+   "kind": "gazette"
+  }
+ ],
+ "Maldives": [
+  {
+   "name": "Supreme Court of the Maldives",
+   "url": "https://www.supremecourt.mv/case-registry/judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "People's Majlis (Parliament)",
+   "url": "https://majlis.gov.mv/en/20-parliament",
+   "kind": "parliament"
+  },
+  {
+   "name": "People's Majlis - Regulations",
+   "url": "https://majlis.gov.mv/en/secretariate/regulations?page=2",
+   "kind": "parliament"
+  },
+  {
+   "name": "President's Office",
+   "url": "https://presidency.gov.mv",
+   "kind": "regulator"
+  }
+ ],
+ "Mali": [
+  {
+   "name": "Primature",
+   "url": "https://primature.ml",
+   "kind": "regulator"
+  },
+  {
+   "name": "Cour suprême du Mali",
+   "url": "https://coursupreme.ml",
+   "kind": "courts"
+  },
+  {
+   "name": "Secrétariat Général du Gouvernement (SGG)",
+   "url": "https://sgg-mali.ml",
+   "kind": "gazette"
+  }
+ ],
+ "Malta": [
+  {
+   "name": "Commissioner for Standards in Public Life",
+   "url": "https://standardscommissioner.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Commission for the Promotion of Equality (NCPE)",
+   "url": "https://ncpe.gov.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Critical Infrastructure Protection Department (Malta CIP)",
+   "url": "https://maltacip.gov.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry for Justice (Malta)",
+   "url": "https://justice.gov.mt",
+   "kind": "government"
+  },
+  {
+   "name": "Malta Digital Innovation Authority (MDIA)",
+   "url": "https://mdia.gov.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Malta Government Gazette",
+   "url": "https://gov.mt/en/Government/DOI/Government%20Gazette",
+   "kind": "gazette"
+  },
+  {
+   "name": "Identità",
+   "url": "https://identita.gov.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Malta Competition and Consumer Affairs Authority",
+   "url": "https://mccaa.org.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Transport Malta",
+   "url": "https://transport.gov.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Malta Communications Authority",
+   "url": "https://mca.org.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Chamber of Advocates Malta",
+   "url": "https://www.avukati.org",
+   "kind": "parliament"
+  },
+  {
+   "name": "Office of the Arbiter for Financial Services (OAFS)",
+   "url": "https://www.financialarbiter.org.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "IDPC Malta",
+   "url": "https://idpc.org.mt",
+   "kind": "legislation"
+  },
+  {
+   "name": "Parliament of Malta",
+   "url": "https://www.parlament.mt",
+   "kind": "parliament"
+  },
+  {
+   "name": "Financial Intelligence Analysis Unit (FIAU Malta)",
+   "url": "https://fiaumalta.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "Malta Financial Services Authority (MFSA)",
+   "url": "https://www.mfsa.mt",
+   "kind": "regulator"
+  },
+  {
+   "name": "eCourts Malta",
+   "url": "https://ecourts.gov.mt",
+   "kind": "courts"
+  },
+  {
+   "name": "Leġiżlazzjoni Malta",
+   "url": "https://legislation.mt",
+   "kind": "legislation"
+  }
+ ],
+ "Mauritania": [
+  {
+   "name": "Conseil Constitutionnel",
+   "url": "https://conseil-constitutionnel.mr",
+   "kind": "other"
+  },
+  {
+   "name": "Primature",
+   "url": "https://www.primature.gov.mr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Primature - Lois",
+   "url": "https://www.primature.gov.mr/ar/t_lois",
+   "kind": "legislation"
+  }
+ ],
+ "Mecklenburg-Vorpommern": [
+  {
+   "name": "Justiz Online Mecklenburg-Vorpommern",
+   "url": "https://www.mv-justiz.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landtag Mecklenburg-Vorpommern",
+   "url": "https://www.landtag-mv.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landesrecht Mecklenburg-Vorpommern",
+   "url": "https://www.landesrecht-mv.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesbeauftragter für Datenschutz und Informationsfreiheit Mecklenburg-Vorpommern (LfDI MV)",
+   "url": "https://www.datenschutz-mv.de",
+   "kind": "regulator"
+  }
+ ],
+ "Mexico": [
+  {
+   "name": "Consejo de la Judicatura Federal (CJF - SJF)",
+   "url": "https://sjf.scjn.gob.mx",
+   "kind": "courts"
+  },
+  {
+   "name": "Suprema Corte de Justicia de la Nación (SCJN)",
+   "url": "https://www.scjn.gob.mx",
+   "kind": "courts"
+  },
+  {
+   "name": "Senado de la República",
+   "url": "https://www.senado.gob.mx",
+   "kind": "parliament"
+  },
+  {
+   "name": "Cámara de Diputados (SIL)",
+   "url": "http://www.diputados.gob.mx/LeyesBiblio",
+   "kind": "legislation"
+  },
+  {
+   "name": "Diario Oficial de la Federación (DOF)",
+   "url": "https://www.dof.gob.mx",
+   "kind": "gazette"
+  }
+ ],
+ "Morocco": [
+  {
+   "name": "Constitutional Court of Morocco",
+   "url": "https://www.cour-constitutionnelle.ma",
+   "kind": "courts"
+  },
+  {
+   "name": "Morocco Ministry of Justice",
+   "url": "https://adala.justice.gov.ma",
+   "kind": "legislation"
+  },
+  {
+   "name": "General Secretariat of the Government of Morocco",
+   "url": "https://www.sgg.gov.ma/BulletinOfficiel.aspx",
+   "kind": "government"
+  },
+  {
+   "name": "Chamber of Representatives of Morocco",
+   "url": "https://www.chambredesrepresentants.ma/fr/legislation/textes-votes-chambre-representants",
+   "kind": "parliament"
+  },
+  {
+   "name": "Morocco Legislation",
+   "url": "https://www.sgg.gov.ma/Legislation.aspx",
+   "kind": "legislation"
+  }
+ ],
+ "Mozambique": [
+  {
+   "name": "ARENE",
+   "url": "https://www.arene.org.mz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Instituto Nacional de Petróleo",
+   "url": "https://www.inp.gov.mz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banco de Moçambique",
+   "url": "https://www.bancomoc.mz",
+   "kind": "regulator"
+  },
+  {
+   "name": "Tribunal Supremo",
+   "url": "https://www.ts.gov.mz",
+   "kind": "courts"
+  },
+  {
+   "name": "Conselho Constitucional",
+   "url": "https://cconstitucional.org.mz",
+   "kind": "other"
+  },
+  {
+   "name": "Portal do Governo de Moçambique",
+   "url": "https://portaldogoverno.gov.mz",
+   "kind": "government"
+  },
+  {
+   "name": "Assembleia da República",
+   "url": "https://www.parlamento.mz",
+   "kind": "parliament"
+  }
+ ],
+ "Namibia": [
+  {
+   "name": "NamibLII - Legislation",
+   "url": "https://namiblii.org/legislation",
+   "kind": "legislation"
+  },
+  {
+   "name": "NamibLII - Supreme Court Judgments",
+   "url": "https://namiblii.org/judgments/NASC",
+   "kind": "courts"
+  },
+  {
+   "name": "NamibLII - All Court Judgments",
+   "url": "https://namiblii.org/judgments/all",
+   "kind": "courts"
+  },
+  {
+   "name": "Constitution of Namibia",
+   "url": "https://ejustice.jud.na/JUDICIARY/LegislationAndDirectives/Pages/NamibianConstitution.aspx",
+   "kind": "government"
+  },
+  {
+   "name": "High Court of Namibia - Fees and Tariffs",
+   "url": "https://ejustice.jud.na/High%20Court/LegislationAndDirectives/Pages/FeesAndTariff.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "High Court of Namibia - Directives",
+   "url": "https://ejustice.jud.na/High%20Court/LegislationAndDirectives/Pages/Directives.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "High Court of Namibia - Regulations",
+   "url": "https://ejustice.jud.na/High%20Court/LegislationAndDirectives/Pages/Regulations.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "High Court of Namibia - Acts of Parliament",
+   "url": "https://ejustice.jud.na/High%20Court/LegislationAndDirectives/Pages/Acts.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "High Court of Namibia - Civil Judgments",
+   "url": "https://ejustice.jud.na/High%20Court/Judgments/Pages/Civil.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Namibia - Legislation and Directives",
+   "url": "https://ejustice.jud.na/Supreme%20Court/LegislationAndDirectives/Pages/default.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Namibia - Judgments",
+   "url": "https://ejustice.jud.na/Supreme%20Court/Judgments/Pages/default.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Namibia",
+   "url": "https://www.parliament.na",
+   "kind": "parliament"
+  },
+  {
+   "name": "Ministry of Justice of Namibia",
+   "url": "https://moj.gov.na",
+   "kind": "government"
+  },
+  {
+   "name": "Namibia Revenue Agency (NamRA)",
+   "url": "https://www.namra.org.na",
+   "kind": "legislation"
+  }
+ ],
+ "Netherlands": [
+  {
+   "name": "Huis voor Klokkenluiders",
+   "url": "https://www.huisvoorklokkenluiders.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nationaal Cyber Security Centrum (NCSC)",
+   "url": "https://www.ncsc.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Staatstoezicht op de Mijnen (SodM)",
+   "url": "https://www.sodm.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Raad voor Accreditatie (RvA)",
+   "url": "https://www.rva.nl",
+   "kind": "other"
+  },
+  {
+   "name": "RIVM",
+   "url": "https://www.rivm.nl",
+   "kind": "other"
+  },
+  {
+   "name": "Rijksoverheid",
+   "url": "https://www.rijksoverheid.nl",
+   "kind": "government"
+  },
+  {
+   "name": "Algemene Rekenkamer",
+   "url": "https://www.rekenkamer.nl",
+   "kind": "courts"
+  },
+  {
+   "name": "Rijksinspectie Digitale Infrastructuur (RDI)",
+   "url": "https://www.rdi.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Raad van State",
+   "url": "https://www.raadvanstate.nl",
+   "kind": "courts"
+  },
+  {
+   "name": "Planbureau voor de Leefomgeving (PBL)",
+   "url": "https://www.pbl.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Openbaar Ministerie (OM)",
+   "url": "https://www.om.nl",
+   "kind": "government"
+  },
+  {
+   "name": "Nederlandse Voedsel- en Warenautoriteit (NVWA)",
+   "url": "https://www.nvwa.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nederlandse Arbeidsinspectie",
+   "url": "https://www.nlarbeidsinspectie.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nationale ombudsman",
+   "url": "https://www.nationaleombudsman.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Interprovinciaal Overleg (IPO)",
+   "url": "https://www.ipo.nl",
+   "kind": "other"
+  },
+  {
+   "name": "Inspectie Leefomgeving en Transport (ILT)",
+   "url": "https://www.ilent.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nederlandse Emissieautoriteit (NEa)",
+   "url": "https://www.emissieautoriteit.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "De Nederlandsche Bank (DNB)",
+   "url": "https://www.dnb.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "College ter Beoordeling van Geneesmiddelen (CBG-MEB)",
+   "url": "https://www.cbg-meb.nl",
+   "kind": "other"
+  },
+  {
+   "name": "Belastingdienst",
+   "url": "https://www.belastingdienst.nl",
+   "kind": "government"
+  },
+  {
+   "name": "Autoriteit Persoonsgegevens (AP)",
+   "url": "https://www.autoriteitpersoonsgegevens.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoriteit Nucleaire Veiligheid en Stralingsbescherming (ANVS)",
+   "url": "https://www.autoriteitnvs.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoriteit Financiële Markten (AFM)",
+   "url": "https://www.afm.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoriteit Consument & Markt (ACM)",
+   "url": "https://www.acm.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "VNG",
+   "url": "https://vng.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Kansspelautoriteit (Ksa)",
+   "url": "https://kansspelautoriteit.nl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Eerste Kamer",
+   "url": "https://www.eerstekamer.nl",
+   "kind": "parliament"
+  },
+  {
+   "name": "Tweede Kamer",
+   "url": "https://www.tweedekamer.nl",
+   "kind": "parliament"
+  },
+  {
+   "name": "Rechtspraak.nl",
+   "url": "https://www.rechtspraak.nl",
+   "kind": "courts"
+  },
+  {
+   "name": "Staatscourant",
+   "url": "https://www.officielebekendmakingen.nl",
+   "kind": "gazette"
+  },
+  {
+   "name": "Wetten.nl",
+   "url": "https://wetten.overheid.nl",
+   "kind": "legislation"
+  },
+  {
+   "name": "Overheid.nl",
+   "url": "https://www.overheid.nl",
+   "kind": "regulator"
+  }
+ ],
+ "New Zealand": [
+  {
+   "name": "New Zealand Parliament",
+   "url": "https://www.parliament.nz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Parliamentary Counsel Office",
+   "url": "https://www.pco.govt.nz",
+   "kind": "parliament"
+  },
+  {
+   "name": "New Zealand Legislation",
+   "url": "https://www.legislation.govt.nz",
+   "kind": "legislation"
+  }
+ ],
+ "Niger": [
+  {
+   "name": "Tribunal de commerce de Niamey",
+   "url": "http://www.tribunalcommerceniamey.ne",
+   "kind": "courts"
+  },
+  {
+   "name": "Présidence de la République du Niger",
+   "url": "https://www.presidence.ne",
+   "kind": "government"
+  },
+  {
+   "name": "Ministère de la Justice",
+   "url": "https://justice.gouv.ne",
+   "kind": "regulator"
+  },
+  {
+   "name": "Portail officiel du Gouvernement du Niger",
+   "url": "https://www.gouv.ne",
+   "kind": "government"
+  }
+ ],
+ "Nigeria": [
+  {
+   "name": "Lagos State Ministry of Justice",
+   "url": "https://lagosstatemoj.org",
+   "kind": "government"
+  },
+  {
+   "name": "Federal Ministry of Justice",
+   "url": "https://justice.gov.ng",
+   "kind": "government"
+  },
+  {
+   "name": "National Assembly - Upcoming Bills",
+   "url": "https://nass.gov.ng/documents/bills",
+   "kind": "parliament"
+  },
+  {
+   "name": "National Assembly - Publications and Legislation",
+   "url": "https://nass.gov.ng/documents/magazine",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Nigeria - Judgments",
+   "url": "https://www.supremecourt.gov.ng/judgment",
+   "kind": "courts"
+  }
+ ],
+ "North Macedonia": [
+  {
+   "name": "Constitution of North Macedonia",
+   "url": "https://www.sobranie.mk/content/EN%20DOKUMENTI/USTAVen.pdf",
+   "kind": "other"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.pravda.gov.mk/mk-MK/regulativa/zakoni",
+   "kind": "government"
+  },
+  {
+   "name": "Assembly of the Republic of North Macedonia",
+   "url": "https://www.sobranie.mk/materials-en.nspx",
+   "kind": "parliament"
+  },
+  {
+   "name": "Služben vesnik",
+   "url": "https://slvesnik.com.mk/home.nspx",
+   "kind": "gazette"
+  }
+ ],
+ "North Rhine-Westphalia": [
+  {
+   "name": "Verfassungsgerichtshof für das Land Nordrhein-Westfalen",
+   "url": "https://www.verfgh.nrw.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Justizportal Nordrhein-Westfalen",
+   "url": "https://www.justiz.nrw.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landtag Nordrhein-Westfalen",
+   "url": "https://www.landtag.nrw.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "RECHT.NRW.DE",
+   "url": "https://recht.nrw.de",
+   "kind": "gazette"
+  },
+  {
+   "name": "Landesbeauftragte für Datenschutz und Informationsfreiheit Nordrhein-Westfalen (LDI NRW)",
+   "url": "https://www.ldi.nrw.de",
+   "kind": "regulator"
+  }
+ ],
+ "Northern Ireland": [
+  {
+   "name": "Department of Justice Northern Ireland",
+   "url": "https://www.justice-ni.gov.uk/publications",
+   "kind": "government"
+  },
+  {
+   "name": "Northern Ireland Assembly",
+   "url": "https://www.niassembly.gov.uk/assembly-business/legislation",
+   "kind": "parliament"
+  },
+  {
+   "name": "National Archives (UK)",
+   "url": "https://www.legislation.gov.uk/explore/legislatures/ni",
+   "kind": "other"
+  },
+  {
+   "name": "UK Supreme Court",
+   "url": "https://supremecourt.uk",
+   "kind": "courts"
+  },
+  {
+   "name": "UK Parliament",
+   "url": "https://www.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "Hansard (Parliamentary Debates)",
+   "url": "https://hansard.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "GOV.UK",
+   "url": "https://www.gov.uk",
+   "kind": "government"
+  },
+  {
+   "name": "Financial Conduct Authority (FCA)",
+   "url": "https://www.fca.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Information Commissioner’s Office (ICO)",
+   "url": "https://ico.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Cambridge International Law Journal",
+   "url": "https://cilj.co.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Immigration Law Practitioners’ Association",
+   "url": "https://ilpa.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Public Law Project",
+   "url": "https://publiclawproject.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "BAILII",
+   "url": "https://www.bailii.org/form/search_legis.html",
+   "kind": "courts"
+  },
+  {
+   "name": "British Institute of International and Comparative Law",
+   "url": "https://www.biicl.org",
+   "kind": "legislation"
+  }
+ ],
+ "Norway": [
+  {
+   "name": "Arbeidstilsynet",
+   "url": "https://www.arbeidstilsynet.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nasjonal sikkerhetsmyndighet (NSM)",
+   "url": "https://nsm.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Datatilsynet",
+   "url": "https://www.datatilsynet.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nasjonal kommunikasjonsmyndighet (Nkom)",
+   "url": "https://nkom.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Skatteetaten",
+   "url": "https://www.skatteetaten.no",
+   "kind": "government"
+  },
+  {
+   "name": "Finanstilsynet",
+   "url": "https://www.finanstilsynet.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finans Norge",
+   "url": "https://www.finansnorge.no",
+   "kind": "regulator"
+  },
+  {
+   "name": "Regjeringen.no",
+   "url": "https://www.regjeringen.no",
+   "kind": "government"
+  },
+  {
+   "name": "Domstol.no",
+   "url": "https://www.domstol.no",
+   "kind": "courts"
+  },
+  {
+   "name": "Høyesterett",
+   "url": "https://www.domstol.no/hoyesterett",
+   "kind": "courts"
+  },
+  {
+   "name": "Stortinget",
+   "url": "https://www.stortinget.no",
+   "kind": "parliament"
+  },
+  {
+   "name": "Norsk Lovtidend",
+   "url": "https://lovdata.no/register/lovtidend",
+   "kind": "gazette"
+  },
+  {
+   "name": "Lovdata",
+   "url": "https://lovdata.no",
+   "kind": "courts"
+  }
+ ],
+ "Oman": [
+  {
+   "name": "State Council of Oman",
+   "url": "https://www.statecouncil.om/Laws-Legislations/Law",
+   "kind": "government"
+  },
+  {
+   "name": "Ministry of Justice and Legal Affairs",
+   "url": "https://www.mjla.gov.om/index.php",
+   "kind": "government"
+  },
+  {
+   "name": "Official Gazette of Oman",
+   "url": "https://www.mjla.gov.om/legislation/1",
+   "kind": "gazette"
+  },
+  {
+   "name": "Ministry of Justice and Legal Affairs - Legislation",
+   "url": "https://www.mjla.gov.om/laws/1",
+   "kind": "legislation"
+  }
+ ],
+ "Pakistan": [
+  {
+   "name": "Lahore High Court",
+   "url": "https://lhc.gov.pk",
+   "kind": "courts"
+  },
+  {
+   "name": "Federal Shariat Court of Pakistan",
+   "url": "https://www.federalshariatcourt.gov.pk",
+   "kind": "courts"
+  },
+  {
+   "name": "Senate of Pakistan",
+   "url": "https://www.senate.gov.pk/en/acts.php",
+   "kind": "parliament"
+  },
+  {
+   "name": "National Assembly of Pakistan",
+   "url": "https://na.gov.pk/en/acts-tenure.php",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Pakistan",
+   "url": "https://www.supremecourt.gov.pk",
+   "kind": "courts"
+  },
+  {
+   "name": "Pakistan Code",
+   "url": "https://www.pakistancode.gov.pk/english/index.php",
+   "kind": "legislation"
+  }
+ ],
+ "Palestine": [
+  {
+   "name": "DCAF - Palestine Security Legislation Database",
+   "url": "https://security-legislation.ps",
+   "kind": "legislation"
+  },
+  {
+   "name": "Palestine Gazette - Muqtafi",
+   "url": "http://muqtafi.birzeit.edu/en/pg",
+   "kind": "gazette"
+  },
+  {
+   "name": "Palestine Courts - Judicial Principles",
+   "url": "https://courts.gov.ps/TechnicalOffice/SearchJudicialPrincipl.aspx",
+   "kind": "courts"
+  }
+ ],
+ "Panama": [
+  {
+   "name": "Procuraduría General de la Nación",
+   "url": "https://ministeriopublico.gob.pa",
+   "kind": "other"
+  },
+  {
+   "name": "Tribunal Constitucional de Panamá",
+   "url": "https://www.organojudicial.gob.pa",
+   "kind": "courts"
+  },
+  {
+   "name": "Asamblea Nacional de Panamá",
+   "url": "https://www.asamblea.gob.pa",
+   "kind": "parliament"
+  },
+  {
+   "name": "Órgano Judicial de Panamá",
+   "url": "https://www.organojudicial.gob.pa",
+   "kind": "courts"
+  },
+  {
+   "name": "Gaceta Oficial de Panamá",
+   "url": "https://www.gacetaoficial.gob.pa",
+   "kind": "gazette"
+  }
+ ],
+ "Paraguay": [
+  {
+   "name": "Official Gazette of Paraguay",
+   "url": "https://www.gacetaoficial.gov.py",
+   "kind": "gazette"
+  },
+  {
+   "name": "Chamber of Deputies of Paraguay",
+   "url": "https://www.diputados.gov.py",
+   "kind": "parliament"
+  },
+  {
+   "name": "Senate of Paraguay",
+   "url": "https://www.senado.gov.py",
+   "kind": "parliament"
+  },
+  {
+   "name": "Supreme Court of Justice of Paraguay",
+   "url": "https://www.pj.gov.py",
+   "kind": "courts"
+  },
+  {
+   "name": "Library and Archive of the National Congress of Paraguay (BACN)",
+   "url": "https://www.bacn.gov.py",
+   "kind": "parliament"
+  }
+ ],
+ "Peru": [
+  {
+   "name": "Ministry of Justice and Human Rights of Peru",
+   "url": "https://www.gob.pe/minjus",
+   "kind": "legislation"
+  },
+  {
+   "name": "Judiciary of Peru",
+   "url": "https://www.pj.gob.pe",
+   "kind": "courts"
+  },
+  {
+   "name": "Constitutional Court of Peru",
+   "url": "https://www.tc.gob.pe",
+   "kind": "courts"
+  },
+  {
+   "name": "Congress of Peru - Legislative Archive",
+   "url": "https://www.leyes.congreso.gob.pe/Inicio.aspx",
+   "kind": "parliament"
+  },
+  {
+   "name": "El Peruano",
+   "url": "https://elperuano.pe",
+   "kind": "regulator"
+  },
+  {
+   "name": "Peruvian Legal Information System (SPIJ)",
+   "url": "https://spij.minjus.gob.pe",
+   "kind": "courts"
+  }
+ ],
+ "Philippines": [
+  {
+   "name": "Official Gazette",
+   "url": "https://www.officialgazette.gov.ph",
+   "kind": "gazette"
+  },
+  {
+   "name": "Judiciary e-Library",
+   "url": "https://elibrary.judiciary.gov.ph",
+   "kind": "courts"
+  },
+  {
+   "name": "LawPhil",
+   "url": "https://www.lawphil.net",
+   "kind": "courts"
+  }
+ ],
+ "Poland": [
+  {
+   "name": "Rzecznik Praw Obywatelskich (RPO)",
+   "url": "https://bip.brpo.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Państwowa Inspekcja Pracy (PIP)",
+   "url": "https://www.pip.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstwo Cyfryzacji",
+   "url": "https://www.gov.pl/web/cyfryzacja",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstwo Sprawiedliwości",
+   "url": "https://www.gov.pl/web/sprawiedliwosc",
+   "kind": "legislation"
+  },
+  {
+   "name": "Urząd Ochrony Konkurencji i Konsumentów (UOKiK)",
+   "url": "https://uokik.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Komisja Nadzoru Finansowego (KNF)",
+   "url": "https://www.knf.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Urząd Ochrony Danych Osobowych (UODO)",
+   "url": "https://uodo.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Urząd Komunikacji Elektronicznej (UKE)",
+   "url": "https://uke.gov.pl",
+   "kind": "regulator"
+  },
+  {
+   "name": "Senat Rzeczypospolitej Polskiej",
+   "url": "https://www.senat.gov.pl",
+   "kind": "parliament"
+  },
+  {
+   "name": "Sejm Rzeczypospolitej Polskiej",
+   "url": "https://www.sejm.gov.pl",
+   "kind": "parliament"
+  },
+  {
+   "name": "Sąd Najwyższy",
+   "url": "https://www.sn.pl",
+   "kind": "courts"
+  },
+  {
+   "name": "Trybunał Konstytucyjny",
+   "url": "https://trybunal.gov.pl",
+   "kind": "courts"
+  },
+  {
+   "name": "Monitor Polski",
+   "url": "https://monitorpolski.gov.pl",
+   "kind": "gazette"
+  },
+  {
+   "name": "Dziennik Ustaw",
+   "url": "https://dziennikustaw.gov.pl",
+   "kind": "gazette"
+  },
+  {
+   "name": "ISAP (Internetowy System Aktów Prawnych)",
+   "url": "https://isap.sejm.gov.pl",
+   "kind": "legislation"
+  }
+ ],
+ "Portugal": [
+  {
+   "name": "Mecanismo Nacional Anticorrupção (MENAC)",
+   "url": "https://menac.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Centro Nacional de Cibersegurança (CNCS)",
+   "url": "https://www.cncs.gov.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministério da Justiça",
+   "url": "https://justica.gov.pt",
+   "kind": "government"
+  },
+  {
+   "name": "Direção-Geral do Consumidor (DGC)",
+   "url": "https://www.consumidor.gov.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoridade de Supervisão de Seguros e Fundos de Pensões (ASF)",
+   "url": "https://www.asf.com.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Comissão do Mercado de Valores Mobiliários (CMVM)",
+   "url": "https://www.cmvm.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoridade Nacional de Comunicações (ANACOM)",
+   "url": "https://www.anacom.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Comissão Nacional de Proteção de Dados (CNPD)",
+   "url": "https://www.cnpd.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banco de Portugal",
+   "url": "https://www.bportugal.pt",
+   "kind": "legislation"
+  },
+  {
+   "name": "Procuradoria-Geral da República (PGR)",
+   "url": "https://www.ministeriopublico.pt",
+   "kind": "regulator"
+  },
+  {
+   "name": "Supremo Tribunal de Justiça (STJ)",
+   "url": "https://www.stj.pt",
+   "kind": "courts"
+  },
+  {
+   "name": "Tribunal Constitucional",
+   "url": "https://www.tribunalconstitucional.pt",
+   "kind": "courts"
+  },
+  {
+   "name": "Assembleia da República",
+   "url": "https://www.parlamento.pt",
+   "kind": "parliament"
+  },
+  {
+   "name": "Diário da República Eletrónico (DRE)",
+   "url": "https://diariodarepublica.pt",
+   "kind": "gazette"
+  }
+ ],
+ "Puerto Rico": [
+  {
+   "name": "Oficina de Servicios Legislativos (OSLPR)",
+   "url": "https://www.oslpr.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Rama Judicial de Puerto Rico",
+   "url": "https://poderjudicial.pr",
+   "kind": "government"
+  }
+ ],
+ "Qatar": [
+  {
+   "name": "Shura Council",
+   "url": "https://www.shura.qa/en",
+   "kind": "government"
+  },
+  {
+   "name": "Court of Cassation - Criminal Provisions",
+   "url": "https://www.almeezan.qa/RulingsBySubjects.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Court of Cassation - Combined Divisions",
+   "url": "https://www.almeezan.qa/RulingsBySubjects.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Court of Cassation - Penal Division",
+   "url": "https://www.almeezan.qa/RulingsBySubjects.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Court of Cassation - Civil & Trade Division",
+   "url": "https://www.almeezan.qa/RulingsBySubjects.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Al Meezan - Qatar Legislation",
+   "url": "https://www.almeezan.qa/LawsByYear.aspx",
+   "kind": "legislation"
+  }
+ ],
+ "Quebec": [
+  {
+   "name": "Office de la protection du consommateur (OPC)",
+   "url": "https://www.opc.gouv.qc.ca",
+   "kind": "legislation"
+  },
+  {
+   "name": "Tribunal des professions",
+   "url": "https://tribunaldesprofessions.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Tribunal des droits de la personne",
+   "url": "https://tribunaldesdroitsdelapersonne.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Cour du Québec",
+   "url": "https://courduquebec.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Cour supérieure du Québec",
+   "url": "https://coursuperieureduquebec.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Cour d'appel du Québec",
+   "url": "https://courdappelduquebec.ca",
+   "kind": "courts"
+  },
+  {
+   "name": "Lois annuelles du Québec",
+   "url": "https://www.publicationsduquebec.gouv.qc.ca/lois-et-reglements/lois-annuelles",
+   "kind": "legislation"
+  },
+  {
+   "name": "Gazette officielle du Québec",
+   "url": "https://www.publicationsduquebec.gouv.qc.ca/gazette-officielle",
+   "kind": "gazette"
+  },
+  {
+   "name": "Assemblée nationale du Québec",
+   "url": "https://www.assnat.qc.ca",
+   "kind": "parliament"
+  }
+ ],
+ "Rhineland-Palatinate": [
+  {
+   "name": "Justiz Rheinland-Pfalz",
+   "url": "https://justiz.rlp.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministerium der Justiz und für Verbraucherschutz Rheinland-Pfalz",
+   "url": "https://mjv.rlp.de",
+   "kind": "government"
+  },
+  {
+   "name": "Parlamentsdokumentation des Landtags Rheinland-Pfalz (OPAL)",
+   "url": "https://opal.rlp.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landtag Rheinland-Pfalz",
+   "url": "https://landtag-rlp.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landesrecht Rheinland-Pfalz",
+   "url": "https://www.landesrecht.rlp.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz und die Informationsfreiheit Rheinland-Pfalz (LfDI RLP)",
+   "url": "https://www.datenschutz.rlp.de",
+   "kind": "regulator"
+  }
+ ],
+ "Romania": [
+  {
+   "name": "Consiliul Național al Audiovizualului (CNA)",
+   "url": "https://www.cna.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Agenția Națională de Integritate (ANI)",
+   "url": "https://integritate.eu",
+   "kind": "regulator"
+  },
+  {
+   "name": "Directoratul Național de Securitate Cibernetică (DNSC)",
+   "url": "https://www.dnsc.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerul Justiției",
+   "url": "https://www.just.ro",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministerul Transporturilor și Infrastructurii",
+   "url": "https://www.mt.ro",
+   "kind": "government"
+  },
+  {
+   "name": "Autoritatea Națională pentru Protecția Consumatorilor (ANPC)",
+   "url": "https://anpc.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banca Națională a României (BNR)",
+   "url": "https://www.bnr.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Monitorul Oficial al României",
+   "url": "https://monitoruloficial.ro",
+   "kind": "gazette"
+  },
+  {
+   "name": "Senatul României",
+   "url": "https://www.senat.ro",
+   "kind": "parliament"
+  },
+  {
+   "name": "Camera Deputaților",
+   "url": "https://www.cdep.ro",
+   "kind": "parliament"
+  },
+  {
+   "name": "Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)",
+   "url": "https://www.dataprotection.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoritatea de Supraveghere Financiară (ASF)",
+   "url": "https://www.asfromania.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "Autoritatea Națională pentru Administrare și Reglementare în Comunicații (ANCOM)",
+   "url": "https://www.ancom.ro",
+   "kind": "regulator"
+  },
+  {
+   "name": "JURIDICE.ro",
+   "url": "https://www.juridice.ro",
+   "kind": "legislation"
+  },
+  {
+   "name": "Legislație - Ministerul Justiției",
+   "url": "https://legislatie.just.ro",
+   "kind": "legislation"
+  },
+  {
+   "name": "REJUST",
+   "url": "https://www.rejust.ro",
+   "kind": "courts"
+  }
+ ],
+ "Russia": [
+  {
+   "name": "State Duma of Russia",
+   "url": "http://duma.gov.ru",
+   "kind": "government"
+  },
+  {
+   "name": "Russia Ministry of Justice",
+   "url": "https://minjust.gov.ru/ru/documents",
+   "kind": "government"
+  },
+  {
+   "name": "Presidential Acts of Russia",
+   "url": "http://kremlin.ru/acts/bank",
+   "kind": "government"
+  },
+  {
+   "name": "Federal Legislation of Russia",
+   "url": "http://pravo.gov.ru/proxy/ips/?start_search&fattrib=1",
+   "kind": "legislation"
+  },
+  {
+   "name": "Constitutional Court of Russia",
+   "url": "http://publication.pravo.gov.ru/documents/block/court",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Russia - Decisions",
+   "url": "https://www.vsrf.ru/documents",
+   "kind": "courts"
+  }
+ ],
+ "Rwanda": [
+  {
+   "name": "Parliament of Rwanda - Statutory Documents",
+   "url": "https://www.parliament.gov.rw/parliament/our-mandate/bills-and-laws",
+   "kind": "parliament"
+  },
+  {
+   "name": "Rwanda Law Reform Commission",
+   "url": "https://www.rlrc.gov.rw",
+   "kind": "legislation"
+  },
+  {
+   "name": "Government of Rwanda - Laws and Regulations",
+   "url": "https://www.gov.rw/laws-and-regulations",
+   "kind": "legislation"
+  },
+  {
+   "name": "Rwanda Legal Information Institute - Gazettes",
+   "url": "https://rwandalii.org/gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Rwanda Legal Information Institute - Judgments",
+   "url": "https://rwandalii.org/judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "Rwanda Legal Information Institute - Legislation",
+   "url": "https://rwandalii.org/legislation",
+   "kind": "legislation"
+  }
+ ],
+ "Saarland": [
+  {
+   "name": "Verfassungsgerichtshof des Saarlandes",
+   "url": "https://www.verfassungsgerichtshof-saarland.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministerium der Justiz des Saarlandes",
+   "url": "https://www.saarland.de/mdj/DE/home",
+   "kind": "legislation"
+  },
+  {
+   "name": "Landtag des Saarlandes",
+   "url": "https://www.landtag-saar.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Verkündungsportal des Saarlandes",
+   "url": "https://www.amtsblatt.saarland.de",
+   "kind": "gazette"
+  },
+  {
+   "name": "Bürgerservice Saarland",
+   "url": "https://recht.saarland.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Unabhängiges Datenschutzzentrum Saarland (UDZ)",
+   "url": "https://www.datenschutz.saarland.de",
+   "kind": "regulator"
+  }
+ ],
+ "Saudi Arabia": [
+  {
+   "name": "National Cybersecurity Authority (NCA)",
+   "url": "https://nca.gov.sa",
+   "kind": "regulator"
+  },
+  {
+   "name": "Saudi Central Bank (SAMA)",
+   "url": "https://www.sama.gov.sa",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Human Resources and Social Development",
+   "url": "https://www.hrsd.gov.sa",
+   "kind": "regulator"
+  },
+  {
+   "name": "Saudi Data and AI Authority (SDAIA)",
+   "url": "https://sdaia.gov.sa",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.moj.gov.sa",
+   "kind": "courts"
+  },
+  {
+   "name": "Board of Grievances",
+   "url": "https://www.bog.gov.sa",
+   "kind": "government"
+  },
+  {
+   "name": "Shura Council",
+   "url": "https://shura.gov.sa",
+   "kind": "legislation"
+  },
+  {
+   "name": "Umm al-Qura Gazette",
+   "url": "https://uqn.gov.sa",
+   "kind": "gazette"
+  },
+  {
+   "name": "Saudi Laws and Regulations Portal",
+   "url": "https://laws.boe.gov.sa",
+   "kind": "legislation"
+  }
+ ],
+ "Saxony": [
+  {
+   "name": "Justiz in Sachsen",
+   "url": "https://www.justiz.sachsen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Sächsischer Landtag",
+   "url": "https://www.landtag.sachsen.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "REVOSax",
+   "url": "https://www.revosax.sachsen.de",
+   "kind": "legislation"
+  },
+  {
+   "name": "Sächsische Datenschutz- und Transparenzbeauftragte (SDTB)",
+   "url": "https://www.datenschutz.sachsen.de",
+   "kind": "regulator"
+  }
+ ],
+ "Saxony-Anhalt": [
+  {
+   "name": "Justizpressestelle Sachsen-Anhalt",
+   "url": "https://justizpressestelle.sachsen-anhalt.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Oberverwaltungsgericht Sachsen-Anhalt",
+   "url": "https://ovg.sachsen-anhalt.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Oberlandesgericht Naumburg",
+   "url": "https://olg.sachsen-anhalt.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesverfassungsgericht Sachsen-Anhalt",
+   "url": "https://verfassungsgericht.sachsen-anhalt.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministerium für Justiz und Verbraucherschutz Sachsen-Anhalt",
+   "url": "https://mj.sachsen-anhalt.de",
+   "kind": "government"
+  },
+  {
+   "name": "Landtag von Sachsen-Anhalt",
+   "url": "https://www.landtag.sachsen-anhalt.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landesrecht Sachsen-Anhalt",
+   "url": "https://www.landesrecht.sachsen-anhalt.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Landesbeauftragter für den Datenschutz Sachsen-Anhalt",
+   "url": "https://datenschutz.sachsen-anhalt.de",
+   "kind": "regulator"
+  }
+ ],
+ "Schleswig-Holstein": [
+  {
+   "name": "Gerichte und Justizbehörden Schleswig-Holstein",
+   "url": "https://www.schleswig-holstein.de/DE/justiz/gerichte-und-justizbehoerden",
+   "kind": "courts"
+  },
+  {
+   "name": "Schleswig-Holsteinischer Landtag",
+   "url": "https://www.landtag.ltsh.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Gesetze-Rechtsprechung Schleswig-Holstein",
+   "url": "https://www.gesetze-rechtsprechung.sh.juris.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Unabhängiges Landeszentrum für Datenschutz Schleswig-Holstein (ULD)",
+   "url": "https://www.datenschutzzentrum.de",
+   "kind": "regulator"
+  }
+ ],
+ "Scotland": [
+  {
+   "name": "Scottish Judiciary",
+   "url": "https://judiciary.scot",
+   "kind": "government"
+  },
+  {
+   "name": "National Records of Scotland",
+   "url": "https://www.nrscotland.gov.uk/records-and-archives",
+   "kind": "other"
+  },
+  {
+   "name": "Freedom of Information Scotland",
+   "url": "https://www.foi.scot",
+   "kind": "government"
+  },
+  {
+   "name": "UK Supreme Court",
+   "url": "https://supremecourt.uk",
+   "kind": "courts"
+  },
+  {
+   "name": "UK Parliament",
+   "url": "https://www.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "Hansard (Parliamentary Debates)",
+   "url": "https://hansard.parliament.uk",
+   "kind": "parliament"
+  },
+  {
+   "name": "GOV.UK",
+   "url": "https://www.gov.uk",
+   "kind": "government"
+  },
+  {
+   "name": "Financial Conduct Authority (FCA)",
+   "url": "https://www.fca.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Information Commissioner’s Office (ICO)",
+   "url": "https://ico.org.uk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Cambridge International Law Journal",
+   "url": "https://cilj.co.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Immigration Law Practitioners’ Association",
+   "url": "https://ilpa.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Public Law Project",
+   "url": "https://publiclawproject.org.uk",
+   "kind": "legislation"
+  },
+  {
+   "name": "BAILII",
+   "url": "https://www.bailii.org/form/search_legis.html",
+   "kind": "courts"
+  },
+  {
+   "name": "British Institute of International and Comparative Law",
+   "url": "https://www.biicl.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Legislation.gov.uk",
+   "url": "https://www.legislation.gov.uk",
+   "kind": "legislation"
+  }
+ ],
+ "Serbia": [
+  {
+   "name": "Ministry of Public Administration - Data Protection Law",
+   "url": "https://mduls.gov.rs/wp-content/uploads/zakon-o-zastiti-podataka-o-licnosti.pdf",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ministry of Public Administration and Local Self-Government",
+   "url": "https://mduls.gov.rs/propisi/zakoni-u-primeni",
+   "kind": "government"
+  },
+  {
+   "name": "Administration for the Prevention of Money Laundering - Laws",
+   "url": "https://www.apml.gov.rs/latinica/zakoni",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Bank of Serbia - AML Law",
+   "url": "https://www.nbs.rs/export/sites/NBS_site/documents/propisi/zakoni/spn_sprecavanje_pranja_novca.pdf",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Bank of Serbia",
+   "url": "https://www.nbs.rs/en/drugi-nivo-navigacije/propisi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Paragraf - Anti-Money Laundering Law",
+   "url": "https://www.paragraf.rs/propisi/zakon_o_sprecavanju_pranja_novca_i_finansiranja_terorizma.html",
+   "kind": "legislation"
+  },
+  {
+   "name": "Paragraf - Serbian Legislation",
+   "url": "https://www.paragraf.rs/propisi.html",
+   "kind": "legislation"
+  },
+  {
+   "name": "Republic of Serbia Games of Chance Administration - News",
+   "url": "https://uis.gov.rs/rsl/aktuelnosti",
+   "kind": "government"
+  },
+  {
+   "name": "Republic of Serbia Games of Chance Administration - Laws",
+   "url": "https://www.uis.gov.rs/rsl/zakoni",
+   "kind": "legislation"
+  },
+  {
+   "name": "Službeni glasnik RS",
+   "url": "https://pravno-informacioni-sistem.rs/slglrsNP-overview/all",
+   "kind": "gazette"
+  },
+  {
+   "name": "Pravno-informacioni sistem",
+   "url": "https://pravno-informacioni-sistem.rs",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Assembly of the Republic of Serbia",
+   "url": "https://www.parlament.gov.rs/akti/doneti-zakoni/doneti-zakoni.1033.html",
+   "kind": "parliament"
+  },
+  {
+   "name": "LiCODU - Serbian Legislation",
+   "url": "https://licodu.cois.it/?page_id=1460&lang=en",
+   "kind": "legislation"
+  },
+  {
+   "name": "Commission for Protection and Equality - Legislation",
+   "url": "https://ravnopravnost.gov.rs/en/legislation/republic-of-serbia-legislation",
+   "kind": "legislation"
+  }
+ ],
+ "Singapore": [
+  {
+   "name": "Attorney-General's Chambers Singapore",
+   "url": "https://www.agc.gov.sg",
+   "kind": "other"
+  },
+  {
+   "name": "Singapore Courts",
+   "url": "https://www.judiciary.gov.sg",
+   "kind": "courts"
+  },
+  {
+   "name": "Singapore Government Portal",
+   "url": "https://www.gov.sg",
+   "kind": "government"
+  },
+  {
+   "name": "Ministry of Law Singapore",
+   "url": "https://www.mlaw.gov.sg",
+   "kind": "legislation"
+  },
+  {
+   "name": "LawNet",
+   "url": "https://www.lawnet.sg/lawnet/web/lawnet/home",
+   "kind": "courts"
+  },
+  {
+   "name": "Singapore Statutes Online",
+   "url": "https://sso.agc.gov.sg",
+   "kind": "legislation"
+  }
+ ],
+ "Slovakia": [
+  {
+   "name": "Úrad na ochranu oznamovateľov (ÚOO)",
+   "url": "https://www.oznamovatelia.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Národný inšpektorát práce (NIP)",
+   "url": "https://www.ip.gov.sk",
+   "kind": "legislation"
+  },
+  {
+   "name": "SK-CERT",
+   "url": "https://www.sk-cert.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Národný bezpečnostný úrad (NBÚ)",
+   "url": "https://www.nbu.gov.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Úrad na ochranu osobných údajov SR",
+   "url": "https://dataprotection.gov.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstvo spravodlivosti SR",
+   "url": "https://www.justice.gov.sk",
+   "kind": "legislation"
+  },
+  {
+   "name": "Slovenská obchodná inšpekcia (SOI)",
+   "url": "https://www.soi.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Rada pre mediálne služby (RpMS)",
+   "url": "https://rpms.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Národná banka Slovenska (NBS)",
+   "url": "https://nbs.sk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerstvo investícií, regionálneho rozvoja a informatizácie SR (MIRRI)",
+   "url": "https://mirri.gov.sk",
+   "kind": "government"
+  },
+  {
+   "name": "Národná rada SR",
+   "url": "https://www.nrsr.sk",
+   "kind": "parliament"
+  },
+  {
+   "name": "Najvyšší súd SR",
+   "url": "https://www.nsud.sk",
+   "kind": "courts"
+  },
+  {
+   "name": "Ústavný súd SR",
+   "url": "https://www.ustavnysud.sk",
+   "kind": "courts"
+  },
+  {
+   "name": "Zbierka zákonov",
+   "url": "https://www.slov-lex.sk/ezbierky/pravne-predpisy",
+   "kind": "gazette"
+  },
+  {
+   "name": "Slov-Lex",
+   "url": "https://www.slov-lex.sk",
+   "kind": "legislation"
+  }
+ ],
+ "Slovenia": [
+  {
+   "name": "Prostorski portal Mestne občine Kranj",
+   "url": "https://prostor.kranj.si",
+   "kind": "government"
+  },
+  {
+   "name": "Lex Localis",
+   "url": "https://www.lex-localis.info",
+   "kind": "legislation"
+  },
+  {
+   "name": "Komisija za preprečevanje korupcije (KPK)",
+   "url": "https://kpk-rs.si",
+   "kind": "regulator"
+  },
+  {
+   "name": "SI-CERT",
+   "url": "https://www.cert.si",
+   "kind": "regulator"
+  },
+  {
+   "name": "Urad Vlade RS za informacijsko varnost (URSIV)",
+   "url": "https://www.gov.si/drzavni-organi/vladne-sluzbe/urad-vlade-za-informacijsko-varnost",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministrstvo za pravosodje RS",
+   "url": "https://www.gov.si/drzavni-organi/ministrstva/ministrstvo-za-pravosodje",
+   "kind": "legislation"
+  },
+  {
+   "name": "Tržni inšpektorat RS (TIRS)",
+   "url": "https://www.gov.si/drzavni-organi/organi-v-sestavi/trzni-inspektorat",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banka Slovenije",
+   "url": "https://www.bsi.si",
+   "kind": "regulator"
+  },
+  {
+   "name": "Agencija za komunikacijska omrežja in storitve RS (AKOS)",
+   "url": "https://www.akos-rs.si",
+   "kind": "regulator"
+  },
+  {
+   "name": "Informacijski pooblaščenec",
+   "url": "https://www.ip-rs.si",
+   "kind": "regulator"
+  },
+  {
+   "name": "Državni zbor RS",
+   "url": "https://www.dz-rs.si",
+   "kind": "parliament"
+  },
+  {
+   "name": "Ustavno sodišče RS",
+   "url": "https://www.us-rs.si",
+   "kind": "courts"
+  },
+  {
+   "name": "Sodna praksa",
+   "url": "https://www.sodnapraksa.si",
+   "kind": "courts"
+  },
+  {
+   "name": "Uradni list RS",
+   "url": "https://www.uradni-list.si",
+   "kind": "gazette"
+  },
+  {
+   "name": "Pravno-informacijski sistem (PIS)",
+   "url": "https://www.pisrs.si",
+   "kind": "legislation"
+  }
+ ],
+ "South Africa": [
+  {
+   "name": "South African Judiciary",
+   "url": "https://www.judiciary.org.za",
+   "kind": "courts"
+  },
+  {
+   "name": "National Department of Health",
+   "url": "https://www.health.gov.za",
+   "kind": "legislation"
+  },
+  {
+   "name": "Department of Employment and Labour",
+   "url": "https://www.labour.gov.za",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Treasury",
+   "url": "https://www.treasury.gov.za",
+   "kind": "legislation"
+  },
+  {
+   "name": "Department of Justice and Constitutional Development",
+   "url": "https://www.justice.gov.za",
+   "kind": "courts"
+  },
+  {
+   "name": "Government Notices",
+   "url": "https://www.gov.za/documents/notices",
+   "kind": "government"
+  },
+  {
+   "name": "Provincial Gazettes",
+   "url": "https://www.gpwonline.co.za/Provincial-Gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Government Gazette",
+   "url": "https://www.gpwonline.co.za/Government-Gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Supreme Court of Appeal - Judgements",
+   "url": "https://www.supremecourtofappeal.org.za/index.php/judgements/category/4-judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Appeal",
+   "url": "https://www.supremecourtofappeal.org.za",
+   "kind": "courts"
+  },
+  {
+   "name": "Acts of Legislation",
+   "url": "https://www.parliament.gov.za/acts",
+   "kind": "parliament"
+  },
+  {
+   "name": "Parliament of South Africa",
+   "url": "https://www.parliament.gov.za",
+   "kind": "parliament"
+  }
+ ],
+ "South Korea": [
+  {
+   "name": "Supreme Court of Korea",
+   "url": "https://eng.scourt.go.kr/eng/main/Main.work",
+   "kind": "courts"
+  },
+  {
+   "name": "Law.go.kr",
+   "url": "https://www.law.go.kr",
+   "kind": "legislation"
+  }
+ ],
+ "South Sudan": [
+  {
+   "name": "National Revenue Authority (NRA)",
+   "url": "https://nra.gov.ss",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bank of South Sudan (BoSS)",
+   "url": "https://boss.gov.ss",
+   "kind": "regulator"
+  },
+  {
+   "name": "Transitional National Legislative Assembly (TNLA)",
+   "url": "https://nla.gov.ss",
+   "kind": "parliament"
+  },
+  {
+   "name": "Office of the President",
+   "url": "https://op.gov.ss",
+   "kind": "regulator"
+  }
+ ],
+ "Spain": [
+  {
+   "name": "Autoridad Independiente de Protección del Informante (AIPI)",
+   "url": "https://www.proteccioninformante.gob.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Organismo Estatal Inspección de Trabajo y Seguridad Social (OEITSS)",
+   "url": "https://oeitss.gob.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministerio de Igualdad",
+   "url": "https://www.igualdad.gob.es",
+   "kind": "legislation"
+  },
+  {
+   "name": "Instituto Nacional de Ciberseguridad (INCIBE)",
+   "url": "https://www.incibe.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Centro Criptológico Nacional (CCN-CERT)",
+   "url": "https://ccn-cert.cni.es",
+   "kind": "other"
+  },
+  {
+   "name": "Ministerio de la Presidencia, Justicia y Relaciones con las Cortes",
+   "url": "https://www.mjusticia.gob.es",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministerio de Derechos Sociales, Consumo y Agenda 2030",
+   "url": "https://www.dsca.gob.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Comisión Nacional de los Mercados y la Competencia (CNMC)",
+   "url": "https://www.cnmc.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Dirección General de Seguros y Fondos de Pensiones (DGSFP)",
+   "url": "https://dgsfp.mineco.gob.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Comisión Nacional del Mercado de Valores (CNMV)",
+   "url": "https://www.cnmv.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Banco de España",
+   "url": "https://www.bde.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Agencia Española de Supervisión de Inteligencia Artificial (AESIA)",
+   "url": "https://aesia.digital.gob.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "Agencia Española de Protección de Datos (AEPD)",
+   "url": "https://www.aepd.es",
+   "kind": "regulator"
+  },
+  {
+   "name": "CENDOJ (Consejo General del Poder Judicial)",
+   "url": "https://www.poderjudicial.es/search/indexAN.jsp",
+   "kind": "other"
+  },
+  {
+   "name": "Tribunal Constitucional",
+   "url": "https://www.tribunalconstitucional.es",
+   "kind": "courts"
+  },
+  {
+   "name": "Senado de España",
+   "url": "https://www.senado.es",
+   "kind": "parliament"
+  },
+  {
+   "name": "Congreso de los Diputados",
+   "url": "https://www.congreso.es",
+   "kind": "parliament"
+  },
+  {
+   "name": "BOE (Boletín Oficial del Estado)",
+   "url": "https://www.boe.es",
+   "kind": "gazette"
+  }
+ ],
+ "Sri Lanka": [
+  {
+   "name": "Data Protection Authority",
+   "url": "https://www.dpa.gov.lk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Department of Labour",
+   "url": "https://labourdept.gov.lk",
+   "kind": "government"
+  },
+  {
+   "name": "Sri Lanka Customs",
+   "url": "https://www.customs.gov.lk",
+   "kind": "other"
+  },
+  {
+   "name": "Inland Revenue Department",
+   "url": "https://www.ird.gov.lk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Securities and Exchange Commission of Sri Lanka",
+   "url": "https://www.sec.gov.lk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Central Bank of Sri Lanka",
+   "url": "https://www.cbsl.gov.lk",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Finance",
+   "url": "https://www.treasury.gov.lk",
+   "kind": "gazette"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.moj.gov.lk",
+   "kind": "gazette"
+  },
+  {
+   "name": "Department of Government Printing",
+   "url": "https://documents.gov.lk",
+   "kind": "gazette"
+  },
+  {
+   "name": "Court of Appeal of Sri Lanka",
+   "url": "https://courtofappeal.lk",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of Sri Lanka",
+   "url": "https://supremecourt.lk",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Sri Lanka",
+   "url": "https://www.parliament.lk",
+   "kind": "courts"
+  }
+ ],
+ "State of Alabama": [
+  {
+   "name": "Alabama Administrative Code",
+   "url": "https://admincode.legislature.state.al.us",
+   "kind": "legislation"
+  },
+  {
+   "name": "Alabama Judicial System",
+   "url": "https://judicial.alabama.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Alabama Legislature (ALISON)",
+   "url": "https://alison.legislature.state.al.us",
+   "kind": "parliament"
+  }
+ ],
+ "State of Alaska": [
+  {
+   "name": "Alaska Administrative Code",
+   "url": "https://www.akleg.gov/basis/aac.asp",
+   "kind": "legislation"
+  },
+  {
+   "name": "Alaska Court System",
+   "url": "https://courts.alaska.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Alaska Legislature",
+   "url": "https://akleg.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Arizona": [
+  {
+   "name": "Arizona Secretary of State (Administrative Register)",
+   "url": "https://apps.azsos.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Arizona Administrative Code",
+   "url": "https://azsos.gov/rules/arizona-administrative-code",
+   "kind": "legislation"
+  },
+  {
+   "name": "Arizona Judicial Branch",
+   "url": "https://www.azcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Arizona Legislature",
+   "url": "https://www.azleg.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Arkansas": [
+  {
+   "name": "Arkansas Secretary of State - Business Services",
+   "url": "https://www.sos.arkansas.gov/business-commercial-services-bcs",
+   "kind": "other"
+  },
+  {
+   "name": "Arkansas Judiciary",
+   "url": "https://arcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Arkansas Legislature",
+   "url": "https://www.arkleg.state.ar.us",
+   "kind": "parliament"
+  }
+ ],
+ "State of California": [
+  {
+   "name": "California Department of Financial Protection and Innovation (DFPI)",
+   "url": "https://dfpi.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Department of Insurance",
+   "url": "https://www.insurance.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Attorney General",
+   "url": "https://oag.ca.gov",
+   "kind": "government"
+  },
+  {
+   "name": "California State Personnel Board",
+   "url": "https://www.spb.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "California State Controller",
+   "url": "https://www.sco.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Superior Court of California, County of Los Angeles",
+   "url": "https://www.lacourt.ca.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "California Franchise Tax Board",
+   "url": "https://www.ftb.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "CAL FIRE",
+   "url": "https://www.fire.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Department of State Hospitals",
+   "url": "https://www.dsh.ca.gov",
+   "kind": "government"
+  },
+  {
+   "name": "California Department of Real Estate",
+   "url": "https://www.dre.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Contractors State License Board",
+   "url": "https://www.cslb.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "California Public Utilities Commission (CPUC)",
+   "url": "https://www.cpuc.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Privacy Protection Agency (CPPA)",
+   "url": "https://www.cppa.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "CourtListener (California reporters)",
+   "url": "https://www.courtlistener.com/c/cal-5th",
+   "kind": "courts"
+  },
+  {
+   "name": "California Law Revision Commission",
+   "url": "https://www.clrc.ca.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "California Health and Human Services Agency",
+   "url": "https://www.chhs.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Gambling Control Commission",
+   "url": "https://www.cgcc.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Department of Pesticide Regulation",
+   "url": "https://www.cdpr.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California State Board of Equalization",
+   "url": "https://www.boe.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "California State Auditor",
+   "url": "https://www.auditor.ca.gov",
+   "kind": "other"
+  },
+  {
+   "name": "California Department of Alcoholic Beverage Control",
+   "url": "https://www.abc.ca.gov",
+   "kind": "government"
+  },
+  {
+   "name": "California Department of Fish and Wildlife",
+   "url": "https://wildlife.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Supreme Court of California",
+   "url": "https://supreme.courts.ca.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Superior Court of California, County of San Francisco",
+   "url": "https://sf.courts.ca.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "California Office of Administrative Law",
+   "url": "https://oal.ca.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "California Code of Regulations (Westlaw)",
+   "url": "https://govt.westlaw.com/calregs/Index",
+   "kind": "legislation"
+  },
+  {
+   "name": "California Employment Development Department",
+   "url": "https://edd.ca.gov",
+   "kind": "government"
+  },
+  {
+   "name": "California Department of Finance",
+   "url": "https://dof.ca.gov",
+   "kind": "government"
+  },
+  {
+   "name": "California Courts",
+   "url": "https://courts.ca.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "California Environmental Protection Agency (CalEPA)",
+   "url": "https://calepa.ca.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "California Statutes",
+   "url": "https://www.leginfo.ca.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "California Legislative Information",
+   "url": "https://leginfo.legislature.ca.gov",
+   "kind": "legislation"
+  }
+ ],
+ "State of Colorado": [
+  {
+   "name": "Colorado Secretary of State",
+   "url": "https://www.sos.state.co.us",
+   "kind": "legislation"
+  },
+  {
+   "name": "Colorado Code of Regulations",
+   "url": "https://www.coloradosos.gov/pubs/CCR/CCRHome.html",
+   "kind": "legislation"
+  },
+  {
+   "name": "Colorado Judicial Branch",
+   "url": "https://www.coloradojudicial.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Colorado General Assembly",
+   "url": "https://leg.colorado.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Connecticut": [
+  {
+   "name": "Connecticut eRegulations System",
+   "url": "https://eregulations.ct.gov/eRegsPortal",
+   "kind": "regulator"
+  },
+  {
+   "name": "Connecticut Judicial Branch",
+   "url": "https://jud.ct.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Connecticut General Assembly",
+   "url": "https://www.cga.ct.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Delaware": [
+  {
+   "name": "Delaware Office of the State Bank Commissioner",
+   "url": "https://banking.delaware.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Delaware Department of Insurance",
+   "url": "https://insurance.delaware.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Delaware Department of Justice (Attorney General)",
+   "url": "https://attorneygeneral.delaware.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Delaware Register of Regulations",
+   "url": "https://regulations.delaware.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Delaware Division of Corporations",
+   "url": "https://corp.delaware.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Delaware Courts",
+   "url": "https://courts.delaware.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Delaware General Assembly",
+   "url": "https://legis.delaware.gov",
+   "kind": "parliament"
+  },
+  {
+   "name": "Delaware Code",
+   "url": "https://delcode.delaware.gov",
+   "kind": "legislation"
+  }
+ ],
+ "State of Florida": [
+  {
+   "name": "Florida Office of Financial Regulation",
+   "url": "https://flofr.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Florida Office of Insurance Regulation",
+   "url": "https://floir.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Florida Attorney General",
+   "url": "https://www.myfloridalegal.com",
+   "kind": "other"
+  },
+  {
+   "name": "Florida Administrative Code and Register",
+   "url": "https://www.flrules.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Florida Courts",
+   "url": "https://www.flcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Florida House",
+   "url": "https://flhouse.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Florida Senate",
+   "url": "https://www.flsenate.gov",
+   "kind": "parliament"
+  },
+  {
+   "name": "Florida Statutes & Constitution",
+   "url": "https://www.leg.state.fl.us",
+   "kind": "legislation"
+  }
+ ],
+ "State of Georgia": [
+  {
+   "name": "Georgia Secretary of State - Rules and Regulations",
+   "url": "https://rules.sos.ga.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Georgia Courts",
+   "url": "https://georgiacourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Georgia General Assembly",
+   "url": "https://www.legis.ga.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Hawaii": [
+  {
+   "name": "Hawaii State Judiciary",
+   "url": "https://www.courts.state.hi.us",
+   "kind": "courts"
+  },
+  {
+   "name": "Hawaii Legislature",
+   "url": "https://www.capitol.hawaii.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Idaho": [
+  {
+   "name": "Idaho Administrative Rules",
+   "url": "https://adminrules.idaho.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Idaho Supreme Court",
+   "url": "https://isc.idaho.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Idaho Legislature",
+   "url": "https://legislature.idaho.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Illinois": [
+  {
+   "name": "Illinois Department of Financial and Professional Regulation (IDFPR)",
+   "url": "https://idfpr.illinois.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Illinois Department of Insurance",
+   "url": "https://idoi.illinois.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Illinois Attorney General",
+   "url": "https://illinoisattorneygeneral.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Illinois Register",
+   "url": "https://www.ilsos.gov/departments/index/register/home.html",
+   "kind": "regulator"
+  },
+  {
+   "name": "Illinois Administrative Code (Cornell LII)",
+   "url": "https://www.law.cornell.edu/regulations/illinois",
+   "kind": "legislation"
+  },
+  {
+   "name": "Illinois Administrative Code",
+   "url": "https://www.ilga.gov/agencies/JCAR/AdminCode",
+   "kind": "legislation"
+  },
+  {
+   "name": "Illinois Courts",
+   "url": "https://www.illinoiscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Illinois General Assembly",
+   "url": "https://www.ilga.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Indiana": [
+  {
+   "name": "Indiana Administrative Code",
+   "url": "https://iar.iga.in.gov/code",
+   "kind": "legislation"
+  },
+  {
+   "name": "Indiana Judicial Branch",
+   "url": "https://www.in.gov/courts",
+   "kind": "courts"
+  },
+  {
+   "name": "Indiana General Assembly",
+   "url": "https://iga.in.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Iowa": [
+  {
+   "name": "Iowa Judicial Branch",
+   "url": "https://www.iowacourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Iowa Legislature",
+   "url": "https://www.legis.iowa.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Kansas": [
+  {
+   "name": "Kansas Courts",
+   "url": "https://kscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Kansas Office of the Revisor of Statutes",
+   "url": "https://www.ksrevisor.org",
+   "kind": "legislation"
+  },
+  {
+   "name": "Kansas Legislature",
+   "url": "https://www.kslegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Louisiana": [
+  {
+   "name": "Louisiana Administrative Code",
+   "url": "https://www.doa.la.gov/doa/osr/louisiana-administrative-code",
+   "kind": "legislation"
+  },
+  {
+   "name": "Louisiana Supreme Court",
+   "url": "https://www.lasc.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Louisiana Legislature",
+   "url": "https://www.legis.la.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Maine": [
+  {
+   "name": "Maine Judicial Branch",
+   "url": "https://www.courts.maine.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Maine Legislature",
+   "url": "https://legislature.maine.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Maryland": [
+  {
+   "name": "Code of Maryland Regulations (COMAR)",
+   "url": "https://regs.maryland.gov/us/md/exec/comar",
+   "kind": "legislation"
+  },
+  {
+   "name": "Maryland Courts",
+   "url": "https://www.mdcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Maryland General Assembly",
+   "url": "https://mgaleg.maryland.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Michigan": [
+  {
+   "name": "Michigan Courts",
+   "url": "https://www.courts.michigan.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Michigan Legislature",
+   "url": "https://www.legislature.mi.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Minnesota": [
+  {
+   "name": "Minnesota Judicial Branch",
+   "url": "https://mncourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Minnesota Office of the Revisor of Statutes",
+   "url": "https://www.revisor.mn.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Minnesota Legislature",
+   "url": "https://www.leg.mn.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Mississippi": [
+  {
+   "name": "Mississippi Administrative Code",
+   "url": "https://www.sos.ms.gov/regulation-enforcement/administrative-procedures",
+   "kind": "legislation"
+  },
+  {
+   "name": "Mississippi Judiciary",
+   "url": "https://courts.ms.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Mississippi Legislature",
+   "url": "https://www.legislature.ms.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Missouri": [
+  {
+   "name": "Missouri Courts",
+   "url": "https://www.courts.mo.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Missouri Revisor of Statutes",
+   "url": "https://revisor.mo.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Missouri General Assembly",
+   "url": "https://www.moga.mo.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Montana": [
+  {
+   "name": "Montana Administrative Rules",
+   "url": "https://rules.mt.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Montana Judicial Branch",
+   "url": "https://courts.mt.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Montana Legislature",
+   "url": "https://www.legmt.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Nebraska": [
+  {
+   "name": "Nebraska Rules and Regulations",
+   "url": "https://rules.nebraska.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Nebraska Judicial Branch",
+   "url": "https://nebraskajudicial.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Nebraska Legislature",
+   "url": "https://nebraskalegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Nevada": [
+  {
+   "name": "Nevada State Board of Pharmacy",
+   "url": "https://www.bop.nv.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Nevada Administrative Code",
+   "url": "https://www.leg.state.nv.us/nac",
+   "kind": "legislation"
+  },
+  {
+   "name": "Nevada Judiciary",
+   "url": "https://nvcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Nevada Legislature",
+   "url": "https://www.leg.state.nv.us",
+   "kind": "parliament"
+  }
+ ],
+ "State of New Hampshire": [
+  {
+   "name": "New Hampshire Administrative Rules",
+   "url": "https://gc.nh.gov/rules",
+   "kind": "government"
+  },
+  {
+   "name": "New Hampshire Judicial Branch",
+   "url": "https://www.courts.nh.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "New Hampshire General Court",
+   "url": "https://www.gencourt.state.nh.us",
+   "kind": "courts"
+  }
+ ],
+ "State of New Jersey": [
+  {
+   "name": "New Jersey Administrative Code (Cornell LII)",
+   "url": "https://www.law.cornell.edu/regulations/new-jersey",
+   "kind": "legislation"
+  },
+  {
+   "name": "New Jersey Division of Consumer Affairs",
+   "url": "https://www.njconsumeraffairs.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "New Jersey Department of Banking and Insurance (DOBI)",
+   "url": "https://www.nj.gov/dobi",
+   "kind": "regulator"
+  },
+  {
+   "name": "New Jersey Office of the Attorney General",
+   "url": "https://www.njoag.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "New Jersey Courts",
+   "url": "https://www.njcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "New Jersey Legislature",
+   "url": "https://www.njleg.state.nj.us",
+   "kind": "parliament"
+  }
+ ],
+ "State of New Mexico": [
+  {
+   "name": "New Mexico Administrative Code",
+   "url": "https://www.srca.nm.gov/nmac-home",
+   "kind": "legislation"
+  },
+  {
+   "name": "New Mexico Courts",
+   "url": "https://nmcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "New Mexico Legislature",
+   "url": "https://www.nmlegis.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of New York": [
+  {
+   "name": "New York State Register",
+   "url": "https://dos.ny.gov/state-register",
+   "kind": "regulator"
+  },
+  {
+   "name": "New York State Department of Financial Services (DFS)",
+   "url": "https://www.dfs.ny.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "CourtListener (New York reporters)",
+   "url": "https://www.courtlistener.com/c/ny3d",
+   "kind": "courts"
+  },
+  {
+   "name": "New York Codes, Rules and Regulations (Westlaw)",
+   "url": "https://govt.westlaw.com/nycrr/Index",
+   "kind": "regulator"
+  },
+  {
+   "name": "New York State Gaming Commission",
+   "url": "https://gaming.ny.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "New York State Attorney General",
+   "url": "https://ag.ny.gov",
+   "kind": "other"
+  },
+  {
+   "name": "New York State Unified Court System",
+   "url": "https://www.nycourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "New York Courts",
+   "url": "https://www.nycourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "New York Open Legislation API",
+   "url": "https://legislation.nysenate.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "New York State Library",
+   "url": "https://nysl.nysed.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "New York State Assembly",
+   "url": "https://www.assembly.state.ny.us",
+   "kind": "parliament"
+  },
+  {
+   "name": "New York State Senate",
+   "url": "https://www.nysenate.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of North Carolina": [
+  {
+   "name": "Office of Administrative Hearings",
+   "url": "https://www.oah.nc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "North Carolina General Assembly",
+   "url": "https://www.ncleg.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of North Dakota": [
+  {
+   "name": "North Dakota Administrative Code",
+   "url": "https://ndlegis.gov/prod/agency-rules/north-dakota-administrative-code",
+   "kind": "legislation"
+  },
+  {
+   "name": "North Dakota Court System",
+   "url": "https://www.ndcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "North Dakota Legislative Branch",
+   "url": "https://www.ndlegis.gov",
+   "kind": "legislation"
+  }
+ ],
+ "State of Ohio": [
+  {
+   "name": "Ohio Board of Pharmacy",
+   "url": "https://www.pharmacy.ohio.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Supreme Court of Ohio",
+   "url": "https://www.supremecourt.ohio.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Ohio Laws and Rules",
+   "url": "https://codes.ohio.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ohio Legislature",
+   "url": "https://www.legislature.ohio.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Oklahoma": [
+  {
+   "name": "Oklahoma Administrative Code",
+   "url": "https://rules.ok.gov/code",
+   "kind": "legislation"
+  },
+  {
+   "name": "Oklahoma State Courts Network",
+   "url": "https://www.oscn.net",
+   "kind": "courts"
+  },
+  {
+   "name": "Oklahoma Legislature",
+   "url": "https://www.oklegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Oregon": [
+  {
+   "name": "Oregon Administrative Rules",
+   "url": "https://secure.sos.state.or.us/oard",
+   "kind": "government"
+  },
+  {
+   "name": "Oregon Judicial Department",
+   "url": "https://www.courts.oregon.gov/pages/default.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "Oregon State Legislature",
+   "url": "https://www.oregonlegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Rhode Island": [
+  {
+   "name": "Rhode Island Code of Regulations",
+   "url": "https://rules.sos.ri.gov/organizations",
+   "kind": "legislation"
+  },
+  {
+   "name": "Rhode Island Judiciary",
+   "url": "https://www.courts.ri.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Rhode Island General Assembly",
+   "url": "http://www.rilegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of South Carolina": [
+  {
+   "name": "South Carolina Code of State Regulations",
+   "url": "https://www.scstatehouse.gov/coderegs/statmast.php",
+   "kind": "legislation"
+  },
+  {
+   "name": "South Carolina Judicial Branch",
+   "url": "https://www.sccourts.org",
+   "kind": "courts"
+  },
+  {
+   "name": "South Carolina Legislature",
+   "url": "https://www.scstatehouse.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of South Dakota": [
+  {
+   "name": "South Dakota Administrative Rules",
+   "url": "https://rules.sd.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "South Dakota Unified Judicial System",
+   "url": "https://ujs.sd.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "South Dakota Legislature",
+   "url": "https://sdlegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Tennessee": [
+  {
+   "name": "Tennessee Rules and Regulations",
+   "url": "https://sos.tn.gov/publications/services/effective-rules-and-regulations-of-the-state-of-tennessee",
+   "kind": "regulator"
+  },
+  {
+   "name": "Tennessee Courts",
+   "url": "https://www.tncourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Tennessee General Assembly",
+   "url": "https://www.capitol.tn.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Texas": [
+  {
+   "name": "Texas Department of Banking",
+   "url": "https://www.dob.texas.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Texas Department of Insurance",
+   "url": "https://www.tdi.texas.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Texas Attorney General",
+   "url": "https://www.texasattorneygeneral.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Texas Administrative Code",
+   "url": "https://texas-sos.appianportalsgov.com",
+   "kind": "legislation"
+  },
+  {
+   "name": "Texas Register",
+   "url": "https://www.sos.state.tx.us/texreg/index.shtml",
+   "kind": "regulator"
+  },
+  {
+   "name": "Texas Judicial Branch",
+   "url": "https://www.txcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Texas Real Estate Commission",
+   "url": "https://www.trec.texas.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Texas Legislative Council",
+   "url": "https://tlc.texas.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Texas Legislature",
+   "url": "https://capitol.texas.gov",
+   "kind": "parliament"
+  },
+  {
+   "name": "Texas Constitution & Statutes",
+   "url": "https://statutes.capitol.texas.gov",
+   "kind": "legislation"
+  }
+ ],
+ "State of Utah": [
+  {
+   "name": "Utah Department of Commerce",
+   "url": "https://commerce.utah.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Utah Administrative Rules",
+   "url": "https://rules.utah.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Utah State Courts",
+   "url": "https://www.utcourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Utah State Legislature",
+   "url": "https://le.utah.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Vermont": [
+  {
+   "name": "Vermont Judiciary",
+   "url": "https://www.vermontjudiciary.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Vermont General Assembly",
+   "url": "https://legislature.vermont.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Washington": [
+  {
+   "name": "Washington State Department of Financial Institutions",
+   "url": "https://dfi.wa.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Washington State Office of the Insurance Commissioner",
+   "url": "https://www.insurance.wa.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Washington State Attorney General",
+   "url": "https://www.atg.wa.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Washington Administrative Code",
+   "url": "https://app.leg.wa.gov/wac",
+   "kind": "legislation"
+  },
+  {
+   "name": "Washington State Courts",
+   "url": "https://www.courts.wa.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Washington State Legislature",
+   "url": "https://leg.wa.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of West Virginia": [
+  {
+   "name": "West Virginia Code of State Rules",
+   "url": "https://apps.sos.wv.gov/adlaw/csr",
+   "kind": "legislation"
+  },
+  {
+   "name": "West Virginia Judiciary",
+   "url": "https://www.courtswv.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "West Virginia Legislature",
+   "url": "https://www.wvlegislature.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Wisconsin": [
+  {
+   "name": "Wisconsin Secretary of State",
+   "url": "https://sos.wi.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Office of the Governor of Wisconsin",
+   "url": "https://evers.wi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Wisconsin Department of Agriculture, Trade and Consumer Protection",
+   "url": "https://datcp.wi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Wisconsin Administrative Code",
+   "url": "https://docs.legis.wisconsin.gov/code/admin_code",
+   "kind": "legislation"
+  },
+  {
+   "name": "Wisconsin Court System",
+   "url": "https://www.wicourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Wisconsin State Legislature",
+   "url": "https://legis.wisconsin.gov",
+   "kind": "parliament"
+  }
+ ],
+ "State of Wyoming": [
+  {
+   "name": "Wyoming Division of Banking",
+   "url": "https://wyomingbankingdivision.wyo.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Wyoming Stable Token Commission",
+   "url": "https://stabletoken.wyo.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Wyoming Department of Health",
+   "url": "https://health.wyo.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Wyoming Administrative Rules",
+   "url": "https://rules.wyo.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Wyoming Judicial Branch",
+   "url": "https://www.wyocourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Wyoming Legislature",
+   "url": "https://wyoleg.gov",
+   "kind": "parliament"
+  }
+ ],
+ "Sudan": [
+  {
+   "name": "Government of Sudan",
+   "url": "https://sudan.gov.sd",
+   "kind": "government"
+  },
+  {
+   "name": "The Judiciary of Sudan",
+   "url": "https://sj.gov.sd",
+   "kind": "courts"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://www.moj.gov.sd",
+   "kind": "legislation"
+  }
+ ],
+ "Sweden": [
+  {
+   "name": "Arbetsmiljöverket",
+   "url": "https://www.av.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Diskrimineringsombudsmannen (DO)",
+   "url": "https://www.do.se",
+   "kind": "courts"
+  },
+  {
+   "name": "Myndigheten för civilt försvar (MCF)",
+   "url": "https://www.mcf.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Konsumentverket",
+   "url": "https://www.konsumentverket.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Integritetsskyddsmyndigheten (IMY)",
+   "url": "https://www.imy.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Post- och telestyrelsen (PTS)",
+   "url": "https://pts.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Svensk Försäkring",
+   "url": "https://www.svenskforsakring.se",
+   "kind": "other"
+  },
+  {
+   "name": "Skatteverket",
+   "url": "https://www.skatteverket.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Finansinspektionen",
+   "url": "https://www.fi.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Regeringskansliet",
+   "url": "https://www.regeringen.se",
+   "kind": "regulator"
+  },
+  {
+   "name": "Högsta förvaltningsdomstolen",
+   "url": "https://www.domstol.se/hogsta-forvaltningsdomstolen/avgoranden",
+   "kind": "courts"
+  },
+  {
+   "name": "Högsta domstolen",
+   "url": "https://www.domstol.se/hogsta-domstolen/avgoranden",
+   "kind": "courts"
+  },
+  {
+   "name": "Sveriges Domstolar",
+   "url": "https://www.domstol.se",
+   "kind": "courts"
+  },
+  {
+   "name": "Svensk författningssamling (SFS)",
+   "url": "https://svenskforfattningssamling.se",
+   "kind": "legislation"
+  },
+  {
+   "name": "Sveriges Riksdag",
+   "url": "https://www.riksdagen.se",
+   "kind": "parliament"
+  }
+ ],
+ "Switzerland": [
+  {
+   "name": "Open Caselaw",
+   "url": "https://opencaselaw.ch",
+   "kind": "courts"
+  },
+  {
+   "name": "Bundeskanzlei – Amtliche Sammlung (AS)",
+   "url": "https://www.fedlex.admin.ch/de/oc",
+   "kind": "legislation"
+  },
+  {
+   "name": "Parlament der Schweiz",
+   "url": "https://www.parlament.ch",
+   "kind": "parliament"
+  },
+  {
+   "name": "Bundesgericht (Federal Supreme Court)",
+   "url": "https://www.bger.ch",
+   "kind": "courts"
+  },
+  {
+   "name": "Fedlex",
+   "url": "https://www.fedlex.admin.ch",
+   "kind": "parliament"
+  }
+ ],
+ "Taiwan": [
+  {
+   "name": "Judicial Yuan Laws & Regulations",
+   "url": "https://legal.judicial.gov.tw/LAWENG/default.aspx",
+   "kind": "legislation"
+  },
+  {
+   "name": "Executive Yuan Gazette",
+   "url": "https://gazette.nat.gov.tw/egFront/indexEng.do",
+   "kind": "gazette"
+  },
+  {
+   "name": "Laws & Regulations Database (MOJ)",
+   "url": "https://law.moj.gov.tw/ENG/index.aspx",
+   "kind": "legislation"
+  }
+ ],
+ "Tajikistan": [
+  {
+   "name": "Tax Committee of Tajikistan",
+   "url": "https://andoz.tj",
+   "kind": "legislation"
+  },
+  {
+   "name": "National Bank of Tajikistan",
+   "url": "https://nbt.tj",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Justice of Tajikistan",
+   "url": "https://minjust.tj",
+   "kind": "government"
+  },
+  {
+   "name": "Majlisi Oli",
+   "url": "https://majlisi.tj",
+   "kind": "parliament"
+  },
+  {
+   "name": "Adlia",
+   "url": "https://adlia.tj",
+   "kind": "legislation"
+  }
+ ],
+ "Tanzania": [
+  {
+   "name": "Parliament of Tanzania",
+   "url": "https://www.parliament.go.tz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Ministry of Foreign Affairs",
+   "url": "https://www.foreign.go.tz",
+   "kind": "government"
+  },
+  {
+   "name": "TanzLII - Gazettes",
+   "url": "https://tanzlii.org/en/gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "TanzLII - Legislation",
+   "url": "https://tanzlii.org/en/legislation",
+   "kind": "legislation"
+  },
+  {
+   "name": "TanzLII - Judgments",
+   "url": "https://tanzlii.org/en/judgments",
+   "kind": "courts"
+  }
+ ],
+ "Thailand": [
+  {
+   "name": "Royal Thai Government Gazette",
+   "url": "https://ratchakitcha.soc.go.th",
+   "kind": "gazette"
+  },
+  {
+   "name": "National Assembly of Thailand",
+   "url": "https://www.parliament.go.th",
+   "kind": "parliament"
+  },
+  {
+   "name": "Thailand Central Law System",
+   "url": "https://www.law.go.th",
+   "kind": "legislation"
+  },
+  {
+   "name": "Office of the Attorney General of Thailand",
+   "url": "https://www.ago.go.th",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ministry of Labour of Thailand",
+   "url": "https://www.mol.go.th",
+   "kind": "government"
+  },
+  {
+   "name": "Ministry of Finance of Thailand",
+   "url": "https://www.mof.go.th",
+   "kind": "government"
+  },
+  {
+   "name": "Court of Justice of Thailand",
+   "url": "https://www.coj.go.th",
+   "kind": "courts"
+  },
+  {
+   "name": "Anti-Money Laundering Office (AMLO)",
+   "url": "https://www.amlo.go.th",
+   "kind": "regulator"
+  },
+  {
+   "name": "Siam Legal Library",
+   "url": "https://library.siam-legal.com/laws-of-thailand",
+   "kind": "legislation"
+  },
+  {
+   "name": "Thai Embassy Legal",
+   "url": "https://www.thaiembassy.com/legal",
+   "kind": "legislation"
+  },
+  {
+   "name": "Thailand Law Online",
+   "url": "https://www.thailandlawonline.com/table/laws-in-thailand",
+   "kind": "legislation"
+  }
+ ],
+ "Thuringia": [
+  {
+   "name": "Thüringer Verwaltungsgerichtsbarkeit",
+   "url": "https://verwaltungsgerichte.thueringen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Thüringer Oberlandesgericht",
+   "url": "https://gerichte.thueringen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Thüringer Verfassungsgerichtshof",
+   "url": "https://verfassungsgerichtshof.thueringen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Thüringer Ministerium für Justiz, Migration und Verbraucherschutz",
+   "url": "https://justiz.thueringen.de",
+   "kind": "government"
+  },
+  {
+   "name": "Thüringer Landtag",
+   "url": "https://www.thueringer-landtag.de",
+   "kind": "parliament"
+  },
+  {
+   "name": "Landesrecht Thüringen",
+   "url": "https://landesrecht.thueringen.de",
+   "kind": "courts"
+  },
+  {
+   "name": "Thüringer Landesbeauftragter für den Datenschutz und die Informationsfreiheit (TLfDI)",
+   "url": "https://tlfdi.de",
+   "kind": "regulator"
+  }
+ ],
+ "Trinidad and Tobago": [
+  {
+   "name": "Registrar General’s Department of Trinidad and Tobago",
+   "url": "https://rgd.legalaffairs.gov.tt",
+   "kind": "government"
+  },
+  {
+   "name": "Attorney General and Ministry of Legal Affairs",
+   "url": "https://agla.gov.tt",
+   "kind": "legislation"
+  },
+  {
+   "name": "Parliament of Trinidad and Tobago",
+   "url": "https://www.ttparliament.org",
+   "kind": "parliament"
+  },
+  {
+   "name": "Judiciary of Trinidad and Tobago",
+   "url": "https://www.ttlawcourts.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Revised Laws of Trinidad and Tobago",
+   "url": "https://laws.gov.tt/ttdll-web2/revision/bytitle",
+   "kind": "legislation"
+  },
+  {
+   "name": "Digital Legislative Library of Trinidad and Tobago",
+   "url": "https://laws.gov.tt",
+   "kind": "legislation"
+  }
+ ],
+ "Tunisia": [
+  {
+   "name": "Présidence du Gouvernement",
+   "url": "https://pm.gov.tn",
+   "kind": "legislation"
+  },
+  {
+   "name": "Assemblée des représentants du peuple (ARP)",
+   "url": "https://www.arp.tn",
+   "kind": "parliament"
+  },
+  {
+   "name": "Ministère de la Justice",
+   "url": "https://www.justice.gov.tn",
+   "kind": "legislation"
+  }
+ ],
+ "Turkey": [
+  {
+   "name": "Kişisel Verileri Koruma Kurumu (KVKK)",
+   "url": "https://www.kvkk.gov.tr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Adalet Bakanlığı",
+   "url": "https://www.adalet.gov.tr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Bilgi Teknolojileri ve İletişim Kurumu (BTK)",
+   "url": "https://www.btk.gov.tr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Bankacılık Düzenleme ve Denetleme Kurumu (BDDK)",
+   "url": "https://www.bddk.org.tr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Grand National Assembly of Turkey (TBMM)",
+   "url": "https://www.tbmm.gov.tr",
+   "kind": "parliament"
+  },
+  {
+   "name": "Mevzuat - Gazette Publications",
+   "url": "https://mevzuat.gov.tr",
+   "kind": "gazette"
+  },
+  {
+   "name": "Mevzuat - Bylaws (Tüzükler)",
+   "url": "https://mevzuat.gov.tr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Mevzuat - Laws (Kanunlar)",
+   "url": "https://mevzuat.gov.tr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Mevzuat Bilgi Sistemi",
+   "url": "https://mevzuat.gov.tr",
+   "kind": "legislation"
+  },
+  {
+   "name": "Resmî Gazete",
+   "url": "https://www.resmigazete.gov.tr",
+   "kind": "gazette"
+  }
+ ],
+ "U.S. Virgin Islands": [
+  {
+   "name": "Public Services Commission (PSC)",
+   "url": "https://psc.vi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Department of Planning and Natural Resources (DPNR)",
+   "url": "https://dpnr.vi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office of Cannabis Regulation",
+   "url": "https://ocr.vi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office of the Lieutenant Governor",
+   "url": "https://ltg.gov.vi",
+   "kind": "regulator"
+  },
+  {
+   "name": "Government of the United States Virgin Islands",
+   "url": "https://www.vi.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "District Court of the Virgin Islands",
+   "url": "https://www.vid.uscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Superior Court of the Virgin Islands",
+   "url": "https://superior.vicourts.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of the Virgin Islands",
+   "url": "https://supreme.vicourts.org",
+   "kind": "courts"
+  },
+  {
+   "name": "Legislature of the Virgin Islands",
+   "url": "https://www.legvi.org",
+   "kind": "parliament"
+  }
+ ],
+ "Uganda": [
+  {
+   "name": "Uganda Law Reform Commission",
+   "url": "https://ulrc.go.ug",
+   "kind": "legislation"
+  },
+  {
+   "name": "Judiciary of Uganda",
+   "url": "https://judicature.go.ug",
+   "kind": "courts"
+  },
+  {
+   "name": "Parliament of Uganda",
+   "url": "https://www.parliament.go.ug",
+   "kind": "parliament"
+  },
+  {
+   "name": "Uganda Legal Information Institute - Gazettes",
+   "url": "https://ulii.org/en/gazettes",
+   "kind": "gazette"
+  },
+  {
+   "name": "Uganda Legal Information Institute - Judgments",
+   "url": "https://ulii.org/en/judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "Uganda Legal Information Institute - Legislation",
+   "url": "https://ulii.org/en/legislation",
+   "kind": "legislation"
+  }
+ ],
+ "Ukraine": [
+  {
+   "name": "Legislation of Ukraine",
+   "url": "https://zakon.rada.gov.ua/laws/main/en",
+   "kind": "legislation"
+  },
+  {
+   "name": "Unified State Register of Court Decisions",
+   "url": "https://reyestr.court.gov.ua",
+   "kind": "courts"
+  },
+  {
+   "name": "Verkhovna Rada of Ukraine (Parliament)",
+   "url": "https://www.rada.gov.ua/en",
+   "kind": "parliament"
+  }
+ ],
+ "United Arab Emirates": [
+  {
+   "name": "UAE Federal Legislation",
+   "url": "https://www.uaelegislation.gov.ae",
+   "kind": "legislation"
+  },
+  {
+   "name": "Capital Market Authority (formerly Securities and Commodities Authority)",
+   "url": "https://www.uaecma.gov.ae",
+   "kind": "regulator"
+  },
+  {
+   "name": "UAE Ministry of Economy and Tourism",
+   "url": "https://www.moet.gov.ae",
+   "kind": "government"
+  },
+  {
+   "name": "UAE Cabinet",
+   "url": "https://uaecabinet.ae",
+   "kind": "government"
+  },
+  {
+   "name": "UAE Accountability Authority",
+   "url": "https://uaeaa.gov.ae",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Committee for Combating Money Laundering (NAMLCFTC)",
+   "url": "https://namlcftc.gov.ae",
+   "kind": "regulator"
+  },
+  {
+   "name": "Central Bank of the UAE",
+   "url": "https://centralbank.ae",
+   "kind": "regulator"
+  },
+  {
+   "name": "Abu Dhabi Policies and Legislations",
+   "url": "https://www.abudhabi.gov.ae/en/policies-and-legislations",
+   "kind": "gazette"
+  },
+  {
+   "name": "Sharjah Government Legislations",
+   "url": "https://legaldpt.shj.ae/legislations",
+   "kind": "legislation"
+  },
+  {
+   "name": "Ras Al Khaimah Legislation Search",
+   "url": "https://www.rak.ae/wps/portal/rak/legislative-committee/legislation-search",
+   "kind": "legislation"
+  },
+  {
+   "name": "ADGM Regulations and Rules",
+   "url": "https://www.adgm.com/legal-framework/rules-and-regulations",
+   "kind": "courts"
+  },
+  {
+   "name": "DIFC Legal Database",
+   "url": "https://www.difc.com/business/laws-and-regulations/legal-database",
+   "kind": "legislation"
+  },
+  {
+   "name": "ADGM Courts Judgments",
+   "url": "https://www.adgm.com/adgm-courts/judgments",
+   "kind": "courts"
+  },
+  {
+   "name": "DIFC Courts Judgments & Orders",
+   "url": "https://www.difccourts.ae/rules-decisions/judgments-orders",
+   "kind": "courts"
+  },
+  {
+   "name": "Abu Dhabi Judicial Department",
+   "url": "https://www.adjd.gov.ae",
+   "kind": "courts"
+  },
+  {
+   "name": "Dubai Courts",
+   "url": "https://www.dc.gov.ae",
+   "kind": "courts"
+  },
+  {
+   "name": "UAE Government Portal",
+   "url": "https://u.ae",
+   "kind": "legislation"
+  },
+  {
+   "name": "UAE Federal Supreme Court",
+   "url": "https://www.moj.gov.ae/en/about-moj/union-supreme-court/e-services/court-technical-office-publications.aspx",
+   "kind": "courts"
+  },
+  {
+   "name": "UAE Federal Laws Portal",
+   "url": "https://www.moj.gov.ae/en/laws.aspx",
+   "kind": "legislation"
+  },
+  {
+   "name": "UAE Official Gazette",
+   "url": "https://www.moj.gov.ae",
+   "kind": "gazette"
+  }
+ ],
+ "United States": [
+  {
+   "name": "The White House",
+   "url": "https://www.whitehouse.gov",
+   "kind": "government"
+  },
+  {
+   "name": "International Trade Commission (USITC)",
+   "url": "https://www.usitc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "United States Courts",
+   "url": "https://www.uscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "United States Court of Appeals for Veterans Claims",
+   "url": "https://www.uscourts.cavc.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "US Citizenship and Immigration Services (USCIS)",
+   "url": "https://www.uscis.gov",
+   "kind": "other"
+  },
+  {
+   "name": "United States Court of Federal Claims",
+   "url": "https://www.uscfc.uscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Department of Transportation (DOT)",
+   "url": "https://www.transportation.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Department of State",
+   "url": "https://www.state.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Securities and Exchange Commission (SEC)",
+   "url": "https://www.sec.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Occupational Safety and Health Administration (OSHA)",
+   "url": "https://www.osha.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Office of Government Ethics (OGE)",
+   "url": "https://www.oge.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office of the Comptroller of the Currency (OCC)",
+   "url": "https://www.occ.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Transportation Safety Board (NTSB)",
+   "url": "https://www.ntsb.gov",
+   "kind": "other"
+  },
+  {
+   "name": "National Telecommunications and Information Administration (NTIA)",
+   "url": "https://www.ntia.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Institute of Standards and Technology (NIST)",
+   "url": "https://www.nist.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Institutes of Health (NIH)",
+   "url": "https://www.nih.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "National Highway Traffic Safety Administration (NHTSA)",
+   "url": "https://www.nhtsa.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Merit Systems Protection Board (MSPB)",
+   "url": "https://www.mspb.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Federal Trade Commission (FTC)",
+   "url": "https://www.ftc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Federal Maritime Commission (FMC)",
+   "url": "https://www.fmc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "FINRA",
+   "url": "https://www.finra.org",
+   "kind": "regulator"
+  },
+  {
+   "name": "Federal Housing Finance Agency (FHFA)",
+   "url": "https://www.fhfa.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Food and Drug Administration (FDA)",
+   "url": "https://www.fda.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Federal Communications Commission (FCC)",
+   "url": "https://www.fcc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Environmental Protection Agency (EPA)",
+   "url": "https://www.epa.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Department of Energy (DOE)",
+   "url": "https://www.energy.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Equal Employment Opportunity Commission (EEOC)",
+   "url": "https://www.eeoc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "eCFR",
+   "url": "https://www.ecfr.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Department of Labor (DOL)",
+   "url": "https://www.dol.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Department of the Interior (DOI)",
+   "url": "https://www.doi.gov",
+   "kind": "government"
+  },
+  {
+   "name": "Consumer Financial Protection Bureau (CFPB)",
+   "url": "https://www.consumerfinance.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Centers for Medicare & Medicaid Services (CMS)",
+   "url": "https://www.cms.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Centers for Disease Control and Prevention (CDC)",
+   "url": "https://www.cdc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Customs and Border Protection (CBP)",
+   "url": "https://www.cbp.gov",
+   "kind": "other"
+  },
+  {
+   "name": "Animal and Plant Health Inspection Service (APHIS)",
+   "url": "https://www.aphis.usda.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Federal Railroad Administration (FRA)",
+   "url": "https://railroads.dot.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Office of Special Counsel (OSC)",
+   "url": "https://osc.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "Library of Congress – Law Library",
+   "url": "https://law.gov",
+   "kind": "parliament"
+  },
+  {
+   "name": "Regulations.gov",
+   "url": "https://www.regulations.gov",
+   "kind": "regulator"
+  },
+  {
+   "name": "PACER",
+   "url": "https://pacer.uscourts.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "Supreme Court of the United States (SCOTUS)",
+   "url": "https://www.supremecourt.gov",
+   "kind": "courts"
+  },
+  {
+   "name": "United States Code (USC)",
+   "url": "https://uscode.house.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Federal Register",
+   "url": "https://www.federalregister.gov",
+   "kind": "other"
+  },
+  {
+   "name": "GovInfo (GPO)",
+   "url": "https://www.govinfo.gov",
+   "kind": "legislation"
+  },
+  {
+   "name": "Congress.gov",
+   "url": "https://www.congress.gov",
+   "kind": "parliament"
+  }
+ ],
+ "Uruguay": [
+  {
+   "name": "Attorney General's Office of Uruguay",
+   "url": "https://www.gub.uy/fiscalia-general-nacion",
+   "kind": "regulator"
+  },
+  {
+   "name": "Parliament of Uruguay - Pending Bills",
+   "url": "https://parlamento.gub.uy/documentosyleyes/proyectos-entrados",
+   "kind": "parliament"
+  },
+  {
+   "name": "Parliament of Uruguay - Legislation",
+   "url": "https://parlamento.gub.uy/documentosyleyes/leyes",
+   "kind": "parliament"
+  },
+  {
+   "name": "Official Gazette of Uruguay",
+   "url": "https://www.impo.com.uy/diariooficial",
+   "kind": "gazette"
+  },
+  {
+   "name": "Supreme Court of Uruguay - Case Search",
+   "url": "https://bjn.poderjudicial.gub.uy/BJNPUBLICA/busquedaSimple.seam",
+   "kind": "courts"
+  }
+ ],
+ "Uzbekistan": [
+  {
+   "name": "Ministry of Justice of Uzbekistan",
+   "url": "https://www.minjust.uz",
+   "kind": "government"
+  },
+  {
+   "name": "Supreme Court of Uzbekistan",
+   "url": "https://sud.uz",
+   "kind": "courts"
+  },
+  {
+   "name": "Oliy Majlis",
+   "url": "https://parliament.gov.uz",
+   "kind": "parliament"
+  },
+  {
+   "name": "Norma.uz",
+   "url": "https://www.norma.uz",
+   "kind": "legislation"
+  },
+  {
+   "name": "Lex.uz",
+   "url": "https://lex.uz",
+   "kind": "legislation"
+  }
+ ],
+ "Venezuela": [
+  {
+   "name": "National Assembly - Pending Bills",
+   "url": "https://www.asambleanacional.gob.ve/leyes/proyectos",
+   "kind": "parliament"
+  },
+  {
+   "name": "National Assembly - Enacted Laws",
+   "url": "https://www.asambleanacional.gob.ve/leyes/vigentes",
+   "kind": "parliament"
+  },
+  {
+   "name": "Official Gazette of Venezuela",
+   "url": "http://www.gacetaoficial.gob.ve",
+   "kind": "gazette"
+  },
+  {
+   "name": "Supreme Tribunal of Justice - Court Decisions",
+   "url": "https://www.tsj.gob.ve/es/decisiones",
+   "kind": "courts"
+  }
+ ],
+ "Vietnam": [
+  {
+   "name": "Công báo Chính phủ",
+   "url": "https://congbao.chinhphu.vn",
+   "kind": "gazette"
+  },
+  {
+   "name": "Thu Vien Phap Luat",
+   "url": "https://thuvienphapluat.vn/en/index.aspx",
+   "kind": "other"
+  },
+  {
+   "name": "Ministry of Justice",
+   "url": "https://moj.gov.vn/portal/van-ban/vb-chi-dao-dieu-hanh.html",
+   "kind": "government"
+  },
+  {
+   "name": "Cổng Thông Tin Pháp Luật",
+   "url": "https://phapluat.gov.vn",
+   "kind": "legislation"
+  }
+ ],
+ "Walloon Region": [
+  {
+   "name": "CWaPE",
+   "url": "https://www.cwape.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "SPW Intérieur et Action sociale",
+   "url": "https://interieur.wallonie.be",
+   "kind": "regulator"
+  },
+  {
+   "name": "SPW Économie, Emploi, Recherche",
+   "url": "https://emploi.wallonie.be",
+   "kind": "other"
+  },
+  {
+   "name": "SPW Finances",
+   "url": "https://finances.wallonie.be",
+   "kind": "other"
+  },
+  {
+   "name": "SPW Territoire, Logement, Patrimoine, Énergie",
+   "url": "https://territoire.wallonie.be",
+   "kind": "legislation"
+  },
+  {
+   "name": "SPW Agriculture, Ressources naturelles et Environnement",
+   "url": "https://environnement.wallonie.be",
+   "kind": "legislation"
+  },
+  {
+   "name": "Wallonie.be",
+   "url": "https://www.wallonie.be",
+   "kind": "government"
+  },
+  {
+   "name": "Parlement de Wallonie",
+   "url": "https://www.parlement-wallonie.be",
+   "kind": "parliament"
+  },
+  {
+   "name": "Wallex",
+   "url": "https://wallex.wallonie.be",
+   "kind": "legislation"
+  }
+ ],
+ "Zimbabwe": [
+  {
+   "name": "ZERA",
+   "url": "https://www.zera.co.zw",
+   "kind": "regulator"
+  },
+  {
+   "name": "Judicial Service Commission",
+   "url": "https://www.jsc.org.zw",
+   "kind": "courts"
+  },
+  {
+   "name": "ZimLII - Legislation",
+   "url": "https://zimlii.org/legislation",
+   "kind": "legislation"
+  },
+  {
+   "name": "ZimLII",
+   "url": "https://zimlii.org",
+   "kind": "courts"
+  }
+ ]
+}

@@ -1,0 +1,59 @@
+/* The lavender signature: the one layer this product adds on top of the reference's stylesheets, and colour only —
+   a gradient on the primaries and the «New agent» tile, a gradient on the emphasised word of the titles, tinted
+   shadows under the surfaces. No layout, no markup. */
+.nomos-btn.is-primary:not(:disabled),
+.nm-nav-actions .nm-nav-row.nm-nav-new,
+.mn-agent-chat.is-home .mn-agent-send:not(:disabled),
+.mn-agents-grid > li:hover .mn-agent-use,
+.mn-agent-use:hover {
+  border-color: transparent;
+  background-color: var(--brand-gold);
+  background-image: var(--brand-gradient);
+  color: var(--brand-on-gold);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .22), 0 1px 2px rgba(38, 30, 78, .22), 0 8px 18px -10px rgba(115, 82, 232, .6);
+}
+.nomos-btn.is-primary:hover:not(:disabled),
+.nm-nav-actions .nm-nav-row.nm-nav-new:hover,
+.mn-agent-chat.is-home .mn-agent-send:hover:not(:disabled) {
+  border-color: transparent;
+  background-color: var(--brand-gold-hover);
+  background-image: var(--brand-gradient-hover);
+  color: var(--brand-on-gold);
+}
+.nomos-btn.is-primary:active:not(:disabled),
+.nm-nav-actions .nm-nav-row.nm-nav-new:active { box-shadow: inset 0 1px 2px rgba(38, 30, 78, .25); }
+
+/* The emphasised word of a title («Facility agreement *review*», «the agent you *need*») and the wordmark. */
+.mn-agent-home-title em,
+.nm-nav-wordmark em {
+  color: var(--brand-gold);
+  background-image: var(--brand-gradient-text);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Surfaces lift from the pearl canvas with a lavender-tinted edge instead of a grey one. */
+.mn-agents-grid > li { box-shadow: 0 1px 2px rgba(38, 30, 78, .04); }
+.mn-agents-grid > li:hover { border-color: rgba(115, 82, 232, .38); box-shadow: 0 14px 30px -18px rgba(38, 30, 78, .32), 0 1px 2px rgba(38, 30, 78, .05); }
+.mn-agent-side, .nomos-home-panel { box-shadow: 0 1px 2px rgba(38, 30, 78, .04); }
+
+/* The rail's active row carries the accent as a soft fill and a deep icon, not a flat tint. */
+.nm-nav-row.is-active { background: linear-gradient(90deg, rgba(115, 82, 232, .14), rgba(115, 82, 232, .07)); }
+
+@media (forced-colors: active) {
+  .nomos-btn.is-primary, .nm-nav-actions .nm-nav-row.nm-nav-new, .mn-agent-home-title em, .nm-nav-wordmark em { background-image: none; -webkit-text-fill-color: unset; color: ButtonText; }
+}
+
+/* Each page settles in as it mounts: a short fade and a 4px rise, on the motion tokens (zero under reduced motion). */
+@keyframes ap-page-in { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: none; } }
+.nomos-stage > .nomos-tool-scroll { animation: ap-page-in var(--brand-motion-panel) var(--brand-ease) both; }
+@media (prefers-reduced-motion: reduce) { .nomos-stage > .nomos-tool-scroll { animation: none; } }
+
+/* Scrollbars (6 Nov 2026, his request: the practice-area panel's bar was «too thick and ugly grey»): every scrolling
+   region gets a slim lavender-grey thumb on no track; the regions the reference already styles keep their own. */
+* { scrollbar-width: thin; scrollbar-color: var(--brand-border-strong) transparent; }
+*::-webkit-scrollbar { width: 8px; height: 8px; }
+*::-webkit-scrollbar-track { background: transparent; }
+*::-webkit-scrollbar-thumb { border-radius: 999px; background: var(--brand-border-strong); }
+*::-webkit-scrollbar-thumb:hover { background: var(--brand-faint); }

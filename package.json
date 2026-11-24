@@ -1,0 +1,39 @@
+{
+  "name": "global-agent-platform",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/build-official-sources.mjs && node --experimental-transform-types scripts/build-landing-index.mjs && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "sources": "node scripts/build-official-sources.mjs",
+    "test": "node --experimental-transform-types tests/run.mjs && node --experimental-transform-types tests/proof.mjs && node --experimental-transform-types tests/office.mjs && node --experimental-transform-types tests/inbound.mjs && node --experimental-transform-types tests/connected.mjs && node --experimental-transform-types tests/routines.mjs && node --experimental-transform-types --no-warnings tests/accounts.mjs && node --experimental-transform-types --no-warnings tests/documents.mjs && node --experimental-transform-types --no-warnings tests/today.mjs && node --experimental-transform-types --no-warnings tests/learn.mjs && node --experimental-transform-types --no-warnings tests/agent-apps.mjs && node --experimental-transform-types tests/public-web.mjs && node --experimental-transform-types tests/markdown.mjs && node --experimental-transform-types --no-warnings tests/ask-block.mjs && node --experimental-transform-types tests/assistant.mjs && node --experimental-transform-types tests/attachments.mjs && node --experimental-transform-types tests/agent-loop.mjs && node --experimental-transform-types tests/link-rules.mjs && node --experimental-transform-types tests/app-actions.mjs && node --experimental-transform-types --no-warnings tests/teach.mjs && node --experimental-transform-types --no-warnings tests/approval.mjs && node --experimental-transform-types --no-warnings tests/search-on-need.mjs && node --experimental-transform-types --no-warnings tests/table-rows.mjs && node --experimental-transform-types --no-warnings tests/data-tools.mjs && node --experimental-transform-types --no-warnings tests/triggers.mjs && node --experimental-transform-types --no-warnings tests/page-links.mjs && node --experimental-transform-types --no-warnings tests/telegram.mjs",
+    "eval:build": "node --experimental-transform-types --no-warnings evals/build-cases.mjs",
+    "eval": "node --experimental-transform-types scripts/eval.mjs"
+  },
+  "dependencies": {
+    "@openai/agents": "0.21.0",
+    "@react-email/components": "1.0.12",
+    "@xyflow/react": "12.12.0",
+    "better-auth": "1.7.14",
+    "lucide-react": "0.487.0",
+    "marked": "^15.0.7",
+    "pdfjs-dist": "^5.4.149",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sanitize-html": "2.17.0",
+    "zod": "4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/react": "18.3.18",
+    "@types/react-dom": "18.3.5",
+    "@types/sanitize-html": "^2.13.0",
+    "@vitejs/plugin-react": "4.7.0",
+    "typescript": "^5.7.2",
+    "vite": "6.3.5"
+  },
+  "license": "MIT"
+}

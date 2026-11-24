@@ -1,0 +1,94 @@
+/*
+ * Nomos chrome (30 Oct 2026): one bar, one button, one segmented switch, one split of two panes,
+ * one drop zone, one empty state and one spinner for every tool and reader. Tools style their
+ * content; the frame around it comes from here, so every screen wears the same 44px bar and gold.
+ */
+:root {
+  --brand-bar-height: 44px;
+  --brand-on-gold: #ffffff;
+}
+
+/* The bar: back, name, the tool's own controls, actions at the right end. */
+.nomos-bar { display: flex; flex: 0 0 var(--brand-bar-height); align-items: center; gap: 10px; height: var(--brand-bar-height); min-height: var(--brand-bar-height); padding: 0 12px; border-bottom: 1px solid var(--brand-border); background: var(--brand-surface); color: var(--brand-ink); font-family: var(--brand-font-sans); white-space: nowrap; overflow-x: auto; scrollbar-width: none; }
+.nomos-bar::-webkit-scrollbar { display: none; }
+.nomos-bar-back { display: grid; place-items: center; flex: none; width: 30px; height: 30px; padding: 0; border: 1px solid var(--brand-border); border-radius: var(--brand-radius-xs); background: transparent; color: var(--brand-ink); cursor: pointer; }
+.nomos-bar-back:hover:not(:disabled) { border-color: var(--brand-gold-line); background: var(--brand-gold-soft); }
+.nomos-bar-title { display: inline-flex; align-items: center; gap: 8px; flex: none; min-width: 0; color: var(--brand-ink); font: 550 13px/1 var(--brand-font-sans); }
+.nomos-bar-title > svg { flex: none; color: var(--brand-gold); }
+.nomos-bar-title > span { overflow: hidden; text-overflow: ellipsis; }
+.nomos-bar-end { display: flex; align-items: center; gap: 8px; min-width: 0; margin-left: auto; }
+.nomos-bar-note { display: inline-flex; align-items: center; gap: 6px; min-width: 0; overflow: hidden; color: var(--brand-muted); font: 400 12px/1.3 var(--brand-font-sans); }
+.nomos-bar-note > svg { flex: none; color: var(--brand-gold); }
+.nomos-bar-note > span { min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.nomos-bar :is(button, select):disabled { opacity: .5; cursor: default; }
+.nomos-bar :is(button, select, a):focus-visible { outline: 2px solid transparent; box-shadow: var(--brand-focus); }
+
+/* The button: quiet by default, gold when it is the step to take, never black. */
+.nomos-btn { display: inline-flex; align-items: center; justify-content: center; gap: 7px; height: 32px; padding: 0 12px; border: 1px solid var(--brand-border-strong); border-radius: var(--brand-radius-sm); background: var(--brand-surface); color: var(--brand-ink-soft); font: 500 13px/1 var(--brand-font-sans); white-space: nowrap; cursor: pointer; transition: background var(--brand-motion-feedback) ease, border-color var(--brand-motion-feedback) ease, color var(--brand-motion-feedback) ease; }
+.nomos-btn:hover:not(:disabled) { border-color: var(--brand-gold-line); background: var(--brand-gold-soft); color: var(--brand-ink); }
+.nomos-btn:disabled { opacity: .5; cursor: default; }
+.nomos-btn:focus-visible { outline: 2px solid transparent; box-shadow: var(--brand-focus); }
+.nomos-btn.is-primary { border-color: var(--brand-gold); background: var(--brand-gold); color: var(--brand-on-gold); font-weight: 600; }
+.nomos-btn.is-primary:hover:not(:disabled) { border-color: var(--brand-gold-hover); background: var(--brand-gold-hover); color: var(--brand-on-gold); }
+.nomos-btn.is-plain { border-color: transparent; background: transparent; }
+.nomos-btn.is-icon { width: 32px; padding: 0; }
+.nomos-btn > svg { flex: none; }
+
+/* The segmented switch between two ways of one tool. */
+.nomos-segment { display: inline-flex; flex: none; gap: 2px; padding: 2px; border: 1px solid var(--brand-border); border-radius: var(--brand-radius-sm); background: var(--brand-surface-soft); }
+.nomos-segment > button { height: 26px; padding: 0 10px; border: 0; border-radius: 6px; background: transparent; color: var(--brand-muted); font: 500 12px/1 var(--brand-font-sans); white-space: nowrap; cursor: pointer; }
+.nomos-segment > button[aria-pressed="true"] { background: var(--brand-surface); color: var(--brand-ink); box-shadow: 0 1px 2px rgba(32,33,31,.08); }
+.nomos-segment > button:focus-visible { outline: 2px solid transparent; box-shadow: var(--brand-focus); }
+
+/* Two panes under the bar, as the translation page has them. */
+.nomos-split { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 16px; flex: 1; min-height: 0; padding: 16px; background: var(--brand-canvas); overflow: hidden; }
+.nomos-pane { position: relative; display: flex; flex-direction: column; min-width: 0; min-height: 0; border: 1px solid var(--brand-border); border-radius: var(--brand-radius-md); background: var(--brand-surface); box-shadow: var(--brand-shadow-1); overflow: hidden; }
+.nomos-pane-label { position: absolute; top: 18px; left: 20px; z-index: 1; color: var(--brand-faint); font: 500 11px/1.2 var(--brand-font-sans); letter-spacing: .02em; }
+.nomos-pane-center { display: flex; flex: 1; flex-direction: column; justify-content: center; width: 100%; max-width: 430px; min-height: 0; margin: 0 auto; padding: 56px 28px 24px; overflow: auto; }
+.nomos-pane-note { flex: none; padding: 14px 20px; color: var(--brand-faint); font: 400 11px/1.4 var(--brand-font-sans); text-align: center; }
+
+/* Where a document goes in. */
+.nomos-drop { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; min-height: 210px; padding: 28px 16px; border: 1px solid var(--brand-border-strong); border-radius: 12px; background: var(--brand-surface-soft); color: var(--brand-muted); font: 400 12px/1.5 var(--brand-font-sans); text-align: center; cursor: pointer; transition: background var(--brand-motion-feedback) ease, border-color var(--brand-motion-feedback) ease; }
+.nomos-drop > svg, .nomos-drop > .nomos-spinner { flex: none; box-sizing: content-box; padding: 11px; margin-bottom: 8px; border: 1px solid var(--brand-border); border-radius: 12px; background: var(--brand-gold-soft); color: var(--brand-gold); }
+/* The translation page's own drop card follows the same drawing. */
+.tr-shell .tr-upload-pane .rl-drop { border: 1px solid var(--brand-border-strong); border-radius: 12px; background: var(--brand-surface-soft); }
+.tr-shell .tr-upload-pane .rl-upload-symbol { display: grid; place-items: center; width: 44px; height: 44px; margin-bottom: 8px; border: 1px solid var(--brand-border); border-radius: 12px; background: var(--brand-gold-soft); color: var(--brand-gold); }
+.nomos-drop strong { color: var(--brand-ink); font: 550 15px/1.3 var(--brand-font-sans); }
+.nomos-drop:hover:not(:disabled), .is-over > .nomos-drop { border-color: var(--brand-gold); background: var(--brand-gold-soft); }
+.nomos-drop:disabled { opacity: .6; cursor: default; }
+.nomos-drop:focus-visible { outline: 2px solid transparent; box-shadow: var(--brand-focus); }
+
+/* Nothing here yet. */
+.nomos-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; margin: auto; padding: 40px 24px; color: var(--brand-muted); text-align: center; }
+.nomos-empty > svg { margin-bottom: 8px; color: var(--brand-gold); opacity: .85; }
+.nomos-empty strong { color: var(--brand-ink); font: 550 15px/1.35 var(--brand-font-sans); letter-spacing: -.01em; text-wrap: balance; }
+.nomos-empty p { max-width: 38ch; margin: 0; font: 400 13px/1.55 var(--brand-font-sans); text-wrap: pretty; }
+
+.nomos-spinner { display: inline-block; flex: none; width: 16px; height: 16px; border: 2px solid var(--brand-gold-line); border-top-color: var(--brand-gold); border-radius: 50%; animation: nomos-spin .8s linear infinite; }
+@keyframes nomos-spin { to { transform: rotate(360deg); } }
+
+@media (max-width: 900px) {
+  .nomos-split { grid-template-columns: minmax(0, 1fr); overflow: auto; }
+  .nomos-pane { flex: none; min-height: 280px; }
+}
+@media (max-width: 700px) {
+  .nomos-bar { gap: 8px; padding: 0 8px; }
+  .nomos-bar-title > span, .nomos-bar-note > span { display: none; }
+  /* A bar holding only its title (Today, Knowledge…) showed as an empty strip under the phone header (12 Nov 2026). */
+  .nomos-bar:has(> .nomos-bar-title:only-child) { display: none; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .nomos-spinner { animation-duration: 2s; }
+  .nomos-btn, .nomos-drop { transition: none; }
+}
+
+/* No top bar (12 Nov 2026, his «remove the top bar everywhere, keep the buttons there without a background bar»):
+   the strip has no fill and no line; its buttons stay where they were. Its label repeated the page's own heading
+   («Routines» twice), so it is gone wherever the page has a heading; a page without one (a conversation with an
+   agent, Settings, Knowledge, the library) keeps the label as its title. Headings inside answers, results and opened
+   documents do not count as the page's heading. */
+.nomos-bar { border-bottom: 0; background: transparent; }
+.nomos-bar-title { font: 600 14px/1 var(--brand-font-sans); }
+.nomos-bar:has(~ * h1:not(:is(.ait, .ait-md, .answer-markdown, .mn-doc-word-page, .mn-run-body, .nomos-official-web, .mn-mail-body) h1)) > .nomos-bar-title { display: none; }
+/* Nothing left in it (no back arrow, no buttons): no empty strip either. */
+.nomos-bar:has(> .nomos-bar-title:only-child):has(~ * h1:not(:is(.ait, .ait-md, .answer-markdown, .mn-doc-word-page, .mn-run-body, .nomos-official-web, .mn-mail-body) h1)) { display: none; }

@@ -1,0 +1,127 @@
+/* An answer's typography (reference markdown.css, the «chat-editorial» presentation). */
+.mn-chat-ai-answer { min-width: 0; }
+.ait { position:relative; min-width:0; color:var(--ait-ink-2); font-family:var(--ait-ui); font-size:15px; font-weight:400; line-height:1.76; letter-spacing:.001em; overflow-wrap:break-word; text-wrap:pretty; font-feature-settings:"kern" 1,"liga" 1,"calt" 1; }
+.ait-md { min-width:0; }
+.ait-md > :first-child, .ait > :first-child { margin-top:0 !important; }
+.ait-md > :last-child, .ait > :last-child { margin-bottom:0 !important; }
+.ait p { margin:0 0 11px; }
+.ait p:last-child { margin-bottom:0; }
+.ait p, .ait li, .ait td, .ait th, .ait blockquote { overflow-wrap:anywhere; }
+.ait strong, .ait b { color:var(--ait-ink); font-weight:700; }
+.ait em, .ait i { font-style:italic; }
+.ait p > strong:first-child, .ait p > b:first-child { color:var(--ait-brass-deep); }
+.ait h1, .ait h2, .ait h3, .ait h4 { color:var(--ait-ink); text-wrap:balance; }
+.ait h4 { margin:14px 0 7px; color:var(--ait-ink-3); font-family:var(--brand-font-mono); font-size:10.5px; font-weight:600; line-height:1.5; letter-spacing:.1em; text-transform:uppercase; }
+/* Lists */
+.ait ul, .ait ol { margin:9px 0 13px; }
+.ait li { margin:5px 0; line-height:1.67; }
+.ait ul { list-style:none; padding-left:0; }
+.ait ul li { position:relative; padding-left:22px; }
+.ait ul li::before { content:""; position:absolute; left:4px; top:.72em; width:6px; height:6px; border:1px solid rgba(var(--brand-gold-rgb),.42); border-radius:50%; background:rgba(var(--brand-gold-rgb),.14); box-shadow:inset 0 0 0 1px rgba(255,255,255,.52); }
+.ait ol { padding-left:25px; }
+.ait ol li { padding-left:3px; }
+.ait ol li::marker { color:var(--ait-brass-deep); font-family:var(--brand-font-mono); font-size:.84em; font-weight:600; }
+.ait li > ul, .ait li > ol { margin-top:6px; margin-bottom:6px; }
+/* Code */
+.ait code { padding:2px 6px; border:1px solid var(--ait-line); border-radius:var(--brand-radius-xs); background:var(--ait-sunken); color:var(--ait-brass-deep); font-family:var(--brand-font-mono); font-size:12.5px; white-space:break-spaces; }
+.ait pre { position:relative; margin:14px 0; padding:15px 16px 15px 18px; overflow-x:auto; border:1px solid var(--ait-line); border-radius:var(--brand-radius-md); background:linear-gradient(180deg,var(--brand-gold-soft),var(--brand-surface-sunken)); box-shadow:inset 0 1px 0 rgba(255,255,255,.78),var(--ait-shadow-1); }
+.ait pre::before { content:""; position:absolute; inset:0 auto 0 0; width:3px; background:linear-gradient(180deg,var(--ait-brass-light),var(--ait-brass-deep)); }
+.ait pre code { display:block; padding:0; border:0; background:none; color:var(--ait-ink-2); font-size:12.5px; line-height:1.65; white-space:pre; }
+/* Quotations */
+.ait blockquote { position:relative; margin:16px 0; padding:15px 18px 15px 43px; border:1px solid var(--ait-brass-line); border-radius:var(--brand-radius-lg); background:linear-gradient(90deg,rgba(var(--brand-gold-rgb),.07),rgba(var(--brand-gold-rgb),.025) 42%,transparent),var(--ait-paper-2); color:var(--ait-ink-2); font-family:var(--ait-display); font-size:15.5px; font-style:italic; line-height:1.68; box-shadow:inset 0 1px 0 rgba(255,255,255,.7),var(--ait-shadow-1); }
+.ait blockquote::before { content:"\201C"; position:absolute; left:13px; top:3px; color:var(--ait-brass); font-family:var(--ait-display); font-size:48px; font-weight:500; line-height:1; opacity:.42; }
+.ait blockquote p { margin:0; }
+/* Separators and links */
+.ait hr { height:1px; margin:19px 0; border:0; background:linear-gradient(90deg,transparent,rgba(var(--brand-gold-rgb),.23),transparent); }
+.ait a { color:var(--ait-brass-deep); text-decoration:underline; text-decoration-color:rgba(var(--brand-gold-rgb),.35); text-decoration-thickness:1px; text-underline-offset:3px; }
+@media (hover:hover) and (pointer:fine) { .ait a { transition:color .15s var(--ait-ease),text-decoration-color .15s var(--ait-ease); } .ait a:hover { color:var(--ait-brass); text-decoration-color:currentColor; } }
+.ait a:focus-visible { outline:2px solid var(--ait-brass); outline-offset:3px; border-radius:3px; }
+/* Tables */
+.ait table, .ait-md table { width:100%; min-width:100%; margin:14px 0; border-collapse:separate; border-spacing:0; border:1px solid var(--ait-line); border-radius:var(--brand-radius-lg); background:var(--ait-paper); color:var(--ait-ink-2); font-family:var(--ait-ui); font-size:13px; line-height:1.5; table-layout:auto; box-shadow:inset 0 1px 0 rgba(255,255,255,.7),var(--ait-shadow-1); }
+.ait thead tr, .ait-md thead tr { background:linear-gradient(180deg,var(--brand-gold-soft),var(--brand-surface-sunken)); }
+.ait th, .ait-md th { padding:11px 13px; border-right:1px solid var(--ait-line-soft); border-bottom:1px solid var(--ait-brass-line); color:var(--ait-ink-3); font-family:var(--brand-font-mono); font-size:10px; font-weight:600; line-height:1.45; letter-spacing:.08em; text-align:left; text-transform:uppercase; vertical-align:bottom; }
+.ait td, .ait-md td { padding:11px 13px; border-right:1px solid var(--ait-line-soft); border-bottom:1px solid var(--ait-line-soft); color:var(--ait-ink-2); line-height:1.55; vertical-align:top; font-variant-numeric:tabular-nums; }
+.ait th:last-child, .ait td:last-child, .ait-md th:last-child, .ait-md td:last-child { border-right:0; }
+.ait tbody tr:last-child td, .ait-md tbody tr:last-child td { border-bottom:0; }
+.ait tbody tr:nth-child(even) td, .ait-md tbody tr:nth-child(even) td { background:rgba(var(--brand-gold-rgb),.022); }
+@media (hover:hover) and (pointer:fine) { .ait tbody tr:hover td, .ait-md tbody tr:hover td { background:var(--ait-paper-2); } }
+/* Editorial presentation (the chat's) */
+.ait--editorial { --ait-editorial-prose:70ch; --ait-editorial-wide:820px; width:min(100%,var(--ait-editorial-wide)); max-width:100%; font-family:var(--brand-font-sans); font-size:15px; line-height:1.7; }
+.ait--editorial > .ait-md { width:100%; max-width:100%; }
+.ait--editorial > .ait-md > :where(p,h1,h2,h3,h4,h5,h6,ul,ol,blockquote,hr) { width:min(100%,var(--ait-editorial-prose)); max-width:100%; }
+.ait--editorial > .ait-md > :where(table,pre) { width:100%; max-width:100%; }
+.ait.ait--editorial :is(p,li,blockquote,th,td) { font-family:var(--brand-font-sans); font-size:15px; }
+.ait--editorial p { margin-bottom:16px; }
+.ait.ait--editorial :is(p,li,blockquote,td) :is(strong,b) { color:var(--ait-ink); font-weight:600; }
+.ait--editorial > .ait-md > :is(h1,h2):first-child + p { color:var(--ait-ink); font-size:16px; line-height:1.68; }
+.ait--editorial :is(h1,h2,h3,h4) :is(strong,b) { color:inherit; font-weight:inherit; }
+.ait--editorial h1 { margin:40px 0 14px; padding:0; font-family:var(--ait-display); font-size:30px; font-weight:400; line-height:1.2; letter-spacing:-.018em; }
+.ait--editorial h2 { margin:36px 0 12px; padding:0; font-family:var(--ait-display); font-size:28px; font-weight:400; line-height:1.25; letter-spacing:-.014em; }
+.ait--editorial h3 { margin:32px 0 10px; font-family:var(--ait-ui); font-size:18px; font-weight:600; line-height:1.35; letter-spacing:-.004em; }
+.ait--editorial > .ait-md > :is(ul,ol) { margin-block:10px 18px; }
+.ait--editorial li { margin:6px 0; line-height:1.7; }
+.ait--editorial li > p { margin:0; }
+.ait--editorial li > p + p { margin-top:8px; }
+.ait--editorial ul li { padding-left:24px; }
+.ait--editorial ul li::before { left:4px; top:calc(.85em - 2.5px); width:5px; height:5px; border:0; background:var(--ait-brass); box-shadow:none; }
+.ait--editorial ol { list-style:none; padding-left:0; }
+.ait--editorial ol > li { position:relative; margin:10px 0; padding-left:24px; }
+.ait--editorial ol > li::before { content:counter(list-item) "."; position:absolute; left:0; top:0; color:var(--ait-brass-deep); font:inherit; font-weight:600; font-variant-numeric:tabular-nums; line-height:inherit; }
+/* In the conversation (the reference's ≥769px rule): 16px ink prose. */
+@media (min-width:769px) {
+  .mn-agent-msg.is-agent .ait.ait--editorial :is(p,li,blockquote) { color:var(--ait-ink); font-size:16px; line-height:1.68; }
+}
+/* Wide tables (11 Nov 2026, his «look the table»): never squeezed letter by letter. The table keeps readable columns
+   and scrolls sideways inside the answer when the column is narrow (a reader open beside the chat, a phone). */
+.ait-md table, .ait table { display:block; width:max-content; min-width:100%; max-width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; overscroll-behavior-x:contain; }
+.ait-md table > thead, .ait-md table > tbody, .ait table > thead, .ait table > tbody { display:table-row-group; }
+.ait-md table > thead, .ait table > thead { display:table-header-group; }
+.ait td, .ait th, .ait-md td, .ait-md th { min-width:9.5em; max-width:28em; overflow-wrap:break-word; word-break:normal; hyphens:manual; }
+.ait td:first-child, .ait th:first-child, .ait-md td:first-child, .ait-md th:first-child { min-width:5em; }
+.ait-md table::-webkit-scrollbar { height:8px; }
+.ait-md table::-webkit-scrollbar-thumb { border-radius:999px; background:var(--brand-border-strong); }
+/* Citations as pills (11 Nov 2026, «like Montesquilex»): flag + site, small and quiet, after the sentence they support. */
+.ait a.mn-source-chip, .ait-md a.mn-source-chip { display:inline-flex; align-items:center; gap:4px; margin:0 1px; padding:1px 7px; border-radius:12px; background:rgba(106,103,122,.09); color:#6a677a;
+  font:500 11px/1.55 var(--brand-font-sans); text-decoration:none; vertical-align:1px; white-space:nowrap; max-width:240px; transition:background .15s ease, color .15s ease; }
+.ait a.mn-source-chip:hover, .ait-md a.mn-source-chip:hover { background:var(--brand-gold-soft); color:var(--brand-gold-hover); }
+.ait a.mn-source-chip i, .ait-md a.mn-source-chip i { font-style:normal; font-size:11px; line-height:1; }
+.ait a.mn-source-chip span, .ait-md a.mn-source-chip span { overflow:hidden; text-overflow:ellipsis; }
+.ait td a.mn-source-chip, .ait-md td a.mn-source-chip { white-space:normal; }
+/* Under the answer: «Cited 3 sources» and «Also consulted 7», closed until opened. */
+.mn-sources-summary { display:flex; flex-direction:column; gap:2px; margin:10px 0 2px; }
+.mn-sources-row > summary { display:inline-flex; align-items:center; gap:8px; padding:5px 2px; color:var(--brand-muted); font:500 13.5px/1.3 var(--brand-font-sans); cursor:pointer; list-style:none; }
+.mn-sources-row > summary::-webkit-details-marker { display:none; }
+.mn-sources-row > summary:hover { color:var(--brand-ink); }
+.mn-sources-row > summary i { font-style:normal; font-size:13px; letter-spacing:2px; }
+.mn-sources-row > summary svg { transition:transform .2s ease; }
+.mn-sources-row[open] > summary svg { transform:rotate(180deg); }
+.mn-sources-row ul { display:flex; flex-direction:column; gap:2px; margin:4px 0 8px; padding:0; list-style:none; }
+.mn-sources-row li a { display:flex; align-items:center; gap:10px; padding:8px 10px; border-radius:10px; color:var(--brand-ink); text-decoration:none; }
+.mn-sources-row li a:hover { background:var(--brand-surface-soft); }
+.mn-sources-row li a > i { font-style:normal; font-size:15px; }
+.mn-sources-row li a > span { display:flex; flex:1; flex-direction:column; gap:1px; min-width:0; }
+.mn-sources-row li b { overflow:hidden; font:550 13px/1.35 var(--brand-font-sans); text-overflow:ellipsis; white-space:nowrap; }
+.mn-sources-row li small { color:var(--brand-muted); font:400 11.5px/1.3 var(--brand-font-sans); }
+.mn-sources-row li svg { flex:none; color:var(--brand-faint); }
+
+/* The apps an answer read live (11 Nov 2026): one quiet line of chips under the answer. */
+.mn-apps-used { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 8px 0 0; color: var(--brand-ink-soft); font: 500 12px/1.4 var(--brand-font-sans); }
+.mn-apps-used b { padding: 2px 9px; border: 1px solid var(--brand-border); border-radius: 999px; background: var(--brand-surface); color: var(--brand-ink); font-weight: 600; }
+
+/* Tables as Claude's own app shows them (12 Nov 2026, his «tables look like dog»): quiet headers in sentence case, thin
+   row lines only, no tint or stripes, roomy cells, one soft outline; wide tables scroll inside it. */
+.ait table, .ait-md table { margin:18px 0; border:1px solid var(--brand-border); border-radius:12px; background:var(--brand-surface); box-shadow:none; font-size:14px; }
+.ait thead tr, .ait-md thead tr { background:var(--brand-surface-sunken, #f7f6f3); }
+.ait th, .ait-md th { padding:10px 14px; border-right:0; border-bottom:1px solid var(--brand-border); color:var(--brand-ink); font-family:var(--brand-font-sans); font-size:13px; font-weight:600; letter-spacing:0; text-transform:none; text-align:left; white-space:nowrap; }
+.ait td, .ait-md td { padding:10px 14px; border-right:0; border-bottom:1px solid var(--brand-border); color:var(--brand-ink); font-size:14px; line-height:1.5; font-weight:400; }
+.ait td:first-child, .ait-md td:first-child { font-weight:500; }
+.ait tbody tr:nth-child(even) td, .ait-md tbody tr:nth-child(even) td { background:transparent; }
+@media (hover:hover) and (pointer:fine) { .ait tbody tr:hover td, .ait-md tbody tr:hover td { background:rgba(0,0,0,.018); } }
+.ait td code, .ait-md td code { white-space:nowrap; }
+.ait.ait--editorial td, .ait.ait--editorial .ait-md td { font-size:14px; } .ait.ait--editorial th, .ait.ait--editorial .ait-md th { font-size:13px; }
+/* Tables in their frame (12 Nov 2026): the frame has the outline and scrolls; the table fills it, header row included. */
+.ait .ait-table, .ait-md .ait-table { width:100%; max-width:100%; margin:18px 0; overflow-x:auto; border:1px solid var(--brand-border); border-radius:12px; background:var(--brand-surface); -webkit-overflow-scrolling:touch; overscroll-behavior-x:contain; }
+.ait .ait-table > table, .ait-md .ait-table > table { display:table; width:100%; min-width:100%; max-width:none; margin:0; overflow:visible; border:0; border-radius:0; background:none; box-shadow:none; }
+.ait .ait-table > table > thead, .ait-md .ait-table > table > thead { display:table-header-group; }
+.ait .ait-table > table > tbody, .ait-md .ait-table > table > tbody { display:table-row-group; }
+.ait-md .ait-table::-webkit-scrollbar { height:8px; } .ait-md .ait-table::-webkit-scrollbar-thumb { border-radius:999px; background:var(--brand-border-strong); }

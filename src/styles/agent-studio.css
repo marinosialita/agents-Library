@@ -1,0 +1,1024 @@
+/* Agent Studio (5 Nov 2026). Full width, tokens only. */
+.mn-agents{display:flex;flex-direction:column;min-height:0;height:100%;background:var(--brand-canvas)}
+.mn-agents-bar-actions{display:inline-flex;align-items:center;gap:8px}
+.mn-agents .nomos-btn{display:inline-flex;align-items:center;gap:6px}
+.mn-agents .is-danger-quiet{color:var(--brand-danger)}
+.mn-agents .is-spinning{animation:mn-agents-spin 900ms linear infinite}
+@keyframes mn-agents-spin{to{transform:rotate(360deg)}}
+@media(prefers-reduced-motion:reduce){.mn-agents .is-spinning{animation:none}}
+
+/* The library: practice areas on the left, the agents as cards. */
+.mn-agents-library{display:grid;flex:1;grid-template-columns:296px minmax(0,1fr);min-height:0}
+/* A long white column with rounded corners, floating beside the agents (5 Nov 2026, his request). */
+.mn-agents-side{display:flex;flex-direction:column;gap:4px;margin:16px 0 16px 0;padding:14px 10px 20px;border:1px solid var(--brand-border);border-radius:16px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1);overflow-y:auto}
+.mn-agents-side-group{display:flex;flex-direction:column;gap:1px}
+.mn-agents-side-title{margin:14px 4px 6px;padding:14px 6px 0;border-top:1px solid var(--brand-border);color:var(--brand-muted);font:600 12.5px/1 var(--brand-font-sans);letter-spacing:.01em}
+.mn-agents-side button{position:relative;display:flex;align-items:center;gap:10px;min-height:36px;padding:0 10px;border:0;border-radius:9px;background:transparent;color:var(--brand-ink-soft);font:500 14.5px/1.25 var(--brand-font-sans);text-align:left;cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+.mn-agents-side button svg{flex-shrink:0;color:var(--brand-faint);transition:color var(--brand-motion-feedback,120ms) ease}
+.mn-agents-side button span{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agents-side button small{min-width:20px;padding:1px 6px;border-radius:999px;background:var(--brand-surface-sunken);color:var(--brand-muted);font:500 12px/17px var(--brand-font-sans);font-variant-numeric:tabular-nums;text-align:center;opacity:0;transition:opacity var(--brand-motion-feedback,120ms) ease}
+.mn-agents-side button:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agents-side button:hover svg{color:var(--brand-ink-soft)}
+.mn-agents-side button:hover small,.mn-agents-side button[aria-pressed=true] small{opacity:1}
+.mn-agents-side button[aria-pressed=true]{background:var(--brand-gold-soft);color:var(--brand-ink);font-weight:600}
+.mn-agents-side button[aria-pressed=true]::before{content:'';position:absolute;top:7px;bottom:7px;left:0;width:3px;border-radius:0 3px 3px 0;background:var(--brand-gold)}
+.mn-agents-side button[aria-pressed=true] svg{color:var(--brand-gold-hover)}
+.mn-agents-side button[aria-pressed=true] small{background:var(--brand-surface);color:var(--brand-ink-soft)}
+.mn-agents-side button:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+@media(prefers-reduced-motion:reduce){.mn-agents-side button,.mn-agents-side button svg,.mn-agents-side button small{transition:none}}
+.mn-agents-main{display:flex;flex-direction:column;min-height:0;padding:16px 32px 24px 14px;overflow-y:auto}
+.mn-agents-bar-end{display:flex;align-items:center;gap:10px;min-width:0}
+.mn-agents-search{display:flex;align-items:center;gap:8px;flex:0 1 280px;width:auto;min-width:110px;height:32px;padding:0 10px;border:1px solid var(--brand-border-strong);border-radius:10px;background:var(--brand-surface);color:var(--brand-muted)}
+.mn-agents-search:focus-within{border-color:var(--brand-faint);box-shadow:var(--brand-focus)}
+.mn-agents-search input{flex:1;min-width:0;border:0;outline:0;background:transparent;color:var(--brand-ink);font:400 13px/1.3 var(--brand-font-sans)}
+.mn-agents-search input::-webkit-search-cancel-button{display:none}
+.mn-agents-search button{display:grid;place-items:center;width:22px;height:22px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agents-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:14px;margin:0;padding:0;list-style:none}
+.mn-agents-grid>li{display:flex;flex-direction:column;border:1px solid var(--brand-border);border-radius:var(--brand-radius-md);background:var(--brand-surface);transition:border-color var(--brand-motion-menu) ease,box-shadow var(--brand-motion-menu) ease}
+.mn-agents-grid>li:hover{border-color:var(--brand-border-strong);box-shadow:var(--brand-shadow-1)}
+.mn-agent-card{display:flex;flex:1;flex-direction:column;gap:8px;padding:16px 16px 12px;border:0;background:transparent;color:var(--brand-ink);text-align:left;cursor:pointer}
+.mn-agent-card:focus-visible{outline:2px solid transparent;box-shadow:inset var(--brand-focus);border-radius:var(--brand-radius-md)}
+.mn-agent-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.mn-agent-card-chip{overflow:hidden;padding:3px 8px;border-radius:999px;background:var(--brand-surface-sunken);color:var(--brand-ink-soft);font:500 11px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-card-place{display:inline-flex;align-items:center;gap:3px;flex-shrink:0;font-size:15px;color:var(--brand-gold-hover)}
+/* One line per title (5 Nov 2026, his request); the full name shows on hover. */
+.mn-agent-card b{overflow:hidden;font:600 16px/1.35 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+/* Each card's description in the case cards' «Νομική αρχή» box (5 Nov 2026, his request): vellum, a thin brass line, a gold edge. */
+.mn-agent-card-text{display:block;padding:8px 11px;border:1px solid rgba(var(--brand-gold-rgb),.22);border-left:3px solid var(--brand-gold);border-radius:3px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 13.75px/1.5 var(--brand-font-sans)}
+/* The text is clamped on an inner span, so no fourth line bleeds into the box's padding, and the box always stands three lines tall (6 Nov 2026, his request; title and text one size up). */
+.mn-agent-card-text>span{display:-webkit-box;overflow:hidden;height:4.5em;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+/* The card's foot (5 Nov 2026): who made it, then three small tools — what it does (AI), customise, use. */
+.mn-agent-card-needs{display:flex;align-items:flex-start;gap:6px;margin-top:2px;color:var(--brand-ink-soft);font:400 12px/1.45 var(--brand-font-sans)}
+.mn-agent-card-needs svg{flex-shrink:0;margin-top:2px;color:var(--brand-faint)}
+.mn-agent-card-needs span{display:-webkit-box;overflow:hidden;-webkit-box-orient:vertical;-webkit-line-clamp:1}
+.mn-agent-card-foot{display:flex;align-items:center;gap:4px;margin-top:auto;padding:8px 10px 10px 16px;border-top:1px solid var(--brand-border)}
+.mn-agent-explain-btn{display:inline-flex;align-items:center;gap:6px;min-width:0;height:30px;margin:0 auto 0 -10px;padding:0 10px;border:0;border-radius:8px;background:transparent;color:var(--brand-gold-hover);font:500 12.5px/1 var(--brand-font-sans);white-space:nowrap;cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+.mn-agent-explain-btn:hover,.mn-agent-explain-btn[aria-pressed=true]{background:var(--brand-gold-soft);color:var(--brand-gold-dark)}
+.mn-agent-explain-btn:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agent-card-tags{display:flex;align-items:center;gap:6px;min-width:0}
+.mn-agent-card-deep{flex-shrink:0;padding:3px 8px;border-radius:999px;background:var(--brand-gold-soft);color:var(--brand-gold-hover);font:500 11px/1.3 var(--brand-font-sans);font-style:normal;white-space:nowrap}
+.mn-agent-tool{display:grid;place-items:center;width:30px;height:30px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--brand-muted);cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+.mn-agent-tool:hover,.mn-agent-tool[aria-pressed=true]{background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-agent-use{display:inline-flex;align-items:center;gap:5px;height:30px;margin-left:2px;padding:0 10px 0 12px;border:1px solid var(--brand-border-strong);border-radius:8px;background:var(--brand-surface);color:var(--brand-ink);font:600 12.5px/1 var(--brand-font-sans);cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,border-color var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+/* «Customise» back as a labelled button (5 Nov 2026, his request), quieter than «Use». */
+.mn-agent-customise{display:inline-flex;align-items:center;gap:5px;height:30px;padding:0 10px;border:0;border-radius:8px;background:transparent;color:var(--brand-ink-soft);font:500 12.5px/1 var(--brand-font-sans);cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+.mn-agent-customise:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agent-customise:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agent-use svg{transition:transform var(--brand-motion-feedback,120ms) ease}
+.mn-agents-grid>li:hover .mn-agent-use,.mn-agent-use:hover{border-color:var(--brand-gold);background:var(--brand-gold);color:var(--brand-surface)}
+.mn-agents-grid>li:hover .mn-agent-use svg{transform:translateX(2px)}
+.mn-agent-tool:focus-visible,.mn-agent-use:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agent-explain-wrap{margin:0 12px 10px;animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-agent-composer .mn-agent-explain-wrap{margin:0 0 8px}
+.mn-agent-explain-label{display:inline-flex;align-items:center;gap:5px;margin:2px 0 5px;color:var(--brand-gold-hover);font:700 10.5px/1.2 var(--brand-font-sans);letter-spacing:.1em;text-transform:uppercase}
+.mn-agent-explain{position:relative;padding:9px 34px 9px 13px;border:1px solid rgba(var(--brand-gold-rgb),.22);border-left:3px solid var(--brand-gold);border-radius:3px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 13px/1.55 var(--brand-font-sans)}
+.mn-agent-explain ul{margin:0;padding-left:16px;list-style:disc}
+.mn-agent-explain ol{margin:0;padding-left:18px;list-style:decimal}
+.mn-agent-explain li{margin:0 0 2px}
+.mn-agent-explain p{margin:0}
+.mn-agent-explain p.is-loading{display:flex;align-items:center;gap:6px;color:var(--brand-muted)}
+.mn-agent-explain .is-spinning{animation:mn-agent-spin 900ms linear infinite}
+.mn-agent-explain>button{position:absolute;top:5px;right:5px;display:grid;place-items:center;width:22px;height:22px;padding:0;border:0;border-radius:4px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-explain>button:hover{background:var(--brand-surface);color:var(--brand-ink)}
+@keyframes mn-agent-explain-in{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}
+@keyframes mn-agent-spin{to{transform:rotate(360deg)}}
+.mn-agents-sort{display:flex;align-items:center;gap:6px;height:32px;padding:0 6px 0 10px;border:1px solid var(--brand-border-strong);border-radius:10px;background:var(--brand-surface);color:var(--brand-muted)}
+.mn-agents-sort select{border:0;outline:0;background:transparent;color:var(--brand-ink);font:500 13px/1.2 var(--brand-font-sans);cursor:pointer}
+/* A focused select shows a quiet grey edge, not the lavender glow (6 Nov 2026, his request: «the box becomes purple, looks wrong»). */
+.mn-agents-sort:focus-within{border-color:var(--brand-faint);box-shadow:0 0 0 1px var(--brand-faint)}
+/* The bar's controls stand 32 px in the 44 px bar (6 Nov 2026, his request: «a little bit smaller than the bar»). The field and jurisdiction pickers wear the sort control's dress; the flag stands in for the globe on a phone. */
+.mn-agents-pick{display:flex;align-items:center;gap:6px;flex-shrink:0;height:32px;padding:0 6px 0 10px;border:1px solid var(--brand-border-strong);border-radius:10px;background:var(--brand-surface);color:var(--brand-muted)}
+.mn-agents-pick select{max-width:180px;border:0;outline:0;background:transparent;color:var(--brand-ink);font:500 13px/1.2 var(--brand-font-sans);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+.mn-agents-pick:focus-within{border-color:var(--brand-faint);box-shadow:0 0 0 1px var(--brand-faint)}
+.mn-agents-pick-flag{display:none;font-size:15px;line-height:1}
+@media(prefers-reduced-motion:reduce){.mn-agent-explain-wrap,.mn-agent-tool,.mn-agent-explain-btn,.mn-agent-use,.mn-agent-use svg{animation:none;transition:none}}
+.mn-agents-empty{display:grid;place-items:center;flex:1;min-height:240px;color:var(--brand-muted);font:400 13.5px/1.5 var(--brand-font-sans);text-align:center}
+
+/* An agent at work: its chats on the left, the conversation in the middle. */
+.mn-agents-run{display:grid;flex:1;grid-template-columns:minmax(0,1fr);min-height:0}
+.mn-agents-run.has-history{grid-template-columns:280px minmax(0,1fr)}
+.mn-agents-history{display:flex;flex-direction:column;gap:2px;margin:16px 0 16px 0;padding:14px 10px 20px;border:1px solid var(--brand-border);border-radius:16px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1);overflow-y:auto}
+.mn-agents-history .mn-agents-side-title{margin:2px 4px 8px;padding:0 6px;border:0}
+.mn-agents-history>small{margin:0 10px;color:var(--brand-faint);font:400 12px/1.4 var(--brand-font-sans)}
+.mn-agents-history-row{display:flex;align-items:center}
+.mn-agents-history-row>button:first-child{display:flex;flex:1;align-items:center;gap:8px;min-width:0;min-height:34px;padding:0 8px;border:0;border-radius:8px;background:transparent;color:var(--brand-ink-soft);font:500 12.5px/1.3 var(--brand-font-sans);text-align:left;cursor:pointer}
+.mn-agents-history-row>button:first-child span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agents-history-row>button:first-child:hover{background:var(--brand-surface-sunken)}
+.mn-agents-history-row>button[aria-current=true]{background:var(--brand-gold-soft);color:var(--brand-ink);font-weight:600}
+.mn-agents-history-delete{display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-faint);cursor:pointer;opacity:0}
+.mn-agents-history-row:hover .mn-agents-history-delete,.mn-agents-history-delete:focus-visible{opacity:1}
+.mn-agents-history-delete:hover{color:var(--brand-danger)}
+
+.mn-agent-chat{display:flex;flex-direction:column;min-height:0;min-width:0}
+.mn-agent-chat-scroll{flex:1;min-height:0;padding:28px max(24px,calc((100% - 860px)/2));overflow-y:auto}
+.mn-agent-intro{display:grid;justify-items:center;gap:10px;max-width:640px;margin:6vh auto 0;text-align:center}
+.mn-agent-intro-icon{display:grid;place-items:center;width:48px;height:48px;border:1px solid var(--brand-border);border-radius:14px;background:var(--brand-surface);color:var(--brand-gold-hover)}
+.mn-agent-intro h2{margin:0;color:var(--brand-ink);font:600 21px/1.3 var(--brand-font-sans);letter-spacing:-.01em}
+.mn-agent-intro p{margin:0;color:var(--brand-muted);font:400 13.5px/1.55 var(--brand-font-sans)}
+.mn-agent-intro-meta{color:var(--brand-faint);font:500 12px/1.4 var(--brand-font-sans)}
+.mn-agent-intro-needs{display:inline-flex;align-items:center;gap:6px;padding:8px 12px;border-radius:10px;background:var(--brand-surface-sunken);color:var(--brand-ink-soft)!important}
+.mn-agent-starters{display:grid;gap:8px;width:100%;margin-top:10px}
+.mn-agent-starters button{padding:11px 14px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface);color:var(--brand-ink-soft);font:400 13px/1.4 var(--brand-font-sans);text-align:center;cursor:pointer}
+.mn-agent-starters button:hover:not(:disabled){border-color:var(--brand-gold-line);color:var(--brand-ink)}
+.mn-agent-msg{margin:0 0 18px}
+.mn-agent-msg.is-user{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.mn-agent-msg.is-user p{max-width:78%;margin:0;padding:11px 14px;border-radius:14px 14px 4px 14px;background:var(--brand-surface-sunken);color:var(--brand-ink);font:400 14px/1.55 var(--brand-font-sans);white-space:pre-wrap}
+.mn-agent-msg.is-user small{display:inline-flex;align-items:center;gap:4px;color:var(--brand-faint);font:400 11.5px/1.3 var(--brand-font-sans)}
+.mn-agent-msg.is-agent{padding:4px 0}
+.mn-agent-thinking{display:inline-flex;align-items:center;gap:8px;margin:0;color:var(--brand-muted);font:400 13px/1.4 var(--brand-font-sans)}
+.mn-agent-gaps{margin:10px 0 0;padding:10px 14px 10px 28px;border-radius:10px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 12.5px/1.5 var(--brand-font-sans)}
+.mn-agent-msg-actions{display:flex;gap:4px;margin-top:8px}
+.mn-agent-msg-actions .mn-agent-copy{margin-top:0}
+.mn-agent-copy{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:4px 8px;border:0;border-radius:6px;background:transparent;color:var(--brand-faint);font:500 12px/1 var(--brand-font-sans);cursor:pointer}
+.mn-agent-copy:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+/* The agent's home (5 Nov 2026), drawn as «Ρωτήστε τον Nomos» (values read from the chat home): a small line, the
+   name at 38 px with its last word in gold, the 136 px composer, then the starters as the home's tool cards. */
+.mn-agent-chat.is-home .mn-agent-chat-scroll{display:flex;flex-direction:column;justify-content:flex-start;padding:clamp(40px,11vh,120px) 0 0}
+.mn-agent-home{box-sizing:border-box;display:flex;flex-direction:column;align-items:center;width:100%;max-width:868px;margin:0 auto;padding:0 24px 12px;text-align:center}
+.mn-agent-home-eyebrow{margin-bottom:14px;color:var(--brand-muted);font:550 10px/1.2 var(--brand-font-sans);letter-spacing:.13em;text-transform:uppercase}
+.mn-agent-home-title{max-width:100%;margin:0;color:var(--brand-ink);font:550 clamp(28px,3.6vw,38px)/1.2 var(--brand-font-sans);letter-spacing:-.045em;text-wrap:balance}
+.mn-agent-home-title em{color:var(--brand-gold);font-style:normal;font-weight:550}
+.mn-agent-home-text{max-width:600px;margin:10px 0 0;color:var(--brand-muted);font:400 13px/1.6 var(--brand-font-sans);text-wrap:balance}
+.mn-agent-chat.is-home .mn-agent-composer{width:100%;min-height:136px;margin:22px 0 0;padding:16px 18px;border:1px solid var(--brand-border-strong);border-radius:16px;background:var(--brand-surface);box-shadow:0 1px 2px rgba(32,33,31,.05),0 18px 44px -24px rgba(32,33,31,.24);text-align:left;justify-content:space-between}
+.mn-agent-chat.is-home .mn-agent-composer:focus-within{border-color:var(--brand-composer-line);box-shadow:var(--brand-composer-focus)}
+.mn-agent-chat.is-home .mn-agent-composer textarea{min-height:52px;padding:2px 0;font-size:14.5px}
+.mn-agent-chat.is-home .mn-agent-composer .nomos-btn{border-color:transparent;background:transparent;padding-inline:4px;color:var(--brand-ink-soft)}
+.mn-agent-chat.is-home .mn-agent-composer .nomos-btn:hover{color:var(--brand-ink)}
+/* The starters one under the other (5 Nov 2026, his request), as rows of one white card divided by hairlines. */
+.mn-agent-home-starters{display:flex;flex-direction:column;width:100%;margin-top:14px;padding:0 4px;text-align:left}
+.mn-agent-home-starters button{display:grid;grid-template-columns:24px minmax(0,1fr) 14px;align-items:center;gap:10px;min-height:40px;padding:4px 10px;border:0;border-radius:10px;background:transparent;color:var(--brand-ink-soft);font:500 13px/1.4 var(--brand-font-sans);text-align:left;cursor:pointer;transition:background var(--brand-motion-feedback,120ms) ease,color var(--brand-motion-feedback,120ms) ease}
+.mn-agent-home-starters button+button{position:relative}
+.mn-agent-home-starters button+button::before{content:'';position:absolute;top:0;right:10px;left:44px;border-top:1px solid var(--brand-border)}
+.mn-agent-home-starters button>span:nth-child(2){overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-home-starters button>svg{color:var(--brand-gold-hover);opacity:0;transition:opacity var(--brand-motion-feedback,120ms) ease}
+.mn-agent-home-starters button:hover:not(:disabled){background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agent-home-starters button:hover:not(:disabled)::before,.mn-agent-home-starters button:hover:not(:disabled)+button::before{opacity:0}
+.mn-agent-home-starters button:hover:not(:disabled)>svg{opacity:1}
+.mn-agent-home-starters button:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agent-home-starter-icon{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-agent-chips{display:flex;flex:1;flex-wrap:wrap;align-items:center;justify-content:flex-end;gap:6px;min-width:0}
+.mn-agent-chip{display:inline-flex;align-items:center;gap:5px;height:28px;padding:0 10px;border:1px solid var(--brand-border);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:500 12px/1 var(--brand-font-sans);white-space:nowrap}
+.mn-agent-chip svg{color:var(--brand-muted)}
+/* A chip never pushes past the send button: it shrinks and its name is cut with an ellipsis (phone). */
+.mn-agent-chips .mn-agent-chip{flex:0 1 auto;min-width:0;max-width:100%}
+.mn-agent-chip>span,.mn-agent-chip select{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-chip.is-deep{border-color:transparent;background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-agent-chip.is-deep svg{color:var(--brand-gold-hover)}
+.mn-agent-chat.is-home .mn-agent-send{width:34px;height:34px;border-radius:12px;background:var(--brand-gold);color:var(--brand-surface)}
+.mn-agent-chat.is-home .mn-agent-send:disabled{opacity:1;background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+@media(prefers-reduced-motion:reduce){.mn-agent-home-starters button,.mn-agent-home-starters button>svg{transition:none}}
+.mn-agent-composer{display:flex;flex-direction:column;gap:8px;margin:0 max(24px,calc((100% - 860px)/2)) 20px;padding:12px;border:1px solid var(--brand-border-strong);border-radius:16px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1)}
+.mn-agent-composer:focus-within{border-color:var(--brand-faint)}
+.mn-agent-composer textarea{width:100%;min-height:44px;padding:4px 6px;border:0;outline:0;resize:none;background:transparent;color:var(--brand-ink);font:400 14px/1.5 var(--brand-font-sans);box-sizing:border-box}
+.mn-agent-composer-row{display:flex;align-items:center;gap:10px}
+.mn-agent-composer-row small{flex:1;color:var(--brand-faint);font:400 12px/1.3 var(--brand-font-sans)}
+.mn-agent-send{display:grid;place-items:center;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:var(--brand-ink);color:var(--brand-surface);cursor:pointer}
+.mn-agent-send:disabled{opacity:.35;cursor:default}
+.mn-agent-docs{display:flex;flex-wrap:wrap;gap:6px}
+.mn-agent-docs>span{display:inline-flex;align-items:center;gap:6px;max-width:260px;padding:4px 6px 4px 9px;border:1px solid var(--brand-border);border-radius:8px;background:var(--brand-surface-soft);color:var(--brand-ink-soft);font:500 12px/1.2 var(--brand-font-sans);overflow:hidden;white-space:nowrap}
+.mn-agent-docs button{display:grid;place-items:center;width:18px;height:18px;padding:0;border:0;border-radius:4px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-notice{margin:0;color:var(--brand-muted);font:400 12.5px/1.4 var(--brand-font-sans)}
+.mn-build-question{display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:10px 12px;border:1px solid var(--brand-gold-line);border-radius:12px;background:var(--brand-gold-soft);color:var(--brand-ink)}
+.mn-build-question>span{flex:1 1 240px}
+.mn-agent-notice.is-error{color:var(--brand-danger)}
+
+/* The editor: the form on the left, a live test on the right. */
+.mn-agents-editor{display:grid;flex:1;grid-template-columns:minmax(0,1.1fr) minmax(360px,.9fr);min-height:0}
+.mn-agents-form{display:flex;flex-direction:column;gap:14px;padding:22px 28px 40px;overflow-y:auto}
+.mn-agents-form label,.mn-agents-form fieldset{display:flex;flex-direction:column;gap:6px;margin:0;padding:0;border:0}
+.mn-agents-form label>span,.mn-agents-form legend{margin-bottom:2px;color:var(--brand-ink-soft);font:600 12px/1.3 var(--brand-font-sans)}
+.mn-agents-form input:not([type=checkbox]),.mn-agents-form select,.mn-agents-form textarea{width:100%;padding:9px 11px;border:1px solid var(--brand-border-strong);border-radius:10px;background:var(--brand-surface);color:var(--brand-ink);font:400 13.5px/1.45 var(--brand-font-sans);box-sizing:border-box}
+.mn-agents-form input:focus,.mn-agents-form select:focus,.mn-agents-form textarea:focus{outline:0;border-color:var(--brand-faint);box-shadow:var(--brand-focus)}
+.mn-agents-form .is-instructions textarea{font:400 13px/1.6 ui-monospace,SFMono-Regular,Menlo,monospace;min-height:280px;resize:vertical}
+.mn-agents-form .is-instructions small{align-self:flex-end;color:var(--brand-faint);font:400 11px/1 var(--brand-font-sans)}
+.mn-agents-form fieldset input+input{margin-top:6px}
+.mn-agents-form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.mn-agents-toggle{flex-direction:row!important;align-items:flex-start;gap:10px!important;padding:10px 12px!important;border:1px solid var(--brand-border)!important;border-radius:10px;background:var(--brand-surface)}
+.mn-agents-toggle input{margin-top:3px}
+.mn-agents-toggle span{display:grid;gap:2px}
+.mn-agents-toggle b{color:var(--brand-ink);font:600 13px/1.35 var(--brand-font-sans)}
+.mn-agents-toggle small{color:var(--brand-muted);font:400 12px/1.4 var(--brand-font-sans)}
+.mn-agents-mode{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.mn-agents-mode button{display:grid;gap:2px;padding:9px 10px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface);text-align:left;cursor:pointer}
+.mn-agents-mode button b{color:var(--brand-ink);font:600 12.5px/1.3 var(--brand-font-sans)}
+.mn-agents-mode button small{color:var(--brand-muted);font:400 11.5px/1.3 var(--brand-font-sans)}
+.mn-agents-mode button[aria-checked=true]{border-color:var(--brand-ink-soft);box-shadow:var(--brand-shadow-1)}
+.mn-agents-file{display:flex;align-items:center;gap:8px;padding:7px 10px;border:1px solid var(--brand-border);border-radius:8px;background:var(--brand-surface);color:var(--brand-ink-soft);font:500 12.5px/1.3 var(--brand-font-sans)}
+.mn-agents-file small{margin-left:auto;color:var(--brand-faint)}
+.mn-agents-file button{display:grid;place-items:center;width:20px;height:20px;padding:0;border:0;border-radius:5px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agents-form fieldset>.nomos-btn{align-self:flex-start}
+.mn-agents-test{display:flex;flex-direction:column;min-height:0;border-left:1px solid var(--brand-border);background:var(--brand-surface-soft)}
+.mn-agents-test header{display:flex;flex-wrap:wrap;align-items:center;gap:4px 10px;padding:14px 18px;border-bottom:1px solid var(--brand-border)}
+.mn-agents-test header b{color:var(--brand-ink);font:600 13px/1.3 var(--brand-font-sans)}
+.mn-agents-test header small{flex:1;color:var(--brand-faint);font:400 12px/1.3 var(--brand-font-sans)}
+.mn-agent-chat.is-test .mn-agent-chat-scroll{padding:20px 18px}
+.mn-agent-chat.is-test .mn-agent-composer{margin:0 14px 14px}
+.mn-agent-chat.is-test .mn-agent-intro{margin-top:2vh}
+.mn-agents-confirm{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:12px 28px 0;padding:12px 14px;border:1px solid color-mix(in srgb,var(--brand-danger) 30%,var(--brand-border));border-radius:10px;background:color-mix(in srgb,var(--brand-danger) 6%,var(--brand-surface));color:var(--brand-ink);font:500 13px/1.4 var(--brand-font-sans)}
+.mn-agents-confirm span{flex:1 1 240px}
+.mn-agents-confirm .is-danger{border-color:var(--brand-danger);background:var(--brand-danger);color:var(--brand-surface)}
+
+@media(max-width:900px){
+  .mn-agents-library,.mn-agents-run{grid-template-columns:minmax(0,1fr)}
+  .mn-agents-side,.mn-agents-side-group{flex-direction:row;flex-wrap:nowrap;gap:6px}
+  /* The practice-area strip scrolls sideways without a scrollbar line under it. */
+  .mn-agents-side{margin:10px 12px 0;padding:8px;border-radius:14px;overflow-x:auto;scrollbar-width:none}
+  .mn-agents-side::-webkit-scrollbar{display:none}
+  .mn-agents-side-title{display:none}
+  .mn-agents-side button small{opacity:1}
+  .mn-agents-side button[aria-pressed=true]::before{display:none}
+  .mn-agents-side button{flex-shrink:0}
+  .mn-agents-history{display:none}
+  .mn-agents-main{padding:16px}
+  .mn-agents-bar-end{flex:1;justify-content:flex-end}
+  .mn-agents-search{width:auto;flex:1 1 120px;max-width:220px}
+  .mn-agents-bar-end .nomos-btn span{display:none}
+  .mn-agents-sort select{max-width:none}
+  .mn-agents-pick select{max-width:120px}
+  .mn-agents-search input,.mn-agent-composer textarea,.mn-agents-form input,.mn-agents-form textarea,.mn-agents-form select{font-size:16px}
+  /* One scrolling page on a narrow screen: the form in full, then the test (the form was squeezed into ~140 px). */
+  .mn-agents-editor{display:block;flex:1;min-height:0;overflow-y:auto}
+  .mn-agents-test{min-height:560px;border-left:0;border-top:1px solid var(--brand-border)}
+  .mn-agents-form{padding:16px;overflow:visible}
+  .mn-agents-form-row{grid-template-columns:1fr}
+  .mn-agent-chat-scroll{padding:18px 16px}
+  .mn-agent-composer{margin:0 12px 12px}
+  .mn-agent-chat.is-home .mn-agent-chat-scroll{padding:28px 16px 0}
+  .mn-agent-home{padding:0 0 12px}
+  .mn-agent-home-title{font-size:30px}
+  .mn-agent-home-starters button>span:nth-child(2){white-space:normal}
+  .mn-agent-chips{justify-content:flex-start}
+}
+/* The agent's history and documents under its composer, as the chat home's panels (5 Nov 2026). */
+.mn-agent-home-panels{margin-bottom:40px;text-align:left}
+.mn-agent-panel-row{position:relative}
+.mn-agent-panel-row>button:first-child{padding-right:40px}
+.mn-agent-panel-delete{position:absolute;top:50%;right:6px;display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;border-radius:7px;background:transparent;color:var(--brand-faint);cursor:pointer;opacity:0;transform:translateY(-50%)}
+.mn-agent-panel-row:hover .mn-agent-panel-delete,.mn-agent-panel-delete:focus-visible{opacity:1}
+.mn-agent-panel-delete:hover{background:var(--brand-surface-sunken);color:var(--brand-danger)}
+.mn-agent-panel-row:hover .nomos-home-panel-when{visibility:hidden}
+/* Inside a chat: «Ιστορικό» in the top bar opens the agent's chats. */
+.mn-agent-history-menu{position:relative}
+.mn-agent-history-menu>.nomos-btn{display:inline-flex;align-items:center;gap:6px}
+.mn-agent-history-list{position:absolute;top:calc(100% + 6px);right:0;z-index:40;display:flex;flex-direction:column;gap:1px;width:320px;max-height:360px;padding:6px;overflow-y:auto;border:1px solid var(--brand-border);border-radius:14px;background:var(--brand-surface);box-shadow:var(--brand-shadow-2);animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-agent-history-list button{display:grid;grid-template-columns:16px minmax(0,1fr) auto;align-items:center;gap:10px;min-height:38px;padding:0 10px;border:0;border-radius:9px;background:transparent;color:var(--brand-ink-soft);font:500 13px/1.3 var(--brand-font-sans);text-align:left;cursor:pointer}
+.mn-agent-history-list button svg{color:var(--brand-faint)}
+.mn-agent-history-list button span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-history-list button small{color:var(--brand-faint);font:400 11.5px/1 var(--brand-font-sans)}
+.mn-agent-history-list button:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agent-history-list button[aria-current=true]{background:var(--brand-gold-soft);color:var(--brand-ink);font-weight:600}
+@media(max-width:700px){.mn-agent-history-list{width:min(320px,calc(100vw - 32px))}.mn-agent-history-menu>.nomos-btn span{display:none}}
+@media(prefers-reduced-motion:reduce){.mn-agent-history-list{animation:none}}
+/* ✦ «Τι κάνω;» in the composer and its steps above the text (5 Nov 2026). */
+.mn-agent-guide{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 10px;border:0;border-radius:9px;background:transparent;color:var(--brand-gold-hover);font:500 12.5px/1 var(--brand-font-sans);cursor:pointer}
+.mn-agent-guide:hover,.mn-agent-guide[aria-pressed=true]{background:var(--brand-gold-soft)}
+.mn-agent-guide:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+@media(max-width:700px){.mn-agent-guide span{display:none}}
+/* Practice-area colours (5 Nov 2026): the card's area tag and the left bar's area icons take the area's ink. */
+.mn-agent-card-chip[style]{background:color-mix(in srgb,var(--agent-cat) 12%,transparent);color:var(--agent-cat)}
+.mn-agents-side button.is-area svg{color:var(--agent-cat)}
+.mn-agents-side button.is-area[aria-pressed=true]{background:color-mix(in srgb,var(--agent-cat) 11%,transparent)}
+.mn-agents-side button.is-area[aria-pressed=true]::before{background:var(--agent-cat)}
+.mn-agents-side button.is-area[aria-pressed=true] svg{color:var(--agent-cat)}
+/* Cards that scroll like the iPhone's Notification Centre (5 Nov 2026, his request). Driven by the scroll itself, not
+   a timer: a card coming up from the bottom rises out of a stack — smaller, tucked under the row above, faint — and
+   settles as it reaches its place; a card leaving at the top shrinks back into the stack and fades. Browsers without
+   scroll-driven animations simply scroll; reduced motion keeps the cards still. */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .mn-agents-grid>li{transform-origin:50% 0;animation:mn-agent-rise linear both,mn-agent-tuck linear both;animation-timeline:view(),view();animation-range:entry 0% entry 100%,exit 0% exit 100%}
+    /* A rising card passes under the settled row above it, as in a stack. */
+    .mn-agents-grid>li{z-index:2}
+    @keyframes mn-agent-rise{from{z-index:0;opacity:.25;transform:translateY(-42%) scale(.9);filter:blur(1.5px)}to{z-index:1;opacity:1;transform:none;filter:none}}
+    @keyframes mn-agent-tuck{from{opacity:1;transform:none;filter:none}to{opacity:0;transform:translateY(34%) scale(.88);filter:blur(2px)}}
+  }
+}
+/* The builder (5 Nov 2026): the agent home's column, with the design stages and the questions in its place. */
+.mn-agent-build .mn-agent-home-starters button>span:nth-child(2){white-space:normal}
+.mn-agent-build-working{display:flex;flex-direction:column;align-items:center;gap:16px;width:100%;margin-top:26px}
+.mn-agent-build-stages{display:flex;flex-direction:column;gap:2px;width:min(420px,100%);margin:0;padding:14px 18px;border:1px solid var(--brand-border);border-radius:16px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1);list-style:none;text-align:left}
+.mn-agent-build-stages li{display:grid;grid-template-columns:22px minmax(0,1fr);align-items:center;gap:8px;min-height:32px;color:var(--brand-faint);font:500 13px/1.4 var(--brand-font-sans);transition:color var(--brand-motion-feedback,120ms) ease}
+.mn-agent-build-stages li>span{display:grid;place-items:center;width:20px;height:20px;border:1px solid var(--brand-border);border-radius:50%;color:var(--brand-gold-hover)}
+.mn-agent-build-stages li.is-now{color:var(--brand-ink)}
+.mn-agent-build-stages li.is-now>span{border-color:var(--brand-gold-line)}
+.mn-agent-build-stages li.is-done{color:var(--brand-ink-soft)}
+.mn-agent-build-stages li.is-done>span{border-color:transparent;background:var(--brand-gold-soft)}
+.mn-agent-build-questions{display:flex;flex-direction:column;gap:14px;width:100%;margin-top:24px;padding:18px 20px;border:1px solid var(--brand-border-strong);border-radius:16px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1);text-align:left;box-sizing:border-box}
+.mn-agent-build-lead{display:flex;align-items:center;gap:7px;margin:0;color:var(--brand-gold-hover);font:600 12px/1.3 var(--brand-font-sans)}
+.mn-agent-build-questions fieldset{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;border:0}
+.mn-agent-build-questions legend{margin-bottom:8px;padding:0;color:var(--brand-ink);font:550 14px/1.4 var(--brand-font-sans)}
+.mn-agent-build-options{display:flex;flex-wrap:wrap;gap:6px}
+.mn-agent-build-options button{min-height:32px;padding:0 12px;border:1px solid var(--brand-border);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:500 13px/1.2 var(--brand-font-sans);cursor:pointer}
+.mn-agent-build-options button:hover{border-color:var(--brand-gold-line);color:var(--brand-ink)}
+.mn-agent-build-options button[aria-pressed="true"]{border-color:var(--brand-gold);background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-agent-build-questions input{height:36px;padding:0 12px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface);color:var(--brand-ink);font:400 13px/1.4 var(--brand-font-sans)}
+.mn-agent-build-questions input:focus{outline:0;border-color:var(--brand-faint)}
+.mn-agent-build-actions{display:flex;justify-content:flex-end;gap:8px}
+.mn-agent-refine{display:flex;flex-direction:column;gap:8px}
+.mn-agent-refine-note{display:flex;align-items:center;gap:8px;margin:0;padding:8px 11px;border:1px solid rgba(var(--brand-gold-rgb),.22);border-left:3px solid var(--brand-gold);border-radius:3px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 13px/1.5 var(--brand-font-sans)}
+.mn-agent-refine-note>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-agent-refine-note>span{flex:1}
+.mn-agent-refine-row{display:flex;align-items:center;gap:8px;padding:4px 4px 4px 12px;border:1px solid var(--brand-gold-line);border-radius:12px;background:var(--brand-surface)}
+.mn-agent-refine-row>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-agent-refine-row input{flex:1;min-width:0;height:34px;border:0;outline:0;background:transparent;color:var(--brand-ink);font:400 13px/1.4 var(--brand-font-sans)}
+@media(prefers-reduced-motion:reduce){.mn-agent-build-stages li{transition:none}}
+/* Phone (5 Nov 2026 bug hunt): the search started 42 px off the left edge; the three controls now share the row. */
+@media(max-width:520px){
+  .mn-agents-bar-end{gap:6px;min-width:0}
+  .mn-agents-search{flex:1 1 0;min-width:0;max-width:none}
+  /* Sort is its icon on a phone (the label read «Recon»); the native list still opens from the whole button. */
+  .mn-agents-sort{position:relative;flex:none;justify-content:center;width:32px;padding:0}
+  .mn-agents-sort select{position:absolute;inset:0;width:100%;max-width:none;opacity:0;cursor:pointer}
+  .mn-agents-pick{position:relative;flex:none;justify-content:center;width:32px;padding:0}
+  .mn-agents-pick select{position:absolute;inset:0;width:100%;max-width:none;opacity:0;cursor:pointer}
+  /* 13 Nov 2026: the globe is the only mark when no country is chosen (it was hidden: an empty square on a phone). */
+  .mn-agents-place .mn-agents-pick-flag{display:inline}
+}
+/* Favourites (5 Nov 2026): the heart fills in a warm red when an agent is kept. */
+.mn-agents{--agent-heart:#c2413b}
+.mn-agent-heart[aria-pressed=true],.mn-agent-heart[aria-pressed=true]:hover{background:transparent;color:var(--agent-heart)}
+.mn-agent-heart:hover{color:var(--agent-heart)}
+.mn-agent-heart-btn[aria-pressed=true]{color:var(--agent-heart)}
+.mn-agent-heart-btn{padding-inline:9px}
+/* A reader beside an agent's conversation (5 Nov 2026, his request: «like the normal chat with Nomos … same size»):
+   the chat's own split, the conversation at least 520 px (or 60 %), the reader up to half the width and 900 px. */
+.mn-agent-split{display:flex;flex:1;flex-direction:column;min-width:0;min-height:0}
+.mn-agent-split>.mn-agent-chat{flex:1}
+.mn-agent-split.has-reader{display:grid;grid-template-columns:minmax(min(520px,60%),1fr) minmax(0,min(50%,900px));align-items:stretch;overflow:hidden}
+.mn-agent-split.has-reader>.mn-agent-chat{min-height:0}
+.mn-agent-split.has-reader .mn-agent-chat-scroll{padding-inline:24px}
+.mn-agent-split.has-reader .mn-agent-composer{margin-inline:20px}
+@media(max-width:880px){.mn-agent-split.has-reader{grid-template-columns:minmax(0,1fr)}.mn-agent-split.has-reader>.mn-agent-chat{display:none}}
+/* Nine starters (5 Nov 2026, his request): five in view, the rest a scroll away inside the same list; the last row
+   fades while more wait below. */
+.mn-agent-home-starters{max-height:calc(5 * 40px + 2px);overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:rgba(var(--brand-gold-rgb),.35) transparent}
+.mn-agent-home-starters.has-more{-webkit-mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent);mask-image:linear-gradient(to bottom,#000 calc(100% - 26px),transparent)}
+.mn-agent-home-starters::-webkit-scrollbar{width:6px}
+.mn-agent-home-starters::-webkit-scrollbar-thumb{border-radius:3px;background:rgba(var(--brand-gold-rgb),.35)}
+.mn-agent-chat.is-test .mn-agent-starters{max-height:132px;overflow-y:auto;overscroll-behavior:contain}
+.mn-agent-explain .mn-agent-explain-retry{position:static;display:inline;width:auto;height:auto;margin-left:4px;padding:0;border:0;background:none;color:var(--brand-gold-hover);font:inherit;text-decoration:underline;cursor:pointer}
+.mn-agents-hint{display:block;margin-top:5px;color:var(--brand-muted);font:400 12px/1.4 var(--brand-font-sans)}
+/* 5 Nov 2026 night: the home panels' rule «.nomos-home-panel li > button» (width 100 %, 52 px) also stretched the
+   hidden delete button over the whole row, so clicking a conversation deleted it. The delete button keeps its size. */
+.nomos-home-panel li > .mn-agent-panel-delete{position:absolute;top:50%;right:6px;display:grid;place-items:center;width:28px;height:28px;padding:0;border-radius:7px;transform:translateY(-50%)}
+.mn-agent-panel-undo{display:flex;align-items:center;gap:8px;margin:6px 12px 0;padding:8px 12px;border-radius:10px;background:var(--brand-surface-sunken);color:var(--brand-ink-soft);font:400 12.5px/1.4 var(--brand-font-sans)}
+.mn-agent-panel-undo button{margin-left:auto;padding:0;border:0;background:none;color:var(--brand-gold-hover);font:600 12.5px/1 var(--brand-font-sans);text-decoration:underline;cursor:pointer}
+/* With a reader beside it the composer is narrow: only the jurisdiction chip stays (the chips broke onto two lines). */
+.mn-agent-split.has-reader .mn-agent-chips .mn-agent-chip+.mn-agent-chip,.mn-agent-chat.is-test .mn-agent-chips .mn-agent-chip+.mn-agent-chip{display:none}
+.mn-agent-unanswered{display:flex;align-items:center;justify-content:flex-end;gap:10px;margin:-4px 0 18px;color:var(--brand-muted);font:400 12.5px/1.4 var(--brand-font-sans)}
+.mn-agent-unanswered button{padding:5px 11px;border:1px solid var(--brand-gold-line);border-radius:999px;background:var(--brand-surface);color:var(--brand-gold-hover);font:600 12px/1 var(--brand-font-sans);cursor:pointer}
+.mn-agent-unanswered button:hover:not(:disabled){background:var(--brand-gold-soft)}
+.mn-agents-draft{display:flex;align-items:center;gap:10px;margin:12px 32px 0 14px;padding:10px 14px;border:1px solid rgba(var(--brand-gold-rgb),.25);border-left:3px solid var(--brand-gold);border-radius:10px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 13px/1.4 var(--brand-font-sans)}
+.mn-agents-draft>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-agents-draft>span{flex:1;min-width:0}
+@media(max-width:900px){.mn-agents-draft{margin:10px 12px 0;flex-wrap:wrap}}
+/* Phone: the agent page's bar shows its buttons as icons (Customise was cut at the edge); one chip in the composer. */
+@media(max-width:700px){
+  .mn-agents-bar-actions .nomos-btn>span{display:none}
+  .mn-agents-bar-actions .nomos-btn{padding-inline:9px}
+}
+@media(max-width:520px){.mn-agent-chips .mn-agent-chip+.mn-agent-chip{display:none}}
+.mn-agent-refine-hint{display:block;margin-top:3px;color:var(--brand-muted);font:400 12px/1.4 var(--brand-font-sans)}
+/* A judgment beside an agent's answer: the chat's case card in the reader column (6 Nov 2026). */
+.mn-agent-case{display:flex;min-width:0;min-height:0;overflow:hidden;border-left:1px solid var(--brand-border);background:var(--brand-surface)}
+.mn-agent-case>.mn-page.mn-agent-case-page{display:flex;flex:1;flex-direction:column;min-width:0;min-height:0;height:100%;overflow:hidden;background:var(--brand-surface)}
+.mn-agent-case .mn-detail-col{flex:1;min-height:0;overflow-y:auto}
+@media(max-width:880px){.mn-agent-case{border-left:0}}
+/* This product: a conversation with no jurisdiction yet chooses one from the chip itself (nothing is chosen for the user). */
+.mn-agent-chip.is-choose{position:relative;gap:6px;padding-right:8px;border-color:var(--brand-gold-line);background:var(--brand-gold-soft);color:var(--brand-gold-hover);cursor:pointer}
+.mn-agent-chip.is-choose svg{color:var(--brand-gold-hover)}
+.mn-agent-chip.is-choose select{max-width:180px;border:0;outline:0;background:transparent;color:inherit;font:inherit;cursor:pointer}
+.mn-agent-chip.is-choose:focus-within{box-shadow:var(--brand-focus)}
+
+/* «Tell me the task» above the library's cards (7 Nov 2026, his request): the task in the user's words, then the
+   agents of every field that do it — the AI's picks with a reason, or matches by wording. */
+.mn-agents-task{margin:0 0 16px}
+.mn-agents-task-form{display:flex;align-items:center;gap:8px;min-height:46px;padding:5px 6px 5px 14px;border:1px solid var(--brand-border-strong);border-radius:14px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1)}
+.mn-agents-task-form:focus-within{border-color:var(--brand-composer-line);box-shadow:var(--brand-composer-focus)}
+.mn-agents-task-form>svg{flex:none;color:var(--brand-gold)}
+.mn-agents-task-form input{flex:1;min-width:0;height:34px;padding:0;border:0;outline:0;background:transparent;color:var(--brand-ink);font:400 14px/1.4 var(--brand-font-sans)}
+.mn-agents-task-form input::placeholder{color:var(--brand-faint)}
+/* The box shows the focus; the field inside draws no second ring. */
+.mn-agents-task-form input:focus-visible{box-shadow:none}
+.mn-agents-task-clear{display:grid;flex:none;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:7px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agents-task-clear:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agents-task-clear:focus-visible,.mn-agents-task-list button:focus-visible,.mn-agents-task-build:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agents-task-form .nomos-btn{flex:none}
+.mn-agents-task-found{margin-top:10px;padding:12px 10px 8px;border:1px solid var(--brand-border);border-radius:var(--brand-radius-md);background:var(--brand-surface);animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-agents-task-head{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;margin:0 6px 6px;color:var(--brand-muted);font:400 12.5px/1.4 var(--brand-font-sans)}
+.mn-agents-task-head b{color:var(--brand-ink);font-weight:600}
+.mn-agents-task-head span{display:inline-flex;align-items:center;gap:6px}
+.mn-agents-task-list{display:flex;flex-direction:column;margin:0;padding:0;list-style:none}
+.mn-agents-task-list li+li{border-top:1px solid var(--brand-border)}
+.mn-agents-task-list button{display:grid;grid-template-columns:minmax(0,1fr) 16px;column-gap:12px;row-gap:4px;width:100%;padding:10px;border:0;border-radius:10px;background:transparent;text-align:left;cursor:pointer}
+.mn-agents-task-list button:hover{background:var(--brand-surface-sunken)}
+.mn-agents-task-pick{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;min-width:0}
+.mn-agents-task-pick b{color:var(--brand-ink);font:600 14px/1.3 var(--brand-font-sans)}
+.mn-agents-task-why{grid-column:1;display:-webkit-box;overflow:hidden;color:var(--brand-muted);font:400 13px/1.45 var(--brand-font-sans);-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.mn-agents-task-list button>svg{grid-column:2;grid-row:1/span 2;align-self:center;color:var(--brand-gold-hover);opacity:.45;transition:opacity var(--brand-motion-feedback,120ms) ease,transform var(--brand-motion-feedback,120ms) ease}
+.mn-agents-task-list button:hover>svg{opacity:1;transform:translateX(2px)}
+.mn-agents-task-empty{margin:0 6px 4px;color:var(--brand-muted);font:400 13px/1.45 var(--brand-font-sans)}
+.mn-agents-task-build{display:inline-flex;align-items:center;gap:6px;margin:6px 2px 2px;padding:6px 10px;border:0;border-radius:8px;background:transparent;color:var(--brand-gold-hover);font:600 12.5px/1.2 var(--brand-font-sans);cursor:pointer}
+.mn-agents-task-build:hover{background:var(--brand-gold-soft)}
+@media(max-width:700px){.mn-agents-task-form .nomos-btn span{display:none}.mn-agents-task-form{padding-left:12px}}
+@media(prefers-reduced-motion:reduce){.mn-agents-task-found{animation:none}.mn-agents-task-list button>svg{transition:none}}
+
+/* «/» in the chat box (7 Nov 2026): the menu at the box, the agent a question goes to, and who answered. */
+.mn-agent-composer{position:relative}
+/* The composer's border shows the focus (focus-within); the text box inside draws no second ring. */
+.mn-agent-composer textarea:focus-visible{box-shadow:none}
+.mn-agent-input{position:relative;display:block}
+.mn-agent-slash-hint{position:absolute;top:5px;right:4px;display:inline-flex;align-items:center;gap:5px;color:var(--brand-faint);font:400 11.5px/1.2 var(--brand-font-sans);pointer-events:none}
+.mn-agent-slash-hint kbd{display:inline-grid;place-items:center;min-width:18px;height:18px;padding:0 4px;border:1px solid var(--brand-border-strong);border-radius:5px;background:var(--brand-surface-soft);color:var(--brand-muted);font:600 11px/1 var(--brand-font-sans)}
+/* The hint keeps its own corner: the text (and a long placeholder) wraps before it, on the home composer too. */
+.mn-agent-chat .mn-agent-composer .mn-agent-input:has(.mn-agent-slash-hint) textarea{padding-right:196px}
+@media(max-width:900px){.mn-agent-slash-hint{display:none}.mn-agent-chat .mn-agent-composer .mn-agent-input:has(.mn-agent-slash-hint) textarea{padding-right:0}}
+.mn-agent-slash{position:absolute;right:10px;bottom:calc(100% + 6px);left:10px;z-index:45;display:flex;flex-direction:column;gap:1px;max-height:320px;margin:0;padding:6px;overflow-y:auto;border:1px solid var(--brand-border);border-radius:14px;background:var(--brand-surface);box-shadow:var(--brand-shadow-2);list-style:none;text-align:left;animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-agent-chat.is-home .mn-agent-slash{top:calc(100% + 6px);bottom:auto}
+.mn-agent-slash-head{padding:8px 10px 4px;color:var(--brand-faint);font:600 10.5px/1.2 var(--brand-font-sans);letter-spacing:.08em;text-transform:uppercase}
+.mn-agent-slash li[role=option]{display:grid;grid-template-columns:16px minmax(0,1fr);align-items:center;gap:10px;min-height:38px;padding:5px 10px;border-radius:9px;color:var(--brand-ink-soft);cursor:pointer}
+.mn-agent-slash li[role=option]>svg{color:var(--brand-gold-hover)}
+.mn-agent-slash li[role=option] span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.mn-agent-slash li[role=option] b{overflow:hidden;color:var(--brand-ink);font:500 13px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-slash li[role=option] small{overflow:hidden;color:var(--brand-muted);font:400 11.5px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-slash li[aria-selected=true]{background:var(--brand-gold-soft)}
+.mn-agent-slash-foot{padding:8px 10px 6px;border-top:1px solid var(--brand-border);color:var(--brand-muted);font:400 12px/1.4 var(--brand-font-sans)}
+.mn-agent-called{display:inline-flex;align-self:flex-start;align-items:center;gap:6px;max-width:100%;padding:4px 6px 4px 9px;border:1px solid var(--brand-gold-line);border-radius:8px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:500 12px/1.2 var(--brand-font-sans)}
+.mn-agent-called>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-agent-called>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-called b{color:var(--brand-ink);font-weight:600}
+.mn-agent-called button{display:grid;flex:none;place-items:center;width:18px;height:18px;padding:0;border:0;border-radius:4px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-called button:hover{background:var(--brand-surface);color:var(--brand-ink)}
+.mn-agent-by{display:inline-flex;align-items:center;gap:5px;margin:0 0 8px;padding:3px 9px;border:1px solid var(--brand-border);border-radius:999px;background:var(--brand-surface);color:var(--brand-gold-hover);font:600 11.5px/1.3 var(--brand-font-sans);cursor:pointer}
+.mn-agent-by:hover:not(:disabled){border-color:var(--brand-gold-line);background:var(--brand-gold-soft)}
+.mn-agent-by:disabled{cursor:default}
+@media(prefers-reduced-motion:reduce){.mn-agent-slash{animation:none}}
+
+/* «Names hidden» (7 Nov 2026): the composer's switch beside «How it works», and what the AI will not see. */
+.mn-agent-privacy-btn[aria-pressed=false]:not(:hover){color:var(--brand-ink-soft)}
+.mn-agent-privacy{display:flex;flex-direction:column;gap:8px;padding:10px 12px;border:1px solid var(--brand-border);border-radius:12px;background:var(--brand-surface-soft);text-align:left;animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-agent-privacy-top{display:flex;align-items:center;gap:10px}
+.mn-agent-privacy-title{display:inline-flex;flex:1;align-items:center;gap:7px;color:var(--brand-ink);font:600 12.5px/1.3 var(--brand-font-sans)}
+.mn-agent-privacy-title svg{color:var(--brand-gold-hover)}
+.mn-agent-privacy-switch{display:inline-flex;align-items:center;gap:7px;height:26px;padding:0 10px 0 4px;border:1px solid var(--brand-border-strong);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:600 11.5px/1 var(--brand-font-sans);cursor:pointer}
+.mn-agent-privacy-switch i{position:relative;width:28px;height:16px;border-radius:999px;background:var(--brand-border-strong);transition:background var(--brand-motion-feedback,120ms) ease}
+.mn-agent-privacy-switch i::after{content:'';position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:var(--brand-surface);box-shadow:0 1px 2px rgba(28,26,40,.25);transition:transform var(--brand-motion-feedback,120ms) ease}
+.mn-agent-privacy-switch[aria-checked=true] i{background:var(--brand-gold)}
+.mn-agent-privacy-switch[aria-checked=true] i::after{transform:translateX(12px)}
+.mn-agent-privacy-close{display:grid;place-items:center;width:22px;height:22px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-privacy-close:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-agent-privacy-switch:focus-visible,.mn-agent-privacy-close:focus-visible,.mn-agent-privacy-list button:focus-visible,.mn-agent-privacy-kept button:focus-visible,.mn-agent-by:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-agent-privacy-list{display:flex;flex-direction:column;max-height:184px;margin:0;padding:0;overflow-y:auto;list-style:none}
+.mn-agent-privacy-list li{display:grid;grid-template-columns:86px minmax(0,1fr) auto 24px;align-items:center;gap:10px;min-height:30px;padding:2px 2px 2px 4px;border-radius:7px}
+.mn-agent-privacy-list li+li{border-top:1px solid var(--brand-border)}
+.mn-agent-privacy-list small{color:var(--brand-faint);font:500 11px/1.2 var(--brand-font-sans)}
+.mn-agent-privacy-list b{overflow:hidden;color:var(--brand-ink);font:500 12.5px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-agent-privacy-list code{padding:2px 6px;border-radius:5px;background:var(--brand-gold-soft);color:var(--brand-gold-hover);font:600 11px/1.2 var(--brand-font-mono,ui-monospace,monospace)}
+.mn-agent-privacy-list button,.mn-agent-privacy-kept button{display:inline-grid;place-items:center;width:24px;height:24px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-privacy-list button:hover{background:var(--brand-surface);color:var(--brand-ink)}
+.mn-agent-privacy-empty{margin:0;color:var(--brand-muted);font:400 12.5px/1.45 var(--brand-font-sans)}
+.mn-agent-privacy-kept{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:0;color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans)}
+.mn-agent-privacy-kept button{display:inline-flex;gap:4px;width:auto;height:22px;padding:0 8px;border:1px solid var(--brand-border);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:500 11.5px/1 var(--brand-font-sans)}
+.mn-agent-privacy-kept button:hover{border-color:var(--brand-gold-line);color:var(--brand-ink)}
+.mn-agent-privacy-add{display:flex;gap:8px}
+.mn-agent-privacy-add input{flex:1;min-width:0;height:30px;padding:0 10px;border:1px solid var(--brand-border-strong);border-radius:8px;outline:0;background:var(--brand-surface);color:var(--brand-ink);font:400 13px/1.3 var(--brand-font-sans)}
+.mn-agent-privacy-add input:focus{border-color:var(--brand-composer-line)}
+.mn-agent-privacy-add .nomos-btn{height:30px}
+.mn-agent-privacy-hint{color:var(--brand-faint);font:400 11.5px/1.45 var(--brand-font-sans)}
+/* A phone keeps room for the place chip: the composer's buttons show their icons only. */
+@media(max-width:520px){.mn-agent-composer-row>.nomos-btn>span{display:none}.mn-agent-composer-row>.nomos-btn{padding-inline:6px}}
+@media(max-width:700px){.mn-agent-privacy-list li{grid-template-columns:minmax(0,1fr) auto 24px}.mn-agent-privacy-list small{display:none}.mn-agent-privacy-add input{font-size:16px}}
+@media(prefers-reduced-motion:reduce){.mn-agent-privacy{animation:none}.mn-agent-privacy-switch i,.mn-agent-privacy-switch i::after{transition:none}}
+
+/* House style, chains, privacy, photos and sharing (7 Nov 2026, his request). Built from the same tokens and the
+   same controls as the pages around them. */
+.mn-house-list{display:flex;flex-direction:column;margin:0;padding:0;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface);list-style:none}
+.mn-house-list li{display:flex;align-items:center;gap:10px;min-height:38px;padding:4px 6px 4px 12px}
+.mn-house-list li+li{border-top:1px solid var(--brand-border)}
+.mn-house-list li>span{display:flex;flex:1;align-items:center;gap:8px;min-width:0;color:var(--brand-ink);font:400 13px/1.45 var(--brand-font-sans)}
+.mn-house-list li>span svg{flex:none;color:var(--brand-muted)}
+.mn-house-list li small{margin-left:auto;color:var(--brand-faint);font:400 11.5px/1.2 var(--brand-font-sans);white-space:nowrap}
+.mn-house-list button{display:grid;flex:none;place-items:center;width:28px;height:28px;padding:0;border:0;border-radius:7px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-house-list button:hover{background:var(--brand-surface-sunken);color:var(--brand-danger)}
+.mn-house-empty{margin:0;color:var(--brand-muted);font:400 13px/1.5 var(--brand-font-sans)}
+.mn-house-add{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:8px}
+.mn-house-add input{flex:1 1 240px;min-width:0}
+.mn-house-colour{display:flex;align-items:center;gap:10px}
+.mn-house-colour input[type=color]{width:44px;height:32px;padding:2px;border:1px solid var(--brand-border-strong);border-radius:8px;background:var(--brand-surface);cursor:pointer}
+.mn-house-preview{display:flex;align-items:center;gap:14px;margin-top:10px;padding:14px 16px;border:1px solid var(--brand-border);border-top:3px solid var(--house-accent,var(--brand-gold));border-radius:10px;background:var(--brand-surface)}
+.mn-house-preview img{max-width:140px;max-height:56px;object-fit:contain}
+.mn-house-preview span{display:flex;flex-direction:column;gap:2px;min-width:0}
+.mn-house-preview b{color:var(--brand-ink);font:600 15px/1.3 var(--brand-font-sans)}
+.mn-house-preview small{color:var(--brand-muted);font:400 12px/1.45 var(--brand-font-sans);white-space:pre-line}
+
+.mn-agent-teach{display:flex;align-items:center;gap:8px;margin-top:8px;max-width:640px}
+.mn-agent-teach input{flex:1;min-width:0;height:32px;padding:0 10px;border:1px solid var(--brand-border-strong);border-radius:8px;outline:0;background:var(--brand-surface);color:var(--brand-ink);font:400 13px/1.3 var(--brand-font-sans)}
+.mn-agent-teach input:focus{border-color:var(--brand-composer-line)}
+.mn-agent-teach .nomos-btn{height:32px}
+.mn-agent-teach-close{display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-agent-teach-close:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+@media(max-width:700px){.mn-agent-teach input{font-size:16px}}
+
+.mn-agent-photos img{width:22px;height:22px;border-radius:4px;object-fit:cover}
+.mn-agent-photo-warning{display:flex;flex-wrap:wrap;align-items:center;gap:8px;color:var(--brand-ink-soft)}
+.mn-agent-photo-warning button{padding:4px 10px;border:1px solid var(--brand-gold-line);border-radius:999px;background:var(--brand-surface);color:var(--brand-gold-hover);font:600 12px/1.2 var(--brand-font-sans);cursor:pointer}
+.mn-agent-photo-warning button+button{border-color:var(--brand-border);color:var(--brand-muted)}
+.mn-agent-privacy-link{padding:0;border:0;background:none;color:var(--brand-gold-hover);font:inherit;text-decoration:underline;cursor:pointer}
+
+.mn-agents-task-shared{display:flex;align-items:center;gap:8px;margin:0 0 8px;padding:8px 10px;border:1px solid rgba(var(--brand-gold-rgb),.25);border-radius:10px;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 12.5px/1.4 var(--brand-font-sans)}
+.mn-agents-task-shared>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-agents-task-shared>span{flex:1;min-width:0}
+.mn-agents-task-shared button{display:grid;flex:none;place-items:center;width:24px;height:24px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+
+.mn-chain-result h3{display:flex;align-items:center;gap:10px;margin:0 0 8px;color:var(--brand-muted);font:600 11px/1.2 var(--brand-font-sans);letter-spacing:.08em;text-transform:uppercase}
+.mn-chain{display:flex;flex-direction:column;gap:12px;padding:16px;border:1px solid var(--brand-border);border-radius:var(--brand-radius-md);background:var(--brand-surface-soft)}
+.mn-chain-head{display:flex;align-items:center;gap:10px}
+.mn-chain-head h2{flex:1;margin:0;color:var(--brand-ink);font:600 17px/1.3 var(--brand-font-sans)}
+.mn-chain-head input{flex:1;min-width:0;height:36px;padding:0 10px;border:1px solid var(--brand-border-strong);border-radius:8px;background:var(--brand-surface);color:var(--brand-ink);font:600 15px/1.3 var(--brand-font-sans)}
+.mn-chain-steps{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none}
+.mn-chain-steps>li{display:grid;grid-template-columns:28px minmax(0,1fr) auto;align-items:start;gap:10px;padding:10px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface)}
+.mn-chain-n{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--brand-gold-soft);color:var(--brand-gold-hover);font:700 12px/1 var(--brand-font-sans)}
+.mn-chain-step{display:flex;flex-direction:column;gap:6px;min-width:0}
+.mn-chain-step textarea{width:100%;box-sizing:border-box;padding:6px 8px;border:1px solid var(--brand-border);border-radius:8px;resize:vertical;background:var(--brand-surface);color:var(--brand-ink);font:400 13px/1.45 var(--brand-font-sans)}
+.mn-chain-step textarea[readonly]{border-color:transparent;background:transparent;resize:none;color:var(--brand-ink-soft)}
+.mn-chain-agent{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:4px 0;border:0;background:transparent;text-align:left;cursor:pointer}
+.mn-chain-agent:disabled{cursor:default}
+.mn-chain-agent b{color:var(--brand-ink);font:600 14px/1.3 var(--brand-font-sans)}
+.mn-chain-agent small{color:var(--brand-gold-hover);font:600 11.5px/1 var(--brand-font-sans)}
+.mn-chain-pick{position:relative;display:flex;align-items:center;gap:6px}
+.mn-chain-pick input{flex:1;min-width:0;height:32px;padding:0 10px;border:1px solid var(--brand-border-strong);border-radius:8px;outline:0;background:var(--brand-surface);color:var(--brand-ink);font:400 13px/1.3 var(--brand-font-sans)}
+.mn-chain-pick input:focus{border-color:var(--brand-composer-line)}
+.mn-chain-pick-close{display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-chain-pick-list{top:calc(100% + 4px);right:0;bottom:auto;left:0}
+.mn-chain-step-tools{display:flex;flex-direction:column;gap:2px}
+.mn-chain-step-tools button{display:grid;place-items:center;width:26px;height:26px;padding:0;border:0;border-radius:6px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-chain-step-tools button:hover:not(:disabled){background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-chain-step-tools button:disabled{opacity:.35;cursor:default}
+.mn-chain .mn-chain-run{margin:0}
+.mn-chain-result{display:flex;flex-direction:column;gap:8px}
+.mn-chain-result h3 select{height:26px;padding:0 6px;border:1px solid var(--brand-border);border-radius:6px;background:var(--brand-surface);color:var(--brand-ink-soft);font:400 12px/1 var(--brand-font-sans);letter-spacing:0;text-transform:none}
+.mn-chain-result ol{display:flex;flex-direction:column;gap:10px;margin:0;padding:0;list-style:none}
+.mn-chain-result li{padding:12px 14px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface)}
+.mn-chain-result li.is-failed{border-color:color-mix(in srgb,var(--brand-danger) 35%,var(--brand-border))}
+.mn-chain-result li>header{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.mn-chain-result li>header small{color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans)}
+.mn-chain-result li>header .mn-agent-by{margin:0}
+.mn-chain-status{display:grid;place-items:center;width:22px;height:22px;color:var(--brand-gold-hover);font:700 11px/1 var(--brand-font-sans)}
+.mn-chain-result li.is-failed .mn-chain-status{color:var(--brand-danger)}
+.mn-chain-result li.is-done .mn-chain-status{color:var(--brand-success)}
+@media(max-width:700px){.mn-chain{padding:12px}.mn-chain-steps>li{grid-template-columns:24px minmax(0,1fr)}.mn-chain-step-tools{grid-column:2;flex-direction:row}.mn-chain-head .nomos-btn>span{display:none}}
+
+.mn-privacy-list{display:flex;flex-direction:column;margin:0;padding:0;border:1px solid var(--brand-border);border-radius:var(--brand-radius-md);background:var(--brand-surface);list-style:none}
+.mn-privacy-list li{display:grid;grid-template-columns:76px minmax(0,1fr) auto;align-items:start;gap:14px;padding:14px 16px}
+.mn-privacy-list li+li{border-top:1px solid var(--brand-border)}
+.mn-privacy-state{display:flex;flex-direction:column;align-items:flex-start;gap:4px;color:var(--brand-success)}
+.mn-privacy-state small{font:600 11.5px/1 var(--brand-font-sans)}
+.mn-privacy-list li.is-off .mn-privacy-state,.mn-privacy-list li.is-waits .mn-privacy-state{color:var(--brand-muted)}
+.mn-privacy-list li.is-checking .mn-privacy-state{color:var(--brand-faint)}
+.mn-privacy-text{display:flex;flex-direction:column;gap:4px;min-width:0}
+.mn-privacy-text b{color:var(--brand-ink);font:600 14px/1.35 var(--brand-font-sans)}
+.mn-privacy-text span{color:var(--brand-muted);font:400 13px/1.55 var(--brand-font-sans)}
+@media(max-width:700px){.mn-privacy-list li{grid-template-columns:minmax(0,1fr)}.mn-privacy-state{flex-direction:row;align-items:center}}
+
+/* Proof on every sentence (7 Nov 2026): the numbered mark after a sentence, coloured by the check of its quote; the
+   bar under the answer; the document opened at the quoted words. */
+.mn-proof-mark{display:inline-grid;place-items:center;min-width:16px;height:16px;margin:0 1px 0 2px;padding:0 4px;border:1px solid var(--brand-border-strong);border-radius:999px;background:var(--brand-surface);color:var(--brand-muted);font:700 10px/1 var(--brand-font-sans);vertical-align:text-top;cursor:pointer}
+.mn-proof-mark.is-checked{border-color:color-mix(in srgb,var(--brand-success) 45%,transparent);background:color-mix(in srgb,var(--brand-success) 10%,var(--brand-surface));color:var(--brand-success)}
+.mn-proof-mark.is-close{border-color:var(--brand-gold-line);background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-proof-mark.is-missing{border-color:color-mix(in srgb,var(--brand-danger) 45%,transparent);background:color-mix(in srgb,var(--brand-danger) 8%,var(--brand-surface));color:var(--brand-danger)}
+.mn-proof-mark.is-pending{border-style:dashed}
+.mn-proof-mark:hover{box-shadow:0 0 0 2px rgba(var(--brand-gold-rgb),.18)}
+.mn-proof-mark:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-proof-bar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin-top:10px;padding:8px 10px;border:1px solid var(--brand-border);border-radius:10px;background:var(--brand-surface-soft);color:var(--brand-muted);font:400 12px/1.4 var(--brand-font-sans)}
+.mn-proof-bar>svg{flex:none;color:var(--brand-gold-hover)}
+.mn-proof-bar b{color:var(--brand-ink);font-weight:600}
+.mn-proof-bar .is-checked{color:var(--brand-success)}
+.mn-proof-bar .is-missing{color:var(--brand-danger)}
+.mn-proof-bar button{padding:2px 8px;border:1px solid var(--brand-border);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:500 11.5px/1.3 var(--brand-font-sans);cursor:pointer}
+.mn-proof-bar button:hover{border-color:var(--brand-gold-line);color:var(--brand-ink)}
+.mn-proof-unsupported{margin:6px 0 0;padding:8px 10px 8px 26px;border-left:3px solid var(--brand-gold-line);border-radius:0 8px 8px 0;background:var(--brand-gold-soft);color:var(--brand-ink-soft);font:400 12.5px/1.5 var(--brand-font-sans)}
+.mn-proof-unsupported li+li{margin-top:4px}
+.mn-proof-quote{margin-top:8px;padding:8px 10px;border:1px solid var(--brand-border);border-radius:8px;background:var(--brand-surface);color:var(--brand-ink-soft);font:400 12.5px/1.5 var(--brand-font-sans)}
+.mn-proof-quote q{color:var(--brand-ink);font-style:italic}
+.mn-proof-quote button{margin-left:6px;padding:0;border:0;background:none;color:var(--brand-gold-hover);font:600 12px/1.3 var(--brand-font-sans);cursor:pointer}
+.mn-doc-reader-body{flex:1;min-height:0;margin:0;padding:18px 22px 40px;overflow:auto;color:var(--brand-ink);font:400 13.5px/1.65 var(--brand-font-sans);white-space:pre-wrap;overflow-wrap:anywhere}
+.mn-doc-reader-body mark{padding:1px 0;border-radius:3px;background:rgba(var(--brand-gold-rgb),.2);box-shadow:0 0 0 2px rgba(var(--brand-gold-rgb),.2);color:var(--brand-ink)}
+.mn-doc-reader-body mark.is-close{background:rgba(var(--brand-gold-rgb),.1)}
+.mn-agent-copy.is-strong{border-color:var(--brand-gold-line);color:var(--brand-gold-hover)}
+
+/* Chain Agents as a library of its own (10 Nov 2026, his screenshot): a wide search, a line that says what a chain
+   is, the last run, Ready-made / My chains with their counts, a field filter, and the chains as cards on the agents'
+   grid: field chip, steps, name, two sentences, the numbered steps, Copy & edit, View chain. */
+.mn-chain-home{display:flex;flex-direction:column;gap:14px;width:100%;max-width:1480px;margin:0 auto;padding:22px 32px 40px;box-sizing:border-box}
+.mn-chain-search{display:flex;align-items:center;gap:12px;height:56px;padding:0 18px;border:1px solid var(--brand-border-strong);border-radius:14px;background:var(--brand-surface);box-shadow:var(--brand-shadow-1);color:var(--brand-muted)}
+.mn-chain-search:focus-within{border-color:var(--brand-composer-line);box-shadow:var(--brand-composer-focus)}
+.mn-chain-search input{flex:1;min-width:0;height:100%;padding:0;border:0;outline:0;background:transparent;color:var(--brand-ink);font:400 15.5px/1.4 var(--brand-font-sans)}
+.mn-chain-search input:focus-visible{box-shadow:none}
+.mn-chain-search input::placeholder{color:var(--brand-faint)}
+.mn-chain-search input::-webkit-search-cancel-button{display:none}
+.mn-chain-search button{display:grid;place-items:center;width:28px;height:28px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.mn-chain-search button:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.mn-chain-lead{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;margin:0 2px;color:var(--brand-muted);font:400 13.5px/1.4 var(--brand-font-sans)}
+.mn-chain-lead button{display:inline-flex;align-items:center;gap:7px;padding:4px 2px;border:0;background:none;color:var(--brand-gold);font:550 13.5px/1.2 var(--brand-font-sans);cursor:pointer}
+.mn-chain-lead button:hover{color:var(--brand-gold-hover)}
+.mn-chain-recent{align-self:flex-start;max-width:100%;height:38px;padding:0 14px;overflow:hidden;border:1px solid var(--brand-border-strong);border-radius:10px;background:var(--brand-surface);color:var(--brand-ink);font:500 13.5px/1 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap;cursor:pointer}
+.mn-chain-recent:hover{border-color:var(--brand-gold-line)}
+.mn-chain-tabs{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding-bottom:14px;border-bottom:1px solid var(--brand-border)}
+.mn-chain-tabs>span{display:flex;flex-wrap:wrap;gap:8px}
+.mn-chain-tabs button{display:inline-flex;align-items:center;gap:9px;height:40px;padding:0 14px;border:1px solid transparent;border-radius:10px;background:transparent;color:var(--brand-ink-soft);font:550 14px/1 var(--brand-font-sans);cursor:pointer}
+.mn-chain-tabs button:hover{background:var(--brand-surface-sunken)}
+.mn-chain-tabs button[aria-selected=true]{border-color:rgba(var(--brand-gold-rgb),.3);background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.mn-chain-tabs button small{min-width:20px;padding:3px 6px;border-radius:999px;background:var(--brand-surface);color:var(--brand-ink-soft);font:600 11px/1 var(--brand-font-sans);text-align:center}
+.mn-chain-tabs button:not([aria-selected=true]) small{background:var(--brand-surface-sunken)}
+.mn-chain-tabs select{height:40px;max-width:240px;padding:0 34px 0 14px;border:1px solid var(--brand-border-strong);border-radius:10px;background-color:var(--brand-surface);color:var(--brand-ink-soft);font:500 13.5px/1 var(--brand-font-sans)}
+.mn-chain-search button:focus-visible,.mn-chain-lead button:focus-visible,.mn-chain-recent:focus-visible,.mn-chain-tabs button:focus-visible,.mn-chain-tabs select:focus-visible{outline:2px solid transparent;box-shadow:var(--brand-focus)}
+.mn-chain-grid{grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:16px}
+.mn-chain-grid .mn-agent-card b{font-size:17px;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.mn-chain-grid .mn-agent-card-text>span{height:3em;-webkit-line-clamp:2}
+.mn-chain-count{color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans);white-space:nowrap}
+.mn-chain-dots{display:flex;align-items:center;margin-top:2px}
+.mn-chain-dots i{position:relative;display:inline-flex;align-items:center;gap:5px;height:24px;margin-right:10px;padding:0 8px;border:1px solid var(--brand-border);border-radius:8px;background:var(--brand-surface);color:var(--brand-gold-hover);font:600 11.5px/1 var(--brand-font-sans);font-style:normal}
+.mn-chain-dots i+i::before{content:'';position:absolute;top:50%;right:100%;width:10px;margin-right:1px;border-top:1px solid var(--brand-border-strong)}
+.mn-chain-dots small{margin-left:auto;color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans)}
+.mn-chain-page{width:min(1080px,100%)}
+@media(max-width:900px){.mn-chain-home{padding:14px 16px 28px}.mn-chain-search{height:48px}.mn-chain-search input{font-size:16px}.mn-chain-grid{grid-template-columns:minmax(0,1fr)}.mn-chain-tabs select{max-width:100%}}
+
+/* «Search everything» (⌘K), over any page (10 Nov 2026). */
+.mn-palette-back{position:fixed;inset:0;z-index:200;display:flex;align-items:flex-start;justify-content:center;padding:14vh 16px 16px;background:rgba(28,26,40,.34);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px);animation:mn-agent-explain-in var(--brand-motion-menu,180ms) ease-out}
+.mn-palette{display:flex;flex-direction:column;width:min(660px,100%);max-height:min(560px,72vh);overflow:hidden;border:1px solid var(--brand-border-strong);border-radius:18px;background:var(--brand-surface);box-shadow:var(--brand-shadow-3)}
+.mn-palette-box{display:flex;align-items:center;gap:12px;height:58px;padding:0 16px;border-bottom:1px solid var(--brand-border);color:var(--brand-gold)}
+.mn-palette-box input{flex:1;min-width:0;height:100%;padding:0;border:0;outline:0;background:transparent;color:var(--brand-ink);font:400 16px/1.4 var(--brand-font-sans)}
+.mn-palette-box input:focus-visible{box-shadow:none}
+.mn-palette-box input::placeholder{color:var(--brand-faint)}
+.mn-palette-box kbd,.nm-nav-kbd{padding:2px 6px;border:1px solid var(--brand-border-strong);border-radius:6px;background:var(--brand-surface-soft);color:var(--brand-muted);font:600 10.5px/1.3 var(--brand-font-sans)}
+.nm-nav-kbd{margin-left:8px;vertical-align:1px}
+.mn-palette ul{display:flex;flex-direction:column;gap:1px;margin:0;padding:6px;overflow-y:auto;list-style:none}
+.mn-palette li[role=option]{display:grid;grid-template-columns:18px minmax(0,1fr);align-items:center;gap:12px;min-height:44px;padding:5px 10px;border-radius:10px;cursor:pointer}
+.mn-palette li[role=option]>svg{color:var(--brand-gold-hover)}
+.mn-palette li[role=option] span{display:flex;flex-direction:column;gap:1px;min-width:0}
+.mn-palette li[role=option] b{overflow:hidden;color:var(--brand-ink);font:550 14px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-palette li[role=option] small{overflow:hidden;color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.mn-palette li[aria-selected=true]{background:var(--brand-gold-soft)}
+.mn-palette-empty{margin:0;padding:22px 18px;color:var(--brand-muted);font:400 13.5px/1.5 var(--brand-font-sans)}
+@media(prefers-reduced-motion:reduce){.mn-palette-back{animation:none}}
+
+/* The chain as a map (11 Nov 2026): React Flow nodes in the card language. */
+.mn-cc { height: 250px; margin: 4px 0 14px; overflow: hidden; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface-soft); }
+.mn-cc .react-flow__background { color: var(--brand-border-strong); }
+.mn-cc .react-flow__attribution { background: transparent; font-size: 9px; opacity: .55; }
+.mn-cc-node { display: flex; flex-direction: column; gap: 6px; width: 200px; padding: 12px 13px; border: 1px solid var(--brand-border); border-radius: 14px; background: var(--brand-surface); font-family: var(--brand-font-sans);
+  box-shadow: 0 1px 2px rgba(38, 30, 78, .05); transition: border-color .25s ease, box-shadow .25s ease; }
+.mn-cc-node[role=button] { cursor: pointer; }
+.mn-cc-node[role=button]:hover { border-color: rgba(115, 82, 232, .4); box-shadow: 0 16px 30px -22px rgba(38, 30, 78, .45); }
+.mn-cc-node.is-task, .mn-cc-node.is-result { background: var(--brand-gold-soft); border-color: var(--brand-gold-line); }
+.mn-cc-node.is-working { border-color: var(--brand-gold); box-shadow: 0 0 0 3px rgba(var(--brand-gold-rgb), .16); }
+.mn-cc-node.is-done { border-color: rgba(35, 114, 76, .35); }
+.mn-cc-node.is-failed, .mn-cc-node.is-stopped { border-color: rgba(167, 52, 44, .35); }
+.mn-cc-top { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.mn-cc-top b { flex: 1; min-width: 0; overflow: hidden; color: var(--brand-ink); font: 600 13px/1.25 var(--brand-font-sans); text-overflow: ellipsis; white-space: nowrap; }
+.mn-cc-badge { display: inline-grid; flex: none; place-items: center; width: 22px; height: 22px; border-radius: 7px; background: var(--brand-surface); color: var(--brand-gold-hover); box-shadow: 0 0 0 1px var(--brand-border); font: 650 11px/1 var(--brand-font-sans); }
+.mn-cc-badge.is-n { background: var(--brand-gold); color: var(--brand-on-gold); box-shadow: none; }
+.mn-cc-state { flex: none; color: var(--brand-faint); }
+.mn-cc-state.is-ok { color: var(--brand-success); } .mn-cc-state.is-bad { color: var(--brand-danger); }
+.mn-cc-node small { display: -webkit-box; overflow: hidden; color: var(--brand-muted); font: 400 11.5px/1.4 var(--brand-font-sans); -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.mn-cc .react-flow__handle { width: 7px; height: 7px; border: 2px solid var(--brand-surface); background: var(--brand-gold-line); }
+.mn-cc .react-flow__edge-path { stroke: var(--brand-border-strong); stroke-width: 1.6; }
+.mn-cc .react-flow__edge.is-live .react-flow__edge-path { stroke: var(--brand-gold); }
+@media (max-width: 600px) { .mn-cc { height: 230px; } }
+/* 13 Nov 2026: a short chain is one row, so its map needs less height. */
+.mn-cc.is-row { height: 168px; }
+@media (max-width: 600px) { .mn-cc.is-row { height: 150px; } }
+/* E-mails in an agent's answer (12 Nov 2026): chips under the answer open the e-mail beside the chat, half and half. */
+.mn-agent-split.has-reader.is-mail{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.mn-mail-chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+.mn-mail-chips button{display:inline-flex;align-items:center;gap:10px;max-width:min(100%,340px);padding:6px 12px 6px 6px;border:1px solid var(--brand-border);border-radius:12px;background:var(--brand-surface);color:var(--brand-ink-soft);text-align:left;cursor:pointer}
+.mn-mail-chips button:hover{border-color:var(--brand-border-strong);background:var(--brand-surface-soft)}
+.mn-mail-chips button.is-open{border-color:var(--brand-gold-line);background:rgba(var(--brand-gold-rgb),.1)}
+.mn-mail-chips button:focus-visible{outline:2px solid var(--brand-gold);outline-offset:1px}
+.mn-mail-chip-avatar{display:grid;place-items:center;flex:none;width:28px;height:28px;border-radius:50%;background:hsl(var(--mail-hue) 55% 45%);color:#fff;font:500 13px/1 var(--brand-font-sans)}
+.mn-mail-chip-text{display:flex;flex-direction:column;gap:1px;min-width:0}
+.mn-mail-chip-text b,.mn-mail-chip-text small{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mn-mail-chip-text b{color:var(--brand-ink);font:600 12.5px/1.3 var(--brand-font-sans)}
+.mn-mail-chip-text small{color:var(--brand-muted);font:400 12px/1.3 var(--brand-font-sans)}
+/* The place picker inside «Choose where» (12 Nov 2026): visible, one click, and the question then goes. */
+.mn-agent-notice:has(.mn-agent-notice-place){display:flex;flex-wrap:wrap;align-items:center;gap:8px;padding:8px 10px;border-radius:10px;background:var(--brand-gold-soft);color:var(--brand-gold-dark);font-weight:500}
+.mn-agent-notice-place{height:30px;padding:0 8px;border:1px solid var(--brand-gold-line);border-radius:8px;background:var(--brand-surface);color:var(--brand-ink);font:500 13px/1 var(--brand-font-sans)}
+
+/* The agent's questions, above the input box (12 Nov 2026): a panel that rises out of the composer, answers as chips. */
+.mn-ask{display:flex;flex-direction:column;gap:12px;margin:-2px -2px 10px;padding:14px 16px;border:1px solid var(--brand-gold-line);border-radius:16px;background:linear-gradient(160deg,var(--brand-gold-soft),var(--brand-surface) 70%);box-shadow:0 18px 40px -28px rgba(var(--brand-gold-rgb),.9);animation:mn-ask-rise .28s cubic-bezier(.2,.9,.3,1.2) both}
+@keyframes mn-ask-rise{from{opacity:0;transform:translateY(14px) scale(.98)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mn-ask{animation:none}}
+.mn-ask header{display:flex;align-items:center;justify-content:space-between;gap:8px;color:var(--brand-gold-dark);font:650 12.5px/1.2 var(--brand-font-sans);letter-spacing:.02em}
+.mn-ask header span{display:inline-flex;align-items:center;gap:6px}
+.mn-ask header button{padding:4px 8px;border:0;border-radius:8px;background:none;color:var(--brand-muted);font:500 12.5px/1 var(--brand-font-sans);cursor:pointer}
+.mn-ask header button:hover{background:rgba(0,0,0,.05);color:var(--brand-ink)}
+.mn-ask fieldset{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;border:0;min-width:0}
+.mn-ask legend{padding:0;margin-bottom:8px;color:var(--brand-ink);font:600 15px/1.35 var(--brand-font-sans)}
+.mn-ask-options{display:flex;flex-wrap:wrap;gap:8px}
+.mn-ask-options button{padding:8px 14px;border:1px solid var(--brand-border-strong);border-radius:999px;background:var(--brand-surface);color:var(--brand-ink);font:500 13.5px/1.2 var(--brand-font-sans);cursor:pointer;transition:transform .1s ease,border-color .1s ease,background .1s ease}
+.mn-ask-options button:hover{border-color:var(--brand-gold);transform:translateY(-1px)}
+.mn-ask-options button[aria-pressed=true]{border-color:var(--brand-gold);background:var(--brand-gold);color:#fff}
+.mn-ask-options button.is-other{border-style:dashed;color:var(--brand-muted)}
+.mn-ask-options button.is-other[aria-pressed=true]{border-style:solid;color:#fff}
+.mn-ask-options input{flex:1 1 200px;min-width:0;height:36px;padding:0 14px;border:1px solid var(--brand-gold);border-radius:999px;outline:0;background:var(--brand-surface);color:var(--brand-ink);font:400 14px/1 var(--brand-font-sans)}
+.mn-ask-send{align-self:flex-end;display:inline-flex;align-items:center;gap:6px;padding:9px 14px;border:0;border-radius:12px;background:var(--brand-gold);color:#fff;font:600 13px/1 var(--brand-font-sans);cursor:pointer}
+.mn-ask-send:disabled{opacity:.45;cursor:default}
+.mn-agent-asked{display:inline-flex;align-items:center;gap:6px;margin:0;color:var(--brand-muted);font:400 13px/1.4 var(--brand-font-sans)}
+@media (max-width:700px){.mn-ask-options input{font-size:16px}}
+
+/* «Look inside»: an agent in the right panel of the library (12 Nov 2026). */
+.mn-agents-library.has-peek{grid-template-columns:296px minmax(0,1fr) minmax(360px,44%)}
+.mn-agents-library.has-peek .mn-agents-grid{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+.mn-peek{height:100%;animation:mn-peek-in .22s ease both}
+@keyframes mn-peek-in{from{opacity:0;transform:translateX(18px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.mn-peek{animation:none}}
+.mn-peek-head{display:flex;align-items:flex-start;gap:8px;padding:18px 18px 14px;background:linear-gradient(160deg,var(--brand-gold-soft),var(--brand-surface) 85%);border-bottom:1px solid var(--brand-border)}
+.mn-peek-head>div{flex:1;min-width:0}
+.mn-peek-eyebrow{margin:0 0 4px;color:var(--brand-gold-dark);font:650 11px/1.2 var(--brand-font-sans);letter-spacing:.08em;text-transform:uppercase}
+.mn-peek-head h2{margin:0;color:var(--brand-ink);font:700 21px/1.2 var(--brand-font-sans);letter-spacing:-.015em}
+.mn-peek-body{display:flex;flex:1;flex-direction:column;gap:16px;min-height:0;padding:18px;overflow:auto}
+.mn-peek-lead{margin:0;color:var(--brand-ink);font:400 15px/1.55 var(--brand-font-sans)}
+.mn-peek-facts{display:flex;flex-wrap:wrap;gap:6px}
+.mn-peek-facts span{display:inline-flex;align-items:center;gap:5px;padding:5px 10px;border-radius:999px;background:var(--brand-surface-sunken,#f1f0ee);color:var(--brand-ink);font:500 12px/1.2 var(--brand-font-sans)}
+.mn-peek-body section{display:flex;flex-direction:column;gap:8px}
+.mn-peek-body h3{display:flex;align-items:center;gap:6px;margin:0;color:var(--brand-muted);font:650 11.5px/1.2 var(--brand-font-sans);letter-spacing:.07em;text-transform:uppercase}
+.mn-peek-body section>p{margin:0;color:var(--brand-ink);font:400 14px/1.5 var(--brand-font-sans)}
+.mn-peek-steps{display:flex;flex-direction:column;gap:8px;margin:0;padding:0;list-style:none;counter-reset:peek}
+.mn-peek-steps li{position:relative;padding-left:32px;color:var(--brand-ink);font:400 13.5px/1.5 var(--brand-font-sans);counter-increment:peek}
+.mn-peek-steps li::before{content:counter(peek);position:absolute;left:0;top:0;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--brand-gold-soft);color:var(--brand-gold-dark);font:650 11.5px/1 var(--brand-font-sans)}
+.mn-peek-starters{display:flex;flex-direction:column;gap:6px}
+.mn-peek-starters button{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:11px 13px;border:1px solid var(--brand-border);border-radius:12px;background:var(--brand-surface);color:var(--brand-ink);font:500 13.5px/1.4 var(--brand-font-sans);text-align:left;cursor:pointer;transition:border-color .12s ease,transform .12s ease,background .12s ease}
+.mn-peek-starters button:hover{border-color:var(--brand-gold);background:var(--brand-gold-soft);transform:translateX(2px)}
+.mn-peek-starters button svg{flex:none;color:var(--brand-gold)}
+.mn-peek .mn-agent-explain-wrap{margin:0}
+.mn-peek .mn-agent-explain>button{display:none}
+.mn-peek-foot{display:flex;gap:8px;padding:12px 18px;border-top:1px solid var(--brand-border);background:var(--brand-surface)}
+.mn-peek-foot .nomos-btn{flex:1;justify-content:center;height:40px}
+@media (max-width:1100px){.mn-agents-library.has-peek{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}.mn-agents-library.has-peek>.mn-agents-side{display:none}}
+@media (max-width:760px){.mn-agents-library.has-peek{grid-template-columns:minmax(0,1fr)}.mn-agents-library.has-peek>.mn-agents-main{display:none}}
+
+/* The assistant's picks and its offer to build, under its answer (12 Nov 2026). */
+.mn-asst-cards { display: flex; flex-direction: column; gap: 10px; margin: 12px 0 4px; }
+.mn-asst-cards ul { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 10px; margin: 0; padding: 0; list-style: none; }
+.mn-asst-cards li > button { display: grid; grid-template-columns: 34px minmax(0, 1fr); grid-template-rows: 1fr auto; gap: 4px 12px; width: 100%; height: 100%; padding: 14px; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); color: var(--brand-ink); text-align: left; cursor: pointer; transition: border-color .14s ease, box-shadow .14s ease, transform .14s ease; }
+.mn-asst-cards li > button:hover { border-color: var(--brand-gold-line); box-shadow: 0 18px 34px -26px rgba(var(--brand-gold-rgb), .95); transform: translateY(-2px); }
+.mn-asst-card-icon { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 11px; background: linear-gradient(135deg, rgba(var(--brand-gold-rgb), .18), rgba(var(--brand-gold-rgb), .06)); color: var(--brand-gold, #6d4fd6); }
+.mn-asst-card-text { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.mn-asst-card-text b { font: 650 14.5px/1.3 var(--brand-font-sans); }
+.mn-asst-card-text small { color: var(--brand-muted); font: 400 13px/1.45 var(--brand-font-sans); }
+.mn-asst-card-text i { color: var(--brand-faint); font: 500 11.5px/1.3 var(--brand-font-sans); font-style: normal; }
+.mn-asst-card-go { grid-column: 2; justify-self: end; display: inline-flex; align-items: center; gap: 5px; padding: 5px 12px; border-radius: 999px; background: var(--brand-ink); color: #fff; font: 600 12.5px/1.2 var(--brand-font-sans); }
+.mn-asst-build { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 14px; border: 1px dashed var(--brand-gold-line); border-radius: 16px; background: linear-gradient(135deg, rgba(var(--brand-gold-rgb), .07), transparent 70%); }
+.mn-asst-build small { display: -webkit-box; overflow: hidden; -webkit-line-clamp: 3; -webkit-box-orient: vertical; }
+@media (max-width: 600px) { .mn-asst-build { grid-template-columns: 34px minmax(0, 1fr); } .mn-asst-build > button { grid-column: 1 / -1; justify-content: center; } }
+
+/* Apps connected right in the chat (12 Nov 2026). */
+.mn-asst-connect { display: flex; flex-direction: column; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.mn-asst-connect li { display: grid; grid-template-columns: 30px minmax(0, 1fr) auto; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); transition: border-color .15s ease, background .15s ease; }
+.mn-asst-connect li[data-on=true] { border-color: rgba(22, 163, 74, .35); background: linear-gradient(135deg, rgba(22, 163, 74, .06), transparent 70%); }
+.mn-asst-connect-name { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.mn-asst-connect-name b { font: 650 14.5px/1.3 var(--brand-font-sans); color: var(--brand-ink); }
+.mn-asst-connect-name small { color: var(--brand-muted); font: 400 12.5px/1.4 var(--brand-font-sans); }
+.mn-asst-connect-on { display: inline-flex; align-items: center; gap: 6px; color: #15803d; font: 600 13px/1.2 var(--brand-font-sans); }
+.mn-asst-connect-off { margin-left: 8px; padding: 4px 10px; border: 1px solid var(--brand-border); border-radius: 999px; background: none; color: var(--brand-muted); font: 500 12px/1.2 var(--brand-font-sans); cursor: pointer; }
+.mn-asst-connect-off:hover { border-color: rgba(220, 38, 38, .4); color: #b91c1c; }
+@media (max-width: 600px) { .mn-asst-connect li { grid-template-columns: 30px minmax(0, 1fr); } .mn-asst-connect li > :last-child { grid-column: 1 / -1; } }
+/* The connect cards are rows, not the agent-card grid they sit in (12 Nov 2026: squeezed into 260 px columns). */
+.mn-asst-cards ul.mn-asst-connect { display: flex; flex-direction: column; gap: 8px; max-width: 560px; }
+.mn-asst-connect li { grid-template-columns: 32px minmax(0, 1fr) auto; padding: 12px 12px 12px 14px; }
+.mn-asst-connect li > svg, .mn-asst-connect li > img, .mn-asst-connect li > span:first-child { width: 32px; height: 32px; }
+.mn-asst-connect-name small { display: flex; align-items: center; gap: 6px; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.mn-asst-connect-dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #16a34a; box-shadow: 0 0 0 3px rgba(22, 163, 74, .15); }
+.mn-asst-connect li[data-on=true] .mn-asst-connect-name small { color: #15803d; }
+.mn-asst-connect-off { margin: 0; padding: 6px 12px; }
+.mn-asst-connect li > .nomos-btn { white-space: nowrap; }
+.mn-asst-connect .mn-ask-inline { flex-wrap: nowrap; white-space: nowrap; }
+/* …and their buttons are buttons, not the agent cards' full-height tiles. */
+.mn-asst-cards .mn-asst-connect li > button { display: inline-flex; align-items: center; gap: 6px; width: auto; height: auto; transform: none; box-shadow: none; }
+.mn-asst-cards .mn-asst-connect li > button.mn-asst-connect-off { padding: 6px 12px; border: 1px solid var(--brand-border); border-radius: 999px; background: var(--brand-surface); color: var(--brand-muted); font: 500 12.5px/1.2 var(--brand-font-sans); }
+.mn-asst-cards .mn-asst-connect li > button.mn-asst-connect-off:hover { border-color: rgba(220, 38, 38, .4); color: #b91c1c; transform: none; }
+.mn-asst-cards .mn-asst-connect li > button.nomos-btn { padding: 8px 14px; border-radius: 999px; }
+/* The files under a question open in the right panel (12 Nov 2026). */
+.mn-agent-msg-files { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.mn-agent-msg-files button { padding: 0; border: 0; background: none; color: inherit; font: inherit; text-decoration: underline; text-decoration-color: rgba(var(--brand-gold-rgb), .45); text-underline-offset: 2px; cursor: pointer; }
+.mn-agent-msg-files button:hover { color: var(--brand-gold, #6d4fd6); }
+/* The agent's questions: Nomos's question sheet one to one (12 Nov 2026, his «100% like Nomos»): its own colours,
+   borders, radii, shadow and Inter, sitting above the box at up to 720 px. */
+.mn-qsheet { --q-ink: #17130d; --q-ink-soft: #3f382f; --q-muted: #6b675f; --q-border: rgba(75,58,36,.13); --q-border-strong: rgba(75,58,36,.22); --q-soft: #fbfaf6;
+  width: min(calc(100% - 48px), 720px); margin: 0 auto 10px; border: 1px solid var(--q-border); border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(54,40,22,.05), 0 18px 44px -24px rgba(54,40,22,.24); font-family: 'Inter', 'Noto Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+.mn-qsheet-head { display: flex; align-items: center; gap: 6px; min-height: 40px; padding: 4px 8px 4px 6px; border-bottom: 1px solid var(--q-border); }
+.mn-qsheet.is-collapsed .mn-qsheet-head { border-bottom: 0; }
+.mn-qsheet-title { font: 500 13px/1 'Inter', sans-serif; color: var(--q-ink-soft); }
+.mn-qsheet-count { flex: 1; padding-right: 2px; text-align: right; font: 500 12px/1 'Inter', sans-serif; color: var(--q-muted); }
+.mn-qsheet-icon { display: inline-grid; place-items: center; width: 28px; height: 28px; border: 0; border-radius: 8px; background: transparent; color: var(--q-muted); cursor: pointer; }
+.mn-qsheet-icon:hover:not(:disabled) { background: var(--q-soft); color: var(--q-ink); }
+.mn-qsheet-icon:disabled { opacity: .35; cursor: default; }
+.mn-qsheet-body { padding: 14px 16px 12px; }
+.mn-qsheet-question { margin: 0 0 10px; font: 500 14px/1.45 'Inter', sans-serif; color: var(--q-ink); }
+.mn-qsheet-options { display: flex; flex-direction: column; gap: 2px; }
+.mn-qsheet-option { display: flex; align-items: center; gap: 10px; min-height: 32px; padding: 5px 8px; border: 0; border-radius: 8px; background: transparent; color: var(--q-ink); font: 400 13.5px/1.35 'Inter', sans-serif; text-align: left; cursor: pointer; }
+.mn-qsheet-option:hover { background: var(--q-soft); }
+.mn-qsheet-option.is-other { color: var(--q-muted); }
+.mn-qsheet-option.is-on { color: var(--q-ink); font-weight: 500; }
+.mn-qsheet-mark { flex: 0 0 auto; width: 15px; height: 15px; border: 1.5px solid var(--q-border-strong); border-radius: 50%; background: #fff; transition: border-color .12s ease, box-shadow .12s ease; }
+.mn-qsheet-option.is-on .mn-qsheet-mark { border-color: var(--q-ink); box-shadow: inset 0 0 0 3.5px #fff, inset 0 0 0 8px var(--q-ink); }
+.mn-qsheet-other { width: calc(100% - 33px); min-height: 34px; margin: 4px 0 2px 33px; padding: 6px 10px; border: 1px solid var(--q-border-strong); border-radius: 8px; background: #fff; color: var(--q-ink); font: 400 13.5px/1.35 'Inter', sans-serif; outline: none; }
+.mn-qsheet-other:focus { border-color: var(--q-ink); }
+.mn-qsheet-actions { display: flex; justify-content: flex-end; align-items: center; gap: 8px; margin-top: 12px; }
+.mn-qsheet-skip { min-height: 32px; padding: 0 12px; border: 1px solid var(--q-border); border-radius: 8px; background: #fff; color: var(--q-ink-soft); font: 500 13px/1 'Inter', sans-serif; cursor: pointer; }
+.mn-qsheet-skip:hover { background: var(--q-soft); }
+/* 13 Nov 2026: a question that asks for a document carries its own «Attach files», on the left of Skip. */
+.mn-qsheet-attach { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; margin-right: auto; padding: 0 12px; border: 1px dashed var(--q-border); border-radius: 8px; background: #fff; color: var(--q-ink); font: 500 13px/1 'Inter', sans-serif; cursor: pointer; }
+.mn-qsheet-attach:hover { background: var(--q-soft); border-style: solid; }
+.mn-qsheet-go { min-height: 32px; padding: 0 14px; border: 0; border-radius: 8px; background: var(--q-ink); color: #fff; font: 500 13px/1 'Inter', sans-serif; cursor: pointer; }
+.mn-qsheet-go:disabled, .mn-qsheet-skip:disabled { opacity: .4; cursor: default; }
+@media (max-width: 720px) { .mn-qsheet { width: 100%; } .mn-qsheet-body { padding: 12px 12px 10px; } .mn-qsheet-other { font-size: 16px; } }
+
+/* The loop's check (12 Nov 2026): a quiet line under a written answer while it is checked or improved. */
+.mn-agent-checking { display: inline-flex; align-items: center; gap: 6px; margin: 6px 0 0; color: var(--brand-muted); font: 500 12.5px/1.3 var(--brand-font-sans); }
+.mn-qsheet-other.is-typed { width: 100%; margin-left: 0; }
+
+/* A routine offered in the chat (12 Nov 2026). */
+.mn-routine-offer { display: grid; grid-template-columns: 34px minmax(0, 1fr) auto; align-items: center; gap: 12px; max-width: 620px; margin: 12px 0 4px; padding: 14px; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); }
+.mn-routine-offer[data-state=on] { border-color: rgba(22, 163, 74, .35); background: linear-gradient(135deg, rgba(22, 163, 74, .06), transparent 70%); }
+.mn-routine-offer .mn-asst-card-text i { color: var(--brand-muted); }
+@media (max-width: 600px) { .mn-routine-offer { grid-template-columns: 34px minmax(0, 1fr); } .mn-routine-offer > button { grid-column: 1 / -1; justify-content: center; } }
+
+/* An action the agent proposed (12 Nov 2026): every detail, Edit, and the one button that does it. */
+.mn-actions { display: flex; flex-direction: column; gap: 10px; max-width: 620px; margin: 12px 0 4px; }
+.mn-action { display: flex; flex-direction: column; gap: 10px; padding: 14px 16px; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); }
+.mn-action header { display: flex; align-items: center; gap: 10px; }
+.mn-action header b { font: 650 14.5px/1.3 var(--brand-font-sans); color: var(--brand-ink); }
+.mn-action header small { margin-left: auto; color: var(--brand-muted); font: 500 12px/1 var(--brand-font-sans); }
+.mn-action-facts { display: grid; gap: 6px; margin: 0; }
+.mn-action-facts > div { display: grid; grid-template-columns: 84px minmax(0, 1fr); gap: 10px; }
+.mn-action-facts dt { color: var(--brand-muted); font: 500 12.5px/1.5 var(--brand-font-sans); }
+.mn-action-facts dd { margin: 0; color: var(--brand-ink); font: 400 13.5px/1.5 var(--brand-font-sans); overflow-wrap: anywhere; }
+.mn-action-facts dd small { color: var(--brand-muted); }
+.mn-action-facts .is-body dd { white-space: pre-wrap; max-height: 220px; overflow: auto; padding: 8px 10px; border-radius: 8px; background: var(--brand-surface-sunken, #f6f5f2); }
+.mn-action-edit { display: grid; gap: 8px; }
+.mn-action-field { display: grid; gap: 4px; }
+.mn-action-field span { color: var(--brand-muted); font: 500 12px/1.3 var(--brand-font-sans); }
+.mn-action-field input, .mn-action-field textarea { width: 100%; padding: 7px 10px; border: 1px solid var(--brand-border-strong); border-radius: 8px; background: #fff; color: var(--brand-ink); font: 400 13.5px/1.45 var(--brand-font-sans); }
+.mn-action-warn { margin: 0; padding: 8px 10px; border-radius: 8px; background: rgba(234, 179, 8, .12); color: #854d0e; font: 400 12.5px/1.45 var(--brand-font-sans); }
+.mn-action-note { margin: 0; color: #b91c1c; font: 400 12.5px/1.45 var(--brand-font-sans); }
+.mn-action footer { display: flex; justify-content: flex-end; gap: 8px; }
+.mn-action.is-done { flex-direction: row; align-items: center; gap: 8px; padding: 10px 14px; border-color: rgba(22, 163, 74, .35); background: linear-gradient(135deg, rgba(22, 163, 74, .06), transparent 70%); color: #15803d; font: 500 13px/1.45 var(--brand-font-sans); }
+
+/* «Teach it» (12 Nov 2026): the lessons card above the box, in the questions' sheet. */
+.mn-qsheet-icon.is-static { cursor: default; }
+.mn-qsheet-icon.is-static:hover { background: transparent; color: var(--q-muted); }
+.mn-lessons-note { margin: 0; font: 400 13.5px/1.45 'Inter', sans-serif; color: var(--q-ink-soft); }
+.mn-lessons-list { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 0; list-style: none; }
+.mn-lessons-list li { display: flex; align-items: center; gap: 10px; min-height: 36px; padding: 3px 4px 3px 8px; border-radius: 8px; }
+.mn-lessons-list li:hover { background: var(--q-soft); }
+.mn-lessons-list li:not(.is-on) .mn-lessons-text { color: var(--q-muted); text-decoration: line-through; }
+.mn-lessons-tick { display: inline-grid; place-items: center; flex: none; width: 16px; height: 16px; padding: 0; border: 1.5px solid var(--q-border-strong); border-radius: 4px; background: #fff; color: #fff; cursor: pointer; }
+.mn-lessons-list li.is-on .mn-lessons-tick { border-color: var(--q-ink); background: var(--q-ink); }
+.mn-lessons-text { flex: 1; min-width: 0; min-height: 30px; padding: 4px 6px; border: 1px solid transparent; border-radius: 6px; background: transparent; color: var(--q-ink); font: 400 13.5px/1.35 'Inter', sans-serif; outline: none; }
+.mn-lessons-text:hover { border-color: var(--q-border); background: #fff; }
+.mn-lessons-text:focus { border-color: var(--q-ink); background: #fff; }
+.mn-lessons-scope { display: inline-flex; flex: none; padding: 2px; border: 1px solid var(--q-border); border-radius: 8px; background: #fff; }
+.mn-lessons-scope button { min-height: 24px; padding: 0 8px; border: 0; border-radius: 6px; background: transparent; color: var(--q-muted); font: 500 12px/1 'Inter', sans-serif; cursor: pointer; white-space: nowrap; }
+.mn-lessons-scope button.is-on { background: var(--q-soft); color: var(--q-ink); box-shadow: 0 0 0 1px var(--q-border); }
+@media (max-width: 720px) {
+  .mn-lessons-list li { flex-wrap: wrap; padding: 6px 4px; }
+  .mn-lessons-text { flex-basis: calc(100% - 30px); font-size: 16px; }
+  .mn-lessons-scope { margin-left: 26px; }
+}
+
+/* «Ask me before sending» (12 Nov 2026): the waiting list on Routines, the bar in a run, the banner on Today. */
+.mn-rt-waiting { margin: 0; /* the page already spaces its sections (26 px) */ padding: 14px 16px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 12px; background: var(--brand-surface-soft, #fbfaf6); }
+.mn-rt-waiting h2 { display: flex; align-items: center; gap: 8px; margin: 0 0 8px; font: 600 14px/1.3 'Inter', sans-serif; color: var(--brand-ink, #17130d); }
+.mn-rt-waiting ul { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.mn-rt-waiting li { display: flex; align-items: center; gap: 12px; min-height: 44px; padding: 6px 6px 6px 12px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 10px; background: #fff; }
+.mn-rt-waiting li > span { display: flex; flex: 1; flex-direction: column; min-width: 0; gap: 2px; }
+.mn-rt-waiting li b { font: 600 13px/1.3 'Inter', sans-serif; color: var(--brand-ink, #17130d); }
+.mn-rt-waiting li small { overflow: hidden; font: 400 12.5px/1.35 'Inter', sans-serif; color: var(--brand-muted, #6b675f); text-overflow: ellipsis; white-space: nowrap; }
+.mn-approval { margin: 0 0 14px; padding: 12px 14px; border: 1px solid rgba(75,58,36,.18); border-radius: 12px; background: #fbfaf6; }
+.mn-approval.is-sent, .mn-approval.is-rejected { padding: 9px 12px; background: transparent; }
+.mn-approval-head { display: flex; align-items: flex-start; gap: 8px; margin: 0; font: 400 13.5px/1.45 'Inter', sans-serif; color: #3f382f; }
+.mn-approval-head svg { flex: none; margin-top: 2px; }
+.mn-approval-head b { color: #17130d; font-weight: 600; }
+.mn-approval-asked { margin: 6px 0 0 23px; font: 400 12.5px/1.4 'Inter', sans-serif; color: #6b675f; }
+.mn-approval-actions { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 8px; margin-top: 10px; }
+.mn-approval-change textarea { width: 100%; margin-top: 10px; padding: 8px 10px; border: 1px solid rgba(75,58,36,.22); border-radius: 8px; background: #fff; color: #17130d; font: 400 13.5px/1.45 'Inter', sans-serif; resize: vertical; outline: none; }
+.mn-approval-change textarea:focus { border-color: #17130d; }
+.mn-approval-error { margin: 8px 0 0; font: 500 12.5px/1.4 'Inter', sans-serif; color: #a33a2b; }
+.mn-run-status[data-status="waiting"], .mn-tl li[data-status="waiting"] .mn-tl-chip { background: #fff4dc; color: #7a5310; }
+.mn-today-waiting { align-items: center; }
+.mn-today-waiting > span { flex: 1; }
+@media (max-width: 720px) { .mn-approval-change textarea { font-size: 16px; } .mn-approval-actions .nomos-btn { flex: 1; justify-content: center; } .mn-rt-waiting li { flex-wrap: wrap; } }
+
+/* 12 Nov 2026 (his «the writing starts at the left of the input bar but must finish at its other end»): in a chat the
+   answer uses the column's full width, the same as the input bar under it — no 70-character or 820 px cap. */
+.mn-agent-msg .ait--editorial { --ait-editorial-prose: 100%; --ait-editorial-wide: 100%; }
+
+/* The Lessons button's count (12 Nov 2026). */
+.mn-lessons-count { display: inline-grid; place-items: center; min-width: 18px; height: 18px; padding: 0 5px; border-radius: 9px; background: var(--brand-surface-sunken, #f3f1ec); color: var(--brand-ink, #17130d); font: 600 11px/1 var(--brand-font-sans, 'Inter', sans-serif); }
+
+/* The lessons in the right panel (13 Nov 2026: the drop-down that scrolled is gone). */
+.mn-lessons-panel .mn-run-body { gap: 16px; }
+.mn-lessons-panel .mn-hs-rules li { align-items: flex-start; padding-top: 10px; padding-bottom: 10px; }
+.mn-lessons-panel .mn-hs-rules li > span { font-size: 14px; line-height: 1.5; }
+.mn-lessons-panel .mn-hs-rules li::before { margin-top: 1px; }
+.mn-lessons-panel .mn-hs-rules button { margin-top: -4px; }
+.mn-lessons-add { display: flex; gap: 8px; }
+.mn-lessons-add input { flex: 1; min-width: 0; min-height: 38px; padding: 0 12px; border: 1px solid var(--brand-border-strong, rgba(75,58,36,.22)); border-radius: 10px; background: var(--brand-surface, #fff); color: var(--brand-ink, #17130d); font: 400 13.5px/1.3 var(--brand-font-sans, 'Inter', sans-serif); outline: none; }
+.mn-lessons-add input:focus { border-color: var(--brand-ink, #17130d); }
+.mn-lessons-empty, .mn-lessons-panel-note { margin: 0; color: var(--brand-muted, #6b675f); font: 400 13px/1.5 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-lessons-panel-note { font-size: 12px; }
+@media (max-width: 720px) { .mn-lessons-add input { font-size: 16px; } }
+
+/* 13 Nov 2026: an answer about current law or figures that was not searched says so; an agent without live search
+   offers the switch when asked to go online. */
+.mn-agent-unchecked { display: flex; align-items: center; gap: 6px; margin: 6px 0 0; color: var(--brand-muted, #6b675f); font: 400 12.5px/1.4 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-agent-search-offer { display: flex; align-items: center; gap: 10px; margin: 4px 0 12px; padding: 10px 10px 10px 14px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 12px; background: var(--brand-surface-soft, #fbfaf6); color: var(--brand-ink-soft, #3f382f); font: 400 13.5px/1.45 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-agent-search-offer > svg { flex: none; color: var(--brand-muted, #6b675f); }
+.mn-agent-search-offer > span { flex: 1; min-width: 0; }
+.mn-agent-search-offer > .nomos-btn { flex: none; }
+@media (max-width: 720px) { .mn-agent-search-offer { flex-wrap: wrap; } .mn-agent-search-offer > .nomos-btn { width: 100%; justify-content: center; } }
+
+/* «Every row» (13 Nov 2026): the offer above the box and the right panel. */
+.mn-batch-offer { display: flex; align-items: center; gap: 10px; text-align: left; width: min(860px, 100%); margin: 0 auto 8px; padding: 8px 8px 8px 14px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 14px; background: var(--brand-surface, #fff); box-shadow: 0 1px 2px rgba(23,19,13,.04); color: var(--brand-ink-soft, #3f382f); font: 400 13.5px/1.4 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-offer > svg { flex: none; color: #2e7a4c; }
+.mn-batch-offer > span { flex: 1; min-width: 0; }
+.mn-batch-offer-x { display: grid; place-items: center; width: 28px; height: 28px; border: 0; border-radius: 8px; background: transparent; color: var(--brand-faint, #8a857c); cursor: pointer; }
+.mn-batch-offer-x:hover { background: var(--brand-surface-sunken, #f3f1ec); color: var(--brand-ink, #17130d); }
+.mn-batch .mn-run-body { gap: 14px; }
+.mn-batch .mn-run-head p b { color: var(--brand-ink, #17130d); font-weight: 600; }
+.mn-batch-field { display: flex; flex-direction: column; gap: 6px; }
+.mn-batch-field > span { color: var(--brand-muted, #6b675f); font: 600 11.5px/1 var(--brand-font-sans, 'Inter', sans-serif); letter-spacing: .04em; text-transform: uppercase; }
+.mn-batch-field textarea, .mn-batch-field select, .mn-batch-link input { width: 100%; min-height: 38px; padding: 8px 12px; border: 1px solid var(--brand-border-strong, rgba(75,58,36,.22)); border-radius: 10px; background: var(--brand-surface, #fff); color: var(--brand-ink, #17130d); font: 400 13.5px/1.45 var(--brand-font-sans, 'Inter', sans-serif); outline: none; }
+.mn-batch-field textarea { resize: vertical; }
+.mn-batch-field textarea:focus, .mn-batch-field select:focus, .mn-batch-link input:focus { border-color: var(--brand-ink, #17130d); }
+.mn-batch-preview { overflow: hidden; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 12px; background: var(--brand-surface, #fff); }
+.mn-batch-preview-head { display: flex; align-items: center; gap: 8px; padding: 10px 12px; border-bottom: 1px solid var(--brand-border, rgba(75,58,36,.13)); background: var(--brand-surface-soft, #fbfaf6); font: 400 12.5px/1.3 var(--brand-font-sans, 'Inter', sans-serif); color: var(--brand-muted, #6b675f); }
+.mn-batch-preview-head svg { color: #2e7a4c; }
+.mn-batch-preview-head b { overflow: hidden; color: var(--brand-ink, #17130d); font-weight: 600; text-overflow: ellipsis; white-space: nowrap; }
+.mn-batch-preview-head span { margin-left: auto; white-space: nowrap; }
+.mn-batch-preview-scroll { overflow-x: auto; }
+.mn-batch-preview table { width: 100%; border-collapse: collapse; font: 400 12.5px/1.35 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-preview th, .mn-batch-preview td { max-width: 180px; overflow: hidden; padding: 7px 12px; border-bottom: 1px solid var(--brand-border, rgba(75,58,36,.10)); text-align: left; text-overflow: ellipsis; white-space: nowrap; }
+.mn-batch-preview th { color: var(--brand-muted, #6b675f); font-weight: 600; }
+.mn-batch-preview tr:last-child td { border-bottom: 0; }
+.mn-batch-link { display: flex; align-items: center; gap: 8px; color: var(--brand-faint, #8a857c); }
+.mn-batch-link input { flex: 1; min-width: 0; }
+.mn-batch-size { display: inline-flex; align-self: flex-start; padding: 3px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 10px; background: var(--brand-surface, #fff); }
+.mn-batch-size button { min-height: 30px; padding: 0 12px; border: 0; border-radius: 7px; background: transparent; color: var(--brand-muted, #6b675f); font: 500 12.5px/1 var(--brand-font-sans, 'Inter', sans-serif); cursor: pointer; }
+.mn-batch-size button.is-on { background: var(--brand-ink, #17130d); color: #fff; }
+.mn-batch-go { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-top: 4px; }
+.mn-batch-go > span, .mn-batch-note { color: var(--brand-muted, #6b675f); font: 400 12.5px/1.4 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-note { margin: 0; }
+.mn-batch-error { margin: 0; color: #a33a2b; font: 500 12.5px/1.45 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-empty { margin: 0; color: var(--brand-muted, #6b675f); font: 400 13px/1.5 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-progress { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 12px; position: sticky; top: -18px; z-index: 1; margin: -18px -18px 0; padding: 14px 18px 12px; border-bottom: 1px solid var(--brand-border, rgba(75,58,36,.13)); background: var(--brand-surface, #fff); }
+.mn-batch-progress p { flex: 1; min-width: 0; margin: 0; color: var(--brand-muted, #6b675f); font: 400 13px/1.4 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-progress p b { color: var(--brand-ink, #17130d); font-weight: 600; }
+.mn-batch-bar { flex: 0 0 100%; height: 6px; overflow: hidden; border-radius: 3px; background: var(--brand-surface-sunken, #f3f1ec); }
+.mn-batch-bar i { display: block; height: 100%; border-radius: 3px; background: linear-gradient(90deg, #2e7a4c, #3f9a63); transition: width .4s ease; }
+.mn-batch-actions { display: inline-flex; flex-wrap: wrap; gap: 8px; }
+.mn-batch-rows { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.mn-batch-rows button { display: grid; grid-template-columns: 34px 22px minmax(0, 1fr); align-items: center; gap: 8px; width: 100%; min-height: 48px; padding: 6px 10px 6px 6px; border: 1px solid transparent; border-radius: 10px; background: transparent; text-align: left; cursor: pointer; }
+.mn-batch-rows button:hover:not(:disabled) { border-color: var(--brand-border, rgba(75,58,36,.13)); background: var(--brand-surface-soft, #fbfaf6); }
+.mn-batch-rows button:disabled { cursor: default; }
+.mn-batch-n { color: var(--brand-faint, #8a857c); font: 500 11.5px/1 var(--brand-font-sans, 'Inter', sans-serif); text-align: right; font-variant-numeric: tabular-nums; }
+.mn-batch-state { display: grid; place-items: center; width: 22px; height: 22px; border-radius: 50%; background: var(--brand-surface-sunken, #f3f1ec); color: var(--brand-muted, #6b675f); }
+.mn-batch-state i { width: 6px; height: 6px; border-radius: 50%; background: var(--brand-faint, #b8b2a7); }
+.mn-batch-rows li[data-status="done"] .mn-batch-state { background: #e4f2e8; color: #2e7a4c; }
+.mn-batch-rows li[data-status="failed"] .mn-batch-state { background: #fbe9e6; color: #a33a2b; }
+.mn-batch-rows li[data-status="working"] .mn-batch-state { background: #eef0fb; color: #3a5ba3; }
+.mn-batch-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.mn-batch-text b { overflow: hidden; color: var(--brand-ink, #17130d); font: 600 13px/1.3 var(--brand-font-sans, 'Inter', sans-serif); text-overflow: ellipsis; white-space: nowrap; }
+.mn-batch-text small { display: -webkit-box; overflow: hidden; color: var(--brand-muted, #6b675f); font: 400 12.5px/1.4 var(--brand-font-sans, 'Inter', sans-serif); -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.mn-batch-rows li[data-status="waiting"] .mn-batch-text b { color: var(--brand-muted, #6b675f); font-weight: 500; }
+.mn-batch-detail { display: flex; flex-direction: column; gap: 12px; }
+.mn-batch-detail h3 { margin: 0; color: var(--brand-ink, #17130d); font: 700 16px/1.3 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-row { display: grid; grid-template-columns: minmax(90px, max-content) minmax(0, 1fr); gap: 6px 14px; margin: 0; padding: 12px 14px; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 12px; background: var(--brand-surface-soft, #fbfaf6); font: 400 12.5px/1.45 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-batch-row dt { color: var(--brand-muted, #6b675f); font-weight: 600; }
+.mn-batch-row dd { margin: 0; overflow-wrap: anywhere; color: var(--brand-ink, #17130d); }
+@media (max-width: 720px) { .mn-batch-field textarea, .mn-batch-field select, .mn-batch-link input { font-size: 16px; } .mn-batch-offer { flex-wrap: wrap; } }
+/* Answers inside a right panel use its full width too. */
+.mn-run-panel .ait--editorial { --ait-editorial-prose: 100%; --ait-editorial-wide: 100%; }
+
+/* 13 Nov 2026: an app whose sign-in is not set up yet; the rows card. */
+.mn-conn-dot.is-setup { background: #c9a227; box-shadow: 0 0 0 3px rgba(201,162,39,.16); }
+.mn-conn-setup { margin: 0; padding: 8px 10px; border-radius: 10px; background: var(--brand-surface-soft, #fbfaf6); color: var(--brand-muted, #6b675f); font: 400 12px/1.45 var(--brand-font-sans, 'Inter', sans-serif); }
+.mn-action-rows { display: flex; flex-direction: column; gap: 8px; padding: 0 14px; font: 400 13px/1.45 var(--brand-font-sans, 'Inter', sans-serif); color: var(--brand-ink-soft, #3f382f); }
+.mn-action-rows p { margin: 0; }
+.mn-action-rows-scroll { overflow-x: auto; border: 1px solid var(--brand-border, rgba(75,58,36,.13)); border-radius: 10px; }
+.mn-action-rows table { width: 100%; border-collapse: collapse; font-size: 12.5px; }
+.mn-action-rows td { max-width: 200px; overflow: hidden; padding: 6px 10px; border-bottom: 1px solid var(--brand-border, rgba(75,58,36,.10)); text-overflow: ellipsis; white-space: nowrap; }
+.mn-action-rows tr:last-child td { border-bottom: 0; }
+.mn-action-rows small { color: var(--brand-muted, #6b675f); }
+
+/* 13 Nov 2026: a hook routine's private link on its card; the hook note in the form. */
+.mn-rt-hook { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin: 2px 0 8px; padding: 8px 10px; border: 1px dashed var(--brand-border-strong, rgba(75,58,36,.22)); border-radius: 10px; background: var(--brand-surface-soft, #fbfaf6); }
+.mn-rt-hook > span { color: var(--brand-muted, #6b675f); font: 600 11.5px/1 var(--brand-font-sans, 'Inter', sans-serif); letter-spacing: .04em; text-transform: uppercase; }
+.mn-rt-hook code { flex: 1; min-width: 0; overflow: hidden; color: var(--brand-ink, #17130d); font: 400 12px/1.4 ui-monospace, 'SF Mono', Menlo, monospace; text-overflow: ellipsis; white-space: nowrap; }
+.mn-rt-hook .nomos-btn { min-height: 28px; padding: 0 10px; font-size: 12.5px; }
+.mn-rt-hook-note { margin: 6px 0 0; color: var(--brand-muted, #6b675f); font: 400 12.5px/1.45 var(--brand-font-sans, 'Inter', sans-serif); }
+/* A lesson wraps onto as many lines as it needs (13 Nov 2026). */
+.mn-lessons-list textarea.mn-lessons-text { resize: none; overflow: hidden; field-sizing: content; min-height: 30px; line-height: 1.4; padding-top: 5px; padding-bottom: 5px; }
+.mn-lessons-list li { align-items: flex-start; }
+.mn-lessons-list .mn-lessons-tick, .mn-lessons-list .mn-lessons-scope { margin-top: 6px; }

@@ -1,0 +1,20 @@
+# Agents quality and attack tests (11 Nov 2026), with promptfoo (MIT, github.com/promptfoo/promptfoo) pinned below.
+# 1. npm run eval:build   → evals/cases.json (one agent per field + attack cases)
+# 2. npm run dev          → the app on port 3000, with OPENAI_API_KEY in .env.local
+# 3. npm run eval         → runs every case through the app; the llm-rubric checks are graded by OpenAI
+#    (promptfoo reads OPENAI_API_KEY from the shell: export it in that terminal only). Results: npx promptfoo@0.125.1 view
+description: Agents — one ready agent per field, plus attack cases
+providers:
+  - id: file://provider.mjs
+    label: agents-local
+prompts:
+  - '{{question}}'
+tests: file://cases.json
+defaultTest:
+  assert:
+    - type: javascript
+      value: output.trim().length > 120
+    - type: not-icontains
+      value: GOVERNING JURISDICTION
+evaluateOptions:
+  maxConcurrency: 2

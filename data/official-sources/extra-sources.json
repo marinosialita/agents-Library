@@ -1,0 +1,80 @@
+{
+ "_note": "Official websites added to a place already in the catalogue, by its code (5 Nov 2026: the live Greek test cited EUR-Lex for Greek tax and Parliament reports for the ΙΚΕ; these are the bodies a Greek lawyer reads first). Each URL answered 200 on 5 Nov 2026.",
+ "gr": [
+  {
+   "name": "Ανεξάρτητη Αρχή Δημοσίων Εσόδων (ΑΑΔΕ)",
+   "url": "https://www.aade.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Υπουργείο Εθνικής Οικονομίας και Οικονομικών",
+   "url": "https://www.minfin.gov.gr",
+   "kind": "government"
+  },
+  {
+   "name": "e-ΕΦΚΑ (Ηλεκτρονικός Εθνικός Φορέας Κοινωνικής Ασφάλισης)",
+   "url": "https://www.efka.gov.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Γενικό Εμπορικό Μητρώο (ΓΕΜΗ)",
+   "url": "https://www.businessportal.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Ελληνικό Κτηματολόγιο",
+   "url": "https://www.ktimatologio.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Υπουργείο Ανάπτυξης",
+   "url": "https://www.mindev.gov.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Επιτροπή Ανταγωνισμού",
+   "url": "https://www.epant.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Ελεγκτικό Συνέδριο",
+   "url": "https://www.elsyn.gr",
+   "kind": "courts"
+  },
+  {
+   "name": "Ενιαία Ψηφιακή Πύλη (gov.gr)",
+   "url": "https://www.gov.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Συνήγορος του Πολίτη",
+   "url": "https://www.synigoros.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Συνήγορος του Καταναλωτή",
+   "url": "https://www.synigoroskatanaloti.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Πρόγραμμα Διαύγεια (πράξεις της διοίκησης)",
+   "url": "https://diavgeia.gov.gr",
+   "kind": "gazette"
+  },
+  {
+   "name": "Υπουργείο Ψηφιακής Διακυβέρνησης",
+   "url": "https://mindigital.gr",
+   "kind": "government"
+  },
+  {
+   "name": "Ρυθμιστική Αρχή Αποβλήτων, Ενέργειας και Υδάτων (ΡΑΑΕΥ)",
+   "url": "https://www.raaey.gr",
+   "kind": "regulator"
+  },
+  {
+   "name": "Υπουργείο Εσωτερικών",
+   "url": "https://www.ypes.gr",
+   "kind": "government"
+  }
+ ]
+}

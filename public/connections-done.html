@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Agents · Connected</title>
+<style>
+  :root { color-scheme: light; }
+  html, body { height: 100%; margin: 0; }
+  body { display: grid; place-items: center; background: #F4F3F9; color: #1C1A28;
+    font: 15px/1.5 Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; }
+  main { text-align: center; padding: 32px; max-width: 360px; }
+  .mark { width: 44px; height: 44px; margin: 0 auto 16px; border-radius: 50%; display: grid; place-items: center; background: #F0ECFE; color: #7352E8; }
+  .mark.is-failed { background: rgba(167, 52, 44, .08); color: #A7342C; }
+  h1 { margin: 0; font-size: 17px; font-weight: 600; letter-spacing: -.01em; }
+  p { margin: 6px 0 0; color: #6A677A; font-size: 13.5px; }
+  button { margin-top: 18px; height: 36px; padding: 0 16px; border: 1px solid #E4E1EE; border-radius: 10px; background: #fff; color: #1C1A28; font: inherit; font-size: 13px; cursor: pointer; }
+</style>
+</head>
+<body>
+<main>
+  <div class="mark" id="mark" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+  <h1 id="title">Connected</h1>
+  <p id="note">You can return to Agents.</p>
+  <button type="button" id="close">Close</button>
+</main>
+<script>
+  // Composio sends the sign-in window here (server/connections.ts → returnAddress); ported from MyNomosAI's page. The
+  // opener is told which service finished and the window closes; a failed sign-in says so instead of pretending.
+  (function () {
+    var query = new URLSearchParams(location.search);
+    var service = (query.get('service') || '').replace(/[^a-z]/g, '');
+    var failed = /fail|error|denied|cancel/i.test(query.get('status') || '') || query.has('error');
+    var opened = false;
+    try { opened = !!window.opener && !window.opener.closed; } catch (e) { opened = false; }
+    var title = document.getElementById('title'), note = document.getElementById('note'), close = document.getElementById('close');
+    if (failed) {
+      document.getElementById('mark').className = 'mark is-failed';
+      title.textContent = 'The connection did not finish';
+      note.textContent = 'Close this window and try again from Agents.';
+    }
+    // Opened in the same tab (popup blocked, a phone): go back to Connections instead of a Close button that cannot close it.
+    var back = '/connections';
+    close.textContent = opened ? 'Close' : 'Back to Agents';
+    close.addEventListener('click', function () { if (opened) window.close(); else location.replace(back); });
+    var message = { type: 'agents-connection', service: service, ok: !failed };
+    try { if (opened) window.opener.postMessage(message, location.origin); } catch (e) { /* opener gone */ }
+    // Google's and Microsoft's sign-in pages cut the link to the opener; the same-site channel still reaches the app.
+    try { var channel = new BroadcastChannel('agents-connections'); channel.postMessage(message); channel.close(); } catch (e) { /* not supported */ }
+    if (!failed) setTimeout(function () {
+      try { window.close(); } catch (e) { /* not allowed */ }
+      setTimeout(function () { if (!window.closed) location.replace(back); }, 300);
+    }, 900);
+  })();
+</script>
+</body>
+</html>

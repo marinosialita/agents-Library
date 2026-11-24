@@ -1,0 +1,78 @@
+/* The reference's design tokens (Nomos brand-system.css names), with this product's values: white surfaces, a
+   pearl canvas, lavender where the reference is gold. Every ported stylesheet reads these names unchanged. */
+:root {
+  color-scheme: light;
+  --brand-canvas: #F4F3F9;
+  --brand-surface: #FFFFFF;
+  --brand-surface-soft: #FAF9FD;
+  --brand-surface-sunken: #EEEBF6;
+  --brand-ink: #1C1A28;
+  --brand-ink-soft: #3A3747;
+  --brand-muted: #6A677A;
+  --brand-faint: #8F8C9E;
+  --brand-border: #E4E1EE;
+  --brand-border-strong: #D2CDE3;
+  --brand-gold: #7352E8;
+  --brand-gold-hover: #5B3DD1;
+  --brand-gold-soft: #F0ECFE;
+  --brand-gold-line: rgba(115, 82, 232, .45);
+  --brand-gold-rgb: 115, 82, 232;
+  --brand-gold-dark: #4A2FB4;
+  --brand-on-gold: #FFFFFF;
+  /* The signature lavender: the light brand hue kept for gradients and the mark; text and fills use the deeper accent. */
+  --brand-lavender: #AA90FE;
+  --brand-gradient: linear-gradient(135deg, #9A7FF8 0%, #7352E8 58%, #6446DC 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #8A6CF4 0%, #5F3FD6 100%);
+  --brand-gradient-text: linear-gradient(120deg, #9B7FFA 0%, #6D4CE6 60%, #5B3DD1 100%);
+  --brand-danger: #C2413B;
+  --brand-success: #2E7A4C;
+  --brand-radius-xs: 6px;
+  --brand-radius-sm: 8px;
+  --brand-radius-md: 12px;
+  --brand-radius-lg: 16px;
+  --brand-radius-xl: 22px;
+  --brand-shadow-1: 0 1px 2px rgba(38, 30, 78, .06), 0 0 0 1px rgba(38, 30, 78, .025);
+  --brand-shadow-2: 0 10px 28px -14px rgba(38, 30, 78, .24), 0 2px 6px -2px rgba(38, 30, 78, .07);
+  --brand-shadow-3: 0 28px 56px -28px rgba(38, 30, 78, .30), 0 10px 20px -12px rgba(38, 30, 78, .11);
+  /* Focus is a quiet grey edge, never a lavender halo (6 Nov 2026, his request: «I don't like the purple around boxes»). */
+  --brand-focus: 0 0 0 1px var(--brand-faint);
+  --brand-ease: cubic-bezier(.22, 1, .36, 1);
+  --brand-motion-feedback: 120ms;
+  --brand-motion-menu: 180ms;
+  --brand-motion-panel: 220ms;
+  --brand-composer-line: rgba(115, 82, 232, .42);
+  --brand-composer-focus: 0 0 0 3px rgba(115, 82, 232, .14), 0 18px 44px -24px rgba(38, 30, 78, .26);
+  --brand-composer-radius: 20px;
+  --brand-bar-height: 44px;
+  --brand-font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --brand-font-display: var(--brand-font-sans);
+  --brand-font-mono: var(--brand-font-sans);
+  --brand-reading-size: 15px;
+  --brand-reading-leading: 1.7;
+  /* The answer typography's own names (markdown.css), mapped onto the brand. */
+  --ait-ink: var(--brand-ink);
+  --ait-ink-2: var(--brand-ink-soft);
+  --ait-ink-3: var(--brand-ink-soft);
+  --ait-muted: var(--brand-muted);
+  --ait-paper: var(--brand-surface);
+  --ait-paper-2: var(--brand-surface-soft);
+  --ait-sunken: var(--brand-surface-sunken);
+  --ait-brass: var(--brand-gold);
+  --ait-brass-deep: var(--brand-gold-hover);
+  --ait-brass-light: var(--brand-gold);
+  --ait-brass-line: rgba(var(--brand-gold-rgb), .24);
+  --ait-line: var(--brand-border);
+  --ait-line-soft: rgba(32, 33, 31, .08);
+  --ait-shadow-1: 0 1px 2px rgba(38, 30, 78, .05);
+  --ait-display: var(--brand-font-sans);
+  --ait-ui: var(--brand-font-sans);
+  --ait-ease: cubic-bezier(.32, .72, 0, 1);
+  /* Older names still used by base.css. */
+  --app-canvas: var(--brand-canvas); --app-surface: var(--brand-surface); --app-sunken: var(--brand-surface-sunken); --app-sunken-strong: var(--brand-border-strong);
+  --app-accent: var(--brand-gold); --app-accent-strong: var(--brand-gold-hover); --app-accent-soft: var(--brand-gold-soft); --app-accent-rgb: var(--brand-gold-rgb);
+  --app-ink: var(--brand-ink); --app-muted: var(--brand-muted); --app-faint: var(--brand-faint); --app-border: var(--brand-border); --app-font: var(--brand-font-sans);
+  --app-radius-md: var(--brand-radius-md); --app-shadow-lg: var(--brand-shadow-3); --app-motion-feedback: var(--brand-motion-feedback); --app-motion-menu: var(--brand-motion-menu); --app-ease: var(--brand-ease); --app-focus: var(--brand-focus);
+}
+@media (prefers-reduced-motion: reduce) {
+  :root { --brand-motion-feedback: 0ms; --brand-motion-menu: 0ms; --brand-motion-panel: 0ms; }
+}

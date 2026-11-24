@@ -1,0 +1,164 @@
+/* Library cards in the landing page's look (11 Nov 2026, his request): title first, plain description, coloured area
+   tags, lavender lift on hover. Loaded last, so it wins over agent-studio.css and brand-lavender.css. */
+.mn-agents-grid { grid-template-columns: repeat(auto-fill, minmax(290px, 1fr)); gap: 14px; }
+.mn-agents-grid > li { border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); box-shadow: none;
+  transition: border-color .3s ease, box-shadow .3s ease, transform .3s var(--brand-ease); }
+.mn-agents-grid > li:hover { border-color: rgba(115, 82, 232, .4); box-shadow: 0 22px 40px -26px rgba(38, 30, 78, .4); transform: translateY(-2px); }
+.mn-agent-card { gap: 9px; padding: 18px 18px 14px; }
+.mn-agent-card:focus-visible { border-radius: 16px; }
+.mn-agent-card-top { align-items: flex-start; gap: 10px; }
+.mn-agent-card b { display: -webkit-box; overflow: hidden; font: 620 16.5px/1.3 var(--brand-font-sans); letter-spacing: -.015em; white-space: normal; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.mn-agent-card-place { flex: none; gap: 4px; min-height: 22px; padding: 2px 8px; border-radius: 999px; background: var(--brand-gold-soft); font-size: 13px; line-height: 1.3; }
+.mn-agent-card-text { padding: 0; border: 0; border-radius: 0; background: none; color: var(--brand-muted); font: 400 13.5px/1.5 var(--brand-font-sans); }
+.mn-agent-card-text > span { height: auto; min-height: 3em; }
+.mn-agent-card-needs { color: var(--brand-muted); }
+.mn-agent-card-tags { flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 2px; }
+.mn-agent-card-chip, .mn-agent-card-deep { padding: 3px 9px; font: 550 11.5px/1.35 var(--brand-font-sans); font-style: normal; }
+.mn-agent-card-chip.is-field { background: var(--brand-surface-sunken); color: var(--brand-ink-soft); }
+.mn-agent-card-foot { padding: 8px 10px 10px 18px; border-top-color: color-mix(in srgb, var(--brand-border) 70%, transparent); }
+
+/* «All fields»: the fields as cards */
+.mn-field-cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(258px, 1fr)); gap: 14px; margin: 0; padding: 0; list-style: none; }
+.mn-field-cards > li { display: flex; }
+.mn-field-card { display: flex; flex: 1; flex-direction: column; gap: 9px; min-height: 172px; padding: 18px 18px 16px; border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface);
+  color: var(--brand-ink); text-align: left; cursor: pointer; transition: border-color .3s ease, box-shadow .3s ease, transform .3s var(--brand-ease); }
+.mn-field-card:hover { border-color: rgba(115, 82, 232, .4); box-shadow: 0 22px 40px -26px rgba(38, 30, 78, .4); transform: translateY(-2px); }
+.mn-field-card:focus-visible { outline: 0; box-shadow: var(--brand-focus); }
+.mn-field-card-top { display: flex; align-items: baseline; justify-content: space-between; gap: 10px; }
+.mn-field-card-top b { font: 620 16.5px/1.25 var(--brand-font-sans); letter-spacing: -.015em; }
+.mn-field-card-top em { padding: 3px 9px; border-radius: 999px; background: var(--brand-gold-soft); color: var(--brand-gold-hover); font: 650 12px/1.2 var(--brand-font-sans); font-style: normal; font-variant-numeric: tabular-nums; }
+.mn-field-card small { flex: 1; color: var(--brand-muted); font: 400 13.5px/1.5 var(--brand-font-sans); }
+.mn-field-card-areas { display: flex; flex-wrap: wrap; gap: 5px; }
+.mn-field-card-areas i { --agent-cat: #596270; padding: 3px 9px; border-radius: 999px; background: color-mix(in srgb, var(--agent-cat) 12%, var(--brand-surface)); color: var(--agent-cat); font: 550 11.5px/1.35 var(--brand-font-sans); font-style: normal; white-space: nowrap; }
+.mn-field-card-areas i.is-more { background: var(--brand-surface-sunken); color: var(--brand-muted); }
+
+@media (prefers-reduced-motion: reduce) { .mn-agents-grid > li, .mn-field-card { transition: none; } .mn-agents-grid > li:hover, .mn-field-card:hover { transform: none; } }
+@media (max-width: 600px) { .mn-agents-grid, .mn-field-cards { grid-template-columns: minmax(0, 1fr); } }
+
+/* The agents' scroll (5 Nov 2026: cards rise out of a stack as they come up and tuck away as they leave) on every
+   card and list in the app (11 Nov 2026, his request). Same keyframes as .mn-agents-grid (agent-studio.css). */
+@supports (animation-timeline: view()) {
+  @media (prefers-reduced-motion: no-preference) {
+    .mn-field-cards > li, .mn-hs-card, .mn-conn-card, .mn-brief, .mn-conn-promises > div, .mn-rt-card, .mn-rt-history > li,
+    .mn-chain-steps > li, .mn-chain-result > ol > li, .mn-pages-row, .mn-agents-task-list > li, .mn-agent-history-list > li {
+      position: relative; z-index: 2; transform-origin: 50% 0;
+      animation: mn-agent-rise linear both, mn-agent-tuck linear both; animation-timeline: view(), view(); animation-range: entry 0% entry 100%, exit 0% exit 100%;
+    }
+  }
+}
+
+/* Routines stay still (11 Nov 2026, his request): no rise-and-tuck on its cards, briefs or history. */
+.mn-rt-page :is(.mn-conn-card, .mn-brief, .mn-rt-history > li, .mn-conn-promises > div) { animation: none; }
+
+/* The chat box's compact row (11 Nov 2026, his request): round icons, the jurisdiction as a flag in a circle. */
+.mn-agent-composer-row.is-compact { display: flex; flex-wrap: nowrap; align-items: center; gap: 6px; }
+.mn-cmp-icon { position: relative; display: inline-grid; flex: none; place-items: center; width: 34px; height: 34px; padding: 0; border: 1px solid var(--brand-border); border-radius: 50%;
+  background: var(--brand-surface); color: var(--brand-ink-soft); cursor: pointer; transition: background var(--brand-motion-feedback) ease, border-color var(--brand-motion-feedback) ease, color var(--brand-motion-feedback) ease; }
+.mn-cmp-icon:hover:not(:disabled):not(.is-static), .mn-cmp-icon[aria-pressed="true"] { border-color: var(--brand-gold-line); background: var(--brand-gold-soft); color: var(--brand-gold-hover); }
+.mn-cmp-icon:focus-visible, .mn-cmp-place:focus-within { outline: 0; box-shadow: var(--brand-focus); }
+.mn-cmp-icon:disabled { opacity: .5; cursor: default; }
+.mn-cmp-icon[data-off="true"] { color: var(--brand-danger); }
+.mn-cmp-icon.is-static { cursor: default; color: var(--brand-gold-hover); background: var(--brand-gold-soft); border-color: transparent; }
+.mn-cmp-badge { position: absolute; top: -4px; right: -5px; min-width: 16px; height: 16px; padding: 0 4px; border-radius: 999px; background: var(--brand-gold); color: var(--brand-on-gold); font: 650 10px/16px var(--brand-font-sans); text-align: center; box-sizing: border-box; }
+.mn-cmp-end { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; }
+.mn-cmp-place { overflow: visible; }
+.mn-cmp-place.is-needed { border-color: var(--brand-gold-line); color: var(--brand-gold-hover); }
+.mn-cmp-place.is-set { border-color: var(--brand-gold-line); background: var(--brand-surface); }
+.mn-cmp-flag { font-size: 18px; line-height: 1; }
+.mn-cmp-place select { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: 50%; opacity: 0; cursor: pointer; }
+.mn-cmp-dot { position: absolute; right: -1px; bottom: -1px; width: 10px; height: 10px; border: 2px solid var(--brand-surface); border-radius: 50%; background: var(--brand-success); }
+.mn-agent-composer-row.is-compact .mn-agent-send { flex: none; }
+/* The honest «thinking» line with its timer (11 Nov 2026). */
+.mn-agent-thinking { flex-wrap: wrap; }
+.mn-agent-thinking time { color: var(--brand-gold-hover); font-variant-numeric: tabular-nums; }
+.mn-agent-thinking small { flex-basis: 100%; padding-left: 22px; color: var(--brand-muted); font: 400 12px/1.45 var(--brand-font-sans); }
+
+/* The conversation's files (11 Nov 2026): one pill in the row, a list to tick what the next question takes. */
+.mn-files { position: relative; flex: none; }
+.mn-files-pill { display: inline-flex; align-items: center; gap: 6px; height: 34px; padding: 0 10px 0 11px; border: 1px solid var(--brand-gold-line); border-radius: 999px; background: var(--brand-gold-soft);
+  color: var(--brand-gold-hover); font: 600 12.5px/1 var(--brand-font-sans); cursor: pointer; }
+.mn-files-pill b { min-width: 18px; padding: 2px 6px; border-radius: 999px; background: var(--brand-surface); color: var(--brand-ink); font: 650 11.5px/1.2 var(--brand-font-sans); text-align: center; font-variant-numeric: tabular-nums; }
+.mn-files-pill:hover, .mn-files-pill[aria-expanded="true"] { border-color: var(--brand-gold); }
+.mn-files-pill:focus-visible { outline: 0; box-shadow: var(--brand-focus); }
+.mn-files-menu { position: absolute; bottom: calc(100% + 10px); left: -84px; z-index: 30; display: flex; flex-direction: column; width: min(380px, calc(100vw - 32px)); max-height: 360px;
+  border: 1px solid var(--brand-border); border-radius: 16px; background: var(--brand-surface); box-shadow: 0 24px 50px -24px rgba(38, 30, 78, .45), 0 2px 6px rgba(38, 30, 78, .08); }
+.mn-files-head { display: flex; flex-direction: column; gap: 2px; margin: 0; padding: 12px 14px 8px; border-bottom: 1px solid var(--brand-border); }
+.mn-files-head b { color: var(--brand-ink); font: 650 13.5px/1.3 var(--brand-font-sans); }
+.mn-files-head span { color: var(--brand-muted); font: 400 12px/1.4 var(--brand-font-sans); }
+.mn-files-menu ul { flex: 1; overflow-y: auto; margin: 0; padding: 6px; list-style: none; }
+.mn-files-menu li { display: flex; align-items: center; gap: 4px; border-radius: 10px; }
+.mn-files-menu li:hover { background: var(--brand-surface-soft); }
+.mn-files-menu li[data-off="true"] label span { opacity: .55; }
+.mn-files-menu label { display: flex; flex: 1; align-items: center; gap: 9px; min-width: 0; padding: 8px; cursor: pointer; color: var(--brand-gold); }
+.mn-files-menu label input { width: 16px; height: 16px; margin: 0; accent-color: var(--brand-gold); flex: none; }
+.mn-files-menu label span { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+.mn-files-menu label b { overflow: hidden; color: var(--brand-ink); font: 550 13px/1.35 var(--brand-font-sans); text-overflow: ellipsis; white-space: nowrap; }
+.mn-files-menu label small { color: var(--brand-muted); font: 400 11.5px/1.3 var(--brand-font-sans); }
+.mn-files-menu li > button { display: grid; flex: none; place-items: center; width: 28px; height: 28px; margin-right: 4px; padding: 0; border: 0; border-radius: 8px; background: transparent; color: var(--brand-muted); cursor: pointer; }
+.mn-files-menu li > button:hover { background: var(--brand-surface-sunken); color: var(--brand-danger); }
+.mn-files-foot { display: flex; align-items: center; gap: 6px; margin: 0; padding: 8px 10px; border-top: 1px solid var(--brand-border); }
+.mn-files-foot button { height: 28px; padding: 0 10px; border: 1px solid var(--brand-border); border-radius: 8px; background: var(--brand-surface); color: var(--brand-ink-soft); font: 500 12px/1 var(--brand-font-sans); cursor: pointer; }
+.mn-files-foot button:disabled { opacity: .45; cursor: default; }
+.mn-files-foot .is-attach { display: inline-flex; align-items: center; gap: 4px; margin-left: auto; border-color: var(--brand-gold-line); color: var(--brand-gold-hover); }
+@media (max-width: 600px) { .mn-files-menu { left: -84px; } .mn-files-pill span { display: none; } }
+.mn-rt-loading { display: flex; align-items: center; gap: 8px; margin: 8px 0; color: var(--brand-muted); font: 400 14px/1.4 var(--brand-font-sans); }
+
+/* «Signature routines» (12 Nov 2026, his «something wow»): richer cards — a soft gradient per routine, a large emoji,
+   the schedule as a chip, the promise in full, and a lift on hover. */
+.mn-rt-signature { display: flex; flex-direction: column; gap: 10px; margin: 8px 0 30px; }
+.mn-rt-signature h2 { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--brand-ink); font: 700 19px/1.2 var(--brand-font-sans); letter-spacing: -.01em; }
+.mn-rt-signature h2 svg { color: var(--brand-gold); }
+.mn-rt-signature h2 small { padding: 2px 8px; border-radius: 999px; background: var(--brand-gold-soft); color: var(--brand-gold-dark); font: 600 12px/1.4 var(--brand-font-sans); }
+.mn-rt-signature-lead { margin: 0 0 6px; color: var(--brand-muted); font: 400 14px/1.5 var(--brand-font-sans); }
+.mn-rt-signature-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 14px; }
+.mn-rt-sig { --sig-a: #ede9fe; --sig-b: #fdf2f8; position: relative; display: flex; flex-direction: column; gap: 8px; min-width: 0; padding: 18px 18px 16px; overflow: hidden;
+  border: 1px solid rgba(var(--brand-gold-rgb), .16); border-radius: 18px; background: linear-gradient(150deg, var(--sig-a) 0%, var(--sig-b) 100%);
+  box-shadow: 0 1px 0 rgba(255,255,255,.7) inset, 0 12px 30px -24px rgba(40, 20, 120, .55); transition: transform .18s ease, box-shadow .18s ease; }
+.mn-rt-sig::after { content: ""; position: absolute; right: -40px; top: -40px; width: 140px; height: 140px; border-radius: 50%; background: radial-gradient(closest-side, rgba(255,255,255,.75), transparent); pointer-events: none; }
+@media (hover: hover) { .mn-rt-sig:hover { transform: translateY(-3px); box-shadow: 0 1px 0 rgba(255,255,255,.7) inset, 0 22px 40px -24px rgba(40, 20, 120, .6); } }
+.mn-rt-sig.is-morning-paper { --sig-a: #fff7ed; --sig-b: #fde68a55; }
+.mn-rt-sig.is-law-radar { --sig-a: #ede9fe; --sig-b: #e0e7ff; }
+.mn-rt-sig.is-tender-hunter { --sig-a: #ecfdf5; --sig-b: #d1fae5; }
+.mn-rt-sig.is-market-open { --sig-a: #eff6ff; --sig-b: #dbeafe; }
+.mn-rt-sig.is-eu-rulebook { --sig-a: #eef2ff; --sig-b: #fef9c3; }
+.mn-rt-sig.is-property-pulse { --sig-a: #fdf4ff; --sig-b: #fae8ff; }
+.mn-rt-sig.is-ai-frontier { --sig-a: #f0fdfa; --sig-b: #ede9fe; }
+.mn-rt-sig.is-competitor-watch { --sig-a: #fff1f2; --sig-b: #ffe4e6; }
+.mn-rt-sig-top { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.mn-rt-sig-emoji { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 14px; background: rgba(255,255,255,.8); box-shadow: 0 6px 16px -10px rgba(0,0,0,.35); font-size: 24px; line-height: 1; }
+.mn-rt-sig-when { padding: 4px 10px; border-radius: 999px; background: rgba(255,255,255,.75); color: var(--brand-ink); font: 600 11.5px/1.3 var(--brand-font-sans); white-space: nowrap; }
+.mn-rt-sig h3 { margin: 6px 0 0; color: var(--brand-ink); font: 700 17px/1.25 var(--brand-font-sans); letter-spacing: -.01em; }
+.mn-rt-sig-tag { margin: 0; color: var(--brand-gold-dark); font: 600 13px/1.35 var(--brand-font-sans); }
+.mn-rt-sig-promise { flex: 1; margin: 0; color: var(--brand-ink); opacity: .78; font: 400 13.5px/1.5 var(--brand-font-sans); }
+.mn-rt-sig-add { display: inline-flex; align-items: center; justify-content: center; gap: 6px; margin-top: 6px; padding: 9px 14px; border: 0; border-radius: 12px; background: var(--brand-ink, #1c1b22); color: #fff; font: 600 13px/1 var(--brand-font-sans); cursor: pointer; transition: transform .12s ease, background .12s ease; }
+.mn-rt-sig-add:hover { background: var(--brand-gold-dark); }
+.mn-rt-sig-add:active { transform: scale(.98); }
+@media (prefers-color-scheme: dark) { :root[data-theme="dark"] .mn-rt-sig { filter: saturate(.8) brightness(.92); } }
+
+/* The country the signature routines report on (12 Nov 2026): chosen by the person, none built in. */
+.mn-rt-sig-place { display: inline-flex; align-items: center; gap: 8px; margin-left: 12px; color: var(--brand-ink); font: 500 13px/1.2 var(--brand-font-sans); }
+.mn-rt-sig-place select { max-width: 220px; padding: 6px 10px; border: 1px solid var(--brand-border); border-radius: 999px; background: var(--brand-surface); color: var(--brand-ink); font: inherit; }
+.mn-rt-sig-place select:focus-visible { outline: 2px solid var(--brand-gold, #6d4fd6); outline-offset: 2px; }
+
+/* Every card the same shape (12 Nov 2026, his «2 lines description for each card, symmetric»): the title keeps room
+   for two lines and the description is always exactly two lines, so the rows line up card to card. */
+.mn-agent-card b { min-height: 2.6em; }
+.mn-agent-card-text > span { height: 3em; min-height: 0; -webkit-line-clamp: 2; }
+
+/* «All fields» cards the same shape too (12 Nov 2026): the blurb is always exactly two lines and the areas one row
+   (a long area name is cut with «…», the «+N» always shows), so every card in the grid lines up. */
+.mn-field-card small { flex: none; display: -webkit-box; overflow: hidden; height: 3em; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.mn-field-card-areas { flex-wrap: nowrap; overflow: hidden; margin-top: auto; }
+.mn-field-card-areas i { flex: 0 1 auto; min-width: 0; overflow: hidden; text-overflow: ellipsis; }
+.mn-field-card-areas i.is-more { flex: none; }
+/* The one-row areas must never widen a card past its column (12 Nov 2026: cards grew and slid over each other). */
+.mn-field-cards { grid-template-columns: repeat(auto-fill, minmax(min(258px, 100%), 1fr)); }
+.mn-field-cards > li, .mn-field-card { min-width: 0; }
+.mn-field-card-top b { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+.mn-field-card-top em { flex: none; }
+
+/* A signature routine asking its one fact on its own card, then starting (12 Nov 2026). */
+.mn-rt-sig-need { display: flex; gap: 6px; margin-top: auto; }
+.mn-rt-sig-need select, .mn-rt-sig-need input { flex: 1; min-width: 0; padding: 8px 12px; border: 1px solid var(--brand-gold-line); border-radius: 999px; background: var(--brand-surface); color: var(--brand-ink); font: 500 13px/1.2 var(--brand-font-sans); }
+.mn-rt-sig-need .mn-rt-sig-add { flex: none; margin: 0; }
+.mn-rt-sig-add:disabled { opacity: .6; cursor: default; }

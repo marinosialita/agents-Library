@@ -1,0 +1,51 @@
+{
+  "Monaco": {"place": {"code":"mc","flag":"🇲🇨","region":"europe"}, "sources": [
+    {"name":"Légimonaco","url":"https://www.legimonaco.mc","kind":"legislation"},
+    {"name":"Journal de Monaco","url":"https://journaldemonaco.gouv.mc","kind":"gazette"},
+    {"name":"Gouvernement Princier","url":"https://www.gouv.mc","kind":"government"},
+    {"name":"Conseil National","url":"https://www.conseilnational.mc","kind":"parliament"}]},
+  "San Marino": {"place": {"code":"sm","flag":"🇸🇲","region":"europe"}, "sources": [
+    {"name":"Consiglio Grande e Generale","url":"https://www.consigliograndeegenerale.sm","kind":"parliament"},
+    {"name":"Segreteria Istituzionale (Bollettino Ufficiale)","url":"https://www.bollettinoufficiale.sm","kind":"gazette"},
+    {"name":"Governo della Repubblica di San Marino","url":"https://www.gov.sm","kind":"government"}]},
+  "Albania": {"place": {"code":"al","flag":"🇦🇱","region":"europe","local":"Shqipëria"}, "sources": [
+    {"name":"Qendra e Botimeve Zyrtare (Fletorja Zyrtare)","url":"https://qbz.gov.al","kind":"gazette"},
+    {"name":"Kuvendi i Shqipërisë","url":"https://www.parlament.al","kind":"parliament"},
+    {"name":"Gjykata e Lartë","url":"https://www.gjykataelarte.gov.al","kind":"courts"},
+    {"name":"Gjykata Kushtetuese","url":"https://www.gjk.gov.al","kind":"courts"},
+    {"name":"Ministria e Drejtësisë","url":"https://www.drejtesia.gov.al","kind":"government"}]},
+  "Bosnia and Herzegovina": {"place": {"code":"ba","flag":"🇧🇦","region":"europe","local":"Bosna i Hercegovina"}, "sources": [
+    {"name":"Službeni list BiH","url":"https://www.sluzbenilist.ba","kind":"gazette"},
+    {"name":"Parlamentarna skupština BiH","url":"https://www.parlament.ba","kind":"parliament"},
+    {"name":"Ustavni sud BiH","url":"https://www.ustavnisud.ba","kind":"courts"},
+    {"name":"Sud Bosne i Hercegovine","url":"https://www.sudbih.gov.ba","kind":"courts"},
+    {"name":"Ministarstvo pravde BiH","url":"https://www.mpr.gov.ba","kind":"government"}]},
+  "Montenegro": {"place": {"code":"me","flag":"🇲🇪","region":"europe","local":"Crna Gora"}, "sources": [
+    {"name":"Službeni list Crne Gore","url":"https://www.sluzbenilist.me","kind":"gazette"},
+    {"name":"Skupština Crne Gore","url":"https://www.skupstina.me","kind":"parliament"},
+    {"name":"Ustavni sud Crne Gore","url":"https://www.ustavnisud.me","kind":"courts"},
+    {"name":"Sudovi Crne Gore","url":"https://sudovi.me","kind":"courts"},
+    {"name":"Vlada Crne Gore","url":"https://www.gov.me","kind":"government"}]},
+  "Kosovo": {"place": {"code":"xk","flag":"🇽🇰","region":"europe","local":"Kosova / Kosovo"}, "sources": [
+    {"name":"Gazeta Zyrtare e Republikës së Kosovës","url":"https://gzk.rks-gov.net","kind":"gazette"},
+    {"name":"Kuvendi i Kosovës","url":"https://www.kuvendikosoves.org","kind":"parliament"},
+    {"name":"Gjykata Kushtetuese","url":"https://gjk-ks.org","kind":"courts"},
+    {"name":"Gjyqësori i Kosovës","url":"https://www.gjyqesori-rks.org","kind":"courts"}]},
+  "Moldova": {"place": {"code":"md","flag":"🇲🇩","region":"europe"}, "sources": [
+    {"name":"Registrul de Stat al Actelor Juridice (LEGIS)","url":"https://www.legis.md","kind":"legislation"},
+    {"name":"Monitorul Oficial","url":"https://monitorul.gov.md","kind":"gazette"},
+    {"name":"Parlamentul Republicii Moldova","url":"https://www.parlament.md","kind":"parliament"},
+    {"name":"Curtea Constituțională","url":"https://www.constcourt.md","kind":"courts"},
+    {"name":"Curtea Supremă de Justiție","url":"https://csj.md","kind":"courts"}]},
+  "Gibraltar": {"place": {"code":"gi","flag":"🇬🇮","region":"europe"}, "sources": [
+    {"name":"Gibraltar Laws","url":"https://www.gibraltarlaws.gov.gi","kind":"legislation"},
+    {"name":"HM Government of Gibraltar","url":"https://www.gibraltar.gov.gi","kind":"government"},
+    {"name":"Gibraltar Courts Service","url":"https://www.gibraltarcourts.gi","kind":"courts"},
+    {"name":"Gibraltar Financial Services Commission","url":"https://www.gfsc.gi","kind":"regulator"}]},
+  "Isle of Man": {"place": {"code":"im","flag":"🇮🇲","region":"europe"}, "sources": [
+    {"name":"Isle of Man Legislation","url":"https://legislation.gov.im","kind":"legislation"},
+    {"name":"Isle of Man Government","url":"https://www.gov.im","kind":"government"},
+    {"name":"Isle of Man Courts of Justice","url":"https://www.courts.im","kind":"courts"},
+    {"name":"Tynwald","url":"https://www.tynwald.org.im","kind":"parliament"},
+    {"name":"Isle of Man Financial Services Authority","url":"https://www.iomfsa.im","kind":"regulator"}]}
+}

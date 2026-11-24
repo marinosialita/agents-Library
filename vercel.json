@@ -1,0 +1,8 @@
+{
+  "regions": ["fra1"],
+  "rewrites": [
+    { "source": "/welcome", "destination": "/welcome.html" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
+  ],
+  "functions": { "api/*": { "supportsCancellation": true } }
+}

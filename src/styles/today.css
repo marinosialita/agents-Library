@@ -1,0 +1,186 @@
+/* «Today» (11 Nov 2026): the morning page, in the Connections card language. */
+.mn-today-page { max-width: 1120px; margin: 0 auto; padding: 32px 28px 56px; display: flex; flex-direction: column; gap: 20px; }
+.mn-today-hero { display: flex; flex-direction: column; gap: 6px; }
+.mn-today-date { margin: 0; color: var(--brand-gold-hover); font: 600 12px/1.3 var(--brand-font-sans); letter-spacing: .08em; text-transform: uppercase; }
+.mn-today-hero h1 { margin: 0 0 10px; font: 650 30px/1.15 var(--brand-font-sans); letter-spacing: -.025em; color: var(--brand-ink); }
+.mn-today-ask { display: flex; align-items: center; gap: 10px; min-height: 54px; padding: 6px 6px 6px 16px; border: 1px solid var(--brand-composer-line, var(--brand-border-strong)); border-radius: 16px; background: var(--brand-surface); color: var(--brand-gold); box-shadow: 0 16px 36px -26px rgba(var(--brand-gold-rgb), .55); }
+.mn-today-ask input { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--brand-ink); font: 400 15px/1.4 var(--brand-font-sans); }
+.mn-today-ask input:focus { outline: 0; }
+.mn-today-ask .nomos-btn { height: 40px; padding: 0 14px; border-radius: 11px; }
+.mn-today-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+.mn-today-card { display: flex; flex-direction: column; gap: 12px; padding: 20px; border: 1px solid var(--brand-border); border-radius: var(--brand-radius-lg); background: var(--brand-surface); min-width: 0; }
+.mn-today-card.is-needs { border-color: var(--brand-gold-line); box-shadow: 0 18px 40px -30px rgba(var(--brand-gold-rgb), .6); }
+.mn-today-card h2 { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--brand-ink); font: 650 16px/1.25 var(--brand-font-sans); }
+.mn-today-card h2 svg { color: var(--brand-gold); }
+.mn-today-card h2 em { margin-left: auto; padding: 2px 8px; border-radius: 999px; background: var(--brand-surface-sunken); color: var(--brand-muted); font: 600 11px/1.4 var(--brand-font-sans); font-style: normal; }
+.mn-today-card ol { display: flex; flex-direction: column; gap: 8px; margin: 0; padding-left: 20px; color: var(--brand-ink); font: 400 14px/1.5 var(--brand-font-sans); }
+.mn-today-card small { color: var(--brand-muted); font: 400 12px/1.4 var(--brand-font-sans); }
+.mn-today-empty { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; margin: 0; color: var(--brand-muted); font: 400 13.5px/1.5 var(--brand-font-sans); }
+.mn-today-empty p { margin: 0; }
+p.mn-today-empty { flex-direction: row; align-items: center; }
+.mn-today-meetings { display: flex; flex-direction: column; margin: 0; padding: 0; list-style: none; }
+.mn-today-meetings li { display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 12px; padding: 10px 0; }
+.mn-today-meetings li + li { border-top: 1px solid var(--brand-border); }
+.mn-today-meetings time { color: var(--brand-gold-hover); font: 650 13.5px/1.4 var(--brand-font-sans); font-variant-numeric: tabular-nums; }
+.mn-today-meetings span { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.mn-today-meetings b { overflow: hidden; color: var(--brand-ink); font: 600 13.5px/1.4 var(--brand-font-sans); text-overflow: ellipsis; white-space: nowrap; }
+.mn-today-stats { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.mn-today-stats span { display: flex; flex-direction: column; gap: 2px; padding: 12px; border-radius: 12px; background: var(--brand-surface-soft); }
+.mn-today-stats b { color: var(--brand-ink); font: 650 24px/1.1 var(--brand-font-sans); font-variant-numeric: tabular-nums; }
+.mn-today-row { display: flex; align-items: center; gap: 7px; margin: 0; color: var(--brand-muted); font: 400 12.5px/1.4 var(--brand-font-sans); }
+.mn-today-row button, .mn-today-link { display: inline-flex; align-items: center; gap: 5px; margin-left: auto; padding: 0; border: 0; background: none; color: var(--brand-gold-hover); font: 600 12.5px/1 var(--brand-font-sans); cursor: pointer; }
+.mn-today-link { margin: auto 0 0; align-self: flex-start; }
+.mn-today-rules { display: flex; flex-direction: column; gap: 6px; margin: 0; padding: 0; list-style: none; }
+.mn-today-rules li { padding: 8px 12px; border-radius: 10px; background: var(--brand-surface-soft); color: var(--brand-ink); font: 400 13px/1.45 var(--brand-font-sans); }
+.mn-today-promise { display: flex; align-items: center; justify-content: center; gap: 7px; margin: 4px 0 0; color: var(--brand-muted); font: 400 12.5px/1.4 var(--brand-font-sans); }
+@supports (animation-timeline: view()) { @media (prefers-reduced-motion: no-preference) {
+  .mn-today-card { position: relative; z-index: 2; transform-origin: 50% 0; animation: mn-agent-rise linear both, mn-agent-tuck linear both; animation-timeline: view(), view(); animation-range: entry 0% entry 100%, exit 0% exit 100%; }
+} }
+@media (max-width: 860px) { .mn-today-grid { grid-template-columns: minmax(0, 1fr); } }
+@media (max-width: 600px) { .mn-today-page { padding: 22px 16px 40px; } .mn-today-hero h1 { font-size: 24px; } .mn-today-ask { flex-wrap: wrap; } .mn-today-ask input { font-size: 16px; } .mn-today-ask .nomos-btn { width: 100%; } }
+.mn-today-learn { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; margin-top: 4px; padding: 0; border: 0; background: none; color: var(--brand-gold-hover); font: 500 13px/1.3 var(--brand-font-sans); cursor: pointer; text-align: left; }
+.mn-today-learn svg { flex: none; }
+
+/* The e-mail reading panel (12 Nov 2026): «Today» splits 50/50 and the right half reads like a mail client. */
+.mn-today-split { display: grid; grid-template-columns: minmax(0, 1fr); overflow: hidden; }
+.mn-today-split.is-open { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.mn-today-split > .mn-today { height: 100%; min-height: 0; overflow: auto; }
+.mn-today-split.is-open .mn-today-grid { grid-template-columns: minmax(0, 1fr); }
+.mn-today-split.is-open .mn-today-page { padding-left: 24px; padding-right: 24px; }
+.mn-today-needs { display: flex; flex-direction: column; gap: 4px; margin: 0; padding: 0; list-style: none; counter-reset: need; }
+.mn-today-needs li { counter-increment: need; }
+.mn-today-needs li > div, .mn-today-needs li > button { position: relative; display: block; width: 100%; padding: 8px 10px 8px 30px; border: 0; border-radius: 10px; background: none; color: var(--brand-ink); font: 400 14px/1.5 var(--brand-font-sans); text-align: left; }
+.mn-today-needs li > div::before, .mn-today-needs li > button::before { content: counter(need) "."; position: absolute; left: 10px; color: var(--brand-muted); font-variant-numeric: tabular-nums; }
+.mn-today-needs li > button { cursor: pointer; }
+.mn-today-needs li > button:hover { background: var(--brand-surface-soft); }
+.mn-today-needs li > button.is-open { background: rgba(var(--brand-gold-rgb), .12); }
+.mn-today-needs li > button:focus-visible { outline: 2px solid var(--brand-gold); outline-offset: 1px; }
+.mn-today-needs .mn-today-mail { display: inline-flex; align-items: center; gap: 4px; margin-left: 6px; color: var(--brand-gold-hover); font: 600 12px/1 var(--brand-font-sans); white-space: nowrap; vertical-align: 1px; }
+
+.mn-mail { display: flex; flex-direction: column; min-height: 0; height: 100%; border-left: 1px solid var(--brand-border); background: var(--brand-surface); color: var(--brand-ink); animation: mn-mail-in .18s ease-out both; }
+@keyframes mn-mail-in { from { opacity: 0; transform: translateX(16px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: reduce) { .mn-mail { animation: none; } }
+.mn-mail-bar { display: flex; align-items: center; gap: 8px; height: 52px; padding: 0 12px; border-bottom: 1px solid var(--brand-border); flex: none; }
+.mn-mail-icon { display: grid; place-items: center; width: 36px; height: 36px; border: 0; border-radius: 50%; background: none; color: var(--brand-ink-soft); cursor: pointer; }
+.mn-mail-icon:hover { background: var(--brand-surface-soft); color: var(--brand-ink); }
+.mn-mail-icon:last-child { margin-left: auto; }
+.mn-mail-open { display: inline-flex; align-items: center; gap: 6px; margin-left: auto; padding: 7px 12px; border-radius: 999px; color: var(--brand-ink-soft); font: 500 13px/1 var(--brand-font-sans); text-decoration: none; }
+.mn-mail-open:hover { background: var(--brand-surface-soft); color: var(--brand-ink); }
+.mn-mail-open + .mn-mail-icon { margin-left: 0; }
+.mn-mail-scroll { flex: 1; min-height: 0; overflow: auto; padding: 20px 24px 40px 20px; }
+.mn-mail-subject { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin: 0 0 20px 56px; color: var(--brand-ink); font: 400 22px/1.3 var(--brand-font-sans); letter-spacing: -.01em; overflow-wrap: anywhere; }
+.mn-mail-label { padding: 2px 6px; border-radius: 4px; background: var(--brand-surface-sunken); color: var(--brand-ink-soft); font: 500 12px/1.4 var(--brand-font-sans); letter-spacing: 0; }
+.mn-mail-head { display: grid; grid-template-columns: 40px minmax(0, 1fr) auto; align-items: start; gap: 16px; }
+.mn-mail-avatar { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: hsl(var(--mail-hue) 55% 45%); color: #fff; font: 500 18px/1 var(--brand-font-sans); }
+.mn-mail-who { min-width: 0; padding-top: 2px; }
+.mn-mail-who p { margin: 0; overflow: hidden; color: var(--brand-ink); font: 400 14px/1.4 var(--brand-font-sans); text-overflow: ellipsis; white-space: nowrap; }
+.mn-mail-who b { font-weight: 650; }
+.mn-mail-who span { margin-left: 5px; color: var(--brand-muted); font-size: 12px; }
+.mn-mail-who small { color: var(--brand-muted); font: 400 12px/1.5 var(--brand-font-sans); }
+.mn-mail-date { padding-top: 3px; color: var(--brand-muted); font: 400 12px/1.4 var(--brand-font-sans); white-space: nowrap; }
+.mn-mail-body { margin: 18px 0 0 56px; color: var(--brand-ink); font: 400 14px/1.6 var(--brand-font-sans); white-space: pre-wrap; overflow-wrap: anywhere; }
+.mn-mail-body a { color: var(--brand-link, #1a73e8); }
+.mn-mail-loading, .mn-mail-error { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--brand-muted); white-space: normal; }
+.mn-mail-error { color: var(--brand-danger, #b42318); }
+.mn-mail-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 32px 0 0 56px; }
+.mn-mail-actions a { display: inline-flex; align-items: center; gap: 8px; height: 36px; padding: 0 20px 0 16px; border: 1px solid var(--brand-border-strong); border-radius: 999px; color: var(--brand-ink-soft); font: 500 14px/1 var(--brand-font-sans); text-decoration: none; }
+.mn-mail-actions a:hover { background: var(--brand-surface-soft); color: var(--brand-ink); }
+@media (max-width: 860px) {
+  .mn-today-split.is-open { grid-template-columns: minmax(0, 1fr); }
+  .mn-today-split.is-open > .mn-mail { position: fixed; inset: 0; z-index: 40; border-left: 0; }
+  .mn-mail-subject, .mn-mail-body, .mn-mail-actions { margin-left: 0; }
+  .mn-mail-scroll { padding: 16px 16px 32px; }
+}
+.mn-mail-files { margin: 28px 0 0 56px; padding-top: 16px; border-top: 1px solid var(--brand-border); }
+.mn-mail-files p { margin: 0 0 10px; color: var(--brand-ink-soft); font: 600 13px/1.4 var(--brand-font-sans); }
+.mn-mail-files ul { display: flex; flex-wrap: wrap; gap: 8px; margin: 0; padding: 0; list-style: none; }
+.mn-mail-files li { display: inline-flex; align-items: center; gap: 8px; max-width: 220px; height: 40px; padding: 0 12px; border: 1px solid var(--brand-border); border-radius: 8px; background: var(--brand-surface-soft); color: var(--brand-ink); font: 500 12.5px/1 var(--brand-font-sans); }
+.mn-mail-files li svg { flex: none; color: var(--brand-danger, #c5221f); }
+.mn-mail-files li span { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+@media (max-width: 860px) { .mn-mail-files { margin-left: 0; } }
+/* Closer to a mail client (12 Nov 2026, «does this really look like Gmail?»): the message's own HTML on white, Arial
+   for the reading view as Gmail uses, the reply icon beside the date. */
+.mn-mail { --mail-font: "Google Sans", Roboto, Arial, Helvetica, sans-serif; }
+.mn-mail-subject { font-family: var(--mail-font); }
+.mn-mail-who p, .mn-mail-who small, .mn-mail-date, .mn-mail-actions a, .mn-mail-open { font-family: var(--mail-font); }
+.mn-mail-meta { display: flex; align-items: center; gap: 4px; }
+.mn-mail-icon.is-small { width: 32px; height: 32px; margin: -6px -6px 0 0; }
+.mn-mail-body.is-html { margin-top: 12px; white-space: normal; }
+.mn-mail-frame { display: block; width: 100%; border: 0; border-radius: 8px; background: #fff; }
+
+/* «Your agents» (12 Nov 2026): one column per agent the person made, side by side, each with its newest result. */
+.mn-today-agents { display: flex; flex-direction: column; gap: 10px; margin-bottom: 14px; min-width: 0; }
+.mn-today-agents h2 { display: flex; align-items: center; gap: 8px; margin: 0; color: var(--brand-ink); font: 650 16px/1.25 var(--brand-font-sans); }
+.mn-today-agents h2 svg { color: var(--brand-gold); }
+.mn-today-agents h2 small { color: var(--brand-muted); font: 500 12px/1 var(--brand-font-sans); }
+.mn-today-columns { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(300px, 460px); gap: 14px; overflow-x: auto; padding-bottom: 6px; scroll-snap-type: x proximity; }
+.mn-today-column { display: flex; flex-direction: column; gap: 10px; min-width: 0; padding: 0 16px 16px; overflow: hidden; border: 1px solid var(--brand-border); border-radius: var(--brand-radius-lg); background: var(--brand-surface); scroll-snap-align: start; }
+/* The title bar (his «light purple bar»): only the routine's name; the last run sits under the bar. */
+.mn-today-column header { display: flex; align-items: center; gap: 8px; margin: 0 -16px 4px; padding: 12px 16px; background: var(--brand-gold-soft); border-bottom: 1px solid rgba(var(--brand-gold-rgb), .18); }
+.mn-today-column header button { flex: 1; min-width: 0; padding: 0; border: 0; background: none; color: var(--brand-gold-dark); font: 650 15px/1.3 var(--brand-font-sans); text-align: left; cursor: pointer; }
+.mn-today-column header button:hover { color: var(--brand-gold-hover); }
+.mn-today-column-when { margin-top: -4px; color: var(--brand-muted); font: 400 12px/1.4 var(--brand-font-sans); }
+/* «Its 3 to-dos are in Needs you below» (13 Nov 2026): the column points to them instead of repeating them. */
+.mn-today-column-needs { display: inline-flex; align-items: center; gap: 6px; align-self: flex-start; padding: 7px 11px; border: 1px solid rgba(var(--brand-gold-rgb), .22); border-radius: 999px;
+  background: rgba(var(--brand-gold-rgb), .06); color: var(--brand-gold-hover); font: 600 12.5px/1.2 var(--brand-font-sans); cursor: pointer; }
+.mn-today-column-needs:hover { background: rgba(var(--brand-gold-rgb), .11); }
+.mn-today-column-body { flex: 1; max-height: 340px; overflow-y: auto; color: var(--brand-ink); font: 400 13.5px/1.5 var(--brand-font-sans); overflow-wrap: anywhere; }
+.mn-today-column-body > :first-child { margin-top: 0; }
+.mn-today-column-body h1, .mn-today-column-body h2, .mn-today-column-body h3 { margin: 12px 0 4px; font: 650 14px/1.3 var(--brand-font-sans); }
+.mn-today-column-body p, .mn-today-column-body ul, .mn-today-column-body ol { margin: 0 0 8px; }
+.mn-today-column-body ul, .mn-today-column-body ol { padding-left: 18px; }
+.mn-today-column-body a { color: var(--brand-gold-hover); }
+.mn-today-split.is-open .mn-today-columns { grid-auto-columns: minmax(260px, 1fr); }
+@media (max-width: 600px) { .mn-today-columns { grid-auto-columns: 85%; } }
+.mn-today-column header .mn-today-column-delete { flex: none; display: grid; place-items: center; width: 26px; height: 26px; border-radius: 8px; color: var(--brand-gold-hover); opacity: .7; }
+.mn-today-column header .mn-today-column-delete:hover { opacity: 1; background: rgba(var(--brand-gold-rgb), .14); color: var(--brand-gold-dark); }
+.mn-today-column-ask { flex: 1; min-width: 0; color: var(--brand-gold-dark); font: 600 14px/1.3 var(--brand-font-sans); }
+.mn-today-column header .mn-today-column-yes, .mn-today-column header .mn-today-column-no { flex: none; padding: 5px 10px; border-radius: 8px; font: 600 12.5px/1.2 var(--brand-font-sans); text-align: center; }
+.mn-today-column header .mn-today-column-yes { background: #C2410C; color: #fff; }
+.mn-today-column header .mn-today-column-yes:hover { background: #9A3412; color: #fff; }
+.mn-today-column header .mn-today-column-no { background: var(--brand-surface); color: var(--brand-ink); border: 1px solid var(--brand-border); }
+
+/* The hero (12 Nov 2026, his «more modern and wow»): a living aurora behind the greeting, the name in colour, a pulse
+   line of what is working for you, and ideas to start from. */
+.mn-today-hero { position: relative; isolation: isolate; gap: 10px; padding: 34px 32px 28px; overflow: hidden; border: 1px solid rgba(var(--brand-gold-rgb), .18); border-radius: 26px;
+  background: linear-gradient(135deg, #f5f1ff 0%, #fdf4ff 45%, #eef6ff 100%); box-shadow: 0 30px 60px -44px rgba(60, 30, 160, .55), 0 1px 0 rgba(255,255,255,.8) inset; }
+.mn-today-hero::before, .mn-today-hero::after { content: ""; position: absolute; z-index: -1; border-radius: 50%; filter: blur(60px); opacity: .7; pointer-events: none; }
+.mn-today-hero::before { width: 420px; height: 420px; left: -120px; top: -220px; background: radial-gradient(closest-side, rgba(124, 92, 255, .55), transparent); animation: mn-aurora-a 16s ease-in-out infinite alternate; }
+.mn-today-hero::after { width: 480px; height: 480px; right: -160px; bottom: -300px; background: radial-gradient(closest-side, rgba(255, 122, 200, .4), rgba(96, 165, 250, .25) 60%, transparent); animation: mn-aurora-b 20s ease-in-out infinite alternate; }
+@keyframes mn-aurora-a { to { transform: translate(180px, 80px) scale(1.15); } }
+@keyframes mn-aurora-b { to { transform: translate(-200px, -90px) scale(1.1); } }
+@media (prefers-reduced-motion: reduce) { .mn-today-hero::before, .mn-today-hero::after { animation: none; } }
+.mn-today-hero h1 { margin: 0; font: 700 clamp(30px, 4.2vw, 46px)/1.08 var(--brand-font-sans); letter-spacing: -.035em; }
+.mn-today-hero h1 em { font-style: normal; background: linear-gradient(90deg, #6d4aff, #c04bd8 55%, #ff6fa5); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.mn-today-pulse { display: flex; align-items: center; gap: 8px; margin: 0 0 12px; color: var(--brand-ink); opacity: .8; font: 500 13.5px/1.4 var(--brand-font-sans); }
+.mn-today-pulse i { position: relative; flex: none; width: 8px; height: 8px; border-radius: 50%; background: #22c55e; }
+.mn-today-pulse i::after { content: ""; position: absolute; inset: -4px; border-radius: 50%; border: 2px solid #22c55e; opacity: 0; animation: mn-pulse 2.2s ease-out infinite; }
+@keyframes mn-pulse { from { transform: scale(.6); opacity: .7; } to { transform: scale(1.6); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .mn-today-pulse i::after { animation: none; } }
+.mn-today-hero .mn-today-ask { min-height: 60px; border-color: rgba(var(--brand-gold-rgb), .3); border-radius: 18px; background: rgba(255,255,255,.86); backdrop-filter: blur(10px); box-shadow: 0 18px 40px -30px rgba(60, 30, 160, .6); }
+.mn-today-hero .mn-today-ask:focus-within { border-color: var(--brand-gold); box-shadow: 0 0 0 4px rgba(var(--brand-gold-rgb), .14), 0 18px 40px -30px rgba(60, 30, 160, .6); }
+.mn-today-quick { display: flex; flex-wrap: wrap; gap: 8px; margin: 6px 0 2px; }
+.mn-today-quick button { padding: 8px 13px; border: 1px solid rgba(var(--brand-gold-rgb), .22); border-radius: 999px; background: rgba(255,255,255,.7); color: var(--brand-ink); font: 500 13px/1.2 var(--brand-font-sans); cursor: pointer; transition: transform .12s ease, background .12s ease, border-color .12s ease; }
+.mn-today-quick button:hover { border-color: var(--brand-gold); background: #fff; transform: translateY(-1px); }
+.mn-today-split.is-open .mn-today-hero { padding: 24px 20px; }
+@media (max-width: 600px) { .mn-today-hero { padding: 22px 18px; border-radius: 20px; } }
+@media (prefers-color-scheme: dark) { :root[data-theme="dark"] .mn-today-hero { background: linear-gradient(135deg, #1d1838, #241a33 50%, #152033); } }
+
+.mn-today-column.is-open { border-color: var(--brand-gold-line); box-shadow: 0 18px 40px -30px rgba(var(--brand-gold-rgb), .9); }
+
+/* A table inside a routine's column (12 Nov 2026: a five-column Netflix table squeezed letter by letter in 420 px):
+   read as a list — each row a block, its first cell the title, the other cells short labelled lines. The whole table
+   is one click away in «Read in full». */
+.mn-today-column-body .ait-table { margin: 4px 0 8px; }
+.mn-today-column-body table, .mn-today-column-body tbody, .mn-today-column-body tr, .mn-today-column-body td { display: block; width: auto; }
+.mn-today-column-body thead { display: none; }
+.mn-today-column-body tr { padding: 9px 0; border-bottom: 1px solid var(--brand-border); }
+.mn-today-column-body tr:last-child { border-bottom: 0; }
+.mn-today-column-body td { padding: 0; border: 0; color: var(--brand-muted); font: 400 13px/1.45 var(--brand-font-sans); overflow-wrap: break-word; word-break: normal; }
+.mn-today-column-body td:first-child { margin-bottom: 3px; color: var(--brand-ink); font-weight: 600; font-size: 13.5px; }
+.mn-today-column-body td:not(:first-child)[data-label]::before { content: attr(data-label) ": "; color: var(--brand-faint); font-weight: 500; }
+.mn-today-column-body td:empty { display: none; }
+.mn-today-column-body { overflow-wrap: break-word; }
+/* 13 Nov 2026: a meeting's day when it is not today, and who keeps each lesson. */
+.mn-today-meetings time small { display: block; color: var(--brand-muted); font: 500 11px/1.3 var(--brand-font-sans); }
+.mn-today-rules li small { display: block; margin-top: 2px; color: var(--brand-muted); font: 500 11.5px/1.3 var(--brand-font-sans); }

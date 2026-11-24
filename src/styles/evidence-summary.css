@@ -1,0 +1,19 @@
+/* One 44px row per source fold-out: icon, label, count on the right, chevron. */
+.mn-evidence-summary {
+  display: flex; align-items: center; gap: 10px; min-height: 44px; padding: 0 8px;
+  border-radius: var(--brand-radius-sm); list-style: none; cursor: pointer;
+  color: var(--brand-ink); font: 500 13px/1.4 var(--brand-font-sans, Inter, sans-serif);
+  transition: background-color .15s ease;
+}
+.mn-evidence-summary::-webkit-details-marker { display: none; }
+.mn-evidence-summary::marker { content: ''; }
+.mn-evidence-summary:hover { background: rgba(var(--brand-gold-rgb), .07); }
+.mn-evidence-icon { flex: 0 0 auto; color: var(--brand-gold); }
+.mn-evidence-label { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.mn-evidence-count {
+  margin-left: auto; color: var(--brand-muted, var(--brand-faint)); font-size: 12px; font-weight: 400;
+  font-variant-numeric: tabular-nums; white-space: nowrap;
+}
+.mn-evidence-chevron { flex: 0 0 auto; color: var(--brand-muted, var(--brand-faint)); transition: transform .18s ease; }
+details[open] > .mn-evidence-summary .mn-evidence-chevron { transform: rotate(180deg); }
+@media (prefers-reduced-motion: reduce) { .mn-evidence-summary, .mn-evidence-chevron { transition: none; } }

@@ -1,0 +1,27 @@
+/* An official page read inside Nomos (5 Nov 2026): a reader beside the answer, the original one click away. Tokens only. */
+.nomos-official-reader-backdrop{position:fixed;inset:0;z-index:120;display:flex;justify-content:flex-end;background:color-mix(in srgb,var(--brand-ink) 18%,transparent)}
+.nomos-official-reader{display:flex;flex-direction:column;width:min(760px,100vw);height:100%;background:var(--brand-surface);box-shadow:var(--brand-shadow-2);animation:nomos-official-reader-in var(--brand-motion-menu,180ms) ease-out}
+@keyframes nomos-official-reader-in{from{transform:translateX(24px);opacity:0}to{transform:none;opacity:1}}
+@media(prefers-reduced-motion:reduce){.nomos-official-reader{animation:none}}
+.nomos-official-reader header{display:flex;align-items:center;gap:10px;padding:14px 16px 14px 22px;border-bottom:1px solid var(--brand-border)}
+.nomos-official-reader header>span{display:grid;flex:1;gap:2px;min-width:0}
+.nomos-official-reader header b{overflow:hidden;color:var(--brand-ink);font:600 15px/1.35 var(--brand-font-sans);text-overflow:ellipsis;white-space:nowrap}
+.nomos-official-reader header small{color:var(--brand-faint);font:400 12px/1.3 var(--brand-font-sans)}
+.nomos-official-reader header .nomos-btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none}
+.nomos-official-reader-close{display:grid;place-items:center;width:34px;height:34px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--brand-muted);cursor:pointer}
+.nomos-official-reader-close:hover{background:var(--brand-surface-sunken);color:var(--brand-ink)}
+.nomos-official-reader-body{flex:1;min-height:0;padding:22px 28px 40px;overflow-y:auto;color:var(--brand-ink);font:400 14.5px/1.7 var(--brand-font-sans)}
+.nomos-official-reader-note{display:flex;align-items:center;gap:8px;color:var(--brand-muted);font-size:13.5px}
+.nomos-official-reader-note .is-spinning{animation:nomos-official-reader-spin 900ms linear infinite}
+@keyframes nomos-official-reader-spin{to{transform:rotate(360deg)}}
+.nomos-official-reader-html h1,.nomos-official-reader-html h2,.nomos-official-reader-html h3,.nomos-official-reader-html h4{margin:1.2em 0 .5em;font-weight:600;line-height:1.3}
+.nomos-official-reader-html h1{font-size:20px}.nomos-official-reader-html h2{font-size:17px}.nomos-official-reader-html h3,.nomos-official-reader-html h4{font-size:15px}
+.nomos-official-reader-html p,.nomos-official-reader-text p{margin:0 0 .8em}
+.nomos-official-reader-html a{color:var(--brand-gold-hover);text-decoration:underline;text-underline-offset:2px}
+.nomos-official-reader-html table{width:100%;margin:12px 0;border-collapse:collapse;font-size:13px}
+.nomos-official-reader-html td,.nomos-official-reader-html th{padding:6px 8px;border:1px solid var(--brand-border);vertical-align:top;text-align:left}
+.nomos-official-reader-html blockquote{margin:0 0 .8em;padding-left:14px;border-left:3px solid var(--brand-border-strong);color:var(--brand-ink-soft)}
+.nomos-official-reader-html ul,.nomos-official-reader-html ol{margin:0 0 .8em;padding-left:22px}.nomos-official-reader-html ul{list-style:disc}.nomos-official-reader-html ol{list-style:decimal}.nomos-official-reader-html li{margin:0 0 .3em}
+.nomos-official-reader-text p{white-space:pre-wrap}
+@media(max-width:700px){.nomos-official-reader-body{padding:18px 16px 32px}.nomos-official-reader header{padding-left:16px}}
+.nomos-official-sources .nomos-official-addition{padding:2px 16px 10px}

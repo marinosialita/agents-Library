@@ -1,0 +1,201 @@
+/* Citation chips read like footnote marks: flat, gold, no icon; a run of chips shares one pill. */
+.mn-document-cite,.mn-chat-ai-answer a[href^="#project-source-"]{display:inline-flex!important;text-decoration:none;align-items:center;gap:3px;vertical-align:baseline;margin:0 2px;padding:1px 6px;border:0;border-radius:5px;background:var(--brand-gold-soft);color:var(--brand-gold-dark,var(--brand-gold-hover));font:600 10.5px/1.5 var(--brand-font-sans);letter-spacing:.01em;white-space:nowrap;cursor:pointer;transition:background var(--brand-motion-feedback) ease,color var(--brand-motion-feedback) ease}
+.mn-document-cite>span{display:inline-flex;gap:2px}.mn-document-cite:hover{background:rgba(var(--brand-gold-rgb),.16);color:var(--brand-gold-hover)}.mn-document-cite:focus-visible{outline:2px solid var(--brand-faint);outline-offset:3px}
+.mn-document-cite-run{display:inline-flex;align-items:center;vertical-align:baseline;margin:0 2px;border-radius:5px;background:var(--brand-gold-soft)}
+.mn-document-cite-run>.mn-document-cite{margin:0;background:transparent;border-radius:0}
+.mn-document-cite-run>.mn-document-cite:first-child{border-radius:5px 0 0 5px}.mn-document-cite-run>.mn-document-cite:last-child{border-radius:0 5px 5px 0}
+.mn-document-cite-run>.mn-document-cite.is-continued{padding-left:0}.mn-document-cite-run>.mn-document-cite.is-continued::before{content:",";margin:0 3px 0 -3px;color:var(--brand-gold-dark,var(--brand-gold-hover))}
+.mn-document-cite-unavailable{color:var(--brand-muted);font:400 11px/1.5 var(--brand-font-sans)}
+.mn-document-source-badge{display:inline-flex;align-items:center;gap:7px;margin:8px 0 13px;padding:6px 9px;border:1px solid rgba(170,144,254,.24);border-radius:var(--brand-radius-sm);background:var(--brand-gold-soft);color:var(--brand-gold-dark,var(--brand-gold-hover));font:500 11px/1.4 var(--brand-font-sans);cursor:pointer}.mn-document-source-badge:hover{border-color:var(--brand-gold)}.mn-document-source-badge strong{font-weight:650}
+
+/* Shared saved-source reader for ordinary chat and cloud Projects. */
+.mn-chat-ai.has-document-source{display:grid!important;grid-template-columns:minmax(min(520px,60%),1fr) minmax(0,min(50%,900px));align-items:stretch;gap:0;padding:0;overflow:hidden;min-height:0}
+.mn-chat-ai.has-document-source .mn-chat-ai-main-flow{display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden}
+.mn-chat-ai.has-document-source .chat-area{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;padding-top:0}
+.mn-chat-ai.has-document-source .msgs{width:auto;max-width:none;padding:20px;margin:0}
+.mn-chat-ai.has-document-source .workspace-composer{position:relative;flex-shrink:0;width:100%;padding:12px 20px 4px;box-sizing:border-box}
+.mn-chat-ai.has-document-source .input-wrap{max-width:none;width:100%}
+.mn-chat-ai.has-document-source .workspace-composer::before,.mn-chat-ai.has-document-source .mn-chat-ai-scope{display:none}
+.mn-chat-ai.has-document-source .mn-chat-ai-header{padding:12px 18px}
+.nomos-research-view:has(.mn-chat-ai.has-document-source) .mn-page.mn-research-workspace{margin-top:calc(-1 * var(--np-chat-header-h,40px))}
+.nomos-research-view:has(.mn-chat-ai.has-document-source) .nomos-project-chat-header{position:relative;z-index:2;width:50%;box-sizing:border-box}
+.nomos-research-view .mn-chat-ai.has-document-source .mn-chat-ai-main-flow{padding-top:var(--np-chat-header-h,40px)}
+.mn-document-source-reader{display:flex;flex-direction:column;min-width:0;min-height:0;overflow:hidden;outline:none;border:0;border-left:1px solid var(--brand-border);border-radius:0;background:var(--brand-surface,#fff);box-shadow:none;font-family:var(--brand-font-sans);color:var(--brand-ink)}
+/* Header built like the law citation panel beside the chat: crumb line, 16px title, controls top-right. */
+.mn-document-source-header{display:flex;align-items:flex-start;gap:10px;padding:10px 12px 8px 20px;box-sizing:border-box;flex-shrink:0;border-bottom:1px solid rgba(32,33,31,.12)}
+.mn-document-source-icon{display:none}
+.mn-document-source-heading{flex:1;min-width:0}
+.mn-document-source-crumb{display:block;margin-bottom:4px;font:500 13px/1.3 var(--brand-font-sans);color:var(--brand-gold);font-variant-numeric:tabular-nums;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mn-document-source-nav{display:inline-flex;align-items:center;gap:2px;flex-shrink:0;margin-top:4px;font-size:12px;font-variant-numeric:tabular-nums}
+.mn-document-source-nav>span{margin-right:6px;color:var(--brand-gold-dark,var(--brand-gold-hover));font-weight:500}
+.mn-document-source-nav button{display:grid;place-items:center;width:24px;height:24px;padding:0;border:0;border-radius:var(--brand-radius-xs);background:transparent;color:var(--brand-ink);cursor:pointer}
+.mn-document-source-nav button:hover:not(:disabled){background:var(--brand-gold-soft)}
+.mn-document-source-nav button:disabled{color:var(--brand-faint);opacity:.5;cursor:default}
+.mn-document-source-paragraph.is-cited{cursor:pointer}
+.mn-document-source-paragraph.is-cited .mn-document-source-number{color:var(--brand-gold-dark,var(--brand-gold-hover));font-weight:600}
+.mn-document-source-paragraph.is-cited:not(.is-selected):hover{background:rgba(var(--brand-gold-rgb),.05);border-radius:0 var(--brand-radius-xs) var(--brand-radius-xs) 0}
+@keyframes mn-source-settle{from{background:transparent;box-shadow:0 0 0 6px transparent}to{background:var(--brand-gold-soft);box-shadow:0 0 0 6px var(--brand-gold-soft)}}
+.mn-document-source-paragraph.is-selected{animation:mn-source-settle 420ms ease-out both}
+.mn-document-source-heading h2{font:600 16px/1.3 var(--brand-font-sans);letter-spacing:-.01em;color:var(--brand-ink);margin:0;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mn-document-source-close,.mn-document-source-download{display:grid;place-items:center;flex-shrink:0;width:32px;height:32px;padding:0;border:0;border-radius:var(--brand-radius-xs);background:transparent;color:var(--brand-muted,var(--brand-faint));cursor:pointer}
+.mn-document-source-close:hover,.mn-document-source-download:hover{background:var(--brand-gold-soft);color:var(--brand-ink)}
+.mn-document-source-toolbar{display:flex;flex-wrap:wrap;align-items:center;gap:4px 12px;padding:0 16px;border-bottom:1px solid var(--brand-border);font-size:11px;color:var(--brand-muted);flex-shrink:0}
+.mn-document-source-picker{position:relative;flex:1 1 180px;min-width:0;display:flex;align-items:center}
+.mn-document-source-picker select{width:100%;min-width:0;appearance:none;padding:8px 24px 8px 0;background:transparent;border:0;border-radius:var(--brand-radius-xs);font:500 11px/1.4 var(--brand-font-sans);color:var(--brand-ink);text-overflow:ellipsis;cursor:pointer}
+.mn-document-source-picker>svg{position:absolute;right:3px;pointer-events:none}
+.mn-document-source-location{padding:9px 0;white-space:nowrap;font-variant-numeric:tabular-nums}
+.mn-document-source-content{flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;scroll-padding:18px 0;padding:16px 18px 14px 20px;scrollbar-width:thin;scrollbar-color:var(--brand-surface-sunken) transparent;background:transparent}
+.mn-document-source-paper{border:0;border-radius:0;background:transparent;padding:0;box-shadow:none;box-sizing:border-box}
+.mn-document-source-paragraph{position:relative;padding:0 0 0 12px;margin:0 0 11px;border:0;border-left:2px solid transparent;border-radius:0;font:400 15px/1.65 var(--brand-font-sans);color:var(--brand-ink);overflow-wrap:anywhere;scroll-margin:18px 0}
+.mn-document-source-text{min-width:0}
+.mn-document-source-text p{margin:0 0 10px;white-space:normal}
+.mn-document-source-text p:last-child{margin-bottom:0}
+.mn-document-source-paragraph:has(.mn-document-source-number){display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;padding-left:6px}
+.mn-document-source-number{font:500 10px/2.3 var(--brand-font-sans);color:var(--brand-muted);user-select:none}
+/* The cited passage: the app's own gold, a bar on the left, no marker pen. */
+.mn-document-source-paragraph.is-selected{background:var(--brand-gold-soft);color:var(--brand-ink);border-left:3px solid var(--brand-gold);border-radius:0 var(--brand-radius-xs) var(--brand-radius-xs) 0;box-shadow:0 0 0 6px var(--brand-gold-soft)}
+.mn-document-source-paragraph.is-selected:has(.mn-document-source-number){padding-left:5px}
+.mn-document-source-notice{margin:0;padding:7px 16px;font:400 11px/1.5 var(--brand-font-sans);color:var(--brand-muted);border-bottom:1px solid var(--brand-border)}
+.mn-document-source-notice button{font:inherit;color:var(--brand-gold-dark);background:none;border:0;text-decoration:underline;cursor:pointer}
+.mn-document-source-page{margin-bottom:8px;font:500 11px/1.5 var(--brand-font-sans);color:var(--brand-muted)}
+.mn-document-source-footer{display:flex;align-items:center;flex-wrap:wrap;gap:4px 6px;min-height:40px;padding:8px 20px;border-top:1px solid rgba(32,33,31,.12);font-size:11px;line-height:1.5;color:var(--brand-muted);background:transparent;flex-shrink:0}
+.mn-document-source-footer strong{margin-left:auto;font-size:10px;font-weight:500;color:var(--brand-gold)}
+.mn-document-source-dot{display:none}
+.mn-document-source-reader button:focus-visible,.mn-document-source-reader select:focus-visible,.mn-document-source-content:focus-visible{outline:2px solid var(--brand-faint);outline-offset:-2px}
+.mn-document-source-sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.mn-document-source-badge{max-width:100%;min-height:32px;line-height:1.5;text-align:left}
+.mn-document-source-badge>svg{flex:none}
+.mn-document-source-badge:focus-visible{outline:2px solid var(--brand-faint);outline-offset:3px}
+@media(max-width:880px){
+ .mn-chat-ai.has-document-source{display:flex!important;position:relative;padding:0}
+ .mn-chat-ai.has-document-source .mn-chat-ai-main-flow{display:none;padding:0}
+ .mn-document-source-reader{flex:1;width:100%;border-left:0}
+ .mn-document-source-header{padding:10px 8px 8px 14px}
+ .mn-document-source-close,.mn-document-source-download{width:40px;height:40px}
+ .mn-document-source-picker select{min-height:40px}
+ .mn-document-source-content{padding:16px 14px}
+ .mn-document-source-badge{min-height:40px}
+}
+@media(max-width:720px){
+ .nomos-research-view:has(.mn-chat-ai.has-document-source) .mn-page.mn-research-workspace{margin-top:0}
+ .nomos-research-view:has(.mn-chat-ai.has-document-source) .nomos-project-chat-header{width:auto}
+}
+@media(prefers-reduced-motion:reduce){.mn-document-cite{transition:none}.mn-document-source-content{scroll-behavior:auto}.mn-document-source-paragraph.is-selected{animation:none}}
+/* «Κείμενο» / «Έγγραφο»: the reader shows the real file when it has it; this switches to the text snapshot and back. */
+.mn-document-source-mode{flex-shrink:0;height:28px;padding:0 10px;border:1px solid var(--brand-border);border-radius:var(--brand-radius-xs);background:transparent;color:var(--brand-ink);font:500 12px/1 var(--brand-font-sans);cursor:pointer}
+.mn-document-source-mode:hover{background:var(--brand-gold-soft);border-color:var(--brand-gold)}
+
+/* iPhone zooms the page into a field under 16px. */
+@media (max-width: 880px) {
+  .mn-document-source-picker select { font-size: 16px; }
+}
+/* A cited paragraph opens with the keyboard as well: its focus shows. */
+.mn-document-source-paragraph[role="button"]:focus-visible { outline:2px solid var(--brand-faint); outline-offset: 2px; border-radius: var(--brand-radius-xs); }
+
+.registrar-web { display:flex;flex-direction:column;flex:1;min-width:0;min-height:0;height:100%;background:#fff; }
+.registrar-web[hidden] { display:none; }
+.registrar-web-toolbar { display:flex;flex-shrink:0;align-items:center;gap:3px;height:44px;padding:6px 8px;border-bottom:1px solid var(--brand-border);background:var(--brand-surface-soft); }
+.registrar-web-toolbar button { display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border:0;border-radius:var(--brand-radius-xs);background:transparent;color:var(--brand-ink-soft);cursor:pointer; }
+.registrar-web-toolbar button:hover:not(:disabled) { background:var(--brand-surface-sunken); }
+.registrar-web-toolbar button:disabled { opacity:.3;cursor:default; }
+.registrar-web-toolbar button:focus-visible,.registrar-web a:focus-visible { outline:2px solid var(--brand-faint);outline-offset:2px; }
+.registrar-web-address { display:flex;align-items:center;justify-content:space-between;gap:8px;flex:1;min-width:0;height:30px;padding:6px 9px;border:1px solid var(--brand-border);border-radius:var(--brand-radius-xs);background:#fff;color:var(--brand-ink-soft);font:12px system-ui;text-decoration:none; }
+.registrar-web-address span { overflow:hidden;white-space:nowrap;text-overflow:ellipsis; }
+.registrar-web-address svg { flex-shrink:0; }
+.registrar-web-announcement { position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0; }
+.registrar-web-error { display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:8px 12px;background:var(--brand-gold-soft);color:var(--brand-gold-hover);font:12px/1.4 system-ui; }
+.registrar-web-error button { background:none;border:0;color:inherit;text-decoration:underline;cursor:pointer;font:inherit; }
+.registrar-web-frame { display:block;flex:1;min-height:0;width:100%;border:0;background:#fff; }
+.living-citation-panel .lcp-body.lcp-body--website { display:flex;padding:0;overflow:hidden; }
+@media (pointer:coarse) {
+  .registrar-web-toolbar { height:52px;gap:0;padding:4px; }
+  .registrar-web-toolbar button { flex-basis:40px;width:40px;height:44px; }
+  .registrar-web-address { height:36px; }
+}
+@media (prefers-reduced-motion:reduce) { .registrar-web .lcp-spin { animation:none; } }
+
+/* The GOV.UK page viewer fills the reader panel beside the chat, like the statute and judgment readers. */
+.nomos-gov-uk-web{padding:0}
+.nomos-gov-uk-web .registrar-web{height:100%}
+/* The official-page viewer (5 Nov 2026): the GOV.UK viewer's bar, plus «Κείμενο» and the original. */
+.nomos-official-web .registrar-web{display:flex;flex-direction:column;min-height:0}
+.nomos-official-web .registrar-web-address{display:flex;align-items:center;justify-content:flex-start;gap:6px}
+.nomos-official-web .registrar-web-address svg{flex:none;color:var(--brand-faint)}
+.registrar-web-toolbar .nomos-official-web-mode{display:inline-flex;flex:none;gap:5px;width:auto;padding:0 9px;font:500 12px/1 var(--brand-font-sans)}
+.registrar-web-toolbar .nomos-official-web-mode[aria-pressed=true]{background:var(--brand-gold-soft);color:var(--brand-gold-hover)}
+.nomos-official-web-original{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:var(--brand-radius-xs);color:var(--brand-ink-soft)}
+.nomos-official-web-original:hover{background:var(--brand-surface-sunken)}
+.nomos-official-web-fallback{flex:1;min-height:0;overflow-y:auto;background:var(--brand-surface)}
+.nomos-official-web-fallback .registrar-web-error{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:18px}
+.nomos-official-web-pdf{padding:12px}
+
+/* Shared by main Chat with Nomos and cloud Projects. */
+  .mn-chat-ai-split {
+    flex: 1;
+    min-width: 0;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    overflow: hidden;
+    /* A law or a judgment beside the conversation takes half the width. On a very
+       wide window the reader stops at 900px, where its lines would grow too long to
+       read; on a narrow one it gives way first, the conversation keeping 520px (or
+       60% where even that does not fit, which is the split this replaced). */
+    --mn-reader-split: minmax(min(520px, 60%), 1fr) minmax(0, min(50%, 900px));
+  }
+  .mn-chat-ai-split[hidden] { display: none; }
+  .mn-chat-ai-split.is-law-open,
+  .mn-chat-ai-split.is-case-open {
+    /* The base split for a source reader beside the conversation (and the compare
+       view): 53% conversation, 47% reader. A law, and a judgment with its full-text
+       reader, refine it below. */
+    grid-template-columns: minmax(0, 53fr) minmax(0, 47fr);
+  }
+  /* A law is read in half the width, the same as a judgment. */
+  .mn-chat-ai-split.is-law-open { grid-template-columns: var(--mn-reader-split); }
+  .mn-chat-ai-conversation { display:flex; flex-direction:column; flex:1; min-width:0; min-height:0; }
+  .mn-chat-ai-conversation[hidden] { display:none; }
+  .mn-chat-ai-primary > .mn-chat-col { flex:1; }
+  .mn-chat-ai-split > .mn-detail-col { border-left:1px solid var(--mn-line, var(--brand-border)); }
+  .mn-chat-ai-primary {
+    min-width: 0;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .mn-chat-ai-citation-pane {
+    min-width: 0;
+    min-height: 0;
+    overflow: hidden;
+    border-left: 1px solid var(--mn-line, var(--brand-border));
+    background: var(--mn-sheet, var(--brand-surface));
+    box-shadow: var(--brand-shadow-2);
+  }
+  @media (max-width: 880px) {
+    .mn-chat-ai-split.is-law-open, .mn-chat-ai-split.is-case-open { display: block; position: relative; }
+    .mn-chat-ai-split.is-case-open > .mn-detail-col { display:block; height:100%; border-left:0; }
+    .mn-chat-ai-split.is-case-open .mn-chat-ai-primary { display:none; }
+    .mn-chat-ai-split.is-case-open.has-case-assistant .mn-chat-ai-primary { display:flex; position:absolute; inset:0; z-index:4; background:var(--mn-sheet, var(--brand-surface)); }
+    .mn-chat-ai-split.is-law-open .mn-chat-ai-primary { display: none; }
+    .mn-chat-ai-citation-pane { width: 100%; height: 100%; border-left: 0; box-shadow: none; }
+  }
+/* 11 Nov 2026: a hidden frame must take no room (its display rule overrode [hidden], so the text reader began halfway down). */
+.registrar-web-frame[hidden], .nomos-official-web iframe[hidden] { display: none !important; }
+.nomos-official-web-pdf-page{margin:0 auto 10px;border-radius:4px;background:#fff;box-shadow:0 1px 3px rgba(0,0,0,.14);overflow:hidden}.nomos-official-web-pdf-page canvas{display:block}
+
+/* The uploaded file itself in the right panel (12 Nov 2026): PDF pages with the quote marked, Word as a page. */
+.mn-doc-pdf { display: flex; flex-direction: column; gap: 8px; padding: 8px 4px 24px; }
+.mn-doc-pdf-pages { display: flex; flex-direction: column; align-items: center; gap: 12px; }
+.mn-doc-pdf-page { position: relative; background: #fff; box-shadow: 0 1px 3px rgba(20, 20, 40, .12), 0 8px 24px -18px rgba(20, 20, 40, .35); }
+.mn-doc-pdf-page canvas { display: block; }
+.mn-doc-pdf-mark { position: absolute; border-radius: 2px; background: rgba(250, 204, 21, .42); mix-blend-mode: multiply; pointer-events: none; }
+.mn-doc-word { padding: 12px 8px 28px; }
+.mn-doc-word-page { max-width: 760px; margin: 0 auto; padding: 48px 56px; background: #fff; color: #1f1f24; box-shadow: 0 1px 3px rgba(20, 20, 40, .12), 0 10px 30px -20px rgba(20, 20, 40, .4); font: 400 14px/1.6 "Times New Roman", Georgia, serif; }
+.mn-doc-word-page h1 { font-size: 20px; margin: 0 0 12px; } .mn-doc-word-page h2 { font-size: 17px; margin: 18px 0 8px; } .mn-doc-word-page h3, .mn-doc-word-page h4 { font-size: 15px; margin: 14px 0 6px; }
+.mn-doc-word-page p { margin: 0 0 8px; } .mn-doc-word-page ul { margin: 0 0 8px; padding-left: 22px; }
+.mn-doc-word-page table { width: 100%; margin: 8px 0 12px; border-collapse: collapse; } .mn-doc-word-page td { padding: 4px 6px; border: 1px solid #d4d4d8; vertical-align: top; } .mn-doc-word-page td p { margin: 0; }
+.mn-doc-word-mark { background: rgba(250, 204, 21, .38); box-shadow: 0 0 0 4px rgba(250, 204, 21, .38); border-radius: 2px; }
+@media (max-width: 600px) { .mn-doc-word-page { padding: 24px 18px; } }
+/* The file scrolls inside the panel, under its bar: the bar and its × stay in view (12 Nov 2026). */
+.mn-doc-pdf, .mn-doc-word { flex: 1; min-height: 0; overflow: auto; }
+.mn-doc-reader .registrar-web { overflow: hidden; }

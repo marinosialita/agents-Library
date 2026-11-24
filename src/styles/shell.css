@@ -1,0 +1,22 @@
+/* The shell (reference nomos-shell.css): the rail on the left, the stage beside it; every tool scrolls inside itself. */
+.nomos-shell { display: flex; width: 100%; height: 100dvh; min-height: 0; background: var(--brand-canvas); overflow: hidden; }
+.nomos-stage { position: relative; display: flex; flex: 1 1 auto; flex-direction: column; min-width: 0; min-height: 0; }
+.nomos-tool-scroll { height: 100%; min-height: 0; overflow: auto; }
+.nomos-missing { display: grid; place-items: center; align-content: center; gap: 8px; height: 100%; padding: 24px; color: var(--brand-muted); font: 400 13.5px/1.5 var(--brand-font-sans); text-align: center; }
+.nomos-missing b { color: var(--brand-ink); font: 600 16px/1.3 var(--brand-font-sans); }
+.nomos-missing svg { color: var(--brand-gold-hover); }
+@media (max-width: 900px) {
+  .nomos-shell {
+    --nomos-mobile-header-top: max(8px, env(safe-area-inset-top, 0px));
+    --nomos-mobile-header-left: max(8px, env(safe-area-inset-left, 0px));
+    --nomos-mobile-header-right: max(8px, env(safe-area-inset-right, 0px));
+    --nomos-mobile-header-height: 48px;
+  }
+  .nomos-stage { padding-top: calc(var(--nomos-mobile-header-top) + var(--nomos-mobile-header-height) + 8px); }
+}
+
+/* A web link opened from any page (12 Nov 2026): the page on the left, the site on the right, half and half. */
+.nomos-stage-split { display: grid; grid-template-columns: minmax(0, 1fr); flex: 1; min-height: 0; overflow: hidden; }
+.nomos-stage.has-web .nomos-stage-split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.nomos-stage-page { display: flex; flex-direction: column; min-width: 0; min-height: 0; }
+@media (max-width: 860px) { .nomos-stage.has-web .nomos-stage-split { grid-template-columns: minmax(0, 1fr); } .nomos-stage.has-web .nomos-stage-page { display: none; } }

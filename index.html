@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="light" />
+    <meta name="theme-color" content="#F4F3F9" />
+    <title>Agents</title>
+    <script>
+      // A first visit to «/» sees the welcome page (welcome.html). Opening the library from it («/?open»), any deep
+      // link, or a browser that already holds the app's settings goes straight to the app.
+      (function () {
+        try {
+          var search = new URLSearchParams(location.search);
+          if (search.has('open')) { localStorage.setItem('ap-seen-v1', '1'); history.replaceState(null, '', '/'); return; }
+          if (location.pathname === '/' && !location.search && !localStorage.getItem('ap-seen-v1') && !localStorage.getItem('ap-settings-v1')) location.replace('/welcome');
+          else localStorage.setItem('ap-seen-v1', '1');
+        } catch (error) { /* storage blocked: the app opens */ }
+      })();
+    </script>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="/icon-192.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
